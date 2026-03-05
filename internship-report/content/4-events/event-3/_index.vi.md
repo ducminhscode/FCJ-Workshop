@@ -1,0 +1,27 @@
+---
+title : "Event 3"
+date :  "`r Sys.Date()`" 
+weight : 3 
+chapter : false
+pre : " <b> 4.3 </b> "
+---
+
+# BÀI THU HOẠCH "AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront & WAF"
+
+## Mục Đích Của Sự Kiện
+
+## Danh Sách Diễn Giả
+
+## Nội Dung Nổi Bật
+
+## Những Gì Học Được
+
+## Ứng Dụng Vào Công Việc
+
+## Trải Nghiệm Trong Event
+
+## Một số hình ảnh buổi workshop
+
+<img src="/images/event-1.jpg" alt="Event 1" style="width:900px !important; max-width:900px !important;">
+
+
