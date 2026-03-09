@@ -6,3 +6,4 @@ pre: <b> 3.2 </b>
 chapter : false
 ---
 
+# Building multi-tenant SaaS applications with AWS Lambda’s new tenant isolation mode

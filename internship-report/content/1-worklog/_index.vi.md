@@ -7,7 +7,7 @@ chapter : false
 ---
 
 **Tuần 1:** [Làm quen với AWS, nền tảng Cloud, tạo tài khoản và xây dựng website báo cáo Hugo](./week-1)  
-**Tuần 2:** [](./week-2)  
+**Tuần 2:** [AWS Networking cơ bản, Hybrid Connectivity, Route 53 DNS và kiến trúc bảo mật Defense-in-Depth](./week-2)  
 **Tuần 3:** [](./week-3)  
 **Tuần 4:** [](./week-4)  
 **Tuần 5:** [](./week-5)  

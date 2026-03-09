@@ -6,3 +6,5 @@ pre: <b> 3.2 </b>
 chapter : false
 ---
 
+# Xây dựng ứng dụng multi-tenant SaaS với chế độ tenant isolation mới của AWS Lambda
+
