@@ -7,18 +7,56 @@ chapter : false
 ---
 
 ### Mục tiêu tuần 3:
+- Hiểu rõ cách kết nối nhiều VPC thông qua AWS Transit Gateway, từ đó nắm được kiến trúc mạng trung tâm giúp quản lý kết nối giữa nhiều hệ thống trên AWS một cách hiệu quả và dễ mở rộng.
+- Nắm vững kiến thức về dịch vụ tính toán (Compute) trên AWS, đặc biệt là dịch vụ máy chủ ảo Amazon EC2, bao gồm kiến trúc hoạt động, các loại instance, cơ chế khởi tạo máy chủ và cách tối ưu hóa hiệu năng cũng như chi phí.
+- Hiểu rõ các giải pháp lưu trữ dữ liệu trên AWS, bao gồm block storage, file storage và object storage thông qua các dịch vụ như Amazon EBS, Amazon EFS và Amazon S3.
+- Nghiên cứu và thực hành các cơ chế tự động hóa và khả năng mở rộng hệ thống, đặc biệt với Amazon EC2 Auto Scaling nhằm đảm bảo hệ thống có thể tự động điều chỉnh tài nguyên dựa trên nhu cầu tải thực tế.
+- Tìm hiểu và triển khai các giải pháp bảo vệ và sao lưu dữ liệu, sử dụng AWS Backup để quản lý backup tập trung cho nhiều dịch vụ AWS khác nhau.
+- Làm quen với các giải pháp tích hợp lưu trữ Hybrid giữa On-premises và AWS, thông qua AWS Storage Gateway.
+- Thực hành triển khai website tĩnh trên cloud, sử dụng Amazon S3 kết hợp với Amazon CloudFront để tăng tốc phân phối nội dung và nâng cao bảo mật.
 
 
 ### Các công việc cần triển khai trong tuần này:
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|-----|-----------|--------------|-----------------|----------------|
-| 2 |  | 09/03/2026 | 09/03/2026 |  |
-| 3 |  | 10/03/2026 | 10/03/2026 |  |
-| 4 |  | 11/03/2026 | 11/03/2026 |  |
-| 5 |  | 12/03/2026 | 12/03/2026 |  |
-| 6 |  | 13/03/2026 | 13/03/2026 |  |
-| 7 | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 14/03/2026 | 14/03/2026 |  |
-| CN | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 15/03/2026 |15/03/2026 | |
+|:---:|-----------|:------------:|:---------------:|----------------|
+| 2 | - Thực hành sử dụng AWS Transit Gateway để kết nối nhiều VPC ([Module 02 - Lab 20](https://drive.google.com/drive/folders/1R942J-0GyxGhZm2NpvKkhhXmjS6LDLpA?usp=drive_link)):<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Chuẩn bị môi trường: tạo Keypair, khởi tạo bằng CloudFormation<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tạo Transit Gateway<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tạo Transit Gateway Attachments<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Cấu hình Transit Gateway Route Tables<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Cập nhật VPC Route Tables<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Kiểm tra kết quả: thực hiện ping đến Private IP từ EC2 trong VPC này sang EC2 trong VPC khác<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Dọn dẹp tài nguyên | 09/03/2026 | 09/03/2026 | [Set up AWS Transit Gateway](https://000020.awsstudygroup.com/) |
+| 3 | - Tìm hiểu về các dịch vụ Máy chủ ảo (Compute VM) và lưu trữ liên quan trên nền tảng AWS:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Amazon Elastic Compute Cloud (EC2) - dịch vụ máy chủ ảo chủ đạo của AWS<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Amazon Elastic Block Store (EBS) – dịch vụ cung cấp các khối lưu trữ (block storage) cho các máy chủ EC2<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Amazon Lightsail - dịch vụ máy chủ ảo đơn giản, phù hợp cho các ứng dụng không yêu cầu hiệu năng quá cao<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Dịch vụ lưu trữ qua mạng (Network File Share): Amazon Elastic File System (EFS), Amazon FSx<br>&nbsp;&nbsp;&nbsp;&nbsp;+ AWS Application Migration Service (MGN): di cư (Migration), phục hồi sau thảm họa (Disaster Recovery)<br>- Đi sâu vào chi tiết về EC2, tập trung khái niệm Instance Type và cách thức hoạt động của máy chủ ảo trên AWS:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tổng quan về Amazon EC2: định nghĩa, các ưu điểm so với máy chủ truyền thống<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Khái niệm Instance Type<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Kiến trúc của EC2 Instance: Hardware Node, Placement Option, Hypervisor, AMI (Amazon Machine Image)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Các lưu ý quan trọng<br>- Hiểu rõ 3 khái niệm quan trọng:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Amazon Machine Image (AMI): định nghĩa, phân loại, thành phần<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Backup và Snapshot: định nghĩa, cơ chế hoạt động<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Key Pair: định nghĩa, cách sử dụng khác nhau tùy hệ điều hành<br>- Amazon Elastic Block Store (EBS), dịch vụ lưu trữ dạng khối (block storage) được sử dụng làm ổ đĩa cho các máy chủ EC2:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tổng quan về Amazon EBS: định nghĩa, kết nối mạng riêng, độ sẵn sàng cao<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Các loại ổ đĩa chính: HDD (Hard Disk Drive), SSD (Solid State Drive)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Kiến trúc và tính năng nổi bật: tính độc lập, EBS Optimized Instance, Multi-Attach<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Backup và Snapshot<br>- EC2 Instance Store, một lựa chọn lưu trữ khác cho máy chủ EC2 bên cạnh EBS, với những đặc điểm rất khác biệt về hiệu năng và tính bền vững của dữ liệu:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tổng quát EC2 Instance Store: định nghĩa, hiệu năng<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Đặc điểm quan trọng về dữ liệu (Ephemeral Storage): tính tạm thời, khi nào dữ liệu không mất, các khuyến cáo<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Các trường hợp sử dụng (Use Cases): Caching & Buffering, Swap space, File log, dữ liệu có thể tái tạo<br>&nbsp;&nbsp;&nbsp;&nbsp;+ So sánh nhanh với EBS: EBS, Instance Store (Ephemeral NVMe)<br>- EC2 User Data, một công cụ quan trọng giúp tự động hóa quá trình thiết lập máy chủ ngay khi vừa khởi tạo:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tổng quan về EC2 User Data: định nghĩa, mục đích<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Cách thức hoạt động: theo hệ điều hành (Linux, Windows), truy xuất thông tin<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Lý do cần sử dụng User Data: kết hợp với Golden Image, đa dạng hóa vai trò<br>- EC2 Metadata, một công cụ quan trọng giúp các tập lệnh (scripts) chạy bên trong máy chủ EC2 có thể tự lấy thông tin về chính bản thân nó từ AWS:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tổng quan về EC2 Metadata: định nghĩa, các loại thông tin cung cấp (địa chỉ IP, tên máy chủ, thông tin về tường lửa, ID của máy chủ, các thông tin về mạng và phần cứng liên quan khác)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Cách truy xuất Metadata<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Lý do cần sử dụng Metadata<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Điểm khác biệt mấu chốt<br>- EC2 Auto Scaling, một tính năng cốt lõi giúp hiện thực hóa khả năng co giãn (Elasticity) của điện toán đám mây AWS:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tổng quan về EC2 Auto Scaling: định nghĩa, mục đích<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Các thành phần và hoạt động: Scaling Policy, tích hợp với Elastic Load Balancing (ELB), khả năng chịu lỗi<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tối ưu hóa chi phí<br>- Tìm hiểu dịch vụ tính toán và lưu trữ nâng cao trên AWS, bao gồm EC2 Auto Scaling, các loại lưu trữ mạng (EFS/FSx), dịch vụ Lightsail và giải pháp di cư máy chủ (MGN):<br>&nbsp;&nbsp;&nbsp;&nbsp;+ EC2 Auto Scaling và cơ chế hoạt động: kiến trúc, quy trình, tính chất<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Các tùy chọn giá (Pricing Options) của EC2: On-demand, Reserved Instances (RI) & Saving Plans, Spot Instances<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Amazon Lightsail<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Lưu trữ mạng: Amazon EFS và Amazon FSx<br>&nbsp;&nbsp;&nbsp;&nbsp;+ AWS Application Migration Service (MGN) | 10/03/2026 | 10/03/2026 | [Compute VM on AWS](https://youtu.be/-t5h4N6vfBs?si=_uHrDvmYkZWo5Ee6)<br>[EC2 - Instance type](https://youtu.be/e7XeKdOVq40?si=mp8iLSeckT-TIt-v)<br>[EC2 - AMI / Backup / Key Pair](https://youtu.be/yAR6QRT3N1k?si=5NxD2rNDyl8xMKMk)<br>[EC2 - Elastic block store](https://youtu.be/hKr_TfGP7NY?si=kNm3qW_HVNoJmpCp)<br>[EC2 - Instance store](https://youtu.be/6IHNDJ85aoQ?si=LcEs0U5Rx4QHo4HW)<br>[EC2 - User Data](https://youtu.be/_v_43Wi7zjo?si=sdqegshjBNsSSuBp)<br>[EC2 - Metadata](https://youtu.be/Ew3QRaKJQSA?si=yM01QVi1IuojA0gC)<br>[EC2 - EC2 Auto Scaling](https://youtu.be/bbLcPitXJSY?si=DsU5EQwRYKAP8-bO)<br>[EC2 Autoscaling - EFS/FSx - Lightsail - MGN](https://youtu.be/hFVYG8WqfU0?si=9fXq-GMnIMQJE4Jx) |
+| 4 | - Thực hành sử dụng AWS Backup để quản lý và tự động hóa việc bảo vệ dữ liệu trên nhiều dịch vụ AWS khác nhau như EBS, RDS, DynamoDB, EFS ([Module 03 - Lab 13](https://drive.google.com/drive/folders/1_NbVp3i8nkD5_d_7Pn1kcKNVzwn-k0wW?usp=drive_link)):<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Chuẩn bị hạ tầng: tạo S3 Bucket, triển khai hạ tầng<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tạo Backup Plan: khởi tạo Backup Plan (tần suất, thời gian lưu trữ), gán tài nguyên<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Thiết lập thông báo: sử dụng dịch vụ Amazon SNS<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Kiểm tra hoạt động: chạy Backup thủ công, kiểm tra khôi phục, xác nhận thông báo<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Dọn dẹp tài nguyên | 11/03/2026 | 11/03/2026 | [Deploy AWS Backup to the System](https://000013.awsstudygroup.com/) |
+| 5 | - Thực hành thiết lập AWS Storage Gateway để tạo ra một cầu nối lưu trữ giữa môi trường On-premises (nội bộ) và đám mây AWS ([Module 03 - Lab 24](https://drive.google.com/drive/folders/1TyWhEC1vw_FAnbV3gADB7i12fE-FeBqa?usp=drive_link)):<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Chuẩn bị hạ tầng: tạo S3 Bucket, triển khai máy chủ Gateway (EC2)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Khởi tạo AWS Storage Gateway (Tài khoản Free Tier không thể thực hiện được): tạo Gateway, cấu hình bộ nhớ đệm (Local Cache)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tạo File Shares: thiết lập một S3 File Share kết nối trực tiếp với S3 Bucket đã tạo, cấu hình các quyền truy cập (Access Control) để xác định ai có quyền đọc/ghi vào tệp tin<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Kết nối từ máy On-premises: Mount File Share, kiểm tra dữ liệu<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Dọn dẹp tài nguyên | 12/03/2026 | 12/03/2026 | [Using File Storage Gateway](https://000024.awsstudygroup.com/) |
+| 6 | - Thực hành làm quen với Amazon S3 thông qua việc thiết lập một trang web tĩnh (Static Website) ([Module 03 - Lab 57](https://drive.google.com/drive/folders/1GSPhu8eI7ZMk5CDyN9GyKfHlhatrHdwK?usp=drive_link)):<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Chuẩn bị dữ liệu: tạo S3 Bucket, tải dữ liệu<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Cấu hình Static Website Hosting: kích hoạt tính năng Static website hosting trên S3, chỉ định tệp tin trang chủ và tệp báo lỗi<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Thiết lập quyền truy cập (Security và Permissions): cấu hình Block Public Access, cấu hình Bucket Policy<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Tăng tốc và bảo mật với CloudFront: Amazon CloudFront, cấu hình OAC/OAI<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Quản lý vòng đời và dữ liệu: Bucket Versioning, di chuyển và sao chép<br>&nbsp;&nbsp;&nbsp;&nbsp;+ Dọn dẹp tài nguyên | 13/03/2026 | 13/03/2026 | [Starting with Amazon S3](https://000057.awsstudygroup.com/) |
+| 7 | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 14/03/2026 | 14/03/2026 | |
+| CN | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 15/03/2026 | 15/03/2026 | |
 
 ### Kết quả đạt được tuần 3:
+
+- Về kiến thức lý thuyết:
+  
+  - Hiểu rõ kiến trúc Hub-and-Spoke Networking khi sử dụng Transit Gateway để kết nối nhiều VPC trong cùng một hệ thống AWS.
+  - Nắm được cơ chế hoạt động của Amazon EC2, bao gồm Instance Types, AMI, Hypervisor, Placement Options và cách lựa chọn cấu hình phù hợp với từng workload.
+  - Phân biệt các loại lưu trữ trên AWS:
+    - Block storage: Amazon EBS
+    - File storage: Amazon EFS và Amazon FSx
+    - Object storage: Amazon S3
+  - Hiểu rõ sự khác biệt giữa EBS và Instance Store về hiệu năng, độ bền dữ liệu và các trường hợp sử dụng.
+  - Nắm được cơ chế tự động mở rộng tài nguyên với Amazon EC2 Auto Scaling và cách tích hợp với hệ thống cân bằng tải.
+  - Hiểu được quy trình backup và khôi phục dữ liệu tập trung với AWS Backup.
+  - Nắm được cách triển khai website tĩnh trên cloud và tối ưu phân phối nội dung với CDN.
+
+- Về thực hành (Hands-on Labs):
+- 
+  - **Lab 20:** Triển khai thành công hệ thống kết nối nhiều VPC thông qua AWS Transit Gateway, cấu hình route tables và kiểm tra kết nối giữa các EC2 instances bằng Private IP.
+  - **Lab 13:** Thiết lập hệ thống backup tập trung với AWS Backup, tạo Backup Plan, gán tài nguyên cần bảo vệ và kiểm tra quá trình khôi phục dữ liệu.
+  - **Lab 24:** Tìm hiểu mô hình lưu trữ hybrid bằng AWS Storage Gateway, thiết lập File Share kết nối giữa môi trường On-premises giả lập và S3.
+  - **Lab 57:** Triển khai thành công Static Website Hosting trên Amazon S3, cấu hình quyền truy cập, thiết lập Bucket Policy và tích hợp CDN với Amazon CloudFront để tăng tốc phân phối nội dung.
+
+- Về kỹ năng triển khai hệ thống:
+
+  - Có khả năng triển khai và quản lý máy chủ EC2 từ việc tạo instance, cấu hình lưu trữ, đến thiết lập quyền truy cập thông qua Key Pair.
+  - Biết cách tự động hóa cấu hình máy chủ bằng EC2 User Data và truy xuất thông tin hệ thống thông qua EC2 Metadata.
+  - Thực hành thiết lập các kiến trúc Hybrid Storage và Cloud Storage.
+  - Nắm được quy trình triển khai và vận hành một website tĩnh trên cloud.
+
+- Về quản lý tài nguyên:
+
+  - Thực hiện tốt việc dọn dẹp tài nguyên sau mỗi bài lab, đảm bảo không phát sinh chi phí không cần thiết trong quá trình thực hành trên AWS.

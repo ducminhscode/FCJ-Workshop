@@ -11,7 +11,7 @@ chapter : false
 
 **Original Article:** [Building an AI-powered defense-in-depth security architecture for serverless microservices](https://aws.amazon.com/vi/blogs/security/building-an-ai-powered-defense-in-depth-security-architecture-for-serverless-microservices/)
 
-**Author:** Roger Nem - Security Specialist, Amazon Web Services
+**Author:** Roger Nem (Security Specialist, Amazon Web Services)
 
 **Publication Date:** 16/02/2026
 

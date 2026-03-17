@@ -7,8 +7,8 @@ chapter : false
 ---
 
 **Week 1:** [Get familiar with AWS and Cloud fundamentals, create an AWS account, build a report website using Hugo](./week-1)  
-**Week 2:** [AWS Networking Fundamentals, Hybrid Connectivity, DNS with Route 53 và Security Architecture](./week-2)  
-**Week 3:** [](./week-3)  
+**Week 2:** [AWS Networking Fundamentals, Hybrid Connectivity, DNS with Route 53 and Security Architecture](./week-2)  
+**Week 3:** [Compute (EC2), Storage (EBS, EFS, S3), Auto Scaling, Backup and Static Website Deployment](./week-3)  
 **Week 4:** [](./week-4)  
 **Week 5:** [](./week-5)  
 **Week 6:** [](./week-6)  

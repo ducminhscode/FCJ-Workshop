@@ -11,7 +11,7 @@ chapter : false
 
 **Bài viết gốc:** [Xây dựng kiến trúc bảo mật defense-in-depth được hỗ trợ bởi AI cho serverless microservices](https://aws.amazon.com/vi/blogs/security/building-an-ai-powered-defense-in-depth-security-architecture-for-serverless-microservices/)
 
-**Tác giả:** Roger Nem - Security Specialist, Amazon Web Services
+**Tác giả:** Roger Nem (Security Specialist, Amazon Web Services)
 
 **Ngày xuất bản:** 16/02/2026 
 

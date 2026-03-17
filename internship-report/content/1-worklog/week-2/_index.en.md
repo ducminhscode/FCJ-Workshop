@@ -33,7 +33,7 @@ chapter : false
   - Gained a solid understanding of how Route 53 Inbound and Outbound Endpoints operate in hybrid environments.
   - Learned the deployment workflow of Site-to-Site VPN and the role of Transit Gateway in centralized network management.
 
-- Hands-on Practice:
+- Hands-on Labs:
   - **Lab 03:** Successfully deployed a VPC environment, configured a Site-to-Site VPN, and integrated Transit Gateway for centralized connectivity management.
   - **Lab 10:** Built a complete Hybrid DNS architecture, enabling seamless domain name resolution between simulated on-premises Microsoft Active Directory and AWS.
   - **Lab 19:** Successfully configured VPC Peering, updated routing tables, and enabled Cross-Peer DNS for communication between VPCs using Private IP addresses.
