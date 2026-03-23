@@ -192,7 +192,7 @@ Security is an ongoing process-continuously monitor your environment, regularly 
 
 ## Contributions and Feedback
 
-This translation was completed as part of the **FCJ Internship Program**.
+This translation was completed as part of the **FCAJ Internship Program**.
 
 **Contact:** ducmin76@gmail.com
 
@@ -200,4 +200,4 @@ This translation was completed as part of the **FCJ Internship Program**.
 
 **Updates:** The translation will be updated based on feedback from the community.
 
-*© 2024 – Translation by Tran Nguyen Duc Minh. Please provide proper credit when using this content.*
+*© 2026 – Translation by Tran Nguyen Duc Minh. Please provide proper credit when using this content.*

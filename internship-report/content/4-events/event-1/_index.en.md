@@ -17,9 +17,9 @@ Through presentations and hands-on sessions, participants had the opportunity to
 
 ## Speakers
 
-- **Nguyen Gia Hung** – Head of Solutions Architect - Viet Nam & Cambodia
-- **Julian Ju** – Senior Edge Services Specialist Solutions Architect
-- **Kevin Lim** – Senior Edge Services Specialist GTM
+- **Nguyen Gia Hung:** Head of Solutions Architect - Viet Nam & Cambodia
+- **Julian Ju:** Senior Edge Services Specialist Solutions Architect
+- **Kevin Lim:** Senior Edge Services Specialist GTM
 
 ## Key Highlights
 

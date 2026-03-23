@@ -18,6 +18,14 @@ chapter : false
 
 ### [Event 2](./event-2)
 
+**Event Name:** AWS First Cloud AI Journey Community Day 2026
+
+**Date & Time:** 09:00, March 21, 2026
+
+**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City, Viet Nam
+
+**Role:** Attendee
+
 ### [Event 3](./event-3)
 
 ### [Event 4](./event-4)

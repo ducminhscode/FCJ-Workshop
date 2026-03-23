@@ -140,7 +140,7 @@ Logic ứng dụng và dữ liệu phải được cô lập khỏi truy cập t
 
 ### Lớp 5: Bảo mật compute (Compute Security)
 
-Các hàm Lambda thực thi mã ứng dụng của bạn — thường yêu cầu truy cập tới tài nguyên và thông tin xác thực nhạy cảm — phải được bảo vệ trước các nguy cơ như chèn mã (code injection), gọi hàm trái phép (unauthorized invocation) và leo thang đặc quyền (privilege escalation). Ngoài ra, cần giám sát hành vi bất thường của hàm để phát hiện dấu hiệu bị xâm nhập (compromise).
+Các hàm Lambda thực thi mã ứng dụng của bạn - thường yêu cầu truy cập tới tài nguyên và thông tin xác thực nhạy cảm - phải được bảo vệ trước các nguy cơ như chèn mã (code injection), gọi hàm trái phép (unauthorized invocation) và leo thang đặc quyền (privilege escalation). Ngoài ra, cần giám sát hành vi bất thường của hàm để phát hiện dấu hiệu bị xâm nhập (compromise).
 
 Lambda cung cấp các tính năng bảo mật tích hợp sẵn, bao gồm:
 
@@ -204,7 +204,7 @@ Bảo mật là một quá trình liên tục - cần giám sát môi trường 
 
 ## Đóng góp và Feedback
 
-Bài dịch này được thực hiện trong khuôn khổ **FCJ Internship Program**. 
+Bài dịch này được thực hiện trong khuôn khổ **FCAJ Internship Program**. 
 
 **Liên hệ:** ducmin76@gmail.com
 
@@ -212,4 +212,4 @@ Bài dịch này được thực hiện trong khuôn khổ **FCJ Internship Prog
 
 **Updates:** Bài dịch sẽ được cập nhật dựa trên feedback từ cộng đồng
 
-*© 2024 - Bản dịch thuộc về Trần Nguyễn Đức Minh. Vui lòng credit khi sử dụng.*
+*© 2026 - Bản dịch thuộc về Trần Nguyễn Đức Minh. Vui lòng credit khi sử dụng.*

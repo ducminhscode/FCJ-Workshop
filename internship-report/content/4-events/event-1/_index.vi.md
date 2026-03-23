@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 4.1 </b> "
 ---
 
-# BÀI THU HOẠCH "AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront & WAF"
+# Bài Thu Hoạch "AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront & WAF"
 
 ## Mục Đích Của Sự Kiện
 
@@ -17,9 +17,9 @@ Thông qua các phần trình bày và hands-on workshop, người tham dự có
 
 ## Danh Sách Diễn Giả
 
-- **Nguyễn Gia Hưng** - Trưởng bộ phận kiến trúc sư giải pháp - Việt Nam và Campuchia
-- **Julian Ju** - Kiến trúc sư giải pháp chuyên gia cấp cao về dịch vụ Edge
-- **Kevin Lim** - Chuyên gia cấp cao về dịch vụ Edge - GTM
+- **Nguyễn Gia Hưng:** Trưởng bộ phận kiến trúc sư giải pháp - Việt Nam và Campuchia
+- **Julian Ju:** Kiến trúc sư giải pháp chuyên gia cấp cao về dịch vụ Edge
+- **Kevin Lim:** Chuyên gia cấp cao về dịch vụ Edge - GTM
 
 ## Nội Dung Nổi Bật
 
