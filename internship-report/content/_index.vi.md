@@ -25,9 +25,9 @@ chapter : false
 
 **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam  
 
-**Vị trí thực tập:** FCJ Cloud Intern   
+**Vị trí thực tập:** FCAJ Cloud Intern   
 
-**Thời gian thực tập:** Từ ngày 23/02/2026 đến ngày 17/05/2026
+**Thời gian thực tập tại công ty:** Từ ngày 23/02/2026 đến ngày 17/05/2026
 
 </div>
 
