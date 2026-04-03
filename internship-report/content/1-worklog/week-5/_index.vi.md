@@ -8,8 +8,8 @@ chapter : false
 
 ### Mục tiêu tuần 5:
 
-- Nắm vững cách thiết lập và quản trị hệ thống tệp tin chia sẻ hiệu năng cao trên Amazon FSx for Windows File Server, bao gồm chuẩn bị hạ tầng Active Directory, tạo Multi-AZ file system (SSD & HDD), cấu hình File Share, tối ưu hóa lưu trữ với Data Deduplication & Shadow Copies, quản lý User Quotas, Continuously Available Shares, giám sát hiệu năng và mở rộng dung lượng.
-- Hiểu rõ và thực hành thành thạo triển khai Static Website Hosting trên Amazon S3 kết hợp Amazon CloudFront, bao gồm cấu hình Bucket Policy, Block Public Access, OAC/OAI, Bucket Versioning, quản lý vòng đời dữ liệu và tăng tốc độ truy cập.
+- Nắm vững cách thiết lập và quản trị hệ thống tệp tin chia sẻ hiệu năng cao trên Amazon FSx for Windows File Server.
+- Hiểu rõ và thực hành thành thạo triển khai Static Website Hosting trên Amazon S3 kết hợp Amazon CloudFront.
 - Nghiên cứu tài liệu kỹ thuật và hiểu rõ luồng dữ liệu giữa Jira Service Management (JSM) và AWS.
 - Thiết lập môi trường phát triển (Development Environment) và khởi tạo cấu trúc mã nguồn.
 - Xác định cấu trúc dữ liệu (Payload) chuẩn để trao đổi giữa các thành phần.
@@ -35,13 +35,14 @@ chapter : false
 ### Kết quả đạt được tuần 5:
 
 - Về thực hành (Hands-on Labs):
-  - **Lab 25:** Thiết lập hệ thống tệp tin chia sẻ hiệu năng cao trên Amazon FSx for Windows File Server (Multi-AZ, SSD & HDD, tối ưu hóa với Data Deduplication, Shadow Copies, User Quotas, Continuously Available Shares).
-  - **Lab 57:** Thiết lập Static Website Hosting trên Amazon S3 kết hợp Amazon CloudFront (với OAC, Bucket Policy, Versioning).
+  - **Lab 25:** Hoàn thành thiết lập hệ thống tệp tin chia sẻ hiệu năng cao trên Amazon FSx for Windows File Server (Multi-AZ, SSD & HDD, tối ưu hóa với Data Deduplication, Shadow Copies, User Quotas, Continuously Available Shares).
+  - **Lab 57:** Hoàn thành thiết lập Static Website Hosting trên Amazon S3 kết hợp Amazon CloudFront (với OAC, Bucket Policy, Versioning).
 - Về dự án nhóm:
   - Môi trường phát triển đã được thiết lập hoàn chỉnh trên máy cá nhân.
   - Cấu trúc mã nguồn được tổ chức rõ ràng theo best practice cho AWS Lambda.
   - Module `secrets.py` hoạt động ổn định, có khả năng truy xuất Jira API Token, Webhook Secret và AWS Config với cơ chế Global Caching giúp tối ưu hóa execution context của Lambda.
-  - Module `jit_access.py`: Xử lý chính xác logic tính toán thời gian thực (JIT). Đã tích hợp thành công các phương thức:
+  - Module `jit_access.py`: Xử lý chính xác logic tính toán thời gian thực (JIT).
+  - Đã tích hợp thành công các phương thức:
     - Mapping thời gian yêu cầu sang các Tier (1h, 2h, 4h, 8h, 12h).
     - Quản lý Account Assignment và Access Group trong AWS Identity Center.
     - Cơ chế thu hồi quyền khẩn cấp (Emergency Revoke) thông qua User Tagging.

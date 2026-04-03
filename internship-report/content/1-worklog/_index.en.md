@@ -10,7 +10,7 @@ chapter : false
 **Week 2:** [AWS Networking Fundamentals, Hybrid Connectivity, DNS with Route 53 and Security Architecture](./week-2)  
 **Week 3:** [Compute (EC2), Storage (EBS, EFS, S3), Auto Scaling, Backup and Static Website Deployment](./week-3)  
 **Week 4:** [AWS Storage Services (S3, Glacier), Backup & Recovery, Hybrid Storage, VM Migration & Multi-tenant SaaS with AWS Lambda](./week-4)  
-**Week 5:** [](./week-5)  
+**Week 5:** [Amazon FSx, Static Website with S3 & CloudFront, and development of a JIT Access system integrated with Jira](./week-5)  
 **Week 6:** [](./week-6)  
 **Week 7:** [](./week-7)  
 **Week 8:** [](./week-8)  
