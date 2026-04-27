@@ -11,7 +11,7 @@ chapter : false
 **Week 3:** [Compute (EC2), Storage (EBS, EFS, S3), Auto Scaling, Backup and Static Website Deployment](./week-3)  
 **Week 4:** [AWS Storage Services (S3, Glacier), Backup & Recovery, Hybrid Storage, VM Migration & Multi-tenant SaaS with AWS Lambda](./week-4)  
 **Week 5:** [Amazon FSx, Static Website with S3 & CloudFront, and development of a JIT Access system integrated with Jira](./week-5)  
-**Week 6:** [](./week-6)  
+**Week 6:** [AWS Security (IAM, Cognito, KMS, Organizations), centralized governance with Security Hub, and cost optimization using Lambda](./week-6)  
 **Week 7:** [](./week-7)  
 **Week 8:** [](./week-8)  
 **Week 9:** [](./week-9)  

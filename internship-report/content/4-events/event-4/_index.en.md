@@ -22,4 +22,4 @@ pre : " <b> 4.4 </b> "
 
 ## Some event photos
 
-<img src="/images/event-1.jpg" alt="Event 1" style="width:900px !important; max-width:900px !important;">
+<img src="" alt="Event 2" style="width:900px !important; max-width:900px !important;">

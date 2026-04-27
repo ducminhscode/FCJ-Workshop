@@ -11,7 +11,7 @@ chapter : false
 **Tuần 3:** [Compute (EC2), Storage (EBS, EFS, S3), Auto Scaling, Backup và triển khai Static Website](./week-3)  
 **Tuần 4:** [Lưu trữ AWS (S3, Glacier), Backup & Recovery, Hybrid Storage, VM Migration & Multi-tenant SaaS với AWS Lambda](./week-4)  
 **Tuần 5:** [Amazon FSx, Static Website với S3 & CloudFront và phát triển hệ thống JIT Access tích hợp Jira](./week-5)  
-**Tuần 6:** [](./week-6)  
+**Tuần 6:** [Bảo mật AWS (IAM, Cognito, KMS, Organizations), quản trị tập trung với Security Hub và tối ưu chi phí bằng Lambda](./week-6)  
 **Tuần 7:** [](./week-7)  
 **Tuần 8:** [](./week-8)  
 **Tuần 9:** [](./week-9)  
