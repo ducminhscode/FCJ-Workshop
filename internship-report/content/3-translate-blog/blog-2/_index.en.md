@@ -17,7 +17,7 @@ chapter : false
 
 **Source:** AWS Compute Blog
 
-**Translator:** Tran Nguyen Duc Minh – FCJ Intern
+**Translator:** Tran Nguyen Duc Minh – FCAJ Intern
 
 **Translation Date:** 18/03/2026
 

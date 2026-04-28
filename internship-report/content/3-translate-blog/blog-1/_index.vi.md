@@ -17,7 +17,7 @@ chapter : false
 
 **Nguồn:** AWS Security Blog  
 
-**Người dịch:** Trần Nguyễn Đức Minh - FCJ Intern
+**Người dịch:** Trần Nguyễn Đức Minh - FCAJ Intern
 
 **Ngày dịch:** 04/03/2026  
 

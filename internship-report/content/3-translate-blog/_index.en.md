@@ -14,6 +14,8 @@ This article presents an approach to building a defense-in-depth security archit
 
 The blog introduces a new **tenant isolation mode** for **AWS Lambda**, designed to help build more secure multi-tenant SaaS applications. This feature ensures that each tenant runs in its own execution environment and does not share it with other tenants, reducing the risk of data leakage. At the same time, the environment can still be reused for the same tenant to help minimize cold start latency.
 
-**Blog 3:**[](./blog-3)
+**Blog 3:** [Blog 3 - Architecting for agentic AI development on AWS](./blog-3)
 
-**Blog 4:**[](./blog-4)
+This blog explains how to design both system architecture and code base structure to support **agentic AI development** on AWS. It focuses on reducing friction through fast feedback mechanisms such as local emulation, hybrid testing, and preview environments. In addition, it highlights code organization principles like domain-driven design, layered testing, monorepos, and machine-readable documentation to help AI agents understand, modify, and validate systems effectively. The goal is to create an environment where AI agents can iteratively develop, test, and refine code safely and efficiently.
+
+**Blog 4:** [](./blog-4)
