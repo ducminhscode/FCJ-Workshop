@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 4.4 </b> "
 ---
 
-# Bài Thu Hoạch "AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront & WAF"
+# Bài Thu Hoạch ""
 
 ## Mục Đích Của Sự Kiện
 

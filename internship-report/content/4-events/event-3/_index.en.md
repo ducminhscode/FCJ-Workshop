@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 4.3 </b> "
 ---
 
-# Summary Report "AWS Perimeter Protection Workshop – Enhancing Security with CloudFront & WAF"
+# Summary Report ""
 
 ## Event Objectives
 
