@@ -8,6 +8,12 @@ chapter : false
 
 ### Mục tiêu tuần 7:
 
+- Nắm vững cách giới hạn quyền người dùng trong AWS IAM bằng Permission Boundary, hiểu rõ khi nào nên áp dụng để kiểm soát quyền hiệu quả hơn so với policy thông thường.
+- Hiểu và thực hành bảo vệ dữ liệu nhạy cảm thông qua mã hóa khi lưu trữ, sử dụng AWS KMS để quản lý khóa và kiểm soát truy cập.
+- Làm chủ cách phân quyền linh hoạt trong IAM bằng cách sử dụng Condition (IP, thời gian, tag), thay vì chỉ dùng quyền tĩnh.
+- Biết cách cấp quyền an toàn cho ứng dụng truy cập tài nguyên AWS thông qua IAM Role, tránh sử dụng Access Key trực tiếp.
+- Tiếp cận tư duy thiết kế hệ thống hiện đại qua việc nghiên cứu kiến trúc hỗ trợ agentic AI development trên AWS, bao gồm tổ chức code, testing và môi trường phát triển.
+- Củng cố thói quen thực hành, kiểm tra và dọn dẹp tài nguyên sau mỗi lab để tối ưu chi phí và đảm bảo môi trường sạch.
 
 ### Các công việc cần triển khai trong tuần này:
 
@@ -22,3 +28,57 @@ chapter : false
 | CN | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 12/04/2026 | 12/04/2026 | |
 
 ### Kết quả đạt được tuần 7:
+
+- Về kiến thức lý thuyết:
+  - Hiểu rõ cơ chế IAM Permission Boundary:
+    - Cách hoạt động như một lớp giới hạn quyền tối đa cho IAM User/Role
+    - Phân biệt giữa Permission Boundary và IAM Policy thông thường
+    - Khi nào nên sử dụng để kiểm soát quyền trong môi trường lớn
+  - Nắm vững nguyên tắc mã hóa dữ liệu at-rest trên AWS:
+    - Vai trò của AWS KMS trong quản lý khóa
+    - Phân biệt Customer Managed Key và AWS Managed Key
+    - Hiểu cách các dịch vụ như EBS, S3 tích hợp với KMS
+  - Hiểu cơ chế phân quyền nâng cao với IAM Condition:
+    - Giới hạn truy cập theo IP
+    - Giới hạn theo thời gian (time-based access)
+    - Kiểm soát truy cập dựa trên Tag
+  - Hiểu rõ cách cấp quyền cho ứng dụng bằng IAM Role:
+    - So sánh IAM Role và Access Key
+    - Cơ chế cấp quyền tạm thời (temporary credentials)
+    - Lợi ích bảo mật khi sử dụng Role cho EC2
+  - Tiếp cận kiến trúc agentic AI development trên AWS:
+    - Các nguyên tắc thiết kế hỗ trợ feedback nhanh và tự động hóa
+    - Khái niệm local emulation, hybrid testing, preview environments
+    - Tổ chức code theo hướng domain-driven design và monorepo
+- Về thực hành (Hands-on Labs):
+  - Lab 30:
+    - Tạo và áp dụng Permission Boundary cho IAM User
+    - Kiểm tra và xác minh giới hạn quyền truy cập
+  - Lab 33:
+    - Tạo Customer Managed Key sử dụng AWS KMS
+    - Mã hóa dữ liệu trên Amazon EBS và Amazon S3
+    - Theo dõi hoạt động thông qua AWS CloudTrail
+  - Lab 44:
+    - Tạo IAM User và Group
+    - Áp dụng Condition để giới hạn truy cập theo IP, thời gian và Tag
+    - Kiểm tra tính hiệu lực của policy
+  - Lab 48:
+    - Tạo IAM Role và gán cho EC2 Instance
+    - Kiểm tra truy cập S3 thông qua Role
+    - So sánh với phương pháp sử dụng Access Key
+    - Thực hiện kiểm tra và dọn dẹp tài nguyên sau mỗi bài lab
+- Về kỹ năng:
+  - Nâng cao kỹ năng kiểm soát quyền truy cập nâng cao trong AWS IAM
+  - Thành thạo việc triển khai mã hóa dữ liệu và quản lý khóa
+  - Có khả năng thiết kế quyền linh hoạt dựa trên nhiều điều kiện thực tế
+  - Hiểu và áp dụng tốt IAM Role trong thực tế triển khai ứng dụng
+  - Cải thiện kỹ năng đọc hiểu tài liệu kiến trúc và phân tích hệ thống
+- Về tư duy hệ thống:
+  - Hình thành tư duy kiểm soát quyền theo nhiều lớp (defense in depth)
+  - Hiểu cách kết hợp IAM, KMS và các cơ chế điều kiện để tăng cường bảo mật
+  - Tiếp cận tư duy thiết kế hệ thống hỗ trợ tự động hóa và AI-driven development
+  - Nhận thức rõ hơn về cân bằng giữa bảo mật, tính linh hoạt và trải nghiệm phát triển
+- Về quản lý tài nguyên:
+  - Duy trì thói quen dọn dẹp tài nguyên sau khi thực hành
+  - Chủ động kiểm soát tài nguyên sử dụng trong phạm vi hợp lý
+  - Nâng cao ý thức tối ưu chi phí khi sử dụng các dịch vụ AWS

@@ -12,7 +12,7 @@ chapter : false
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |:---:|------|:----------:|:---------------:|--------------------|
-| Mon |  | 20/04/2026 | 20/04/2026 |  |
+| Mon | -  | 20/04/2026 | 20/04/2026 | [Blog 04](https://aws.amazon.com/vi/blogs/mt/handling-sensitive-log-data-using-amazon-cloudwatch/) |
 | Tue |  | 21/04/2026 | 21/04/2026 |  |
 | Wed |  | 22/04/2026 | 22/04/2026 |  |
 | Thu |  | 23/04/2026 | 23/04/2026 |  |

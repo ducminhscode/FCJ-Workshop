@@ -18,4 +18,6 @@ Bài blog giới thiệu **chế độ tenant isolation** mới của AWS dành 
 
 Bài viết trình bày cách thiết kế kiến trúc hệ thống và code base nhằm hỗ trợ **agentic AI development** trên AWS. Nội dung tập trung vào việc giảm friction thông qua các cơ chế phản hồi nhanh như local emulation, hybrid testing và preview environments. Đồng thời, bài viết đề xuất các nguyên tắc tổ chức code như domain-driven design, layered testing, monorepo và tài liệu machine-readable để giúp AI agents hiểu, chỉnh sửa và kiểm thử hệ thống hiệu quả. Mục tiêu là xây dựng môi trường nơi AI agents có thể tự động lặp, validate và cải tiến code một cách an toàn và nhanh chóng.
 
-**Blog 4:** [](./blog-4)
+**Blog 4:** [Blog 4 - Xử lý dữ liệu log nhạy cảm bằng Amazon CloudWatch](./blog-4)
+
+Bài viết tập trung vào cách bảo vệ dữ liệu nhạy cảm (đặc biệt là PII) trong log ứng dụng khi sử dụng Amazon CloudWatch, đồng thời vẫn đảm bảo khả năng debug và vận hành hiệu quả. Nội dung chính xoay quanh việc sử dụng **data protection policies** để tự động phát hiện và che (mask) các thông tin nhạy cảm như email, số thẻ tín dụng, cũng như áp dụng kiểm soát truy cập chi tiết với IAM để giới hạn ai có thể xem dữ liệu gốc (unmask). Bên cạnh đó, bài viết cũng đề cập đến việc kết hợp Audit và Deidentify để giám sát và bảo vệ dữ liệu, xây dựng quy trình cấp quyền tạm thời (privilege escalation) khi cần truy cập log đầy đủ, và sử dụng CloudTrail để audit toàn bộ hoạt động truy cập. Giải pháp này giúp cân bằng giữa bảo mật, tuân thủ và hiệu quả xử lý sự cố (MTTR) trong các hệ thống hiện đại.
