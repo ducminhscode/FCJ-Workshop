@@ -22,6 +22,6 @@ pre : " <b> 4.3 </b> "
 
 ## Một số hình ảnh buổi workshop
 
-<img src="" alt="Event 2" style="width:900px !important; max-width:900px !important;">
+<img src="" alt="Event 3" style="width:900px !important; max-width:900px !important;">
 
 

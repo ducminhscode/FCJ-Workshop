@@ -45,7 +45,6 @@ chapter : false
   - **Lab 13:** Thiết lập hệ thống backup tập trung với AWS Backup, tạo Backup Plan, gán tài nguyên cần bảo vệ và kiểm tra quá trình khôi phục dữ liệu.
   - **Lab 14:** Thực hành VM Import/Export, thực hiện upload VM image lên S3, import thành AMI, khởi chạy EC2 instance và export máy ảo từ AWS về môi trường bên ngoài.
   - **Lab 24:** Tìm hiểu mô hình lưu trữ hybrid bằng AWS Storage Gateway, thiết lập File Share kết nối giữa môi trường On-premises giả lập và S3.
-  - Thực hành kiểm tra, xác minh dữ liệu và dọn dẹp tài nguyên sau mỗi lab để tối ưu chi phí.
 - Về kỹ năng:
   - Nâng cao khả năng triển khai và quản lý hệ thống lưu trữ trên AWS, từ object storage đến hybrid storage.
   - Có khả năng triển khai và vận hành các giải pháp backup, hybrid storage và VM migration trên AWS trong môi trường thực tế.
