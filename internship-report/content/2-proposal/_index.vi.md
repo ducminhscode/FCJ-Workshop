@@ -8,6 +8,27 @@ pre: <b> 2. </b>
 
 # Production Access Request Portal
 
+## Mục lục
+
+- [Production Access Request Portal](#production-access-request-portal)
+  - [Mục lục](#mục-lục)
+  - [Tổng quan dự án](#tổng-quan-dự-án)
+    - [Tóm tắt](#tóm-tắt)
+    - [Đối tượng sử dụng](#đối-tượng-sử-dụng)
+    - [Nguyên tắc thiết kế](#nguyên-tắc-thiết-kế)
+  - [Vấn đề cần giải quyết](#vấn-đề-cần-giải-quyết)
+    - [Mô tả vấn đề](#mô-tả-vấn-đề)
+    - [Giải pháp](#giải-pháp)
+    - [So sánh hai kiến trúc](#so-sánh-hai-kiến-trúc)
+  - [Kiến trúc giải pháp](#kiến-trúc-giải-pháp)
+    - [Sơ đồ kiến trúc hệ thống](#sơ-đồ-kiến-trúc-hệ-thống)
+    - [Các dịch vụ AWS được sử dụng](#các-dịch-vụ-aws-được-sử-dụng)
+    - [Thành phần hệ thống](#thành-phần-hệ-thống)
+  - [Lộ trình \& Mốc triển khai](#lộ-trình--mốc-triển-khai)
+  - [Ước tính ngân sách](#ước-tính-ngân-sách)
+  - [Đánh giá rủi ro](#đánh-giá-rủi-ro)
+  - [Kết quả kỳ vọng](#kết-quả-kỳ-vọng)
+
 ## Tổng quan dự án
 
 ### Tóm tắt
@@ -90,9 +111,25 @@ Trước khi hệ thống này ra đời, quy trình quản lý quyền truy c�
   - Tối ưu chi phí vận hành (pay-per-use).
   - Tăng độ tin cậy và khả năng sẵn sàng của hệ thống.
 
-### So sánh 
+### So sánh hai kiến trúc
+
+| Tiêu chí | Direct Assignment (v1.0) | Group-Based Access (v2.0) |
+|----------|--------------------------|---------------------------|
+| Cơ chế cấp quyền | Gán trực tiếp user vào account | Thêm user vào group đã được gán sẵn |
+| Thời gian cấp quyền | 15-30 giây (async operation) | < 5 giây (sync operation, gần như real-time) |
+| Thời gian thu hồi quyền | Tối đa 12 giờ | Trong vòng 60 giây |
+| Hiệu lực credentials sau revoke| Vẫn còn hiệu lực trong một khoảng thời gian | Bị vô hiệu hóa gần như ngay lập tức |
+| Độ phức tạp vận hành | Cao - Phải tạo/xóa assignment mỗi lần | Thấp - chỉ quản lý membership |
+| Khả năng mở rộng | Hạn chế khi số lượng user tăng | Dễ mở rộng nhờ reuse group |
+| Phản ứng sự cố bảo mật | Chậm, khó kiểm soát | Nhanh, có thể revoke hàng loạt |
 
 ## Kiến trúc giải pháp
+
+### Sơ đồ kiến trúc hệ thống
+
+### Các dịch vụ AWS được sử dụng
+
+### Thành phần hệ thống
 
 ## Lộ trình & Mốc triển khai
 
