@@ -24,23 +24,24 @@ pre: <b> 2. </b>
     - [Sơ đồ kiến trúc hệ thống](#sơ-đồ-kiến-trúc-hệ-thống)
     - [Các dịch vụ AWS được sử dụng](#các-dịch-vụ-aws-được-sử-dụng)
     - [Thành phần hệ thống](#thành-phần-hệ-thống)
-      - [Jira Service Management Portal](#jira-service-management-portal)
-      - [API Gateway Layer](#api-gateway-layer)
-      - [Compute Layer - AWS Lambda](#compute-layer---aws-lambda)
-        - [Lambda Executor](#lambda-executor)
-        - [Lambda Expiry](#lambda-expiry)
-        - [Lambda Email Approval](#lambda-email-approval)
-      - [Data Layer - DynamoDB](#data-layer---dynamodb)
-        - [AccessSessions Table](#accesssessions-table)
-        - [ApprovalTokens Table](#approvaltokens-table)
-      - [Identity Management Layer - AWS IAM Identity Center](#identity-management-layer---aws-iam-identity-center)
-      - [Secrets Management Layer - AWS Secrets Manager](#secrets-management-layer---aws-secrets-manager)
-      - [Notification Layer - Amazon SES](#notification-layer---amazon-ses)
-      - [Monitoring \& Audit Layer - CloudWatch và CloudTrail](#monitoring--audit-layer---cloudwatch-và-cloudtrail)
     - [Quy trình vận hành](#quy-trình-vận-hành)
+      - [Quy trình cấp quyền tiêu chuẩn (Standard Grant Flow)](#quy-trình-cấp-quyền-tiêu-chuẩn-standard-grant-flow)
+      - [Quy trình phê duyệt qua email (Email Approval Flow)](#quy-trình-phê-duyệt-qua-email-email-approval-flow)
+      - [Quy trình tự động hết hạn và thu hồi quyền (Auto Expiry Flow)](#quy-trình-tự-động-hết-hạn-và-thu-hồi-quyền-auto-expiry-flow)
+      - [Quy trình thu hồi khẩn cấp (Emergency Revocation)](#quy-trình-thu-hồi-khẩn-cấp-emergency-revocation)
+      - [Nguyên tắc vận hành và xử lý ngoại lệ](#nguyên-tắc-vận-hành-và-xử-lý-ngoại-lệ)
   - [Lộ trình \& Mốc triển khai](#lộ-trình--mốc-triển-khai)
+    - [Giai đoạn 1: Phân tích yêu cầu và thiết kế giải pháp (Tuần 2-4)](#giai-đoạn-1-phân-tích-yêu-cầu-và-thiết-kế-giải-pháp-tuần-2-4)
+    - [Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5–6)](#giai-đoạn-2-xây-dựng-hạ-tầng-nền-tảng-tuần-56)
+    - [Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7–8)](#giai-đoạn-3-phát-triển-nghiệp-vụ-hệ-thống-tuần-78)
+    - [Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9–10)](#giai-đoạn-4-kiểm-thử-và-nghiệm-thu-tuần-910)
+    - [Giai đoạn 5: Triển khai Production và chuyển giao vận hành (Tuần 11)](#giai-đoạn-5-triển-khai-production-và-chuyển-giao-vận-hành-tuần-11)
+    - [Bảng kế hoạch triển khai tổng quan](#bảng-kế-hoạch-triển-khai-tổng-quan)
+    - [Kế hoạch mở rộng sau triển khai](#kế-hoạch-mở-rộng-sau-triển-khai)
   - [Ước tính ngân sách](#ước-tính-ngân-sách)
   - [Đánh giá rủi ro](#đánh-giá-rủi-ro)
+    - [Ma trận đánh giá rủi ro](#ma-trận-đánh-giá-rủi-ro)
+    - [Kế hoạch ứng phó sự cố](#kế-hoạch-ứng-phó-sự-cố)
   - [Kết quả kỳ vọng](#kết-quả-kỳ-vọng)
 
 ## Tổng quan dự án
@@ -174,95 +175,222 @@ Hệ thống Production Access Request Portal được tổ chức theo mô hìn
 | Amazon SES | Gửi email approval, notification, expiry alert | Kênh giao tiếp với approver và requester |
 | CloudWatch/CloudTrail | Ghi log, metrics, audit trail | Giám sát, truy vết và tuân thủ |
 
-#### Jira Service Management Portal
-
-Jira Service Management Portal là lớp giao tiếp chính giữa người dùng và hệ thống. Người dùng khởi tạo yêu cầu truy cập Production thông qua form chuẩn hóa, trong đó các thông tin như tài khoản AWS, loại quyền truy cập và thời gian yêu cầu được ghi nhận và chuyển thành ticket. Jira đồng thời đóng vai trò quản lý vòng đời của request: từ trạng thái khởi tạo, chờ phê duyệt, đã cấp quyền, đến hết hạn hoặc bị thu hồi.
-
-Ngoài ra, Jira còn là nguồn phát sinh webhook để kích hoạt các quy trình tự động phía AWS. Khi một request được phê duyệt, Jira sẽ gọi sang API Gateway để khởi động Lambda Executor. Khi request bị từ chối hoặc hết hạn, Jira cũng được cập nhật trạng thái tương ứng để đảm bảo người dùng và đội vận hành luôn theo dõi được tình trạng thực tế của request.
-
-#### API Gateway Layer
-
-API Gateway đóng vai trò là lớp tiếp nhận và bảo vệ các endpoint công khai của hệ thống. Trong kiến trúc này, API Gateway không chỉ nhận webhook từ Jira mà còn cung cấp các endpoint phục vụ email approval flow. Mỗi request đi vào đều phải được xác thực bằng API key và chịu giới hạn bởi throttling, usage plan và quota để giảm nguy cơ bị lạm dụng hoặc gửi request bất thường.
-
-Các endpoint chính bao gồm:
-- POST /provision-access: kích hoạt Lambda Executor sau khi request được duyệt.
-- POST /email-approval/request: tạo luồng gửi email phê duyệt.
-- GET /email-approval/action: xử lý hành động approve/decline từ email.
-
-Thiết kế này giúp toàn bộ luồng tự động hóa được gom về một lớp truy cập thống nhất, dễ kiểm soát, dễ áp dụng bảo mật và dễ quan sát log vận hành.
-
-#### Compute Layer - AWS Lambda
-
-Compute Layer là trung tâm xử lý nghiệp vụ của hệ thống và được triển khai bằng ba Lambda functions chính. Tất cả đều sử dụng Python 3.12 runtime và chia sẻ một Lambda Layer chung để tái sử dụng logic dùng chung, giảm trùng lặp mã nguồn và rút ngắn thời gian deploy.
-
-##### Lambda Executor
-
-Lambda Executor là function quan trọng nhất của hệ thống. Function này tiếp nhận webhook từ Jira, xác thực request, ánh xạ duration sang duration tier, tra cứu group phù hợp trong mapping, thêm user vào access group của IAM Identity Center, sau đó ghi session vào DynamoDB và cập nhật trạng thái Jira.
-
-Vai trò của Lambda Executor gồm:
-- Xác thực webhook và kiểm tra dữ liệu đầu vào.
-- Tìm user theo email trong Identity Store.
-- Thêm user vào access group tương ứng.
-- Ghi nhận session để phục vụ TTL và revoke.
-- Gửi notification cho requester sau khi cấp quyền thành công.
-
-##### Lambda Expiry
-
-Lambda Expiry được kích hoạt từ DynamoDB Stream khi record session bị TTL xóa. Đây là cơ chế cốt lõi bảo đảm hệ thống tự động thu hồi quyền truy cập ngay khi phiên làm việc hết hạn. Function này đọc dữ liệu cũ từ stream, xác định membership cần xóa, thực hiện remove khỏi group trong IAM Identity Center và cập nhật trạng thái request trong Jira.
-
-Cơ chế này tạo ra lợi thế lớn so với mô hình Direct Assignment trước đây vì quyền truy cập không còn phụ thuộc vào quá trình revoke thủ công hoặc đồng bộ chậm. Theo thiết kế trong tài liệu, credentials có thể bị vô hiệu hóa trong vòng khoảng 60 giây sau khi session hết hạn.
-
-##### Lambda Email Approval
-
-Lambda Email Approval phục vụ quy trình phê duyệt qua email. Function này tạo token có chữ ký HMAC-SHA256, lưu metadata của token vào DynamoDB với TTL, render email HTML chứa nút Approve/Decline và gửi qua SES đến approver. Khi approver click vào link, function sẽ kiểm tra token, xác nhận tính hợp lệ, đánh dấu token đã dùng và gọi Jira Approval API tương ứng.
-
-#### Data Layer - DynamoDB
-
-DynamoDB là lớp lưu trữ trạng thái của toàn bộ hệ thống. Trong tài liệu, hệ thống sử dụng ít nhất hai bảng chính: AccessSessions và ApprovalTokens. Đây là lựa chọn phù hợp với kiến trúc serverless vì có độ trễ thấp, hỗ trợ TTL và tích hợp tốt với Streams để kích hoạt luồng revoke tự động.
-
-##### AccessSessions Table
-
-Bảng này lưu toàn bộ metadata của một session truy cập, bao gồm requestId, requester, account, access type, duration, group membership id, thời điểm cấp quyền, thời điểm hết hạn và trạng thái hiện tại. Trường ttl được dùng để DynamoDB tự động xóa record khi session kết thúc. Khi record bị xóa, stream event sẽ kích hoạt Lambda Expiry để thu hồi quyền.
-
-##### ApprovalTokens Table
-
-Bảng này dùng để quản lý token cho workflow phê duyệt email. Mỗi token là single-use, có thời hạn sống ngắn và được đánh dấu used ngay sau khi được kích hoạt. Cách làm này giúp hệ thống chống replay attack và tránh việc một liên kết phê duyệt bị dùng lại nhiều lần.
-
-#### Identity Management Layer - AWS IAM Identity Center
-
-IAM Identity Center là nơi thực thi quyền truy cập thực tế vào các AWS target accounts. Hệ thống không cấp quyền trực tiếp cho từng user theo kiểu truyền thống mà sử dụng mô hình group-based access. Mỗi group tương ứng với một tổ hợp account + access_type + duration_tier, từ đó ánh xạ tới permission set phù hợp. Khi user được thêm vào group, quyền được cấp gần như ngay lập tức; khi bị xóa khỏi group, credentials sẽ bị vô hiệu hóa trong thời gian rất ngắn.
-
-Thành phần này gồm ba khối logic:
-- Permission Sets: định nghĩa mức quyền như ReadOnly, PowerUser, Admin.
-- Access Groups: nhóm người dùng đại diện cho một tổ hợp quyền cụ thể.
-- Group Assignments: gán group vào target account và permission set tương ứng.
-
-Thiết kế này giúp giảm số lượng thao tác quản trị, dễ mở rộng khi thêm tài khoản mới và đặc biệt phù hợp với mục tiêu revoke gần như tức thời của hệ thống.
-
-#### Secrets Management Layer - AWS Secrets Manager
-
-Secrets Manager được sử dụng để lưu trữ các thông tin nhạy cảm như Jira credentials, API key của webhook, token secret và access group mapping. Việc dùng Secrets Manager thay cho hardcode hoặc file cấu hình giúp giảm nguy cơ lộ bí mật và hỗ trợ kiểm soát truy cập tốt hơn.
-
-Đặc biệt, mapping giữa account, access type và duration tier được lưu trong Secrets Manager để Lambda Executor có thể tra cứu group đúng theo request. Theo thiết kế trong tài liệu, Lambda còn áp dụng cache ngắn hạn để giảm số lần truy vấn secret, từ đó tối ưu hiệu năng và chi phí.
-
-#### Notification Layer - Amazon SES
-
-Amazon SES là kênh thông báo chính của hệ thống. Thành phần này chịu trách nhiệm gửi email phê duyệt đến approver, gửi email xác nhận cấp quyền cho requester và gửi cảnh báo khi access sắp hết hạn hoặc đã hết hạn. Việc tách notification ra khỏi logic chính giúp quy trình cấp quyền không phụ thuộc hoàn toàn vào email, đồng thời vẫn duy trì được tính minh bạch cho người dùng cuối.
-
-Trong email approval flow, SES còn đóng vai trò truyền tải các liên kết approve/decline đã được ký và có TTL. Điều này giúp approver có thể xử lý nhanh mà không cần vào Jira, nhưng vẫn đảm bảo token được xác thực ở phía backend trước khi thực hiện thay đổi trạng thái request.
-
-#### Monitoring & Audit Layer - CloudWatch và CloudTrail
-
-Hệ thống đặt yêu cầu rất cao về giám sát và kiểm toán, do đó CloudWatch và CloudTrail được sử dụng như lớp quan sát bắt buộc. CloudWatch đảm nhiệm việc ghi log thực thi của Lambda, theo dõi metric và kích hoạt cảnh báo khi có lỗi, timeout hoặc bất thường về lưu lượng. CloudTrail ghi nhận các API call liên quan đến Identity Center và những thao tác quản trị AWS để phục vụ audit trail.
-
-Sự kết hợp giữa CloudWatch, CloudTrail, Jira và DynamoDB giúp hệ thống đạt được mức truy vết đầy đủ từ lúc request được tạo, phê duyệt, cấp quyền, sử dụng, cho đến khi bị thu hồi hoặc hết hạn. Đây là nền tảng quan trọng để đáp ứng các yêu cầu tuân thủ và điều tra sự cố sau này.
-
 ### Quy trình vận hành
+
+Quy trình vận hành của Production Access Request Portal được thiết kế theo mô hình tự động hóa end-to-end, bắt đầu từ lúc người dùng gửi yêu cầu trên Jira Service Management cho đến khi quyền truy cập được cấp, theo dõi thời hạn, và tự động thu hồi khi hết hiệu lực. Toàn bộ vòng đời của một request đều được ghi nhận đầy đủ trên Jira, DynamoDB, CloudWatch và CloudTrail nhằm đảm bảo khả năng kiểm toán và truy vết.
+
+#### Quy trình cấp quyền tiêu chuẩn (Standard Grant Flow)
+
+Quy trình cấp quyền tiêu chuẩn được kích hoạt khi End User gửi request truy cập Production trên Jira Service Management Portal. Sau khi request được tạo, Jira workflow sẽ chuyển trạng thái sang bước chờ phê duyệt và đồng thời phát sinh webhook đến AWS API Gateway để bắt đầu quá trình provisioning. Lambda Executor là thành phần chịu trách nhiệm xử lý logic cấp quyền chính, bao gồm xác thực webhook, tra cứu mapping, thêm user vào group và ghi nhận session vào DynamoDB.
+
+Luồng xử lý tiêu chuẩn như sau:
+1. **Người dùng gửi yêu cầu truy cập:** End User điền form trên Jira Service Management Portal với các thông tin như tài khoản đích, loại quyền truy cập và thời gian sử dụng mong muốn.
+2. **Jira chuyển yêu cầu sang trạng thái chờ duyệt:** Jira tạo ticket và kích hoạt automation rule để gọi webhook tới hệ thống backend.
+3. **API Gateway tiếp nhận webhook:** API Gateway nhận request từ Jira, kiểm tra API key và chuyển tiếp payload đến Lambda Executor.
+4. **Lambda Executor xác thực và xử lý request:** Lambda kiểm tra tính hợp lệ của payload, xác thực chữ ký webhook, đọc dữ liệu cần thiết và ánh xạ duration của request sang duration tier chuẩn.
+5. **Tra cứu access group tương ứng:** Hệ thống sử dụng Secrets Manager để lấy mapping giữa account, access type và duration tier, sau đó xác định access group phù hợp trong IAM Identity Center. Cách làm này đúng với mô hình Group-Based Access đã mô tả trong tài liệu.
+6. **Thêm user vào access group:** Lambda Executor gọi API của Identity Center để tạo group membership cho user. Khi membership được tạo thành công, quyền truy cập tương ứng sẽ được cấp gần như ngay lập tức.
+7. **Ghi nhận session vào DynamoDB:** Một bản ghi session được tạo trong bảng AccessSessions, bao gồm thông tin request ID, requester, group ID, membership ID, thời gian cấp và thời gian hết hạn. TTL được thiết lập để kích hoạt luồng thu hồi tự động.
+8. **Cập nhật trạng thái trên Jira:** Jira ticket được chuyển sang trạng thái Approved và được dùng như nguồn theo dõi chính cho người dùng và approver.
+9. **Gửi email thông báo cho requester:** Hệ thống gửi email thông báo rằng quyền đã được cấp thành công, kèm theo thông tin cần thiết để truy cập IAM Identity Center Portal.
+10. **Người dùng đăng nhập và sử dụng quyền tạm thời:** End User đăng nhập vào Identity Center Portal để sử dụng quyền truy cập AWS trong khoảng thời gian đã được phê duyệt.
+
+#### Quy trình phê duyệt qua email (Email Approval Flow)
+
+Ngoài quy trình phê duyệt trực tiếp trên Jira, hệ thống còn hỗ trợ phê duyệt qua email nhằm tăng tính linh hoạt cho Approver. Khi một request mới được tạo, Jira automation có thể gọi Lambda Email Approval để sinh email chứa các liên kết Approve/Decline. Quy trình này sử dụng token có chữ ký HMAC-SHA256, thời hạn 24 giờ và chỉ dùng một lần để hạn chế rủi ro giả mạo hoặc replay attack.
+
+Luồng xử lý như sau:
+1. **Jira kích hoạt yêu cầu phê duyệt email:** Khi request ở trạng thái chờ duyệt, Jira gọi endpoint `/email-approval/request`.
+2. **Lambda tạo token phê duyệt an toàn:** Token được sinh ra từ `token_id`, `expiry_timestamp` và `hmac_signature`, sau đó lưu metadata vào bảng Approval Tokens trong DynamoDB.
+3. **Gửi email đến Approver:** Lambda render email HTML chứa hai nút `Approve` và `Decline` rồi gửi qua Amazon SES.
+4. **Approver chọn hành động:** Khi người phê duyệt nhấp vào một trong hai nút, request sẽ được chuyển đến endpoint `/email-approval/action`.
+5. **Hệ thống xác thực token:** Lambda kiểm tra chữ ký HMAC, trạng thái hết hạn và cờ `used` trong DynamoDB. Nếu token hợp lệ, hệ thống đánh dấu token đã sử dụng.
+6. **Cập nhật kết quả về Jira:** Lambda gọi Jira Service Desk Approval API để cập nhật trạng thái approve hoặc decline.
+7. **Trả về trang xác nhận:** Hệ thống hiển thị trang xác nhận cho Approver và đồng thời ghi nhận log phục vụ kiểm toán.
+
+#### Quy trình tự động hết hạn và thu hồi quyền (Auto Expiry Flow)
+
+Khi session đến thời điểm hết hạn, DynamoDB TTL sẽ tự động xóa bản ghi session. Sự kiện xóa này được đẩy qua DynamoDB Streams và kích hoạt Lambda Expiry để thực hiện revoke quyền. Đây là cơ chế then chốt giúp hệ thống đạt được mục tiêu thu hồi credentials trong vòng khoảng 60 giây.
+
+Luồng xử lý như sau:
+1. **DynamoDB TTL xóa session hết hạn:** Khi `ttl` của session đã quá hạn, DynamoDB tự động loại bỏ record.
+2. **DynamoDB Streams phát sinh event REMOVE:** Lambda Expiry nhận sự kiện xóa từ stream và xác định đây là một sự kiện hết hạn hợp lệ.
+3. **Xác định membership cần thu hồi:** Lambda đọc dữ liệu cũ của session để lấy `membership_id` và group name tương ứng.
+4. **Xóa user khỏi access group:** Hệ thống gọi `DeleteGroupMembership` trên IAM Identity Center để loại bỏ quyền của user.
+5. **Credentials bị vô hiệu hóa:** Sau khi membership bị xóa, credentials của user sẽ không còn hiệu lực trong thời gian rất ngắn, đáp ứng mục tiêu revoke gần như tức thời.
+6. **Cập nhật Jira và gửi thông báo:** Ticket được chuyển sang trạng thái Expired, đồng thời requester nhận email thông báo quyền đã hết hạn.
+
+#### Quy trình thu hồi khẩn cấp (Emergency Revocation)
+
+Trong các tình huống khẩn cấp như phát hiện lộ credentials, hành vi bất thường hoặc yêu cầu từ nhóm bảo mật, hệ thống hỗ trợ cơ chế thu hồi khẩn cấp để loại bỏ toàn bộ quyền truy cập của một user trong thời gian ngắn. Lambda có thể liệt kê tất cả group memberships của user và xóa chúng để vô hiệu hóa toàn bộ session đang hoạt động.
+
+Các bước thực hiện gồm:
+1. **Kích hoạt yêu cầu thu hồi khẩn cấp:** Operator hoặc hệ thống giám sát gửi yêu cầu revoke ngay lập tức.
+2. **Tra cứu toàn bộ membership của user:** Lambda lấy danh sách tất cả group memberships của user trong Identity Center.
+3. **Xóa user khỏi toàn bộ groups:** Mọi membership liên quan đến user đều bị xóa để đảm bảo không còn quyền truy cập nào tồn tại.
+4. **Ghi nhận sự kiện thu hồi:** Hệ thống cập nhật trạng thái trong DynamoDB, ghi log lên CloudWatch và lưu dấu vết phục vụ audit trail.
+
+#### Nguyên tắc vận hành và xử lý ngoại lệ
+
+Để đảm bảo hệ thống vận hành ổn định, một số nguyên tắc sau được áp dụng xuyên suốt toàn bộ workflow:
+- **Không cấp quyền nếu chưa đủ điều kiện**: Request chỉ được xử lý khi webhook hợp lệ, approver hợp lệ và mapping group tương ứng tồn tại.
+- **Mỗi request chỉ có một trạng thái cuối cùng:** Approved, Declined, Expired hoặc Revoked.
+- **Token email chỉ dùng một lần:** Ngăn chặn việc mở lại liên kết cũ để thực hiện thao tác ngoài ý muốn.
+- **Mọi lỗi đều phải được log:** Các lỗi xác thực, lỗi API hoặc lỗi provisioning cần được ghi nhận để phục vụ điều tra.
+- **Ưu tiên fail-safe:** Nếu hệ thống không xác định được trạng thái hợp lệ, quyền truy cập sẽ không được cấp.
 
 ## Lộ trình & Mốc triển khai
 
+### Giai đoạn 1: Phân tích yêu cầu và thiết kế giải pháp (Tuần 2-4)
+
+Mục tiêu của giai đoạn này là xác định rõ phạm vi hệ thống, các yêu cầu nghiệp vụ, mô hình phân quyền và thiết kế kiến trúc tổng thể.
+
+Các công việc chính:
+- Thu thập yêu cầu từ các bên liên quan (DevOps, Security, Engineering).
+- Xác định danh sách AWS Accounts cần quản lý.
+- Xây dựng ma trận quyền truy cập (ReadOnly, PowerUser, Admin).
+- Xác định duration tiers tiêu chuẩn.
+- Thiết kế workflow Jira Service Management.
+- Thiết kế sơ đồ kiến trúc hệ thống.
+- Thiết kế mô hình dữ liệu DynamoDB.
+
+**Milestone 1 - Architecture Approved**
+
+### Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5–6)
+
+Mục tiêu của giai đoạn này là triển khai toàn bộ hạ tầng AWS bằng Terraform để tạo nền tảng cho hệ thống.
+
+Các công việc chính:
+- Xây dựng Terraform modules: API Gateway, Lambda Functions, DynamoDB Tables, IAM Roles, Secrets Manager, SES Configuration.
+- Tạo Permission Sets trong IAM Identity Center.
+- Tạo Access Groups cho từng account.
+- Thiết lập Group Assignments.
+- Thiết lập Terraform Backend (S3 + DynamoDB Lock).
+
+**Milestone 2 - Infrastructure Ready**
+
+### Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7–8)
+
+Đây là giai đoạn phát triển phần logic cốt lõi của hệ thống.
+
+Các công việc chính:
+- Phát triển Lambda Executor.
+- Phát triển Lambda Email Approval.
+- Phát triển Lambda Expiry.
+- Xây dựng shared Lambda Layer.
+- Tích hợp Jira APIs.
+- Tích hợp IAM Identity Center APIs.
+- Tích hợp Amazon SES.
+- Triển khai structured logging.
+- Tích hợp Secrets Manager cache.
+
+**Milestone 3 - Core Features Completed**
+
+### Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9–10)
+
+Giai đoạn này tập trung kiểm tra tính ổn định, độ bảo mật và khả năng vận hành thực tế.
+
+Các công việc chính:
+- Unit Testing cho Lambda functions.
+- Integration Testing toàn bộ workflow.
+- Security Testing: API authentication, webhook signature validation, token replay prevention.
+- Load Testing API Gateway.
+- TTL Expiry Testing.
+- Emergency Revocation Testing.
+
+**Milestone 4 - UAT Passed**
+
+### Giai đoạn 5: Triển khai Production và chuyển giao vận hành (Tuần 11)
+
+Giai đoạn cuối cùng đưa hệ thống vào vận hành chính thức.
+
+Các công việc chính:
+- Deploy Production environment.
+- Verify tất cả resources.
+- Populate Access Group Mapping.
+- Verify Jira webhook integration.
+- Verify SES production mode.
+- Thiết lập CloudWatch alarms.
+- Thiết lập dashboard giám sát.
+
+**Milestone 5 - Production Go-Live**
+
+### Bảng kế hoạch triển khai tổng quan
+
+| Giai đoạn | Thời gian | Deliverables | Milestone |
+|-----------|-----------|--------------|-----------|
+| Phân tích & Thiết kế | Tuần 2-4 | Kiến trúc, workflow, data model | Architecture Approved |
+| Xây dựng hạ tầng | Tuần 5-6 | Terraform infrastructure | Infrastructure Ready |
+| Phát triển nghiệp vụ | Tuần 7-8 | Lambda functions, API integration | Core Features Completed |
+| Kiểm thử & Nghiệm thu | Tuần 9-10 | Testing reports, UAT | UAT Passed |
+| Production Deployment | Tuần 11 | Production system live | Production Go-Live |
+
+### Kế hoạch mở rộng sau triển khai
+
+Sau khi hệ thống đi vào vận hành ổn định, các cải tiến trong tương lai có thể bao gồm:
+- Hỗ trợ Slack Approval Workflow.
+- Dashboard theo dõi active sessions theo thời gian thực.
+- Tích hợp SIEM cho Security Team.
+- Risk-based Access Approval.
+- Machine Learning anomaly detection cho access pattern.
+- Multi-region deployment để tăng khả năng sẵn sàng.
+
 ## Ước tính ngân sách
+
+| Dịch vụ | Đơn giá | Giả định | Chi phí ước tính mỗi tháng |
+|---------|---------|----------|----------------------------|
+| AWS Lambda | $0.2/triệu requests và $0.0000166667/mỗi GB-giây duration | Khoảng 3000 invocations, 256 MB, thời gian chạy trung bình khoảng 5 giây | ~ $0.06 |
+| API Gateway | $3.5/triệu requests | Khoảng 2000 requests | ~ $0.01 |
+| DynamoDB | On-demand pricing | Khoảng 4000 write và 2000 read | ~ $0.01 |
+| Secrets Manager | $0.4/secret/tháng và $0.05/10000 lượt calls | 4 secrets, khoảng 10000 calls | ~ $1.6 |
+| Amazon SES | $0.1/1000 emails  | Khoảng 2000 emails (grant + expiry) | ~ $0.02 |
+| CloudWatch Logs | $0.5/GB ingested | Khoảng 0.5 GB log ingestion | ~ $0.25 |
+| S3 (Terraform State) | $0,023/GB | Dưới 1 MB | ~ $0.00 |
+
+Tổng chi phí ước tính cho toàn bộ hệ thống là khoảng **~$2/tháng**.
 
 ## Đánh giá rủi ro
 
+Mặc dù Production Access Request Portal được xây dựng trên kiến trúc serverless với nhiều lớp bảo mật và cơ chế tự động hóa, hệ thống vẫn tồn tại một số rủi ro tiềm ẩn liên quan đến phụ thuộc dịch vụ bên ngoài, lỗi vận hành, lỗi cấu hình hoặc các sự cố bảo mật. Việc đánh giá rủi ro giúp chủ động xây dựng phương án giảm thiểu và đảm bảo tính sẵn sàng của hệ thống trong môi trường Production.
+
+### Ma trận đánh giá rủi ro
+
+Các rủi ro được đánh giá dựa trên ba tiêu chí chính: Khả năng xảy ra, mức độ ảnh hưởng, mức độ ưu tiên xử lý.
+
+| Rủi ro | Mô tả | Khả năng xảy ra | Mức độ ảnh hưởng | Mức độ ưu tiên xử lý |
+|--------|-------|:---------------:|:----------------:|:--------------------:|
+| Jira Service Management bị gián đoạn | Không thể tạo request mới hoặc cập nhật trạng thái approval | Trung bình | Cao | Cao |
+| AWS IAM Identity Center lỗi hoặc suy giảm dịch vụ | Không thể cấp hoặc thu hồi quyền truy cập | Thấp | Rất cao | Cao |
+| DynamoDB TTL xử lý chậm | Session hết hạn nhưng chưa bị revoke đúng thời điểm | Trung bình | Cao | Cao |
+| Lambda function lỗi runtime | Workflow provisioning hoặc expiry bị gián đoạn | Trung bình | Cao | Cao |
+| SES gửi email thất bại | Approver hoặc requester không nhận được thông báo | Trung bình | Trung bình | Trung bình |
+| Secrets Manager không truy cập được | Lambda không lấy được secret để xử lý request | Thấp | Cao | Trung bình |
+| Webhook giả mạo hoặc payload bị sửa đổi | Có thể dẫn đến provisioning trái phép nếu không xác thực đúng | Thấp | Rất cao | Cao |
+| Cấu hình sai access group mapping | User được cấp sai quyền hoặc sai account | Trung bình | Cao | Cao |
+| CloudWatch logging lỗi hoặc thiếu log | Mất khả năng điều tra hoặc audit trail không đầy đủ | Thấp | Trung bình | Trung bình |
+| Emergency revoke thất bại | Không thể thu hồi quyền ngay khi phát hiện rủi ro | Thấp | Rất cao | Cao |
+
+### Kế hoạch ứng phó sự cố
+
+Để giảm thiểu rủi ro khi sự cố xảy ra, hệ thống cần có runbook rõ ràng.
+
+| Tình huống | Phản ứng ngay lập tức |
+|-----------|------------------------|
+| Lambda provisioning fail | Retry hoặc manual trigger |
+| Identity Center API fail | Retry và escalate AWS Support |
+| SES fail | Retry gửi email hoặc dùng Jira UI approval |
+| TTL revoke fail | Manual revoke qua operator |
+| Security incident | Emergency revoke toàn bộ sessions |
+| Webhook authentication fail | Reject request và alert Security Team |
+
 ## Kết quả kỳ vọng
+
+- **Chuẩn hóa và tự động hóa quy trình cấp quyền:** Hệ thống giúp thay thế hoàn toàn quy trình cấp quyền thủ công bằng một luồng xử lý tự động, thống nhất và có thể kiểm soát đầu cuối. Từ bước gửi yêu cầu, phê duyệt, cấp quyền cho đến thu hồi quyền đều được điều phối bởi Jira Service Management, AWS Lambda và IAM Identity Center, qua đó giảm đáng kể thời gian xử lý và hạn chế sai sót do con người.
+- **Tăng cường bảo mật cho môi trường Production:** Nhờ áp dụng mô hình Just-in-Time Access, Zero Standing Privileges và Group-Based Access hệ thống chỉ cấp quyền trong đúng khoảng thời gian cần thiết và tự động vô hiệu hóa khi hết hạn. Điều này giúp giảm thiểu rủi ro tồn tại credentials dài hạn, đồng thời nâng cao khả năng bảo vệ môi trường Production trước các tình huống lộ thông tin xác thực hoặc lạm dụng quyền truy cập.
+- **Rút ngắn thời gian cấp và thu hồi quyền:** So với kiến trúc cũ dựa trên Direct Assignment, phiên bản mới kỳ vọng rút ngắn đáng kể thời gian provisioning xuống còn dưới 5 giây và thu hồi quyền trong vòng khoảng 60 giây sau khi TTL hết hạn. Nhờ đó, đội ngũ kỹ thuật có thể truy cập nhanh hơn khi cần xử lý sự cố, trong khi đội ngũ bảo mật vẫn đảm bảo khả năng thu hồi quyền gần như tức thời khi phát hiện rủi ro.
+- **Nâng cao khả năng kiểm toán và truy vết:** Toàn bộ hoạt động của hệ thống được ghi nhận qua Jira, CloudWatch, CloudTrail và DynamoDB, giúp tạo ra audit trail đầy đủ cho các sự kiện như request submitted, approved, provisioned, expired và revoked. Đây là nền tảng quan trọng để đáp ứng yêu cầu tuân thủ nội bộ, hỗ trợ kiểm toán và điều tra khi có sự cố bảo mật.
+- **Tối ưu chi phí và công sức vận hành:** Với kiến trúc serverless trên AWS, hệ thống không yêu cầu quản lý máy chủ, tự động mở rộng theo nhu cầu và chỉ phát sinh chi phí theo mức sử dụng thực tế. Điều này giúp giảm gánh nặng vận hành cho đội ngũ DevOps, đồng thời đảm bảo chi phí triển khai ở mức thấp và phù hợp với quy mô sử dụng của tổ chức.
+- **Cải thiện trải nghiệm người dùng và quy trình phê duyệt:** Người dùng có thể gửi yêu cầu truy cập qua Jira Portal và nhận thông báo rõ ràng qua email trong suốt vòng đời request. Người phê duyệt cũng có thể xử lý nhanh hơn thông qua Jira UI hoặc email approval link, giúp quy trình trở nên linh hoạt, minh bạch và thuận tiện hơn cho cả requester lẫn approver.
+- **Mở rộng dễ dàng trong tương lai:** Thiết kế theo hướng module hóa và Infrastructure as Code giúp hệ thống dễ dàng mở rộng sang nhiều AWS account, thêm access type mới hoặc tích hợp thêm các kênh phê duyệt khác như Slack mà không cần thay đổi lớn về kiến trúc tổng thể.
+
+Tổng kết lại, dự án kỳ vọng tạo ra một nền tảng quản lý truy cập Production hiện đại, an toàn và có khả năng mở rộng cao, đồng thời cân bằng tốt giữa bảo mật, tốc độ xử lý, khả năng kiểm toán và chi phí vận hành.
