@@ -56,10 +56,10 @@ Trong hệ thống Production Access Request Portal có nhiều đối tượng 
 
 | Vai trò | Mô tả | Tương tác với hệ thống |
 |---------|-------|------------------------|
-| End User (Developer/Engineer) | Người có nhu cầu truy cập vào môi trường Production để thực hiện các công việc như triển khai (deploypment), xử lý sự cố (troubleshooting) hoặc kiểm tra hệ thống. | Người dùng tương tác với hệ thống thông qua Jira Service Management Portal để gửi yêu cầu truy cập. Sau khi được phê duyệt, họ sử dụng AWS IAM Identity Center để đăng nhập và nhận quyền truy cập tạm thời. |
-| Approver (Team Lead/Manager) | Người chịu trách nhiệm xem xét và phê duyệt các yêu cầu truy cập Production. Đóng vai trò kiểm soát, đảm bảo rằng chỉ những yêu cầu hợp lệ và cần thiết mới được cấp quyền. | Việc phê duyệt được thực hiện trực tiếp trên giao diện Jira hoặc thông qua email với các liên kết xác nhận (approve/decline).|
-| Platform/DevOps Engineer | Người chịu trách nhiệm thiết kế, triển khai và vận hành hệ thống. | Quản lý toàn bộ hạ tầng thông qua Terraform (Infrastructure as Code), phát triển và bảo trì các Lambda functions cũng như giám sát hiệu năng hệ thống, xử lý sự cố và thực hiện các cải tiến kiến trúc khi cần thiết để đảm bảo hệ thống hoạt động ổn định. |
-| Security/Compliance Team | Người chịu trách nhiệm đảm bảo hệ thống tuân thủ các tiêu chuẩn và chính sách bảo mật của tổ chức. | Theo dõi các hoạt động truy cập thông qua audit logs, kiểm tra các chính sách phân quyền và đánh giá rủi ro bảo mật. |
+| **End User (Developer/Engineer)** | Người có nhu cầu truy cập vào môi trường Production để thực hiện các công việc như triển khai (deploypment), xử lý sự cố (troubleshooting) hoặc kiểm tra hệ thống. | Người dùng tương tác với hệ thống thông qua Jira Service Management Portal để gửi yêu cầu truy cập. Sau khi được phê duyệt, họ sử dụng AWS IAM Identity Center để đăng nhập và nhận quyền truy cập tạm thời. |
+| **Approver (Team Lead/Manager)** | Người chịu trách nhiệm xem xét và phê duyệt các yêu cầu truy cập Production. Đóng vai trò kiểm soát, đảm bảo rằng chỉ những yêu cầu hợp lệ và cần thiết mới được cấp quyền. | Việc phê duyệt được thực hiện trực tiếp trên giao diện Jira hoặc thông qua email với các liên kết xác nhận (approve/decline).|
+| **Platform/DevOps Engineer** | Người chịu trách nhiệm thiết kế, triển khai và vận hành hệ thống. | Quản lý toàn bộ hạ tầng thông qua Terraform (Infrastructure as Code), phát triển và bảo trì các Lambda functions cũng như giám sát hiệu năng hệ thống, xử lý sự cố và thực hiện các cải tiến kiến trúc khi cần thiết để đảm bảo hệ thống hoạt động ổn định. |
+| **Security/Compliance Team** | Người chịu trách nhiệm đảm bảo hệ thống tuân thủ các tiêu chuẩn và chính sách bảo mật của tổ chức. | Theo dõi các hoạt động truy cập thông qua audit logs, kiểm tra các chính sách phân quyền và đánh giá rủi ro bảo mật. |
 
 ### Nguyên tắc thiết kế
 
@@ -88,11 +88,11 @@ Trước khi hệ thống này ra đời, quy trình quản lý quyền truy c�
 
 | Vấn đề | Tác động | Mức độ rủi ro |
 |--------|----------|:-------------:|
-| Cấp quyền thủ công và thiếu nhất quán | Quy trình cấp quyền truy cập Production chủ yếu được thực hiện thủ công, thông qua việc tạo hoặc chỉnh sửa IAM User cho từng yêu cầu. Cách làm này không chỉ tốn nhiều thời gian mà còn dễ xảy ra sai sót trong quá trình cấu hình, dẫn đến việc cấp sai quyền hoặc thiếu kiểm soát. Việc thiếu một quy trình chuẩn hóa cũng khiến cho các thao tác giữa các nhóm không đồng nhất, gây khó khăn trong quản lý và mở rộng hệ thống. | Cao |
-| Không có cơ chế tự động hết hạn quyền truy cập | Một trong những vấn đề nghiêm trọng là quyền truy cập Production không được tự động thu hồi sau khi hoàn thành công việc. Điều này dẫn đến việc tồn tại các credentials lâu dài (long-lived credentials) trong hệ thống. Việc duy trì quyền truy cập trong thời gian dài làm tăng nguy cơ bị khai thác nếu thông tin xác thực bị lộ, đồng thời vi phạm các nguyên tắc bảo mật hiện đại như Zero Standing Privileges. | Rất cao |
-| Thiếu khả năng truy vết và kiểm toán (Audit Trail) | Hệ thống cũ không cung cấp đầy đủ thông tin để theo dõi và truy vết các hoạt động truy cập. Việc không biết chính xác ai đã truy cập, vào thời điểm nào và thực hiện hành động gì gây khó khăn trong quá trình kiểm toán và điều tra sự cố. Điều này đặc biệt nghiêm trọng trong các môi trường yêu cầu tuân thủ cao, nơi mà audit trail là bắt buộc. | Rất cao |
-| Quy trình phê duyệt rời rạc và kém hiệu quả | Quy trình phê duyệt truy cập thường diễn ra thông qua nhiều kênh khác nhau như email, tin nhắn hoặc trao đổi trực tiếp, thiếu sự tập trung và tự động hóa. Điều này làm cho thời gian xử lý yêu cầu kéo dài, không có SLA rõ ràng hay khó theo dõi trạng thái yêu cầu hiện tại. Hệ quả là làm giảm hiệu suất làm việc của đội ngũ kỹ thuật và làm tăng độ trễ trong xử lý sự cố Production. | Trung bình |
-| Không có cơ chế thu hồi quyền khẩn cấp | Trong trường hợp phát hiện rủi ro bảo mật hoặc tài khoản bị xâm phạm, hệ thống không cung cấp khả năng thu hồi quyền truy cập ngay lập tức. Việc này khiến tổ chức không thể phản ứng nhanh với các sự cố, làm gia tăng mức độ ảnh hưởng và thiệt hại tiềm ẩn. | Nghiêm trọng |
+| **Cấp quyền thủ công và thiếu nhất quán** | Quy trình cấp quyền truy cập Production chủ yếu được thực hiện thủ công, thông qua việc tạo hoặc chỉnh sửa IAM User cho từng yêu cầu. Cách làm này không chỉ tốn nhiều thời gian mà còn dễ xảy ra sai sót trong quá trình cấu hình, dẫn đến việc cấp sai quyền hoặc thiếu kiểm soát. Việc thiếu một quy trình chuẩn hóa cũng khiến cho các thao tác giữa các nhóm không đồng nhất, gây khó khăn trong quản lý và mở rộng hệ thống. | Cao |
+| **Không có cơ chế tự động hết hạn quyền truy cập** | Một trong những vấn đề nghiêm trọng là quyền truy cập Production không được tự động thu hồi sau khi hoàn thành công việc. Điều này dẫn đến việc tồn tại các credentials lâu dài (long-lived credentials) trong hệ thống. Việc duy trì quyền truy cập trong thời gian dài làm tăng nguy cơ bị khai thác nếu thông tin xác thực bị lộ, đồng thời vi phạm các nguyên tắc bảo mật hiện đại như Zero Standing Privileges. | Rất cao |
+| **Thiếu khả năng truy vết và kiểm toán (Audit Trail)** | Hệ thống cũ không cung cấp đầy đủ thông tin để theo dõi và truy vết các hoạt động truy cập. Việc không biết chính xác ai đã truy cập, vào thời điểm nào và thực hiện hành động gì gây khó khăn trong quá trình kiểm toán và điều tra sự cố. Điều này đặc biệt nghiêm trọng trong các môi trường yêu cầu tuân thủ cao, nơi mà audit trail là bắt buộc. | Rất cao |
+| **Quy trình phê duyệt rời rạc và kém hiệu quả** | Quy trình phê duyệt truy cập thường diễn ra thông qua nhiều kênh khác nhau như email, tin nhắn hoặc trao đổi trực tiếp, thiếu sự tập trung và tự động hóa. Điều này làm cho thời gian xử lý yêu cầu kéo dài, không có SLA rõ ràng hay khó theo dõi trạng thái yêu cầu hiện tại. Hệ quả là làm giảm hiệu suất làm việc của đội ngũ kỹ thuật và làm tăng độ trễ trong xử lý sự cố Production. | Trung bình |
+| **Không có cơ chế thu hồi quyền khẩn cấp** | Trong trường hợp phát hiện rủi ro bảo mật hoặc tài khoản bị xâm phạm, hệ thống không cung cấp khả năng thu hồi quyền truy cập ngay lập tức. Việc này khiến tổ chức không thể phản ứng nhanh với các sự cố, làm gia tăng mức độ ảnh hưởng và thiệt hại tiềm ẩn. | Nghiêm trọng |
 
 ### Giải pháp
 
@@ -130,13 +130,13 @@ Trước khi hệ thống này ra đời, quy trình quản lý quyền truy c�
 
 | Tiêu chí | Direct Assignment (v1.0) | Group-Based Access (v2.0) |
 |----------|:------------------------:|:-------------------------:|
-| Cơ chế cấp quyền | Gán trực tiếp user vào account | Thêm user vào group đã được gán sẵn |
-| Thời gian cấp quyền | 15-30 giây (async operation) | < 5 giây (sync operation, gần như real-time) |
-| Thời gian thu hồi quyền | Tối đa 12 giờ | Trong vòng 60 giây |
-| Hiệu lực credentials sau revoke| Vẫn còn hiệu lực trong một khoảng thời gian | Bị vô hiệu hóa gần như ngay lập tức |
-| Độ phức tạp vận hành | Cao - Phải tạo/xóa assignment mỗi lần | Thấp - chỉ quản lý membership |
-| Khả năng mở rộng | Hạn chế khi số lượng user tăng | Dễ mở rộng nhờ reuse group |
-| Phản ứng sự cố bảo mật | Chậm, khó kiểm soát | Nhanh, có thể revoke hàng loạt |
+| **Cơ chế cấp quyền** | Gán trực tiếp user vào account | Thêm user vào group đã được gán sẵn |
+| **Thời gian cấp quyền** | 15-30 giây (async operation) | < 5 giây (sync operation, gần như real-time) |
+| **Thời gian thu hồi quyền** | Tối đa 12 giờ | Trong vòng 60 giây |
+| **Hiệu lực credentials sau revoke** | Vẫn còn hiệu lực trong một khoảng thời gian | Bị vô hiệu hóa gần như ngay lập tức |
+| **Độ phức tạp vận hành** | Cao - Phải tạo/xóa assignment mỗi lần | Thấp - chỉ quản lý membership |
+| **Khả năng mở rộng** | Hạn chế khi số lượng user tăng | Dễ mở rộng nhờ reuse group |
+| **Phản ứng sự cố bảo mật** | Chậm, khó kiểm soát | Nhanh, có thể revoke hàng loạt |
 
 ## Kiến trúc giải pháp
 
@@ -149,14 +149,14 @@ Trước khi hệ thống này ra đời, quy trình quản lý quyền truy c�
 
 | Dịch vụ AWS | Vai trò trong hệ thống | Lý do lựa chọn |
 |-------------|------------------------|----------------|
-| AWS Lambda | Xử lý toàn bộ logic nghiệp vụ của hệ thống như provisioning access, revoke, xử lý email approval và auto expiry. | Kiến trúc serverless giúp không cần quản lý server, auto scaling, chi phí thấp theo số lần chạy (pay-per-use), phù hợp workload event-driven. |
-| Amazon API Gateway | Cung cấp REST API endpoint để nhận webhook từ Jira. | Managed API service có hỗ trợ authentication, throttling, rate limit, usage plans và tích hợp native với Lambda. |
-| AWS IAM Identity Center | Quản lý quyền truy cập AWS thông qua Permission Sets, Access Groups và Group Memberships. Cấp phát và thu hồi quyền truy cập nhanh chóng (group-based). | Đây là giải pháp SSO chính thức của AWS, hỗ trợ centralized access management và revoke credentials gần như tức thời ( trong vòng 60s). |
-| Amazon DynamoDB | Lưu trữ session metadata (Sessions Table), approval tokens (Approval Tokens Table), hỗ trợ TTL auto-expiry và trigger revoke workflow thông qua DynamoDB Streams. | NoSQL serverless có độ trễ thấp, hỗ trợ TTL auto-expiry và DynamoDB Streams. |
-| AWS Secrets Manager | Lưu trữ bảo mật Jira credentials, webhook API key, token secret và access group mapping. | Bảo mật secrets tốt hơn hardcode/config file, có encryption at rest và automatic rotation support. |
-| Amazon SES | Gửi email approval, email notification khi cấp quyền và revoke quyền. | Chi phí thấp, dễ tích hợp với Lambda. |
-| Amazon CloudWatch | Logging (structured JSON logs), monitoring metrics, alarming cho Lambda, API Gateway, DynamoDB... | Native integration với Lambda và các dịch vụ AWS khác. |
-| AWS CloudTrail | Ghi audit trail cho tất cả API calls liên quan đến Identity Center, Lambda và các thao tác cấp quyền. | Đáp ứng compliance requirements (đảm bảo complete auditability). |
+| **AWS Lambda** | Xử lý toàn bộ logic nghiệp vụ của hệ thống như provisioning access, revoke, xử lý email approval và auto expiry. | Kiến trúc serverless giúp không cần quản lý server, auto scaling, chi phí thấp theo số lần chạy (pay-per-use), phù hợp workload event-driven. |
+| **Amazon API Gateway** | Cung cấp REST API endpoint để nhận webhook từ Jira. | Managed API service có hỗ trợ authentication, throttling, rate limit, usage plans và tích hợp native với Lambda. |
+| **AWS IAM Identity Center** | Quản lý quyền truy cập AWS thông qua Permission Sets, Access Groups và Group Memberships. Cấp phát và thu hồi quyền truy cập nhanh chóng (group-based). | Đây là giải pháp SSO chính thức của AWS, hỗ trợ centralized access management và revoke credentials gần như tức thời ( trong vòng 60s). |
+| **Amazon DynamoDB** | Lưu trữ session metadata (Sessions Table), approval tokens (Approval Tokens Table), hỗ trợ TTL auto-expiry và trigger revoke workflow thông qua DynamoDB Streams. | NoSQL serverless có độ trễ thấp, hỗ trợ TTL auto-expiry và DynamoDB Streams. |
+| **AWS Secrets Manager** | Lưu trữ bảo mật Jira credentials, webhook API key, token secret và access group mapping. | Bảo mật secrets tốt hơn hardcode/config file, có encryption at rest và automatic rotation support. |
+| **Amazon SES** | Gửi email approval, email notification khi cấp quyền và revoke quyền. | Chi phí thấp, dễ tích hợp với Lambda. |
+| **Amazon CloudWatch** | Logging (structured JSON logs), monitoring metrics, alarming cho Lambda, API Gateway, DynamoDB... | Native integration với Lambda và các dịch vụ AWS khác. |
+| **AWS CloudTrail** | Ghi audit trail cho tất cả API calls liên quan đến Identity Center, Lambda và các thao tác cấp quyền. | Đáp ứng compliance requirements (đảm bảo complete auditability). |
 
 ### Thành phần hệ thống
 
@@ -164,16 +164,16 @@ Hệ thống Production Access Request Portal được tổ chức theo mô hìn
 
 | Thành phần | Chức năng chính | Vai trò trong luồng xử lý |
 |------------|-----------------|---------------------------|
-| Jira Service Management Portal | Tiếp nhận yêu cầu truy cập từ người dùng, hiển thị trạng thái request, workflow phê duyệt | Điểm bắt đầu của toàn bộ quy trình |
-| API Gateway | Tiếp nhận webhook từ Jira, xác thực request và chuyển tiếp vào Lambda | Cửa vào của backend serverless |
-| Lambda Executor | Xử lý provisioning access sau khi request được duyệt | Thực thi logic cấp quyền chính |
-| Lambda Email Approval | Tạo email phê duyệt, xử lý approve/decline từ email | Hỗ trợ phê duyệt linh hoạt qua email |
-| Lambda Expiry | Theo dõi session hết hạn và tự động thu hồi quyền | Đảm bảo quyền truy cập chỉ tồn tại trong thời gian cho phép |
-| DynamoDB | Lưu session, approval token, TTL và metadata phục vụ revoke | Nền tảng lưu trữ trạng thái hệ thống |
-| Secrets Manager | Lưu secrets, mapping group, token secret, Jira credentials | Bảo vệ dữ liệu nhạy cảm |
-| IAM Identity Center | Quản lý permission sets, access groups, group membership | Thành phần cấp phát và thu hồi quyền truy cập |
-| Amazon SES | Gửi email approval, notification, expiry alert | Kênh giao tiếp với approver và requester |
-| CloudWatch/CloudTrail | Ghi log, metrics, audit trail | Giám sát, truy vết và tuân thủ |
+| **Jira Service Management Portal** | Tiếp nhận yêu cầu truy cập từ người dùng, hiển thị trạng thái request, workflow phê duyệt | Điểm bắt đầu của toàn bộ quy trình |
+| **API Gateway** | Tiếp nhận webhook từ Jira, xác thực request và chuyển tiếp vào Lambda | Cửa vào của backend serverless |
+| **Lambda Executor** | Xử lý provisioning access sau khi request được duyệt | Thực thi logic cấp quyền chính |
+| **Lambda Email Approval** | Tạo email phê duyệt, xử lý approve/decline từ email | Hỗ trợ phê duyệt linh hoạt qua email |
+| **Lambda Expiry** | Theo dõi session hết hạn và tự động thu hồi quyền | Đảm bảo quyền truy cập chỉ tồn tại trong thời gian cho phép |
+| **DynamoDB** | Lưu session, approval token, TTL và metadata phục vụ revoke | Nền tảng lưu trữ trạng thái hệ thống |
+| **Secrets Manager** | Lưu secrets, mapping group, token secret, Jira credentials | Bảo vệ dữ liệu nhạy cảm |
+| **IAM Identity Center** | Quản lý permission sets, access groups, group membership | Thành phần cấp phát và thu hồi quyền truy cập |
+| **Amazon SES** | Gửi email approval, notification, expiry alert | Kênh giao tiếp với approver và requester |
+| **CloudWatch/CloudTrail** | Ghi log, metrics, audit trail | Giám sát, truy vết và tuân thủ |
 
 ### Quy trình vận hành
 
@@ -339,13 +339,13 @@ Sau khi hệ thống đi vào vận hành ổn định, các cải tiến trong 
 
 | Dịch vụ | Đơn giá | Giả định | Chi phí ước tính mỗi tháng |
 |---------|---------|----------|----------------------------|
-| AWS Lambda | $0.2/triệu requests và $0.0000166667/mỗi GB-giây duration | Khoảng 3000 invocations, 256 MB, thời gian chạy trung bình khoảng 5 giây | ~ $0.06 |
-| API Gateway | $3.5/triệu requests | Khoảng 2000 requests | ~ $0.01 |
-| DynamoDB | On-demand pricing | Khoảng 4000 write và 2000 read | ~ $0.01 |
-| Secrets Manager | $0.4/secret/tháng và $0.05/10000 lượt calls | 4 secrets, khoảng 10000 calls | ~ $1.6 |
-| Amazon SES | $0.1/1000 emails  | Khoảng 2000 emails (grant + expiry) | ~ $0.02 |
-| CloudWatch Logs | $0.5/GB ingested | Khoảng 0.5 GB log ingestion | ~ $0.25 |
-| S3 (Terraform State) | $0,023/GB | Dưới 1 MB | ~ $0.00 |
+| **AWS Lambda** | $0.2/triệu requests và $0.0000166667/mỗi GB-giây duration | Khoảng 3000 invocations, 256 MB, thời gian chạy trung bình khoảng 5 giây | ~ $0.06 |
+| **API Gateway** | $3.5/triệu requests | Khoảng 2000 requests | ~ $0.01 |
+| **DynamoDB** | On-demand pricing | Khoảng 4000 write và 2000 read | ~ $0.01 |
+| **Secrets Manager** | $0.4/secret/tháng và $0.05/10000 lượt calls | 4 secrets, khoảng 10000 calls | ~ $1.6 |
+| **Amazon SES** | $0.1/1000 emails  | Khoảng 2000 emails (grant + expiry) | ~ $0.02 |
+| **CloudWatch Logs** | $0.5/GB ingested | Khoảng 0.5 GB log ingestion | ~ $0.25 |
+| **S3 (Terraform State)** | $0,023/GB | Dưới 1 MB | ~ $0.00 |
 
 Tổng chi phí ước tính cho toàn bộ hệ thống là khoảng **~$2/tháng**.
 

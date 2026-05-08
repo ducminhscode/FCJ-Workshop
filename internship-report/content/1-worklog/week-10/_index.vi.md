@@ -8,6 +8,16 @@ chapter : false
 
 ### Mục tiêu tuần 10:
 
+- Hiểu và thực hành quy trình phân tích chi phí và hiệu suất hệ thống trên AWS bằng Amazon Glue và Amazon Athena.
+- Làm quen với cách xây dựng và vận hành data pipeline serverless trên AWS theo hướng Data Lake hiện đại.
+- Củng cố kiến thức và kỹ năng làm việc với cơ sở dữ liệu NoSQL DynamoDB thông qua AWS SDK for Python (boto3).
+- Hiểu cách tổ chức dữ liệu, tự động hóa ETL và trực quan hóa dữ liệu bằng QuickSight trong kiến trúc serverless.
+- Hoàn thiện chức năng Email Token trong hệ thống quản lý quyền truy cập, bao gồm xử lý approve/reject trực tiếp từ email.
+- Tích hợp cập nhật trạng thái tự động lên Jira ticket nhằm đồng bộ quy trình phê duyệt truy cập.
+- Tăng độ ổn định và khả năng chịu lỗi của hệ thống bằng cách triển khai retry logic cho các API AWS/Jira.
+- Xử lý các edge cases trong hệ thống như token hết hạn, user không tồn tại hoặc group bị xóa.
+- Tiếp tục nâng cao tư duy thiết kế hệ thống serverless kết hợp automation, monitoring và fault tolerance trên AWS.
+- Rèn luyện kỹ năng triển khai thực tế, quản lý tài nguyên và tối ưu chi phí khi làm việc với các dịch vụ dữ liệu AWS.
 
 ### Các công việc cần triển khai trong tuần này:
 
@@ -22,3 +32,30 @@ chapter : false
 | CN | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 03/05/2026 | 03/05/2026 | |
 
 ### Kết quả đạt được tuần 10:
+
+- Về kiến thức lý thuyết:
+  - Hiểu được quy trình xây dựng hệ thống phân tích chi phí và hiệu suất trên AWS bằng cách kết hợp Amazon Glue, Athena và Cost & Usage Report.
+  - Nắm được vai trò của AWS Glue trong việc crawl dữ liệu, tạo metadata catalog và hỗ trợ truy vấn dữ liệu bằng Athena.
+  - Hiểu cách hoạt động của mô hình Data Pipeline serverless trên AWS, bao gồm lưu trữ, ETL, truy vấn và trực quan hóa dữ liệu.
+  - Củng cố kiến thức về DynamoDB và cách thao tác với NoSQL database thông qua AWS SDK for Python (boto3).
+  - Hiểu rõ hơn về cơ chế xử lý lỗi, retry strategy và các tình huống edge cases trong hệ thống phân tán.
+- Về thực hành (Hands-on Labs):
+  - **Lab 40:** Thực hành xây dựng hệ thống phân tích chi phí và hiệu suất bằng AWS Glue và Amazon Athena, bao gồm cấu hình Cost & Usage Report, Glue Crawler và truy vấn dữ liệu.
+  - **Lab 60:** Thực hành làm việc với Amazon DynamoDB bằng Python và boto3, bao gồm tạo bảng, thêm dữ liệu, truy vấn, cập nhật và xóa dữ liệu.
+  - **Lab 70:** Xây dựng hoàn chỉnh một data pipeline serverless trên AWS với S3, Glue, Athena và QuickSight để xử lý và trực quan hóa dữ liệu.
+- Về phát triển hệ thống:
+  - Hoàn thiện logic Email Token phục vụ quy trình approve/reject quyền truy cập trực tiếp từ email.
+  - Xây dựng chức năng cập nhật trạng thái Jira ticket tự động khi Manager thực hiện thao tác phê duyệt hoặc từ chối.
+  - Triển khai retry logic cho các lời gọi API AWS và Jira nhằm tăng độ ổn định hệ thống khi gặp lỗi tạm thời.
+  - Xử lý các edge cases quan trọng như token hết hạn, user không tồn tại hoặc group đã bị xóa khỏi hệ thống.
+  - Cải thiện khả năng fault tolerance và tính tự động hóa trong workflow quản lý quyền truy cập.
+- Về kỹ năng:
+  - Nâng cao kỹ năng xây dựng và vận hành hệ thống dữ liệu serverless trên AWS.
+  - Cải thiện khả năng làm việc với DynamoDB và AWS SDK thông qua Python.
+  - Phát triển tư duy thiết kế workflow có khả năng chịu lỗi và xử lý exception hiệu quả.
+  - Củng cố kỹ năng tích hợp nhiều dịch vụ AWS trong cùng một hệ thống thực tế.
+  - Nâng cao khả năng đọc tài liệu kỹ thuật, triển khai lab và áp dụng kiến thức vào dự án.
+- Về quản lý tài nguyên:
+  - Thực hiện dọn dẹp tài nguyên sau các bài lab để tránh phát sinh chi phí ngoài ý muốn.
+  - Theo dõi và tối ưu tài nguyên sử dụng trong quá trình triển khai Glue, Athena, S3 và QuickSight.
+  - Có ý thức kiểm soát chi phí và hiệu suất khi xây dựng các hệ thống phân tích dữ liệu trên AWS.

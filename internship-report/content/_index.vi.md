@@ -23,7 +23,7 @@ chapter : false
 
 **Lớp:** DH22CS02   
 
-**Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam  
+**Công ty thực tập:** Công ty TNHH Amazon Web Services Việt Nam 
 
 **Vị trí thực tập:** FCAJ Cloud Intern   
 

@@ -8,6 +8,16 @@ chapter : false
 
 ### Mục tiêu tuần 11:
 
+- Hoàn thiện và kiểm thử toàn bộ luồng tích hợp của hệ thống quản lý quyền truy cập từ Jira đến AWS Identity Center.
+- Đảm bảo cơ chế cấp và thu hồi quyền hoạt động ổn định, tự động và đúng theo lifecycle đã thiết kế.
+- Nâng cao khả năng giám sát hệ thống bằng cách triển khai logging và monitoring chuyên sâu với Amazon CloudWatch.
+- Tối ưu hiệu năng và chi phí vận hành của các hàm AWS Lambda thông qua việc điều chỉnh runtime và memory phù hợp.
+- Hoàn thiện tài liệu kỹ thuật và sơ đồ kiến trúc nhằm hỗ trợ quá trình bàn giao và bảo trì hệ thống.
+- Rèn luyện kỹ năng trình bày và demo hệ thống thông qua buổi vận hành và review cuối cùng với nhóm.
+- Tiếp tục mở rộng kiến thức về hệ sinh thái phân tích dữ liệu AWS, đặc biệt là mô hình Serverless Data Lake.
+- Hiểu quy trình xử lý dữ liệu từ ingest, catalog, transform đến analysis và visualization trên AWS.
+- Làm quen với việc xây dựng dashboard trực quan và tương tác bằng Amazon QuickSight.
+- Nâng cao kỹ năng thiết kế hệ thống serverless kết hợp data analytics, event-driven architecture và visualization.
 
 ### Các công việc cần triển khai trong tuần này:
 
@@ -22,3 +32,32 @@ chapter : false
 | CN | - Nghỉ ngơi và chuẩn bị cho tuần tiếp theo | 10/05/2026 | 10/05/2026 | |
 
 ### Kết quả đạt được tuần 11:
+
+- Về kiến thức lý thuyết:
+  - Hiểu rõ quy trình kiểm thử tích hợp (Integration Testing) trong hệ thống serverless đa dịch vụ trên AWS.
+  - Nắm được cách sử dụng Amazon CloudWatch để theo dõi log, metric và giám sát trạng thái hoạt động của hệ thống.
+  - Hiểu cách tối ưu hiệu năng Lambda thông qua điều chỉnh memory allocation và runtime execution.
+  - Củng cố kiến thức về kiến trúc Serverless Data Lake và luồng xử lý dữ liệu trong hệ sinh thái Analytics on AWS.
+  - Hiểu vai trò của các dịch vụ như Amazon Kinesis, AWS Glue, Athena, Redshift, QuickSight và Lambda trong pipeline phân tích dữ liệu.
+  - Nắm được cách thiết kế dashboard trực quan, tương tác và hỗ trợ phân tích dữ liệu hiệu quả bằng Amazon QuickSight.
+- Về thực hành (Hands-on Labs):
+  - **Lab 72:** Thực hành xây dựng kiến trúc Serverless Data Lake hoàn chỉnh với S3, Kinesis, Glue, Athena, Redshift, QuickSight và Lambda.
+  - **Lab 73:** Xây dựng dashboard trực quan với Amazon QuickSight, bao gồm tạo dataset, visualization, dashboard tương tác và chia sẻ báo cáo.
+- Về phát triển hệ thống:
+  - Thực hiện kiểm thử hoàn chỉnh luồng Jira Webhook → API Gateway → Lambda Executor → AWS Identity Center để đảm bảo hệ thống hoạt động ổn định.
+  - Kiểm tra và xác nhận cơ chế revoke quyền tự động hoạt động đúng với các mốc thời gian TTL đã thiết kế.
+  - Cấu hình CloudWatch Logs và theo dõi số lượng request thành công/thất bại nhằm hỗ trợ monitoring và troubleshooting.
+  - Tối ưu hiệu năng của các Lambda functions nhằm cải thiện độ ổn định và giảm chi phí hệ thống.
+  - Hoàn thiện tài liệu codebase, sơ đồ logic và hướng dẫn triển khai để phục vụ bàn giao dự án.
+  - Thực hiện demo và vận hành thử nghiệm hệ thống cùng các thành viên trong nhóm.
+- Về kỹ năng:
+  - Nâng cao kỹ năng kiểm thử hệ thống tích hợp nhiều dịch vụ AWS.
+  - Cải thiện khả năng monitoring, logging và troubleshooting trong môi trường serverless.
+  - Phát triển kỹ năng tối ưu chi phí và hiệu năng hệ thống cloud.
+  - Nâng cao khả năng thiết kế dashboard và trực quan hóa dữ liệu phục vụ phân tích.
+  - Rèn luyện kỹ năng làm việc nhóm, trình bày hệ thống và bàn giao dự án thực tế.
+  - Củng cố tư duy xây dựng hệ thống tự động hóa và event-driven trên AWS.
+- Về quản lý tài nguyên:
+  - Thực hiện dọn dẹp tài nguyên sau các bài thực hành để tránh phát sinh chi phí ngoài ý muốn.
+  - Theo dõi mức sử dụng tài nguyên của Lambda, Athena, Kinesis và QuickSight để tối ưu chi phí.
+  - Có ý thức quản lý tài nguyên và giám sát hiệu năng trong quá trình triển khai các hệ thống phân tích dữ liệu trên AWS.

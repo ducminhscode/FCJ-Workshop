@@ -28,4 +28,20 @@ chapter : false
 
 ### [Event 3](./event-3)
 
+**Event Name:**
+
+**Date & Time:**
+
+**Location:** 
+
+**Role:** 
+
 ### [Event 4](./event-4)
+
+**Event Name:**
+
+**Date & Time:**
+
+**Location:** 
+
+**Role:** 

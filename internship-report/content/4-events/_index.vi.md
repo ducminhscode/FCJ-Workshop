@@ -28,4 +28,20 @@ chapter : false
 
 ### [Event 3](./event-3)
 
+**Tên sự kiện:** 
+
+**Thời gian:** 
+
+**Địa điểm:** 
+
+**Vai trò trong sự kiện:** 
+
 ### [Event 4](./event-4)
+
+**Tên sự kiện:** 
+
+**Thời gian:** 
+
+**Địa điểm:** 
+
+**Vai trò trong sự kiện:** 

@@ -29,7 +29,7 @@ Không chỉ là những buổi chia sẻ kiến thức, đây là hành trình 
 
   - **Building Modern Platform Engineering & Career Pathways:** 
   
-    - Khám phá văn hóa doanh nghiệp, cơ hội thực tập và cách tương tác với diễn giả thông qua nền tảng hỏi đáp (Q&A) tương tác
+    - Khám phá văn hóa doanh nghiệp, cơ hội thực tập và cách tương tác với diễn giả thông qua nền tảng hỏi đáp (Q&A) tương tác.
     - Tìm hiểu tổng quan về Platform Engineering và vai trò của nó trong hệ sinh thái Cloud và DevOps hiện đại.
     - Tham gia phiên hỏi đáp mở (Open Q&A) để đặt câu hỏi và nhận được những chia sẻ, góc nhìn trực tiếp từ các chuyên gia trong ngành.
 
@@ -40,19 +40,19 @@ Không chỉ là những buổi chia sẻ kiến thức, đây là hành trình 
   
   - **Shipping Code trong kỷ nguyên Agentic:**
 
-    - Các vấn đề
-    - Các công cụ
-    - Phân tích chuyên sâu
-    - Productivity Playbook
-    - Demo
+    - Các vấn đề.
+    - Các công cụ.
+    - Phân tích chuyên sâu.
+    - Productivity Playbook.
+    - Demo.
   
   - **Production-Grade Multimodal GenAI:**
 
-    - Kiến trúc ứng dụng AI thế hệ mới
-    - Tìm kiếm đa phương thức với Nova Embeddings
-    - GraphRAG cho tri thức doanh nghiệp
-    - Quy trình làm việc đa tác nhân
-    - GenAI an toàn và có khả năng quan sát
+    - Kiến trúc ứng dụng AI thế hệ mới.
+    - Tìm kiếm đa phương thức với Nova Embeddings.
+    - GraphRAG cho tri thức doanh nghiệp.
+    - Quy trình làm việc đa tác nhân.
+    - GenAI an toàn và có khả năng quan sát.
 
 ## Những Gì Học Được
 

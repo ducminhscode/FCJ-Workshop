@@ -15,6 +15,6 @@ chapter : false
 **Tuần 7:** [Bảo mật nâng cao với AWS IAM (Permission Boundary, Condition, Role), KMS và tư duy kiến trúc Agentic AI](./week-7)  
 **Tuần 8:** [Cơ sở dữ liệu trên AWS (RDS, Aurora, Redshift, ElastiCache), DMS Migration và phát triển Serverless Backend](./week-8)  
 **Tuần 9:** [Bảo mật log với CloudWatch, xây dựng Data Lake và tự động hóa quyền truy cập với DynamoDB & Lambda](./week-9)  
-**Tuần 10:** [](./week-10)  
-**Tuần 11:** [](./week-11)  
+**Tuần 10:** [Phân tích dữ liệu với Glue, Athena, DynamoDB và xây dựng Serverless Data Pipeline kết hợp Email Approval Flow](./week-10)  
+**Tuần 11:** [Kiểm thử tích hợp hệ thống, tối ưu Lambda & Logging, xây dựng Data Analytics Pipeline và Dashboard với QuickSight](./week-11)  
 **Tuần 12:** [](./week-12)  

@@ -29,30 +29,30 @@ More than just knowledge-sharing sessions, the event guided participants from fo
 
 - **Building Modern Platform Engineering & Career Pathwa:**
 
-  - Discover company culture, internship opportunities, and how to engage with speakers through an interactive Q&A platform
-  - Get an introduction to Platform Engineering and its role in modern cloud and DevOps ecosystems
-  - Join an open Q&A session to ask questions and gain insights directly from industry experts
+  - Discover company culture, internship opportunities, and how to engage with speakers through an interactive Q&A platform.
+  - Get an introduction to Platform Engineering and its role in modern cloud and DevOps ecosystems.
+  - Join an open Q&A session to ask questions and gain insights directly from industry experts.
   
 - **​GenAIOps Essential - DevOps for Generative AI Applications:**
 
-  - DevOps Fundamentals on AWS and Learning Resources
+  - DevOps Fundamentals on AWS and Learning Resources.
   - ​Examples GenAIOps for Real AWS Projects with Bedrock AgentCore Observability, EKS, Langfuse.
   
 - **​Shipping Code in the Agentic Era:**
 
-  - ​The problem
-  - ​The Tools
-  - ​Deep Dive
-  - ​Productivity Playbook
-  - Demo
+  - ​The problem.
+  - ​The Tools.
+  - ​Deep Dive.
+  - ​Productivity Playbook.
+  - Demo.
   
 - **Production-Grade Multimodal GenAI on AWS:**
 
-  - ​The New AI Application Stack
-  - Multimodal Search with Nova Embeddings
-  - GraphRAG for Enterprise Knowledge
-  - Multi-Agent Workflows
-  - Safe & Observable GenAI
+  - ​The New AI Application Stack.
+  - Multimodal Search with Nova Embeddings.
+  - GraphRAG for Enterprise Knowledge.
+  - Multi-Agent Workflows.
+  - Safe & Observable GenAI.
 
 ## Key Takeaways
 
