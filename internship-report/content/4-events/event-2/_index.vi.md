@@ -3,7 +3,7 @@ title : "Event 2"
 date :  "`r Sys.Date()`" 
 weight : 2 
 chapter : false
-pre : " <b> 4.2 </b> "
+pre : <b> 4.2 </b>
 ---
 
 # Bài Thu Hoạch "AWS First Cloud AI Journey Community Day 2026"

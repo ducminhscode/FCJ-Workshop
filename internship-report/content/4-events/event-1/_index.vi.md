@@ -3,7 +3,7 @@ title : "Event 1"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
-pre : " <b> 4.1 </b> "
+pre : <b> 4.1 </b>
 ---
 
 # Bài Thu Hoạch "AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront & WAF"
