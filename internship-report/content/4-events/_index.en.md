@@ -28,13 +28,13 @@ chapter : false
 
 ### [Event 3](./event-3)
 
-**Event Name:**
+**Event Name:** FCAJ HCM Knowledge Sharing
 
-**Date & Time:**
+**Date & Time:** 09:00, May 09, 2026
 
-**Location:** 
+**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City, Viet Nam
 
-**Role:** 
+**Role:** Attendee
 
 ### [Event 4](./event-4)
 

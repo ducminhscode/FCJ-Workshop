@@ -28,13 +28,13 @@ chapter : false
 
 ### [Event 3](./event-3)
 
-**Tên sự kiện:** 
+**Tên sự kiện:** FCAJ HCM Knowledge Sharing
 
-**Thời gian:** 
+**Thời gian:** 09:00 ngày 09/05/2026
 
-**Địa điểm:** 
+**Địa điểm:** Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam
 
-**Vai trò trong sự kiện:** 
+**Vai trò trong sự kiện:** Người tham dự 
 
 ### [Event 4](./event-4)
 

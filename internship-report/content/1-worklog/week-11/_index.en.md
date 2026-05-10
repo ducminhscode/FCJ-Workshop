@@ -17,7 +17,7 @@ chapter : false
 | Wed |  | 06/05/2026 | 06/05/2026 |  |
 | Thu |  | 07/05/2026 | 07/05/2026 |  |
 | Fri |  | 08/05/2026 | 08/05/2026 |  |
-| Sat | - Rest and prepare for the upcoming week | 09/05/2026 | 09/05/2026 | |
+| Sat | - Participated in the **FCAJ HCM Knowledge Sharing** workshop, where team speakers shared learning methods, thinking frameworks, and personal development experiences. | 09/05/2026 | 09/05/2026 | |
 | Sun | - Rest and prepare for the upcoming week | 10/05/2026 | 10/05/2026 | |
 
 ### Week 11 Achievements:
