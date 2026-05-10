@@ -34,9 +34,9 @@ chapter : false
   - Gained understanding of Hub-and-Spoke networking architecture using AWS Transit Gateway to connect multiple VPCs.
   - Understood the working mechanism of Amazon EC2, including instance types, AMI, hypervisor, placement options, and how to choose configurations for different workloads.
   - Distinguished between AWS storage types:
-    - Block storage: Amazon EBS
-    - File storage: Amazon EFS and Amazon FSx
-    - Object storage: Amazon S3
+    - Block storage: Amazon EBS.
+    - File storage: Amazon EFS and Amazon FSx.
+    - Object storage: Amazon S3.
   - Understood differences between EBS and Instance Store in terms of performance, durability, and use cases.
   - Learned how EC2 Auto Scaling enables automatic resource scaling and integrates with load balancing systems.
   - Understood centralized backup and restore processes with AWS Backup.

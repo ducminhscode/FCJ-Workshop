@@ -35,9 +35,9 @@ chapter : false
   - Hiểu rõ kiến trúc Hub-and-Spoke Networking khi sử dụng Transit Gateway để kết nối nhiều VPC trong cùng một hệ thống AWS.
   - Nắm được cơ chế hoạt động của Amazon EC2, bao gồm Instance Types, AMI, Hypervisor, Placement Options và cách lựa chọn cấu hình phù hợp với từng workload.
   - Phân biệt các loại lưu trữ trên AWS:
-    - Block storage: Amazon EBS
-    - File storage: Amazon EFS và Amazon FSx
-    - Object storage: Amazon S3
+    - Block storage: Amazon EBS.
+    - File storage: Amazon EFS và Amazon FSx.
+    - Object storage: Amazon S3.
   - Hiểu rõ sự khác biệt giữa EBS và Instance Store về hiệu năng, độ bền dữ liệu và các trường hợp sử dụng.
   - Nắm được cơ chế tự động mở rộng tài nguyên với Amazon EC2 Auto Scaling và cách tích hợp với hệ thống cân bằng tải.
   - Hiểu được quy trình backup và khôi phục dữ liệu tập trung với AWS Backup.

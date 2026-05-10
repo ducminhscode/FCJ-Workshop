@@ -41,53 +41,53 @@ chapter : false
 - Theoretical Knowledge:
   - Clearly understand the Shared Responsibility Model, distinguishing security responsibilities between AWS and the user across layers (infrastructure, platform, application, data).
   - Master the components of IAM (Identity and Access Management):
-    - IAM Users, Groups, Roles, and Policies (JSON)
-    - The principle of least privilege and policy evaluation logic (explicit deny > allow)
+    - IAM Users, Groups, Roles, and Policies (JSON).
+    - The principle of least privilege and policy evaluation logic (explicit deny > allow).
   - Understand the role and usage of IAM Roles, especially for granting temporary permissions to services (EC2, Lambda).
   - Understand authentication and authorization mechanisms in Amazon Cognito:
-    - Differentiate between User Pools (authentication) and Identity Pools (authorization)
-    - Grasp the login flow and permission granting for web/mobile applications
+    - Differentiate between User Pools (authentication) and Identity Pools (authorization).
+    - Grasp the login flow and permission granting for web/mobile applications.
   - Understand how to organize and manage multi-account environments with AWS Organizations:
-    - Structure: Management Account, Organizational Units (OUs), Member Accounts
-    - Permission control via Service Control Policies (SCPs)
-    - Consolidated Billing
+    - Structure: Management Account, Organizational Units (OUs), Member Accounts.
+    - Permission control via Service Control Policies (SCPs).
+    - Consolidated Billing.
   - Understand how AWS Identity Center (SSO) works:
-    - Centralized access management
-    - Account-based permission assignment in multi-account environments
+    - Centralized access management.
+    - Account-based permission assignment in multi-account environments.
   - Understand encryption and key management using AWS Key Management Service (KMS):
-    - Differentiate between Customer Managed Keys (CMK) and Data Keys
-    - Understand the envelope encryption mechanism
+    - Differentiate between Customer Managed Keys (CMK) and Data Keys.
+    - Understand the envelope encryption mechanism.
   - Understand the role of AWS Security Hub:
-    - Aggregating and analyzing security findings
-    - Standards: CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices, PCI DSS
-    - How to interpret and evaluate security assessment results
+    - Aggregating and analyzing security findings.
+    - Standards: CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices, PCI DSS.
+    - How to interpret and evaluate security assessment results.
 - Hands-on Labs:
   - **Lab 18:**
-    - Enable and explore AWS Security Hub (within Free Tier limits)
-    - Analyze security findings
-    - Evaluate compliance against security standards
+    - Enable and explore AWS Security Hub (within Free Tier limits).
+    - Analyze security findings.
+    - Evaluate compliance against security standards.
   - **Lab 22:**
-    - Build a Lambda function to automatically start/stop EC2 instances
-    - Use Tags to identify target resources
-    - Integrate notifications via webhook (Slack)
+    - Build a Lambda function to automatically start/stop EC2 instances.
+    - Use Tags to identify target resources.
+    - Integrate notifications via webhook (Slack).
   - **Lab 27:**
-    - Tag resources using both Console and CLI
-    - Create Resource Groups for centralized management
+    - Tag resources using both Console and CLI.
+    - Create Resource Groups for centralized management.
   - **Lab 28:**
-    - Build IAM Policies based on tag conditions
-    - Create IAM Roles and test EC2 access permissions
-  - Perform validation and clean up resources after each lab
+    - Build IAM Policies based on tag conditions.
+    - Create IAM Roles and test EC2 access permissions.
+  - Perform validation and clean up resources after each lab.
 - Skills Development:
-  - Enhance ability to design secure systems on AWS following best practices
-  - Build and manage flexible access control using IAM, Roles, and Policies
-  - Become proficient in using Tags for resource management and control
-  - Develop skills in analyzing security findings and evaluating compliance
-  - Improve technical documentation reading and hands-on implementation using AWS Console
+  - Enhance ability to design secure systems on AWS following best practices.
+  - Build and manage flexible access control using IAM, Roles, and Policies.
+  - Become proficient in using Tags for resource management and control.
+  - Develop skills in analyzing security findings and evaluating compliance.
+  - Improve technical documentation reading and hands-on implementation using AWS Console.
 - System Thinking:
-  - Develop a security-first mindset when designing cloud systems
-  - Understand how to combine services (IAM, Cognito, Organizations, KMS) to build comprehensive security architectures
-  - Recognize trade-offs between security, cost, and performance
+  - Develop a security-first mindset when designing cloud systems.
+  - Understand how to combine services (IAM, Cognito, Organizations, KMS) to build comprehensive security architectures.
+  - Recognize trade-offs between security, cost, and performance.
 - Resource Management:
-  - Clean up resources after each lab to avoid unnecessary costs
-  - Use Tags effectively to control and optimize resources
-  - Be mindful of staying within Free Tier limits during practice
+  - Clean up resources after each lab to avoid unnecessary costs.
+  - Use Tags effectively to control and optimize resources.
+  - Be mindful of staying within Free Tier limits during practice.

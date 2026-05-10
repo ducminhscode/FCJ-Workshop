@@ -41,52 +41,52 @@ chapter : false
 - Về kiến thức lý thuyết:
   - Hiểu rõ mô hình Shared Responsibility Model, phân biệt trách nhiệm bảo mật giữa AWS và người dùng ở các lớp (infrastructure, platform, application, data).
   - Nắm vững các thành phần của IAM (Identity and Access Management):
-    - IAM User, Group, Role và Policy (JSON)
-    - Nguyên tắc least privilege và cơ chế đánh giá policy (explicit deny > allow)
+    - IAM User, Group, Role và Policy (JSON).
+    - Nguyên tắc least privilege và cơ chế đánh giá policy (explicit deny > allow).
   - Hiểu rõ vai trò và cách sử dụng IAM Role, đặc biệt trong việc cấp quyền tạm thời cho dịch vụ (EC2, Lambda).
   - Hiểu cơ chế xác thực và phân quyền của Amazon Cognito:
-    - Phân biệt User Pool (authentication) và Identity Pool (authorization)
-    - Nắm được quy trình đăng nhập và cấp quyền cho ứng dụng web/mobile
+    - Phân biệt User Pool (authentication) và Identity Pool (authorization).
+    - Nắm được quy trình đăng nhập và cấp quyền cho ứng dụng web/mobile.
   - Hiểu cách tổ chức và quản lý đa tài khoản với AWS Organizations:
-    - Cấu trúc: Management Account, Organizational Units (OU), Member Accounts
-    - Cơ chế kiểm soát quyền với Service Control Policy (SCP)
-    - Consolidated Billing
+    - Cấu trúc: Management Account, Organizational Units (OU), Member Accounts.
+    - Cơ chế kiểm soát quyền với Service Control Policy (SCP).
+    - Consolidated Billing.
   - Nắm được cách hoạt động của AWS Identity Center (SSO):
-    - Quản lý truy cập tập trung
-    - Phân quyền theo account trong môi trường multi-account
+    - Quản lý truy cập tập trung.
+    - Phân quyền theo account trong môi trường multi-account.
   - Hiểu cơ chế mã hóa và quản lý khóa với AWS Key Management Service:
-    - Phân biệt Customer Managed Key và Data Key
-    - Cơ chế mã hóa envelope encryption
+    - Phân biệt Customer Managed Key và Data Key.
+    - Cơ chế mã hóa envelope encryption.
   - Hiểu vai trò của AWS Security Hub:
-    - Tổng hợp và phân tích các cảnh báo bảo mật
-    - Các tiêu chuẩn: CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices, PCI DSS
-    - Cách đọc và đánh giá kết quả kiểm tra bảo mật
+    - Tổng hợp và phân tích các cảnh báo bảo mật.
+    - Các tiêu chuẩn: CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices, PCI DSS.
+    - Cách đọc và đánh giá kết quả kiểm tra bảo mật.
 - Về thực hành (Hands-on Labs):
   - **Lab 18:**
-    - Kích hoạt và làm quen với AWS Security Hub (giới hạn bởi Free Tier)
-    - Phân tích các phát hiện bảo mật (findings)
-    - Đánh giá mức độ tuân thủ theo tiêu chuẩn bảo mật
+    - Kích hoạt và làm quen với AWS Security Hub (giới hạn bởi Free Tier).
+    - Phân tích các phát hiện bảo mật (findings).
+    - Đánh giá mức độ tuân thủ theo tiêu chuẩn bảo mật.
   - **Lab 22:**
-    - Xây dựng Lambda function để tự động start/stop EC2
-    - Sử dụng Tags để xác định tài nguyên mục tiêu
-    - Tích hợp thông báo qua webhook (Slack)
+    - Xây dựng Lambda function để tự động start/stop EC2.
+    - Sử dụng Tags để xác định tài nguyên mục tiêu.
+    - Tích hợp thông báo qua webhook (Slack).
   - **Lab 27:**
-    - Gắn thẻ tài nguyên trên Console và CLI
-    - Tạo Resource Groups để quản lý tập trung
+    - Gắn thẻ tài nguyên trên Console và CLI.
+    - Tạo Resource Groups để quản lý tập trung.
   - **Lab 28:**
-    - Xây dựng IAM Policy dựa trên điều kiện tag
-    - Tạo IAM Role và kiểm tra phân quyền truy cập EC2
+    - Xây dựng IAM Policy dựa trên điều kiện tag.
+    - Tạo IAM Role và kiểm tra phân quyền truy cập EC2.
 - Về kỹ năng:
-  - Nâng cao kỹ năng thiết kế hệ thống bảo mật trên AWS theo chuẩn best practices
-  - Có khả năng xây dựng và kiểm soát quyền truy cập linh hoạt bằng IAM, Role và Policy
-  - Thành thạo việc sử dụng Tags để quản lý và kiểm soát tài nguyên
-  - Rèn luyện kỹ năng phân tích cảnh báo bảo mật và đánh giá compliance
-  - Nâng cao khả năng đọc tài liệu kỹ thuật và triển khai thực tế trên AWS Console
+  - Nâng cao kỹ năng thiết kế hệ thống bảo mật trên AWS theo chuẩn best practices.
+  - Có khả năng xây dựng và kiểm soát quyền truy cập linh hoạt bằng IAM, Role và Policy.
+  - Thành thạo việc sử dụng Tags để quản lý và kiểm soát tài nguyên.
+  - Rèn luyện kỹ năng phân tích cảnh báo bảo mật và đánh giá compliance.
+  - Nâng cao khả năng đọc tài liệu kỹ thuật và triển khai thực tế trên AWS Console.
 - Về tư duy hệ thống:
-  - Hình thành tư duy security-first khi thiết kế hệ thống cloud
-  - Hiểu cách kết hợp nhiều dịch vụ (IAM, Cognito, Organizations, KMS) để xây dựng hệ thống bảo mật toàn diện
-  - Nhận thức rõ trade-offs giữa bảo mật, chi phí và hiệu năng
+  - Hình thành tư duy security-first khi thiết kế hệ thống cloud.
+  - Hiểu cách kết hợp nhiều dịch vụ (IAM, Cognito, Organizations, KMS) để xây dựng hệ thống bảo mật toàn diện.
+  - Nhận thức rõ trade-offs giữa bảo mật, chi phí và hiệu năng.
 - Về quản lý tài nguyên:
-  - Thực hiện dọn dẹp tài nguyên sau mỗi bài lab nhằm tránh phát sinh chi phí
-  - Biết cách sử dụng Tags để kiểm soát và tối ưu tài nguyên hiệu quả
-  - Có ý thức sử dụng dịch vụ trong phạm vi Free Tier khi thực hành
+  - Thực hiện dọn dẹp tài nguyên sau mỗi bài lab nhằm tránh phát sinh chi phí.
+  - Biết cách sử dụng Tags để kiểm soát và tối ưu tài nguyên hiệu quả.
+  - Có ý thức sử dụng dịch vụ trong phạm vi Free Tier khi thực hành.
