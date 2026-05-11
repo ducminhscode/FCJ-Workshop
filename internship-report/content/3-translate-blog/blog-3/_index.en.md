@@ -25,7 +25,7 @@ chapter : false
 
 ## Summary
 
-This blog explains how to design systems for building agentic AI on AWS—AI systems that can plan, take actions, and iteratively interact with their environment, rather than simply responding to a single prompt.
+This blog explains how to design systems for building agentic AI on AWS—AI systems that can plan, take actions and iteratively interact with their environment, rather than simply responding to a single prompt.
 
 It highlights the shift from traditional "request–response" AI to loop-based architectures, where an agent can:
 - Understand a goal
@@ -36,11 +36,11 @@ It highlights the shift from traditional "request–response" AI to loop-based a
 The post introduces a reference architecture on AWS that typically includes:
 - An LLM as the core decision-making engine
 - An orchestration layer to manage workflows and state
-- Tool integrations such as APIs, databases, and services
+- Tool integrations such as APIs, databases and services
 - Memory components (short-term and long-term)
 - Monitoring and guardrails to control behavior
   
-A key emphasis is on modular system design, allowing teams to scale, swap models, and optimize costs more easily. The blog also outlines how AWS services can be used to support orchestration, storage, and compute for flexible agent-based systems.
+A key emphasis is on modular system design, allowing teams to scale, swap models and optimize costs more easily. The blog also outlines how AWS services can be used to support orchestration, storage and compute for flexible agent-based systems.
 
 It also discusses real-world challenges, including:
 - Managing state and context across multiple steps
@@ -48,7 +48,7 @@ It also discusses real-world challenges, including:
 - Controlling costs from iterative loops
 - Implementing guardrails to prevent unintended behavior
 
-Overall, the blog provides guidance on building production-ready AI agents, focusing on scalability, observability, and control rather than just prototypes.
+Overall, the blog provides guidance on building production-ready AI agents, focusing on scalability, observability and control rather than just prototypes.
 
 **Target Audience:** AI/ML developers and software engineers, cloud and solution architects, product builders working with AI agents, readers with basic knowledge of LLMs or AWS
 
@@ -79,15 +79,15 @@ Overall, the blog provides guidance on building production-ready AI agents, focu
 
 ## Introduction
 
-If you’re architecting cloud systems for AI development on AWS, you’ve likely discovered that traditional architectures create friction for AI agents. Many cloud teams are experimenting with AI coding assistants but quickly discover a gap between what these tools promise and what their architectures allow. When an AI agent generates code, it often takes minutes-or hours-before you can validate whether that change actually works. Slow deployment cycles, tightly coupled services, and opaque code bases turn every iteration into a high-friction exercise. As a result, AI agents struggle to operate autonomously, and developers are forced back into manual validation loops.
+If you’re architecting cloud systems for AI development on AWS, you’ve likely discovered that traditional architectures create friction for AI agents. Many cloud teams are experimenting with AI coding assistants but quickly discover a gap between what these tools promise and what their architectures allow. When an AI agent generates code, it often takes minutes-or hours-before you can validate whether that change actually works. Slow deployment cycles, tightly coupled services and opaque code bases turn every iteration into a high-friction exercise. As a result, AI agents struggle to operate autonomously and developers are forced back into manual validation loops.
 
-This article is written for cloud architects who want to remove that friction. It focuses on agentic development, a model where an AI agent does more than suggest snippets-it writes, tests, deploys, and refines code through rapid feedback cycles. To make that possible, both your system architecture and your code base architecture must be designed to support fast validation, safe iteration, and clear intent.
+This article is written for cloud architects who want to remove that friction. It focuses on agentic development, a model where an AI agent does more than suggest snippets-it writes, tests, deploys and refines code through rapid feedback cycles. To make that possible, both your system architecture and your code base architecture must be designed to support fast validation, safe iteration and clear intent.
 
-In this post, we demonstrate how to architect AWS systems that enable AI agents to iterate rapidly through design patterns for both system architecture and code base structure. We first examine the architectural problems that limit agentic development today. We then walk through system architecture patterns that support rapid experimentation, followed by codebase patterns that help AI agents understand, modify, and validate your applications with confidence.
+In this post, we demonstrate how to architect AWS systems that enable AI agents to iterate rapidly through design patterns for both system architecture and code base structure. We first examine the architectural problems that limit agentic development today. We then walk through system architecture patterns that support rapid experimentation, followed by codebase patterns that help AI agents understand, modify and validate your applications with confidence.
 
 ## Why traditional architectures hinder agentic AI
 
-Most cloud architectures were designed for human-driven development. They assume long-lived environments, manual testing, and infrequent deployments. In an agentic workflow, those assumptions break down.
+Most cloud architectures were designed for human-driven development. They assume long-lived environments, manual testing and infrequent deployments. In an agentic workflow, those assumptions break down.
 
 AI agents must validate changes continuously. When every test requires provisioning cloud resources, waiting for pipelines, or debugging deployment-only failures, feedback loops become too slow. Tight coupling between business logic and cloud services further complicates local testing, while inconsistent project structures make it difficult for an agent to understand where changes belong.
 
@@ -98,15 +98,15 @@ Without architectural support, agentic AI produces more risk than value. The sol
 Agentic development depends on feedback speed. The faster an agent can observe the impact of a change, the more effectively it can refine its output. System architecture plays a decisive role here.
 
 <img src="/images/figure-1-blog-3.jpeg" alt="figure-1-blog-3" style="width:600px !important; max-width:600px !important;">
-<p style="text-align:center; font-style:italic;">Figure 1: High-level architecture enabling agentic development: local test loops, ephemeral test stack, and continuous integration and continuous delivery (CI/CD) pipeline triggered by AI</p>
+<p style="text-align:center; font-style:italic;">Figure 1: High-level architecture enabling agentic development: local test loops, ephemeral test stack and continuous integration and continuous delivery (CI/CD) pipeline triggered by AI</p>
 
 ### Local emulation as the default feedback path
 
 Whenever possible, your architecture should allow AI agents to test changes locally before touching cloud resources. AWS provides several tools that make this practical.
 
-For example, serverless applications built with [AWS Lambda](https://aws.amazon.com/vi/lambda/) and [Amazon API Gateway](https://aws.amazon.com/vi/api-gateway/) can be emulated locally using the [AWS Serverless Application Model](https://aws.amazon.com/vi/serverless/sam/) (AWS SAM). With the `sam local start-api` command, an AI agent can invoke Lambda functions through a locally emulated API Gateway, observe responses immediately, and iterate in seconds rather than minutes.
+For example, serverless applications built with [AWS Lambda](https://aws.amazon.com/vi/lambda/) and [Amazon API Gateway](https://aws.amazon.com/vi/api-gateway/) can be emulated locally using the [AWS Serverless Application Model](https://aws.amazon.com/vi/serverless/sam/) (AWS SAM). With the `sam local start-api` command, an AI agent can invoke Lambda functions through a locally emulated API Gateway, observe responses immediately and iterate in seconds rather than minutes.
 
-Containers offer similar benefits for services that run on [Amazon Elastic Container Service](https://aws.amazon.com/vi/ecs/) (Amazon ECS) or [AWS Fargate](https://aws.amazon.com/vi/fargate/). By building and running the same container images locally, an agent can validate application behavior before deploying to the cloud. For data persistence, [Amazon DynamoDB](https://aws.amazon.com/vi/dynamodb/) Local allows the agent to test create, read, update, and delete (CRUD) operations against a local database that mirrors the DynamoDB API.
+Containers offer similar benefits for services that run on [Amazon Elastic Container Service](https://aws.amazon.com/vi/ecs/) (Amazon ECS) or [AWS Fargate](https://aws.amazon.com/vi/fargate/). By building and running the same container images locally, an agent can validate application behavior before deploying to the cloud. For data persistence, [Amazon DynamoDB](https://aws.amazon.com/vi/dynamodb/) Local allows the agent to test create, read, update and delete (CRUD) operations against a local database that mirrors the DynamoDB API.
 
 Note: Local emulation reduces iteration time, allowing AI-generated code to be validated in seconds and potentially reducing the cost and risk of experimentation.
 
@@ -114,7 +114,7 @@ Note: Local emulation reduces iteration time, allowing AI-generated code to be v
 
 Many workloads fit neatly into request-response testing, but data processing pipelines often involve large datasets and distributed execution. Even here, agentic workflows benefit from local feedback.
 
-[AWS Glue](https://aws.amazon.com/vi/glue/) provides Docker images that allow AWS Glue jobs to run locally with the AWS Glue ETL libraries. An AI agent can validate transformations against sample datasets, inspect intermediate results, and only move to the cloud for scale testing. The same pattern applies to other data and machine learning (ML) workloads: isolate logic, test locally with reduced data, and promote validated code to managed services later.
+[AWS Glue](https://aws.amazon.com/vi/glue/) provides Docker images that allow AWS Glue jobs to run locally with the AWS Glue ETL libraries. An AI agent can validate transformations against sample datasets, inspect intermediate results and only move to the cloud for scale testing. The same pattern applies to other data and machine learning (ML) workloads: isolate logic, test locally with reduced data and promote validated code to managed services later.
 
 **Note:** Offline development shortens feedback loops for data workloads and reduces unnecessary cloud runs during early iteration.
 
@@ -122,7 +122,7 @@ Many workloads fit neatly into request-response testing, but data processing pip
 
 Some AWS services cannot be fully emulated locally. In these cases, the goal is not to avoid the cloud, but to keep cloud feedback lightweight.
 
-For event-driven systems using [Amazon Simple Notification Service](https://aws.amazon.com/vi/sns/) (Amazon SNS) or [Amazon Simple Queue Service](https://aws.amazon.com/vi/sqs/) (Amazon SQS), you can define minimal development stacks using infrastructure as code (IaC) tools such as [AWS CloudFormation](https://aws.amazon.com/vi/cloudformation/) or the [AWS Cloud Development Kit](https://aws.amazon.com/vi/cdk/) (AWS CDK). An AI agent can deploy small, isolated resources, invoke them through the AWS SDK, and validate behavior without provisioning full environments.
+For event-driven systems using [Amazon Simple Notification Service](https://aws.amazon.com/vi/sns/) (Amazon SNS) or [Amazon Simple Queue Service](https://aws.amazon.com/vi/sqs/) (Amazon SQS), you can define minimal development stacks using infrastructure as code (IaC) tools such as [AWS CloudFormation](https://aws.amazon.com/vi/cloudformation/) or the [AWS Cloud Development Kit](https://aws.amazon.com/vi/cdk/) (AWS CDK). An AI agent can deploy small, isolated resources, invoke them through the AWS SDK and validate behavior without provisioning full environments.
 
 This hybrid approach treats the cloud as another test dependency-used sparingly and predictably.
 
@@ -132,7 +132,7 @@ Note: Hybrid testing confirms real service behavior early while keeping cloud us
 
 Fast feedback does not stop at local testing. End-to-end validation still matters, especially when multiple services interact.
 
-Preview environments are short-lived stacks deployed on demand for validation. Defined through IaC, they allow an AI agent to deploy a complete application, run smoke tests, and tear everything down when finished. When combined with contract-first design-where APIs are defined upfront using OpenAPI specifications-agents can validate integrations even before all services are implemented.
+Preview environments are short-lived stacks deployed on demand for validation. Defined through IaC, they allow an AI agent to deploy a complete application, run smoke tests and tear everything down when finished. When combined with contract-first design-where APIs are defined upfront using OpenAPI specifications-agents can validate integrations even before all services are implemented.
 
 **Note**: Preview environments can reduce integration risk and allow AI-generated changes to be validated safely before reaching production.
 
@@ -170,19 +170,19 @@ Well-written tests also act as documentation. When a test fails, the agent can i
 
 ### Monorepos and machine-readable documentation
 
-AI agents work more effectively when they have broad context. A monorepo allows the agent to navigate across services, understand shared patterns, and evaluate the impact of changes system-wide. Within that repository, concise and structured documentation is essential. Files such as AGENT.md can explain architectural principles and constraints, while RUNBOOK.md and CONTRIBUTING.md describe operational and development workflows. Machine-readable formats, such as YAML or configuration files, are more straightforward for agents to interpret than lengthy prose.
+AI agents work more effectively when they have broad context. A monorepo allows the agent to navigate across services, understand shared patterns and evaluate the impact of changes system-wide. Within that repository, concise and structured documentation is essential. Files such as AGENT.md can explain architectural principles and constraints, while RUNBOOK.md and CONTRIBUTING.md describe operational and development workflows. Machine-readable formats, such as YAML or configuration files, are more straightforward for agents to interpret than lengthy prose.
 
-Kiro can use [foundational steering documents](https://kiro.dev/docs/cli/steering/#foundational-steering-files)-summaries of structure, technology, and product guidelines—to help the agent maintain situational awareness as the project evolves.
+Kiro can use [foundational steering documents](https://kiro.dev/docs/cli/steering/#foundational-steering-files)-summaries of structure, technology and product guidelines—to help the agent maintain situational awareness as the project evolves.
 
 **Note:** Shared context improves the quality of AI-generated changes and reduces the need for manual correction.
 
 ### Integrating agents safely into delivery pipelines
 
-As AI agents become more capable, governance remains essential. Continuous integration and continuous deliver (CI/CD) pipelines should include guardrails such as required test execution, automated reviews, and branch protections. Over time, as confidence grows, you can expand the agent’s autonomy while keeping humans in the loop for high-impact decisions. This balance allows AI to accelerate routine work without increasing operational risk.
+As AI agents become more capable, governance remains essential. Continuous integration and continuous deliver (CI/CD) pipelines should include guardrails such as required test execution, automated reviews and branch protections. Over time, as confidence grows, you can expand the agent’s autonomy while keeping humans in the loop for high-impact decisions. This balance allows AI to accelerate routine work without increasing operational risk.
 
 ## Conclusion
 
-Agentic AI development does not succeed by accident. It requires architectures that prioritize fast feedback, clear boundaries, and explicit intent. Combining local emulation, lightweight cloud testing, and preview environments with domain-driven structure, layered testing, and machine-readable documentation creates an environment where AI agents can operate effectively and safely. Tools like Kiro help bridge the gap between human design decisions and autonomous AI execution. When architecture aligns with agentic workflows, AI agents become true force multipliers, handling iterative development at speed while your team focuses on higher-level design and innovation.
+Agentic AI development does not succeed by accident. It requires architectures that prioritize fast feedback, clear boundaries and explicit intent. Combining local emulation, lightweight cloud testing and preview environments with domain-driven structure, layered testing and machine-readable documentation creates an environment where AI agents can operate effectively and safely. Tools like Kiro help bridge the gap between human design decisions and autonomous AI execution. When architecture aligns with agentic workflows, AI agents become true force multipliers, handling iterative development at speed while your team focuses on higher-level design and innovation.
 
 To learn more about how AWS can help your organization implement agentic solutions, visit [AWS Agentic AI](https://aws.amazon.com/vi/ai/agentic-ai/).
 

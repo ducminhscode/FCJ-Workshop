@@ -33,7 +33,7 @@ This approach enhances security and simplifies system design, while still benefi
 
 Overall, tenant isolation mode makes AWS Lambda a more effective solution for building scalable and secure multi-tenant SaaS systems, especially in scenarios where strong isolation between tenants is critical.
 
-**Target Audience:** Cloud engineers, backend developers, and solution architects who are building or designing multi-tenant SaaS applications on AWS, especially those working with serverless architectures
+**Target Audience:** Cloud engineers, backend developers and solution architects who are building or designing multi-tenant SaaS applications on AWS, especially those working with serverless architectures
 
 **Difficulty Level:** Intermediate
 
@@ -69,7 +69,7 @@ Lambda runs your function code in secure execution environments that leverage [F
 
 Multi-tenant SaaS applications that handle sensitive tenant-specific data or execute code supplied dynamically by tenants may need a higher degree of isolation-at the individual application tenant level rather than at the function level-for secure code execution and to reduce the risk of cross-tenant data access.
 
-Prior to today’s launch, developers would implement custom solutions, such as SDKs or application logic to manage isolation within function code. This approach was bug-prone, required more work from application development teams, and didn’t ensure isolation at the compute environment level.
+Prior to today’s launch, developers would implement custom solutions, such as SDKs or application logic to manage isolation within function code. This approach was bug-prone, required more work from application development teams and didn’t ensure isolation at the compute environment level.
 
 Alternatively, developers adopted the approach of creating separate functions per application tenant, replicating the same code across hundreds or thousands of tenants. This approach provided stronger compute environment isolation than sharing compute environments across multiple tenants of the same function, but increased implementation overhead and operational complexity as workloads grew to support a larger number of tenants over time.
 
@@ -85,7 +85,7 @@ For organizations handling sensitive tenant-specific data or running untrusted c
 
 ## Example scenario
 
-Consider building a multi-tenant serverless SaaS application. To optimize performance, your function handler can retrieve tenant-specific configuration and data, cache it in memory, and reuse it for subsequent invocations from the same tenant. For example, you might cache tenant-specific database location, feature flags, or business rules that are frequently accessed during request processing. You may store this information within the application runtime process as global variables or as files in the `/tmp` directory. However, if the underlying execution environment is used to serve multiple tenants, this approach can potentially expose data across tenants.
+Consider building a multi-tenant serverless SaaS application. To optimize performance, your function handler can retrieve tenant-specific configuration and data, cache it in memory and reuse it for subsequent invocations from the same tenant. For example, you might cache tenant-specific database location, feature flags, or business rules that are frequently accessed during request processing. You may store this information within the application runtime process as global variables or as files in the `/tmp` directory. However, if the underlying execution environment is used to serve multiple tenants, this approach can potentially expose data across tenants.
 
 With tenant isolation mode you can address this risk with much simpler architecture and configuration. This built-in capability makes Lambda an excellent choice for multi-tenant SaaS applications needing isolated compute environments for individual tenants.
 
@@ -229,7 +229,7 @@ Follow the instructions in [this GitHub repository](https://github.com/aws-sampl
 
 The new tenant isolation mode for Lambda simplifies building serverless multi-tenant SaaS applications on AWS. By automatically managing application tenant-level compute environment isolation, this capability eliminates the need for custom isolation logic or separate tenant functions, allowing you to focus on the core business logic while AWS handles the complexities of tenant-aware compute environment isolation.
 
-Combined with the existing security features in Lambda, rapid scaling, and pay-per-use pricing, tenant isolation mode makes Lambda an even more compelling choice for modern SaaS applications, whether you’re building new solutions or enhancing existing ones.
+Combined with the existing security features in Lambda, rapid scaling and pay-per-use pricing, tenant isolation mode makes Lambda an even more compelling choice for modern SaaS applications, whether you’re building new solutions or enhancing existing ones.
 
 To learn more, refer to the [documentation for tenant isolation](https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation.html). For details on pricing, refer to [Lambda’s pricing page](https://aws.amazon.com/vi/lambda/pricing/).
 

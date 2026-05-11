@@ -27,7 +27,7 @@ chapter : false
 
 The AWS blog explains how to securely handle sensitive data (especially personally identifiable information - PII) in application logs using Amazon CloudWatch.
 
-Logs are essential for debugging, monitoring, and incident response, but they often contain sensitive data such as credit card numbers, emails, or personal details. This creates a trade-off between operational efficiency (fast troubleshooting) and data security/compliance.
+Logs are essential for debugging, monitoring and incident response, but they often contain sensitive data such as credit card numbers, emails, or personal details. This creates a trade-off between operational efficiency (fast troubleshooting) and data security/compliance.
 
 To address this, the blog introduces a solution based on two key capabilities:
 - Data masking (data protection policies): CloudWatch Logs can automatically detect and mask sensitive data using built-in identifiers (e.g., credit cards, emails) or custom patterns. This ensures that sensitive information is hidden while logs remain usable for debugging.
@@ -69,9 +69,9 @@ This post will help you identify common techniques to secure sensitive informati
 
 ## What is personally identifiable information (PII)?
 
-As defined in NIST Computer Security Resource Center, [personally identifiable information (PII)](https://csrc.nist.gov/glossary/term/PII) is *"any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual's identity, such as name, social security number, date and place of birth, mother's maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information."*
+As defined in NIST Computer Security Resource Center, [personally identifiable information (PII)](https://csrc.nist.gov/glossary/term/PII) is *"any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual's identity, such as name, social security number, date and place of birth, mother's maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial and employment information."*
 
-Modern applications collect user data to personalize experiences and boost retention. Data collection varies by application type, industry, and domain. Features like in-app purchases require sensitive information such as names and credit card details, demanding high availability and low mean time to respond (MTTR) during incidents.
+Modern applications collect user data to personalize experiences and boost retention. Data collection varies by application type, industry and domain. Features like in-app purchases require sensitive information such as names and credit card details, demanding high availability and low mean time to respond (MTTR) during incidents.
 
 To meet these requirements, developers implement structured logging and cross-correlation of telemetry signals for faster troubleshooting. However, this increases the risk of PII exposure in logs.
 
@@ -81,12 +81,12 @@ Through the next sections in this post, we will discuss how you can handle sensi
 
 ## Reference Application
 
-We launched the [One Observability Demo Workshop](https://observability.workshop.aws/) in August 2020 that utilizes an application called PetAdoptions that is available on [GitHub](https://github.com/aws-samples/one-observability-demo/tree/main/PetAdoptions/petsite/petsite/Controllers). We will use that as the reference application to operate on the log data and showcase the data protection capability. It is built using a Microservice architecture, and different components of the application are deployed on various services, such as [Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/vi/eks/), [Amazon Elastic Container Service (Amazon ECS)](https://aws.amazon.com/ecs), [AWS Lambda](https://aws.amazon.com/vi/lambda/), [Amazon API Gateway](https://aws.amazon.com/vi/api-gateway/), [Amazon DynamoDB](https://aws.amazon.com/vi/dynamodb/), [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/vi/sqs/), [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/vi/sns/), and [AWS Step Functions](https://aws.amazon.com/vi/step-functions/). The application architecture is shown in the following diagram.
+We launched the [One Observability Demo Workshop](https://observability.workshop.aws/) in August 2020 that utilizes an application called PetAdoptions that is available on [GitHub](https://github.com/aws-samples/one-observability-demo/tree/main/PetAdoptions/petsite/petsite/Controllers). We will use that as the reference application to operate on the log data and showcase the data protection capability. It is built using a Microservice architecture and different components of the application are deployed on various services, such as [Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/vi/eks/), [Amazon Elastic Container Service (Amazon ECS)](https://aws.amazon.com/ecs), [AWS Lambda](https://aws.amazon.com/vi/lambda/), [Amazon API Gateway](https://aws.amazon.com/vi/api-gateway/), [Amazon DynamoDB](https://aws.amazon.com/vi/dynamodb/), [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/vi/sqs/), [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/vi/sns/) and [AWS Step Functions](https://aws.amazon.com/vi/step-functions/). The application architecture is shown in the following diagram.
 
 <img src="/images/figure-1-blog-4.png" alt="figure-1-blog-4" style="width:600px !important; max-width:600px !important;">
 <p style="text-align:center; font-style:italic;">Figure 1 : Reference Application Architecture Diagram</p>
 
-As illustrated in the diagram, the application is deployed on various services and written using different programming languages, such as Java, C#, Go, Python, and Node.js. The service components collect traces, metrics, and logs, which are then sent to CloudWatch and X-Ray.
+As illustrated in the diagram, the application is deployed on various services and written using different programming languages, such as Java, C#, Go, Python and Node.js. The service components collect traces, metrics and logs, which are then sent to CloudWatch and X-Ray.
 
 ## Scenario
 
@@ -211,7 +211,7 @@ When a user requires access to the raw logs, the user would go through the privi
 `| sort @timestamp desc`<br>
 `| limit 20`
 
-Every time logs data is accessed, a record is created in AWS CloudTrail auditing this action. The audit record captures two actions: If the unmask function was used, and the log record pointer, which can subsequently be used in the [GetLogRecord](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogRecord.html) call to determine which log record was accessed.
+Every time logs data is accessed, a record is created in AWS CloudTrail auditing this action. The audit record captures two actions: If the unmask function was used and the log record pointer, which can subsequently be used in the [GetLogRecord](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogRecord.html) call to determine which log record was accessed.
 
 ```
 {

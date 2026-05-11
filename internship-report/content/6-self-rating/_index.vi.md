@@ -6,15 +6,15 @@ pre: <b> 6. </b>
 chapter : false
 ---
 
-Trong giai đoạn thực tập từ 23/02/2026 đến 17/05/2026 tại **Công ty TNHH Amazon Web Services Việt Nam**, tôi đã có cơ hội quý báu để học hỏi, rèn luyện và áp dụng những kiến thức lý thuyết từ giảng đường vào môi trường làm việc thực tế. 
+Trong giai đoạn thực tập từ 23/02/2026 đến 17/05/2026 tại **Công ty TNHH Amazon Web Services Việt Nam**, em đã có cơ hội quý báu để học hỏi, rèn luyện và áp dụng những kiến thức lý thuyết từ giảng đường vào môi trường làm việc thực tế. 
 
-Thông qua việc tham gia vào dự án Production Access Request Portal, tôi không chỉ củng cố kỹ năng chuyên môn về các dịch vụ điện toán đám mây trên AWS mà còn rèn luyện được tư duy làm việc trong môi trường doanh nghiệp. 
+Thông qua việc tham gia vào dự án Production Access Request Portal, em không chỉ củng cố kỹ năng chuyên môn về các dịch vụ điện toán đám mây trên AWS mà còn rèn luyện được tư duy làm việc trong môi trường doanh nghiệp. 
 
-Với tinh thần cầu thị, tôi luôn nỗ lực hoàn thành mọi nhiệm vụ được giao và chủ động phối hợp cùng các cộng sự để đạt hiệu quả công việc cao nhất.
+Với tinh thần cầu thị, em luôn nỗ lực hoàn thành mọi nhiệm vụ được giao và chủ động phối hợp cùng các cộng sự để đạt hiệu quả công việc cao nhất.
 
 ### Bảng đánh giá theo tiêu chí
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Để phản ánh một cách khách quan quá trình thực tập, em xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
 | STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
 |-----|----------|-------|:---:|:---:|:----------:|

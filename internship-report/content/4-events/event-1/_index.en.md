@@ -11,9 +11,9 @@ pre : <b> 4.1 </b>
 ## Event Objectives
 
 The **AWS Perimeter Protection Workshop** was organized to help engineers and developers gain a deeper understanding of how to build secure architectures for web applications on the AWS platform.
-The event focused on introducing solutions to protect systems from increasingly sophisticated cyber threats such as DDoS attacks, bot traffic, and common web application vulnerabilities.
+The event focused on introducing solutions to protect systems from increasingly sophisticated cyber threats such as DDoS attacks, bot traffic and common web application vulnerabilities.
 
-Through presentations and hands-on sessions, participants had the opportunity to learn about key AWS security services such as [Amazon CloudFront](https://aws.amazon.com/vi/cloudfront/), [AWS WAF](https://aws.amazon.com/vi/waf/) and [AWS Shield](https://aws.amazon.com/vi/shield/), and understand how to implement a defense-in-depth security architecture to protect internet-facing applications.
+Through presentations and hands-on sessions, participants had the opportunity to learn about key AWS security services such as [Amazon CloudFront](https://aws.amazon.com/vi/cloudfront/), [AWS WAF](https://aws.amazon.com/vi/waf/) and [AWS Shield](https://aws.amazon.com/vi/shield/) and understand how to implement a defense-in-depth security architecture to protect internet-facing applications.
 
 ## Speakers
 
@@ -25,9 +25,9 @@ Through presentations and hands-on sessions, participants had the opportunity to
 
 The event featured several in-depth sessions and practical workshops:
 
-- **CDN Architecture with CloudFront:** Focusing on how to design a global content delivery architecture using CloudFront, optimize performance, and reduce load on origin systems.
-- **Application Protection with AWS WAF:** Introducing how AWS WAF can be used to block malicious traffic, mitigate OWASP Top 10 vulnerabilities, and defend against bot attacks.
-- **Hands-on Workshop:** Participants had the opportunity to practice configuring CloudFront, optimizing web application performance, and implementing security mechanisms using AWS WAF.
+- **CDN Architecture with CloudFront:** Focusing on how to design a global content delivery architecture using CloudFront, optimize performance and reduce load on origin systems.
+- **Application Protection with AWS WAF:** Introducing how AWS WAF can be used to block malicious traffic, mitigate OWASP Top 10 vulnerabilities and defend against bot attacks.
+- **Hands-on Workshop:** Participants had the opportunity to practice configuring CloudFront, optimizing web application performance and implementing security mechanisms using AWS WAF.
 - **Analysis of Emerging Threats:** The workshop also highlighted the rapid increase in cyber threats, particularly the rise of DDoS attacks and AI-driven bot traffic.
 
 ## Key Takeaways

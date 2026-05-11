@@ -20,7 +20,7 @@ Tóm lại đây là một môi trường lý tưởng cho những ai muốn bư
 
 **2. Sự hỗ trợ của mentor/team admin**
 
-Sự đồng hành của các anh chị mentor và đội ngũ Admin chính là “chìa khóa” giúp mình nhanh chóng hòa nhập và vượt qua những bỡ ngỡ ban đầu tại Amazon Web Services Việt Nam. 
+Sự đồng hành của các anh chị mentor và đội ngũ Admin chính là "chìa khóa" giúp mình nhanh chóng hòa nhập và vượt qua những bỡ ngỡ ban đầu tại Amazon Web Services Việt Nam. 
 
 Điều mình ấn tượng nhất là tinh thần "Ownership" trong cách hướng dẫn của các mentor. Thay vì cầm tay chỉ việc, các anh chị luôn khuyến khích mình chủ động làm chủ những task được giao bằng cách định hướng, gợi mở vấn đề và để mình tự tìm tòi giải pháp trước khi cùng review và tối ưu. Cách tiếp cận này giúp mình rèn luyện tư duy độc lập và khả năng giải quyết vấn đề một cách hiệu quả. 
 
@@ -86,7 +86,7 @@ Em xin chân thành cảm ơn chương trình FCAJ của Amazon Web Services đ�
 
 Trước khi tham gia chương trình, em từng khá thiếu tự tin về kỹ năng kỹ thuật của mình. Tuy nhiên, nhờ môi trường học tập chuyên nghiệp, sự hỗ trợ tận tình từ mentor và các anh chị trong chương trình, em đã có cơ hội tiếp cận với quy trình làm việc thực tế, tự tin triển khai hệ thống trên AWS, xử lý production issues và cải thiện đáng kể kỹ năng làm việc nhóm. Đây đều là những kinh nghiệm rất quý giá đối với em trên con đường phát triển sự nghiệp sau này.
 
-Bên cạnh những trải nghiệm tích cực, em cũng nhận thấy trong quá trình thực tập đôi lúc cột sốó m thông báo chưa được đồng bộ giữa các nhóm, khiến em khá bối rối và dẫn đến vài tình huống không mong muốn. Em nghĩ điều này một phần cũng đến từ việc em chưa đọc thật kỹ toàn bộ thông tin và còn ngại chủ động đặt câu hỏi với các anh chị admin, master và mentor. Tuy vậy, đây cũng là bài học giúp em cải thiện kỹ năng giao tiếp và chủ động hơn trong công việc.
+Bên cạnh những trải nghiệm tích cực, em cũng nhận thấy trong quá trình thực tập đôi lúc có một số thông báo chưa được đồng bộ giữa các nhóm, khiến em khá bối rối và dẫn đến vài tình huống không mong muốn. Em nghĩ điều này một phần cũng đến từ việc em chưa đọc thật kỹ toàn bộ thông tin và còn ngại chủ động đặt câu hỏi với các anh chị admin, master và mentor. Tuy vậy, đây cũng là bài học giúp em cải thiện kỹ năng giao tiếp và chủ động hơn trong công việc.
 
 Em hy vọng FCAJ sẽ tiếp tục phát triển chương trình thực tập này để mang đến thêm nhiều cơ hội học hỏi cho các bạn sinh viên trong tương lai. Một lần nữa, em xin cảm ơn team FCJ, các anh chị mentor và các bạn đồng đội đã luôn đồng hành, hỗ trợ và tạo nên một trải nghiệm đáng nhớ đối với em.
 

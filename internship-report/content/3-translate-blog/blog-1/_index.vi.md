@@ -157,7 +157,7 @@ Lambda cung cấp các tính năng bảo mật tích hợp sẵn, bao gồm:
 
 ### Lớp 6: Bảo vệ credentials
 
-Ứng dụng cần truy cập đến các thông tin xác thực nhạy cảm như mật khẩu cơ sở dữ liệu, API keys và khóa mã hóa. Việc hardcode secrets trong mã nguồn hoặc lưu trữ trong biến môi trường có thể tạo ra lỗ hổng bảo mật. Do đó, cần cơ chế lưu trữ an toàn, xoay vòng định kỳ (rotation), kiểm soát truy cập theo nguyên tắc “chỉ được phép khi cần” (authorized-only access) và ghi nhận nhật ký đầy đủ để đáp ứng yêu cầu tuân thủ (compliance).
+Ứng dụng cần truy cập đến các thông tin xác thực nhạy cảm như mật khẩu cơ sở dữ liệu, API keys và khóa mã hóa. Việc hardcode secrets trong mã nguồn hoặc lưu trữ trong biến môi trường có thể tạo ra lỗ hổng bảo mật. Do đó, cần cơ chế lưu trữ an toàn, xoay vòng định kỳ (rotation), kiểm soát truy cập theo nguyên tắc "chỉ được phép khi cần" (authorized-only access) và ghi nhận nhật ký đầy đủ để đáp ứng yêu cầu tuân thủ (compliance).
 
 - **Secrets Manager** giúp bảo vệ quyền truy cập vào ứng dụng, dịch vụ và tài nguyên CNTT mà không cần tự quản lý phần cứng HSM (Hardware Security Module). Dịch vụ cung cấp kho lưu trữ tập trung cho thông tin xác thực cơ sở dữ liệu, API keys và OAuth tokens trong một repository được mã hóa bằng AWS Key Management Service (AWS KMS) ở trạng thái lưu trữ (encryption at rest).
 - **Xoay vòng bí mật tự động (Automatic Secret Rotation)** cho phép cấu hình xoay vòng thông tin xác thực cơ sở dữ liệu, tự động cập nhật cả kho lưu trữ bí mật và cơ sở dữ liệu mục tiêu mà không gây downtime cho ứng dụng.

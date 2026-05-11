@@ -11,10 +11,10 @@ chapter : false
 - Master the deployment and administration of storage services on AWS, including Amazon FSx and Amazon S3, through hands-on lab exercises.
 - Understand and apply the architecture of high-performance shared file systems on Windows Server in a cloud environment.
 - Gain experience in deploying static websites using Amazon S3 integrated with CloudFront, ensuring security and optimized performance.
-- Build a foundation for serverless backend systems with AWS Lambda, including project organization, code reuse (shared logic), and dependency management using Lambda Layers.
+- Build a foundation for serverless backend systems with AWS Lambda, including project organization, code reuse (shared logic) and dependency management using Lambda Layers.
 - Develop integration modules with external services (Jira API) and AWS services (DynamoDB) to support workflow management solutions.
 - Design and implement approval flow logic with HMAC-SHA256 token security mechanisms, ensuring data integrity and security.
-- Gradually strengthen the skills required to design, develop, and operate a real-world serverless system on AWS.
+- Gradually strengthen the skills required to design, develop and operate a real-world serverless system on AWS.
 
 ### Tasks to be carried out this week:
 
@@ -32,13 +32,13 @@ chapter : false
 
 - Theoretical Knowledge:
   - Gain a solid understanding of the architecture and deployment of high-performance shared file systems on Windows Server within the AWS environment.
-  - Understand how Amazon FSx for Windows File Server works, including Multi-AZ deployment, SSD/HDD storage mechanisms, and optimization features such as deduplication and Shadow Copies.
+  - Understand how Amazon FSx for Windows File Server works, including Multi-AZ deployment, SSD/HDD storage mechanisms and optimization features such as deduplication and Shadow Copies.
   - Learn how to deploy static websites on Amazon S3 and understand the role of CloudFront in content acceleration and security.
-  - Understand S3 access control mechanisms such as Bucket Policies, Block Public Access, and Versioning.
+  - Understand S3 access control mechanisms such as Bucket Policies, Block Public Access and Versioning.
   - Strengthen knowledge of serverless architecture using AWS Lambda and reusable code organization practices.
 - Hands-on Labs:
-  - **Lab 25:** Deploy a file-sharing system with Amazon FSx, including file system creation, connection setup, access permission configuration, and performance monitoring.
-  - **Lab 57:** Build a static website on Amazon S3, configure hosting, manage access permissions, and integrate with CloudFront.
+  - **Lab 25:** Deploy a file-sharing system with Amazon FSx, including file system creation, connection setup, access permission configuration and performance monitoring.
+  - **Lab 57:** Build a static website on Amazon S3, configure hosting, manage access permissions and integrate with CloudFront.
 - System Development:
   - Set up a modular and scalable project structure for AWS Lambda.
   - Build shared libraries for common functionalities such as logging and exception handling.

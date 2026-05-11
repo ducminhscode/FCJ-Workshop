@@ -8,12 +8,12 @@ chapter : false
 
 ### Week 1 Objectives:
 
-- Get familiar with the internship environment at AWS First Cloud Journey (FCJ), understand the working process, task management, and progress reporting.
+- Get familiar with the internship environment at AWS First Cloud Journey (FCJ), understand the working process, task management and progress reporting.
 - Build foundational knowledge of Cloud Computing and service models (IaaS, PaaS, SaaS).
 - Clearly understand the differences between On-premise and Cloud models, as well as the benefits of cloud computing.
 - Successfully create and configure an AWS Free Tier account, ensuring compliance with security best practices (MFA, IAM).
 - Get familiar with AWS Management Console and AWS CLI for resource management.
-- Take initial steps in exploring AWS Global Infrastructure, cost optimization, and AWS Support.
+- Take initial steps in exploring AWS Global Infrastructure, cost optimization and AWS Support.
 - Learn Hugo to build a personal internship report website.
 - Practice basic labs in Module 01 and apply knowledge in real scenarios.
 
@@ -21,7 +21,7 @@ chapter : false
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |:---:|------|:----------:|:---------------:|--------------------|
-| Mon | - Get to know FCJ members<br>- Watch the official introduction video **First Cloud Journey Kick-off** about the organization and training orientation<br>- Carefully read and note important rules, working guidelines, progress reporting, and task management at AWS First Cloud Journey Internship | 23/02/2026 | 23/02/2026 | [First Cloud Journey Kick-off](https://youtu.be/AQlsd0nWdZk?si=LrHqeTag2kuwwjIK)<br>[Github Repository](https://github.com/AWS-First-Cloud-Journey/Internship) |
+| Mon | - Get to know FCJ members<br>- Watch the official introduction video **First Cloud Journey Kick-off** about the organization and training orientation<br>- Carefully read and note important rules, working guidelines, progress reporting and task management at AWS First Cloud Journey Internship | 23/02/2026 | 23/02/2026 | [First Cloud Journey Kick-off](https://youtu.be/AQlsd0nWdZk?si=LrHqeTag2kuwwjIK)<br>[Github Repository](https://github.com/AWS-First-Cloud-Journey/Internship) |
 | Tue | - Install required tools: Git, VS Code, AWS CLI, SSH client<br>- Study service models:<br>&nbsp;&nbsp;&nbsp;&nbsp;+ IaaS (Infrastructure as a Service)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ PaaS (Platform as a Service)<br>&nbsp;&nbsp;&nbsp;&nbsp;+ SaaS (Software as a Service)<br>- Compare On-premise and Cloud models<br>- Learn about cloud computing benefits: Scalability, High Availability, Cost Optimization | 24/02/2026 | 24/02/2026 | [Tutorial Git](https://dev.to/womakerscode/tutorial-git-acesso-ao-github-com-ssh-4kg9?utm_source=chatgpt.com)<br>[VS Code](https://code.visualstudio.com/docs/remote/ssh-tutorial)<br>[AWS CLI](https://github.com/aws/aws-cli?utm_source=chatgpt.com)<br>[SSH Client](https://aws.amazon.com/vi/what-is/cli/?utm_source=chatgpt.com)<br>[Cloud Computing Models](https://www.ssh.com/academy/cloud/computing-models?utm_source=chatgpt.com)<br>[On-premise & Cloud](https://www.cleo.com/blog/knowledge-base-on-premise-vs-cloud?utm_source=chatgpt.com) |
 | Wed | - Create and configure AWS Free Tier account<br>- Enable MFA for AWS account<br>- Create Admin Group and Admin User<br>- Explore and configure AWS Management Console & AWS CLI<br>- Create and manage AWS Support cases<br>- [Practice Module 01 - Lab 01](https://drive.google.com/drive/folders/1z9YIhelvzdy-Navy4ec6YVc0IlIr74Y7?usp=drive_link) | 25/02/2026 | 25/02/2026 | [The First Cloud Journey](https://cloudjourney.awsstudygroup.com/)<br>[Creating Your First AWS Account](https://000001.awsstudygroup.com/)<br>[Getting Started with the AWS Management Console](https://docs.aws.amazon.com/hands-on/latest/getting-started-with-aws-management-console/getting-started-with-aws-management-console.html)<br>[Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html?utm_source=chatgpt.com) |
 | Thu | - Research and install Hugo<br>- Learn project structure and layout organization in Hugo<br>- Practice editing menu and logo from Theme<br>- Initialize and run static website on localhost | 26/02/2026 | 26/02/2026 | [Hugo Introduction](https://learn.netlify.app/en/)<br>[Hugo Guides](https://van-hoang-kha.github.io/)<br>[Sample Internship Report](https://workshop-sample.fcjuni.com/)<br>[AWS Workshop Guide](https://youtu.be/mXRqgMr_97U?si=Vl6aZ_dlWKkpJLJO) |
@@ -32,7 +32,7 @@ chapter : false
 ### Week 1 Achievements:
 
 - Familiarized with FCJ internship environment:
-  - Understood workflow, task management, and progress reporting.
+  - Understood workflow, task management and progress reporting.
   - Clearly grasped training orientation and learning roadmap.
 - Installed and configured working environment:
   - Installed Git and configured SSH with GitHub.

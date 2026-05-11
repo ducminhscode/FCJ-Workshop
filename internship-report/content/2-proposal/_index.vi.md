@@ -32,9 +32,9 @@ pre: <b> 2. </b>
       - [Nguyên tắc vận hành và xử lý ngoại lệ](#nguyên-tắc-vận-hành-và-xử-lý-ngoại-lệ)
   - [Lộ trình \& Mốc triển khai](#lộ-trình--mốc-triển-khai)
     - [Giai đoạn 1: Phân tích yêu cầu và thiết kế giải pháp (Tuần 2-4)](#giai-đoạn-1-phân-tích-yêu-cầu-và-thiết-kế-giải-pháp-tuần-2-4)
-    - [Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5–6)](#giai-đoạn-2-xây-dựng-hạ-tầng-nền-tảng-tuần-56)
-    - [Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7–8)](#giai-đoạn-3-phát-triển-nghiệp-vụ-hệ-thống-tuần-78)
-    - [Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9–10)](#giai-đoạn-4-kiểm-thử-và-nghiệm-thu-tuần-910)
+    - [Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5-6)](#giai-đoạn-2-xây-dựng-hạ-tầng-nền-tảng-tuần-5-6)
+    - [Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7-8)](#giai-đoạn-3-phát-triển-nghiệp-vụ-hệ-thống-tuần-7-8)
+    - [Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9-10)](#giai-đoạn-4-kiểm-thử-và-nghiệm-thu-tuần-9-10)
     - [Giai đoạn 5: Triển khai Production và chuyển giao vận hành (Tuần 11)](#giai-đoạn-5-triển-khai-production-và-chuyển-giao-vận-hành-tuần-11)
     - [Bảng kế hoạch triển khai tổng quan](#bảng-kế-hoạch-triển-khai-tổng-quan)
     - [Kế hoạch mở rộng sau triển khai](#kế-hoạch-mở-rộng-sau-triển-khai)
@@ -64,7 +64,6 @@ Trong hệ thống Production Access Request Portal có nhiều đối tượng 
 ### Nguyên tắc thiết kế
 
 Hệ thống Production Access Request Portal được thiết kế dựa trên các nguyên tắc bảo mật và kiến trúc hiện đại nhằm đảm bảo việc quản lý truy cập vào môi trường Production được thực hiện một cách an toàn, minh bạch và hiệu quả. Các nguyên tắc cốt lõi bao gồm:
-
 - **Zero Standing Privileges:** 
   - Nguyên tắc này quy định rằng hệ thống không cho phép tồn tại bất kỳ quyền truy cập Production nào mang tính lâu dài hoặc thường trực. Thay vào đó thì mọi quyền truy cập đều phải được yêu cầu thông qua hệ thống, trải qua quy trình phê duyệt và chỉ tồn tại trong một khoảng thời gian giới hạn. 
   - Sau khi hết thời gian được cấp, quyền truy cập sẽ tự động bị thu hồi mà không cần sự can thiệp thủ công. Cách tiếp cận này giúp giảm thiểu đáng kể nguy cơ lộ thông tin xác thực (credentials) cũng như hạn chế khả năng lạm dụng quyền truy cập trong hệ thống.
@@ -256,7 +255,7 @@ Các công việc chính:
 
 **Milestone 1 - Architecture Approved**
 
-### Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5–6)
+### Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5-6)
 
 Mục tiêu của giai đoạn này là triển khai toàn bộ hạ tầng AWS bằng Terraform để tạo nền tảng cho hệ thống.
 
@@ -269,7 +268,7 @@ Các công việc chính:
 
 **Milestone 2 - Infrastructure Ready**
 
-### Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7–8)
+### Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7-8)
 
 Đây là giai đoạn phát triển phần logic cốt lõi của hệ thống.
 
@@ -286,7 +285,7 @@ Các công việc chính:
 
 **Milestone 3 - Core Features Completed**
 
-### Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9–10)
+### Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9-10)
 
 Giai đoạn này tập trung kiểm tra tính ổn định, độ bảo mật và khả năng vận hành thực tế.
 
