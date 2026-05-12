@@ -17,4 +17,4 @@ chapter : false
 **Week 9:** [Log Security with CloudWatch, Building a Data Lake and Automating Access Control with DynamoDB & Lambda](./week-9)  
 **Week 10:** [Data Analytics with Glue, Athena, DynamoDB and Building a Serverless Data Pipeline with Email Approval Flow](./week-10)  
 **Week 11:** [System Integration Testing, Lambda & Logging Optimization, Building a Data Analytics Pipeline and Dashboard with QuickSight](./week-11)  
-**Week 12:** [](./week-12)  
+**Week 12:** [Complete the internship report, summarize the acquired knowledge, and thoroughly review the entire implemented project](./week-12)  

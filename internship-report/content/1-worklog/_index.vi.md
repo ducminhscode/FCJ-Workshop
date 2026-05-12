@@ -17,4 +17,4 @@ chapter : false
 **Tuần 9:** [Bảo mật log với CloudWatch, xây dựng Data Lake và tự động hóa quyền truy cập với DynamoDB & Lambda](./week-9)  
 **Tuần 10:** [Phân tích dữ liệu với Glue, Athena, DynamoDB và xây dựng Serverless Data Pipeline kết hợp Email Approval Flow](./week-10)  
 **Tuần 11:** [Kiểm thử tích hợp hệ thống, tối ưu Lambda & Logging, xây dựng Data Analytics Pipeline và Dashboard với QuickSight](./week-11)  
-**Tuần 12:** [](./week-12)  
+**Tuần 12:** [Hoàn thiện báo cáo thực tập, tổng kết kiến thức và kiểm tra lại toàn bộ dự án đã triển khai](./week-12)  
