@@ -141,7 +141,7 @@ To address the limitations in the Production access management process, the Prod
 
 ### System Architecture Diagram
 
-<img src="/images/figure-1-proposal.png" alt="figure-1-proposal" style="width:600px !important; max-width:900px !important;">
+<img src="/images/figure-proposal.png" alt="figure-proposal" style="width:600px !important; max-width:900px !important;">
 <p style="text-align:center; font-style:italic;">Figure 1. Production Access Request Portal System Architecture Diagram</p>
 
 ### AWS Services Used

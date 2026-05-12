@@ -141,7 +141,7 @@ Trước khi hệ thống này ra đời, quy trình quản lý quyền truy c�
 
 ### Sơ đồ kiến trúc hệ thống
 
-<img src="/images/figure-1-proposal.png" alt="figure-1-proposal" style="width:600px !important; max-width:900px !important;">
+<img src="/images/figure-proposal.png" alt="figure-proposal" style="width:600px !important; max-width:900px !important;">
 <p style="text-align:center; font-style:italic;">Hình 1. Sơ đồ kiến trúc hệ thống Production Access Request Portal</p>
 
 ### Các dịch vụ AWS được sử dụng
