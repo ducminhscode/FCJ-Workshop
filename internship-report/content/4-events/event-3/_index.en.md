@@ -18,7 +18,7 @@ More than just a knowledge-sharing event, the session also helped participants b
 
 - **Khang Nguyen:** Solution Architect - Cloud Kinetics Vietnam
 - **Thịnh Nguyễn:** DevOps/Cloud Engineer - First Cloud AI Journey
-- **Nguyễn Phương Thảo:** Ambassador - First Cloud AI Journey
+- **Nguyễn Phương Thảo:** GenAI Engineer - VIB
 - **Hoàng Long:** Ambassador - First Cloud AI Journey
 
 ## Key Highlights
