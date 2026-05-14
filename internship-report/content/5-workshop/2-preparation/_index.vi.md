@@ -19,3 +19,5 @@ chapter : false
 1. [Kích hoạt Identity Center](2.1-activate-identity-center/)
 2. [Tạo Permission Sets](2.2-create-permission-sets/)
 3. [Tạo Access Groups](2.3-create-access-group/)
+4. [Tạo Group Assignments](2.4-create-group-assignments/)
+5. [Tạo các bảng DynamoDB](2.5-create-dynamodb-tables/)

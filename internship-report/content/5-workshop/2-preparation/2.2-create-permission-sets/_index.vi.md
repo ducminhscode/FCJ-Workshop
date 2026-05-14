@@ -56,15 +56,15 @@ Thực hiện lặp lại các bước sau cho từng Permission Set có trong b
 
 5. **Gán Tags (Khuyến nghị):** Để dễ dàng quản lý, hãy thêm các tag sau:
 
-- **AccessType:** (ReadOnly/PowerUser/Admin) 
-- **Duration:** (1h/4h/8h) 
-- **ManagedBy:** Manual 
+- **AccessType:** ReadOnly/PowerUser/Admin.
+- **Duration:** 1h/4h/8h.
+- **ManagedBy:** Manual.
 
 6. **Hoàn tất:** Review lại thông tin và nhấn **Create**.
 
 ![5.2.2-5](/images/5.2.2-5.png)
 
-7. **Ghi nhận thông tin:** Sau khi tạo xong mỗi Permission Set, copy và lưu lại ARN của chúng. Các giá trị này sẽ được sử dụng để cấu hình biến môi trường cho Lambda Function ở các bước sau. **Cấu trúc ARN mẫu:** `arn:aws:sso:::permissionSet/ssoins-XXXXXXXXXX/ps-XXXXXXXXXXXX.`
+7. **Ghi nhận thông tin:** Sau khi tạo xong mỗi Permission Set, copy và lưu lại ARN của chúng. Các giá trị này sẽ được sử dụng để cấu hình biến môi trường cho Lambda Function ở các bước sau. **Cấu trúc ARN mẫu:** `arn:aws:sso:::permissionSet/ssoins-XXXXXXXXXX/ps-XXXXXXXXXXXX`.
 
 *Lặp lại bước này cho tất cả 9 Permission Sets và ghi lại ARN của từng cái.*
 
