@@ -23,3 +23,5 @@ chapter : false
 5. [Tạo các bảng DynamoDB](2.5-create-dynamodb-tables/)
 6. [Tạo Secrets Manager](2.6-create-secrets-manager/)
 7. [Tạo Simple Email Service](2.7-create-simple-email-service/)
+8. [IAM Roles & Policies cho Lambda](2.8-iam-roles-and-policies-for-lambda/)
+9. [Tạo Lambda Layer](2.9-create-lambda-layer/)
