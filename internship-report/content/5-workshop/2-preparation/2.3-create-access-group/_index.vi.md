@@ -42,24 +42,22 @@ Dựa trên cấu hình chuẩn (2 accounts × 3 loại quyền × 3 bậc thờ
 
  Thực hiện các bước sau cho từng group trong danh sách trên:
  
-1. **Truy cập:** Vào **IAM Identity Center** > Chọn **Groups** từ menu bên trái.
+1. **Truy cập:** Vào **IAM Identity Center** > Chọn **Groups** từ menu bên trái > Click **Create group**.
 
 ![5.2.3-1](/images/5.2.3-1.png)
 
-2. **Khởi tạo:** Click **Create group**.
-
-3. **Cấu hình:**
+2. **Cấu hình:**
 
 - **Group name:** Nhập chính xác theo quy ước (Ví dụ: `pa-sit-application-ReadOnly-1h`).
 - **Description:** Nhập mô tả để dễ quản lý (Ví dụ: `JIT Access: application - ReadOnly - 1h`).
 
 ![5.2.3-2](/images/5.2.3-2.png)
 
-4. **Thành viên:** KHÔNG thêm bất kỳ user nào vào group tại thời điểm này. Group phải để trống.
+3. **Thành viên:** KHÔNG thêm bất kỳ user nào vào group tại thời điểm này. Group phải để trống.
    
-5. **Hoàn tất:** Click **Create group**.
+4. **Hoàn tất:** Click **Create group**.
 
-6. **Ghi nhận thông tin:** Sau khi tạo thành công, click vào tên group vừa tạo. Copy và lưu lại Group ID (có định dạng UUID như: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`).
+5. **Ghi nhận thông tin:** Sau khi tạo thành công, click vào tên group vừa tạo. Copy và lưu lại Group ID (có định dạng UUID như: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`).
 
 ![5.2.3-3](/images/5.2.3-3.png)
 

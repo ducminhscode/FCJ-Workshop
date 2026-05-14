@@ -21,3 +21,5 @@ chapter : false
 3. [Tạo Access Groups](2.3-create-access-group/)
 4. [Tạo Group Assignments](2.4-create-group-assignments/)
 5. [Tạo các bảng DynamoDB](2.5-create-dynamodb-tables/)
+6. [Tạo Secrets Manager](2.6-create-secrets-manager/)
+7. [Tạo Simple Email Service](2.7-create-simple-email-service/)

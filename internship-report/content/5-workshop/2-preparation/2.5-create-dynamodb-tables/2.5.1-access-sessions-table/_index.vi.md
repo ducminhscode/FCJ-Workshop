@@ -34,7 +34,7 @@ Bảng này dùng để quản lý các phiên truy cập của người dùng v
     - **Partition key:** `requester` - **Attribute**, `String` - **Data type**.
     - **Attribute projections:** All.
 - **Encryption at rest:** AWS managed key.
-- - Chọn **Create table**.
+- Chọn **Create table**.
 
 ![5.2.5.1-3](/images/5.2.5.1-3.png)
 

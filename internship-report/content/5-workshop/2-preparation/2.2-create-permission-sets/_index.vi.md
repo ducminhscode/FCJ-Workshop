@@ -30,11 +30,11 @@ Dưới đây là danh sách 9 Permission Sets tiêu chuẩn (dựa trên 3 lo�
 
 Thực hiện lặp lại các bước sau cho từng Permission Set có trong bảng trên:
 
-1. **Truy cập:** Vào **IAM Identity Center** > Chọn **Permission sets** từ menu bên trái.
+1. **Truy cập:** Vào **IAM Identity Center** > Chọn **Permission sets** từ menu bên trái > Click **Create permission set**.
 
 ![5.2.2-1](/images/5.2.2-1.png)
 
-2. **Khởi tạo:** Click **Create permission set** > Chọn **Custom permission set** > Nhấn **Next**.
+2. **Khởi tạo:** Chọn **Custom permission set** > Nhấn **Next**.
 
 ![5.2.2-2](/images/5.2.2-2.png)
 
