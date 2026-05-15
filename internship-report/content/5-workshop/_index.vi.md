@@ -38,5 +38,6 @@ Hệ thống được xây dựng để phục vụ nhiều nhóm người dùng
 
 1. [Giới thiệu](1-introduction/)
 2. [Chuẩn bị tài nguyên](2-preparation/)
-3. [Demo sản phẩm](3-product-demonstration/)
-4. [Dọn dẹp tài nguyên](4-clean-up-resources/)
+3. [Kiểm tra kết nối](3-test-connection/)
+4. [Demo sản phẩm](4-product-demonstration/)
+5. [Dọn dẹp tài nguyên](5-clean-up-resources/)

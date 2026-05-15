@@ -69,3 +69,11 @@ Thực hiện lặp lại các bước sau cho từng Permission Set có trong b
 *Lặp lại bước này cho tất cả 9 Permission Sets và ghi lại ARN của từng cái.*
 
 ![5.2.2-6](/images/5.2.2-6.png)
+
+Ngoài ra, cũng cần tạo **3 Legacy Permission Sets** (Dùng cho backward compatibility - sẽ là Environment variables cho Lambda):
+
+| STT | Tên Legacy Permission Set | Duration | AWS Managed Policy |
+|:---:|:-------------------------:|:--------:|:------------------:|
+| 1 | ProdAccessReadOnly | 12h | ReadOnlyAccess |
+| 2 | ProdAccessPowerUser | 12h | PowerUserAccess |
+| 3 | ProdAccessAdmin | 12h | AdministratorAccess |

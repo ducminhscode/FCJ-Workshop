@@ -25,3 +25,8 @@ chapter : false
 7. [Tạo Simple Email Service](2.7-create-simple-email-service/)
 8. [IAM Roles & Policies cho Lambda](2.8-iam-roles-and-policies-for-lambda/)
 9. [Tạo Lambda Layer](2.9-create-lambda-layer/)
+10. [Tạo Lambda Function](2.10-create-lambda-functions/)
+11. [Thiết lập API Gateway](2.11-setup-api-gateway/)
+12. [Kết nối DynamoDB Stream đến Lambda Expiry](2.12-connect-dynamodb-stream-to-lambda-expiry/)
+13. [Thiết lập CloudWatch Alarms](2.13-setup-cloudwatch-alarms/)
+14. [Populate Access Group Mapping](2.14-populate-access-group-mapping/)

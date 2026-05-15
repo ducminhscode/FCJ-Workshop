@@ -17,7 +17,7 @@ With a proactive learning attitude, I consistently strived to complete all assig
 To objectively reflect on my internship experience, I would like to provide the following self-assessment based on these criteria:
 
 | No. | Criteria | Description | Good | Fairly Good | Average |
-|-----|----------|-------------|:----:|:-----------:|:-------:|
+|:---:|----------|-------------|:----:|:-----------:|:-------:|
 | 1 | **Professional Knowledge and Technical Skills** | Understanding of the field, practical application of knowledge, tool usage skills, quality of work | ✅ | ☐ | ☐ |
 | 2 | **Learning Ability** | Ability to absorb new knowledge and learn quickly | ☐ | ✅ | ☐ |
 | 3 | **Proactiveness** | Self-learning and taking initiative without waiting for instructions | ☐ | ✅ | ☐ |

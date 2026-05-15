@@ -17,7 +17,7 @@ Với tinh thần cầu thị, em luôn nỗ lực hoàn thành mọi nhiệm v�
 Để phản ánh một cách khách quan quá trình thực tập, em xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
 | STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
-|-----|----------|-------|:---:|:---:|:----------:|
+|:---:|----------|-------|:---:|:---:|:----------:|
 | 1 | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅  | ☐  | ☐ |
 | 2 | **Khả năng học hỏi** | Tiếp thu kiến thức mới, học hỏi nhanh | ☐ | ✅ | ☐ |
 | 3 | **Chủ động** | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn | ☐ | ✅ | ☐ |

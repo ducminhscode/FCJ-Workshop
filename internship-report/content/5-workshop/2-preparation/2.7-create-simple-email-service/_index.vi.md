@@ -40,7 +40,7 @@ Hệ thống sử dụng Amazon Simple Email Service để gửi email phục v�
 
 Sau khi tạo identity, **AWS SES** sẽ gửi email xác nhận. Hãy mở inbox của email sender và click vào link để **Verify this email address**.
 
-Sau khi verify thành công, trạng thái của identity (Identity status) sẽ chuyển thành `Verified`.
+Sau khi verify thành công, trạng thái của identity (Identity status) sẽ chuyển thành **Verified**.
 
 ![5.2.7-4](/images/5.2.7-4.png)
 

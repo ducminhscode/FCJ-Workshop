@@ -1,7 +1,7 @@
 ---
 title : "Clean up resources"
 date :  "`r Sys.Date()`" 
-weight : 4
-pre: <b> 5.4 </b>
+weight : 5
+pre: <b> 5.5 </b>
 chapter : false
 ---
