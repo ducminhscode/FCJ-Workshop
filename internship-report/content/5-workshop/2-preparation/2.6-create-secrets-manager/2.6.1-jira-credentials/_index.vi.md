@@ -7,13 +7,12 @@ chapter : false
 ---
 
 Secret này được Lambda sử dụng để gọi Jira REST API nhằm: 
-- Lấy thông tin ticket
-- Cập nhật trạng thái request
-- Comment kết quả provisioning
+- Lấy thông tin ticket.
+- Cập nhật trạng thái request.
+- Comment kết quả provisioning.
 - Đồng bộ workflow giữa Jira và AWS.
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Secrets Manager" trên thanh tìm kiếm.
 
 ![5.2.6-1](/images/5.2.6-1.png)
@@ -23,7 +22,6 @@ Secret này được Lambda sử dụng để gọi Jira REST API nhằm:
 ![5.2.6.1-1](/images/5.2.6.1-1.png)
 
 2. **Cấu hình:**
-
 - Ở bước đầu tiên:
 
 **Secret type:** Chọn **Other type of secret**.

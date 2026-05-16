@@ -7,7 +7,6 @@ chapter : false
 ---
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Lambda" trên thanh tìm kiếm.
 
 ![5.2.12-1](/images/5.2.12-1.png)
@@ -21,7 +20,6 @@ chapter : false
 ![5.2.12-3](/images/5.2.12-3.png)
 
 2. **Cấu hình:**
-
 - **Trigger configuration:** Chọn **DynamoDB**.
 - **DynamoDB table:** Chọn `pa-{env}-access-sessions-{region}`.
 - **Batch size:** `100`.

@@ -7,7 +7,6 @@ chapter : false
 ---
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Lambda" trên thanh tìm kiếm.
 
 ![5.2.9-1](/images/5.2.9-1.png)
@@ -17,7 +16,6 @@ chapter : false
 ![5.2.10-1](/images/5.2.10-1.png)
 
 2. **Cấu hình:**
-
 - Chọn **Author from scratch**.
 - **Function name:** `pa-{env}-executor-{region}`.
 - **Runtime:** Chọn **Python 3.12**.
@@ -30,7 +28,6 @@ chapter : false
 ![5.2.10.1-2](/images/5.2.10.1-2.png)
 
 3. **Tải lên package:**
-
 - Trong lambda vừa tạo, vào tab **Code** > Chọn **Upload from** > Chọn **.zip file**.
 
 ![5.2.10.1-3](/images/5.2.10.1-3.png)
@@ -44,7 +41,6 @@ chapter : false
 ![5.2.10.1-6](/images/5.2.10.1-6.png)
 
 4. **Đính kèm Lambda Layer:**
-
 - Scroll xuống phần **Layers** > Chọn **Edit** > Chọn **Add a layer**.
 
 ![5.2.10.1-7](/images/5.2.10.1-7.png)
@@ -65,7 +61,6 @@ chapter : false
 ![5.2.10.1-11](/images/5.2.10.1-11.png)
 
 5. **Runtime Settings:**
-
 - Ở phần **Runtime settings**, chọn **Edit**.
 
 ![5.2.10.1-12](/images/5.2.10.1-12.png)
@@ -76,7 +71,6 @@ chapter : false
 ![5.2.10.1-13](/images/5.2.10.1-13.png)
 
 6. **General Configuration:**
-
 - Vào tab **Configuration** > Chọn **General configuration** > Chọn **Edit**.
 
 ![5.2.10.1-14](/images/5.2.10.1-14.png)
@@ -88,7 +82,6 @@ chapter : false
 ![5.2.10.1-15](/images/5.2.10.1-15.png)
 
 7. **Environment Variables:**
-
 - Vào tab **Configuration** > Chọn **Environment variables** > Chọn **Edit**.
 
 ![5.2.10.1-16](/images/5.2.10.1-16.png)

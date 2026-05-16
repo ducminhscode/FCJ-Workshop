@@ -7,7 +7,6 @@ chapter : false
 ---
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "IAM" trên thanh tìm kiếm.
 
 ![5.2.8-1](/images/5.2.8-1.png)
@@ -17,7 +16,6 @@ chapter : false
 ![5.2.8-2](/images/5.2.8-2.png)
 
 2. **Bước 1:**
-
 - **Trusted entity type:** Chọn **AWS service**.
 - **Use case:** Chọn **Lambda**.
 - Chọn **Next**.
@@ -29,7 +27,6 @@ chapter : false
 ![5.2.8.3-2](/images/5.2.8.3-2.png)
 
 4. **Bước 3:**
-
 - **Role name:** `pa-{env}-email-approval-role-{region}`.
 - **Description:** `IAM role for Lambda Email Approval function`.
 - **Tags:**

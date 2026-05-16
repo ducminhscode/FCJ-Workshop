@@ -7,21 +7,18 @@ chapter : false
 ---
 
 Đây là secret quan trọng nhất trong cơ chế **Group-Based Access Architecture**. Lambda Executor sẽ đọc secret này để xác định:
-
 - User cần được add vào group nào.
 - Group đó map tới account nào.
 - Permission Set nào sẽ được cấp.
 - Session duration bao lâu.
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Secrets Manager" trên thanh tìm kiếm.
 - Chọn **Store a new secret**.
 
 ![5.2.6-1](/images/5.2.6-1.png)
 
 2. **Cấu hình:**
-
 - Ở bước đầu tiên:
 
 **Secret type:** Chọn **Other type of secret**.

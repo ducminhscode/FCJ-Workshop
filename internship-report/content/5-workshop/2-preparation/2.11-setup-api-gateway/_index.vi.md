@@ -15,7 +15,6 @@ chapter : false
 ### Tạo REST API
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "API Gateway" trên thanh tìm kiếm.
 
 ![5.2.11-1](/images/5.2.11-1.png)
@@ -29,7 +28,6 @@ chapter : false
 ![5.2.11-3](/images/5.2.11-3.png)
 
 2. **Cấu hình:**
-
 - **API name:** `pa-{env}-api-{region}`.
 - **Description:** `API Gateway for {env} Access Request Portal`.
 - **Endpoint Type:** Chọn **Regional**.
@@ -40,34 +38,28 @@ chapter : false
 ### Tạo Resource & Method - Provision Access
 
 1. **Tạo Resource:**
-
 - Trong API vừa tạo, chọn **Create resource**.
 
 ![5.2.11-5](/images/5.2.11-5.png)
 
 - **Cấu hình:**
-
   - **Resource path:** `/`.
   - **Resource name:** `provision-access`.
-
 - Chọn **Create resource**.
 
 ![5.2.11-6](/images/5.2.11-6.png)
 
 2. **Tạo POST Method:**
-
 - Chọn resource `/provision-access` > Chọn **Create method**.
 
 ![5.2.11-7](/images/5.2.11-7.png)
 
 - **Cấu hình:**
-
   - **Method type:** Chọn **POST**.
   - **Integration type:** Chọn **Lambda function**.
   - **Lambda proxy integration:** Bật **Enabled**.
   - **Lambda function:** Chọn vùng > Chọn `arn:aws:lambda:{region}:{account_id}:function:pa-{env}-executor-{region}`.
   - Tick vào ô **API key required**.
-
 - Chọn **Create method**.
 
 ![5.2.11-8](/images/5.2.11-8.png)
@@ -77,39 +69,31 @@ chapter : false
 ### Tạo Resources & Methods - Email Approval
 
 1. **Tạo Resource:**
-
 - Trong API vừa tạo, chọn **Create resource**.
 
 ![5.2.11-10](/images/5.2.11-10.png)
 
 - **Cấu hình:**
-
   - **Resource path:** `/`.
   - **Resource name:** `email-approval`.
-
 - Chọn **Create resource**.
-
 - Tiếp tục **Create resource** tương tự với:
-  
   - **Resource path:** `/email-approval`.
   - **Resource name:** `request`.
 
 ![5.2.11-11](/images/5.2.11-11.png)
 
 2. **Tạo POST Method:**
-
 - Chọn resource `/email-approval/request` > Chọn **Create method**.
 
 ![5.2.11-12](/images/5.2.11-12.png)
 
 - **Cấu hình:**
-
   - **Method type:** Chọn **POST**.
   - **Integration type:** Chọn **Lambda function**.
   - **Lambda proxy integration:** Bật **Enabled**.
   - **Lambda function:** Chọn vùng > Chọn `arn:aws:lambda:{region}:{account_id}:function:pa-{env}-email-approval-{region}`.
   - Tick vào ô **API key required**.
-
 - Chọn **Create method**.
 
 ![5.2.11-13](/images/5.2.11-13.png)
@@ -117,9 +101,7 @@ chapter : false
 ![5.2.11-14](/images/5.2.11-14.png)
 
 3. **Tạo GET Method:**
-
 - Tiếp tục **Create resource** tương tự với:
-  
   - **Resource path:** `/email-approval`.
   - **Resource name:** `action`.
 
@@ -132,13 +114,11 @@ chapter : false
 ![5.2.11-17](/images/5.2.11-17.png)
 
 - **Cấu hình:**
-
   - **Method type:** Chọn **GET**.
   - **Integration type:** Chọn **Lambda function**.
   - **Lambda proxy integration:** Bật **Enabled**.
   - **Lambda function:** Chọn vùng > Chọn `arn:aws:lambda:{region}:{account_id}:function:pa-{env}-email-approval-{region}`.
   - KHÔNG chọn vào ô **API key required**.
-
 - Chọn **Create method**.
 
 ![5.2.11-18](/images/5.2.11-18.png)
@@ -146,7 +126,6 @@ chapter : false
 ![5.2.11-19](/images/5.2.11-19.png)
 
 ### Deploy API
-
 - Chọn **Deploy API**.
 
 ![5.2.11-20](/images/5.2.11-20.png)
@@ -162,7 +141,6 @@ Sau khi deploy xong, AWS sẽ tạo **Invoke URL** và hãy ghi lại nó: `http
 ![5.2.11-22](/images/5.2.11-22.png)
 
 ### Tạo API Key
-
 - Chọn **API keys** từ menu bên trái > Chọn **Create API key**.
 
 ![5.2.11-23](/images/5.2.11-23.png)
@@ -177,7 +155,6 @@ Sau khi deploy xong, AWS sẽ tạo **Invoke URL** và hãy ghi lại nó: `http
 ![5.2.11-25](/images/5.2.11-25.png)
 
 ### Tạo Usage Plan
-
 - Chọn **Usage plans** từ menu bên trái > Chọn **Create usage plan**.
 
 ![5.2.11-26](/images/5.2.11-26.png)

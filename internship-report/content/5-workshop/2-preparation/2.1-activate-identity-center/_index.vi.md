@@ -18,10 +18,9 @@ Trước khi bắt đầu, chúng ta cần đảm bảo dịch vụ đã đượ
 
 3. **Kích hoạt:** Nếu dịch vụ chưa được bật, nhấn **Enable** và chọn chế độ **AWS Organizations mode** để có khả năng quản lý đa tài khoản tối ưu nhất.
 
-4. **Lưu trữ thông tin:** Sau khi kích hoạt thành công, hãy copy và lưu lại hai giá trị sau vào file cấu hình dự án:
-
-- **Identity Center Instance ARN** (Ví dụ: `arn:aws:sso:::instance/ssoins-XXXXXXXXXX`)
-- **Identity Store ID** (Ví dụ: `d-XXXXXXXXXX`)
+4. **Lưu trữ thông tin:** Sau khi kích hoạt thành công, hãy copy và lưu lại hai giá trị sau vào file cấu hình dự án.
+- **Identity Center Instance ARN** (Ví dụ: `arn:aws:sso:::instance/ssoins-XXXXXXXXXX`).
+- **Identity Store ID** (Ví dụ: `d-XXXXXXXXXX`).
 
 ![5.2.1-3](/images/5.2.1-3.png)
 

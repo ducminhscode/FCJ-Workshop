@@ -9,7 +9,6 @@ chapter : false
 Bảng này dùng để quản lý các phiên truy cập của người dùng vào hệ thống.
 
 1. **Truy cập:** 
-
 - Vào giao diện **AWS Console** và tìm kiếm "DynamoDB" trên thanh tìm kiếm.
 
 ![5.2.5.1-1](/images/5.2.5.1-1.png)
@@ -19,8 +18,7 @@ Bảng này dùng để quản lý các phiên truy cập của người dùng v
 ![5.2.5.1-2](/images/5.2.5.1-2.png)
 
 2. **Cấu hình:**
-
-- **Table name** (Ví dụ: `pa-{env}-access-sessions-{region}`)
+- **Table name** (Ví dụ: `pa-{env}-access-sessions-{region}`).
 - **Partition key:** ID duy nhất của phiên truy cập (Ví dụ: `sessionId` - Type: String).
 - **Table settings:** Chọn **Customize settings**.
 - **Read/Write capacity settings:** Chọn **On-demand**.
@@ -53,7 +51,6 @@ Bảng này dùng để quản lý các phiên truy cập của người dùng v
 ![5.2.5.1-9](/images/5.2.5.1-9.png)
 
 3. **Cấu hình TTL (Time to Live):**
-
 - Sau khi bảng đã được tạo, chọn bảng > Vào **Actions** > Chọn **Turn on TTL**.
 
 ![5.2.5.1-10](/images/5.2.5.1-10.png)
@@ -88,7 +85,7 @@ Bảng này dùng để quản lý các phiên truy cập của người dùng v
 
 ![5.2.5.1-19](/images/5.2.5.1-19.png)
 
-4. **Ghi nhận thông tin:** Sau khi tạo thành công, click vào tên bảng vừa tạo. Copy và lưu lại **Amazon Resource Name (ARN)** (Ví dụ: `arn:aws:dynamodb:{region}:{account_id}:table/pa-{env}-access-sessions-{region}`), **Latest stream ARN** (Ví dụ: `arn:aws:dynamodb:{region}:{account_id}:table/pa-{env}-access-sessions-{region}/stream/...`)
+4. **Ghi nhận thông tin:** Sau khi tạo thành công, click vào tên bảng vừa tạo. Copy và lưu lại **Amazon Resource Name (ARN)** (Ví dụ: `arn:aws:dynamodb:{region}:{account_id}:table/pa-{env}-access-sessions-{region}`), **Latest stream ARN** (Ví dụ: `arn:aws:dynamodb:{region}:{account_id}:table/pa-{env}-access-sessions-{region}/stream/...`).
 
 ![5.2.5.1-21](/images/5.2.5.1-21.png)
 

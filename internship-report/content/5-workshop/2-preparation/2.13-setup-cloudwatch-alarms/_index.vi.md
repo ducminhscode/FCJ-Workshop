@@ -7,7 +7,6 @@ chapter : false
 ---
 
 ### Alarm cho Lambda Executor Errors
-
 - Truy cập vào giao diện **AWS Console** và tìm kiếm "CloudWatch" trên thanh tìm kiếm.
 
 ![5.2.13-1](/images/5.2.13-1.png)

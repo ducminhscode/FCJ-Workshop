@@ -7,7 +7,6 @@ chapter : false
 ---
 
 ### Kiểm tra kết nối API Gateway đến Lambda Executor
-
 - Chạy Script trong CloudShell trên giao diện AWS Console:
 
 ```
@@ -23,7 +22,6 @@ curl -X POST \
   - Có thể nhận HTTP: 200, 400 422.
 
 ### Kiểm tra Lambda Executor hoạt động
-
 - Vào giao diện **AWS Console** và tìm kiếm "Lambda" trên thanh tìm kiếm.
 - Chọn **Functions** từ menu bên trái > Chọn `pa-{env}-executor-{region}` > Vào tab **Test**.
 - Tạo event mô phỏng:
@@ -41,20 +39,19 @@ curl -X POST \
 ```
 - Chọn **Test**.
 - Kết quả mong đợi:
-  - Parse request body
-  - Validate payload
-  - Kết nối Secrets Manager
-  - Ghi dữ liệu vào DynamoDB
-  - Add user vào Identity Center Group
+  - Parse request body.
+  - Validate payload.
+  - Kết nối Secrets Manager.
+  - Ghi dữ liệu vào DynamoDB.
+  - Add user vào Identity Center Group.
 
 ### Kiểm tra DynamoDB Stream đến Lambda Expiry
-
 - Vào giao diện **AWS Console** và tìm kiếm "DynamoDB" trên thanh tìm kiếm.
 - Chọn **Tables** từ menu bên trái > Chọn `pa-{env}-access-sessions-{region}`.
 - Tạo record test với:
   - **sessionId:** `TEST-SESSION-001`.
   - **requester:** `test@company.com`.
-  - **ttl:** `Unix timestamp hiện tại + 2 phút`
+  - **ttl:** `Unix timestamp hiện tại + 2 phút`.
 - Kết quả mong đợi: **Lambda Expiry** được invoke tự động.
 
 ### Kiểm tra Email Approval Workflow
@@ -70,7 +67,7 @@ curl -X POST \
 ```
 
 - Kết quả mong đợi:
-  - Generate approval token
-  - Lưu token vào DynamoDB
-  - Gửi email qua SES
-  - Sinh approve/reject link
+  - Generate approval token.
+  - Lưu token vào DynamoDB.
+  - Gửi email qua SES.
+  - Sinh approve/reject link.

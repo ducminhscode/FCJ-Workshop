@@ -7,7 +7,6 @@ chapter : false
 ---
 
 Hệ thống sử dụng Amazon Simple Email Service để gửi email phục vụ các chức năng:
-
 - Gửi email approval request tới admin.
 - Gửi email thông báo cấp quyền thành công.
 - Gửi email thông báo revoke quyền truy cập.
@@ -19,7 +18,6 @@ Hệ thống sử dụng Amazon Simple Email Service để gửi email phục v�
 Để AWS SES có quyền gửi email thay mặt mình, địa chỉ email người gửi cần được xác minh chính chủ.
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Amazon SES" trên thanh tìm kiếm.
 
 ![5.2.7-1](/images/5.2.7-1.png)
@@ -29,7 +27,6 @@ Hệ thống sử dụng Amazon Simple Email Service để gửi email phục v�
 ![5.2.7-2](/images/5.2.7-2.png)
 
 2. **Cấu hình:**
-
 - **Identity type:** Chọn **Email address**.
 - **Email address:** `SES_SENDER_EMAIL` (Ví dụ: `noreply@company.com`).
 - **Assign a default configuration set:** None.
@@ -49,14 +46,12 @@ Sau khi verify thành công, trạng thái của identity (Identity status) sẽ
 **Configuration Set** giúp theo dõi các chỉ số gửi email và quản lý việc thực thi các quy định về gửi mail (reputation).
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Amazon SES" trên thanh tìm kiếm.
 - Chọn **Configuration sets** từ menu bên trái > Chọn **Create set**.
 
 ![5.2.7-5](/images/5.2.7-5.png)
 
 2. **Cấu hình:**
-
 - **Configuration set name:** `pa-{env}-email-approval-{region}`.
 - **Reputation metrics:** Chọn **Enable**.
 - Chọn **Create set**.
@@ -74,7 +69,6 @@ Sau khi verify thành công, trạng thái của identity (Identity status) sẽ
 ![5.2.7-8](/images/5.2.7-8.png)
 
 2. **Cấu hình:**
-
 - Ở bước 1, chọn tất cả **Event types** > Chọn **Next**.
 
 ![5.2.7-9](/images/5.2.7-9.png)

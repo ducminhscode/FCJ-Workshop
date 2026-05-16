@@ -28,7 +28,6 @@ Dưới đây là kiến trúc triển khai:
 ### Đối tượng sử dụng
 
 Hệ thống được xây dựng để phục vụ nhiều nhóm người dùng khác nhau trong quá trình quản lý và kiểm soát quyền truy cập vào môi trường production trên AWS:
-
 - **Người dùng cuối (Developer/Engineer):** Là những người cần truy cập tạm thời vào môi trường production để thực hiện các công việc như triển khai hệ thống, xử lý sự cố, kiểm tra log hoặc bảo trì dịch vụ.
 - **Người phê duyệt (Team Lead/Manager):** Có trách nhiệm xem xét, phê duyệt hoặc từ chối các yêu cầu truy cập nhằm đảm bảo việc cấp quyền đúng mục đích và đúng đối tượng.
 - **Đội ngũ Platform/DevOps Engineer:** Phụ trách triển khai, cấu hình, vận hành và giám sát toàn bộ hạ tầng của hệ thống trên AWS, đồng thời đảm bảo các dịch vụ hoạt động ổn định và an toàn.

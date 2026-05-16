@@ -39,7 +39,6 @@ Thực hiện lặp lại các bước sau cho từng Permission Set có trong b
 ![5.2.2-2](/images/5.2.2-2.png)
 
 3. **Gán Policy:**
-
 - Tại bước 2 - **Specify policies and permissions boundary**, chọn tab AWS managed policies.
 - Tìm và tick chọn policy tương ứng (Ví dụ: `ReadOnlyAccess`).
 - Nhấn **Next**.
@@ -47,7 +46,6 @@ Thực hiện lặp lại các bước sau cho từng Permission Set có trong b
 ![5.2.2-3](/images/5.2.2-3.png)
 
 4. **Cấu hình cơ bản:**
-
 - **Permission set name:** Nhập chính xác tên theo bảng (Ví dụ: `ProdAccessReadOnly1h`).
 - **Description:** Mô tả ngắn gọn (Ví dụ: `ReadOnly access with 1h session duration`).
 - **Session duration:** Chọn thời gian tương ứng (Ví dụ: 1 hour, 4 hours,...).
@@ -55,7 +53,6 @@ Thực hiện lặp lại các bước sau cho từng Permission Set có trong b
 ![5.2.2-4](/images/5.2.2-4.png)
 
 5. **Gán Tags (Khuyến nghị):** Để dễ dàng quản lý, hãy thêm các tag sau:
-
 - **AccessType:** ReadOnly/PowerUser/Admin.
 - **Duration:** 1h/4h/8h.
 - **ManagedBy:** Manual.

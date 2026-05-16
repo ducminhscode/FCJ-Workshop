@@ -9,7 +9,6 @@ chapter : false
 Secret này chứa API Key dùng để xác thực request từ Jira Automation hoặc các external systems gọi vào API Gateway.
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Secrets Manager" trên thanh tìm kiếm.
 
 ![5.2.6-1](/images/5.2.6-1.png)
@@ -19,7 +18,6 @@ Secret này chứa API Key dùng để xác thực request từ Jira Automation 
 ![5.2.6.2-1](/images/5.2.6.2-1.png)
 
 2. **Cấu hình:**
-
 - Ở bước đầu tiên:
 
 **Secret type:** Chọn **Other type of secret**.
@@ -39,7 +37,6 @@ python -c "import secrets; print(secrets.token_urlsafe(48))"
 ```
 
 **Khuyến nghị:**
-
 - Tối thiểu 32 ký tự.
 - Không sử dụng password đơn giản.
 - Không commit API key vào Git repository.

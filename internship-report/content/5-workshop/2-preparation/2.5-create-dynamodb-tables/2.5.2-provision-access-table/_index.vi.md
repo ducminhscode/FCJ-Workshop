@@ -9,15 +9,13 @@ chapter : false
 Bảng này dùng để lưu lịch sử các yêu cầu đã được xử lý (provisioned).
 
 1. **Truy cập:** 
-
 - Vào giao diện **AWS Console** và tìm kiếm "DynamoDB" trên thanh tìm kiếm.
 - Chọn **Tables** từ menu bên trái > Chọn **Create table**.
 
 ![5.2.5.2-1](/images/5.2.5.2-1.png)
 
 2. **Cấu hình:**
-
-- **Table name** (Ví dụ: `pa-{env}-approval-tokens-{region}`)
+- **Table name** (Ví dụ: `pa-{env}-approval-tokens-{region}`).
 - **Partition key:** ID duy nhất (Ví dụ: `token_id ` - Type: String).
 - **Table settings:** Chọn **Customize settings**.
 - **Read/Write capacity settings:** Chọn **On-demand**.
@@ -31,7 +29,6 @@ Bảng này dùng để lưu lịch sử các yêu cầu đã được xử lý 
 ![5.2.5.2-4](/images/5.2.5.2-4.png)
 
 3. **Cấu hình TTL (Time to Live):**
-
 - Sau khi bảng đã được tạo, chọn bảng > Vào **Actions** > Chọn **Turn on TTL**.
 
 ![5.2.5.2-5](/images/5.2.5.2-5.png)

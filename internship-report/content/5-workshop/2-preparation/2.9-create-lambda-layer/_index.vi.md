@@ -9,7 +9,6 @@ chapter : false
 Truy cập vào [đường dẫn](https://drive.google.com/drive/folders/1d4NfTtJsv90yf4kwihjYupCDF__Mlauh?usp=sharing) sau để lấy 4 file chứa **Lambda Packages**.
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Lambda" trên thanh tìm kiếm.
 
 ![5.2.9-1](/images/5.2.9-1.png)
@@ -19,7 +18,6 @@ Truy cập vào [đường dẫn](https://drive.google.com/drive/folders/1d4NfTt
 ![5.2.9-2](/images/5.2.9-2.png)
 
 2. **Cấu hình:**
-
 - **Name:** `pa-{env}-dependencies-{region}`.
 - **Description:** `Shared dependencies for Production Access Portal Lambda functions`.
 - **Upload:** Upload file **dependencies-layer.zip**.

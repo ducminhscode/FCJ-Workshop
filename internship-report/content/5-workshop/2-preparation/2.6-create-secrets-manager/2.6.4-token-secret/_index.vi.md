@@ -7,20 +7,17 @@ chapter : false
 ---
 
 Secret này chứa HMAC signing key dùng để:
-
 - Ký email approval token.
 - Validate approval links.
 - Ngăn giả mạo approval request.
 
 1. **Truy cập:**
-
 - Vào giao diện **AWS Console** và tìm kiếm "Secrets Manager" trên thanh tìm kiếm.
 - Chọn **Store a new secret**.
 
 ![5.2.6-1](/images/5.2.6-1.png)
 
 2. **Cấu hình:**
-
 - Ở bước đầu tiên:
 
 **Secret type:** Chọn **Other type of secret**.
@@ -40,7 +37,6 @@ python -c "import secrets; print(secrets.token_urlsafe(64))"
 ```
 
 **Khuyến nghị:**
-
 - Không dùng secret ngắn.
 - Không tái sử dụng JWT secret cũ.
 - Không chia sẻ secret qua chat/email.
