@@ -7,8 +7,8 @@ chapter : false
 ---
 
 **Access Groups** là các nhóm trong IAM Identity Center. Trong kiến trúc v2.0, mỗi group đại diện cho một tổ hợp duy nhất giữa **Account × Access Type × Duration Tier**. 
-- **Khi cấp quyền:** Lambda chỉ cần thêm user vào group tương ứng → User tự động nhận quyền truy cập vào Account. 
-- **Khi thu hồi:** Lambda xóa user khỏi group → Mọi credentials hiện hành của user sẽ bị vô hiệu hóa (invalid) trong vòng tối đa 60 giây.
+- **Khi cấp quyền:** Lambda chỉ cần thêm user vào group tương ứng > User tự động nhận quyền truy cập vào Account. 
+- **Khi thu hồi:** Lambda xóa user khỏi group > Mọi credentials hiện hành của user sẽ bị vô hiệu hóa (invalid) trong vòng tối đa 60 giây.
 
 ### Bảng Access Groups cần tạo
 

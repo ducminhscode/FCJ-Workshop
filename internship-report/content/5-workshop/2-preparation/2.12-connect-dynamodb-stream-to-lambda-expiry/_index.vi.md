@@ -39,7 +39,7 @@ chapter : false
 }
 ```
 
-*Filter này đảm bảo Lambda Expiry chỉ được trigger khi DynamoDB TTL service tự động xóa record (không phải khi ai đó xóa thủ công)*
+*Filter này đảm bảo Lambda Expiry chỉ được trigger khi DynamoDB TTL service tự động xóa record (không phải khi ai đó xóa thủ công).*
 
 - Chọn **Add**.
 
