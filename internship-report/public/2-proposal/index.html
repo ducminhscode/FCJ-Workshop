@@ -1,0 +1,3878 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Project Proposal :: Internship Report</title>
+
+    
+    <link href="/css/nucleus.css?1779203515" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203515" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203515" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203515" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203515" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203515" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203515" rel="stylesheet">
+    <link href="/css/theme.css?1779203515" rel="stylesheet">
+    <link href="/css/tabs.css?1779203515" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203515" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203515" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203515"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/2-proposal/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203515"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203515"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203515"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/" title="Worklog" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/">
+          <b> 1. </b>Worklog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-1/" title="Worklog Week 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog Week 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-2/" title="Worklog Week 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog Week 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-3/" title="Worklog Week 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog Week 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-4/" title="Worklog Week 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog Week 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-5/" title="Worklog Week 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog Week 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-6/" title="Worklog Week 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog Week 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-7/" title="Worklog Week 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog Week 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-8/" title="Worklog Week 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog Week 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-9/" title="Worklog Week 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog Week 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-10/" title="Worklog Week 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog Week 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-11/" title="Worklog Week 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog Week 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-12/" title="Worklog Week 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog Week 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-proposal/" title="Project Proposal" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/2-proposal/">
+          <b> 2. </b>Project Proposal
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/" title="Translated Blogs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/">
+          <b> 3. </b>Translated Blogs
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/" title="Events Participated" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/">
+          <b> 4. </b>Events Participated
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/1-introduction/" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/1-introduction/">
+          <b> 5.1 </b>Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/" title="Preparation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/">
+          <b> 5.2 </b>Preparation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.1-activate-identity-center/" title="Activate Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Activate Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.2-create-permission-sets/" title="Create Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Create Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.3-create-access-group/" title="Create Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Create Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.4-create-group-assignments/" title="Create Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Create Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Create DynamoDB Tables" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Create DynamoDB Tables
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="AccessSessions Table" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>AccessSessions Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="ProvisionAccess Table" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>ProvisionAccess Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Create Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Create Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Create Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Create Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies for Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies for Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Create Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Create Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Create Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Create Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Set up API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Set up API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Connect DynamoDB Stream to Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Connect DynamoDB Stream to Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Set up CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Set up CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.15-setup-jira/" title="Set up Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Set up Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/3-test-connection/" title="Test Connection" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Test Connection
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/4-product-demonstration/" title="Product Demonstration" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Product Demonstration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/5-clean-up-resources/" title="Clean up resources" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Clean up resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-self-rating/" title="Self-Assessment" class="dd-item
+        
+        
+        
+        ">
+      <a href="/6-self-rating/">
+          <b> 6. </b>Self-Assessment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-feedback/" title="Sharing and Feedback" class="dd-item
+        
+        
+        
+        ">
+      <a href="/7-feedback/">
+          <b> 7. </b>Sharing and Feedback
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/2-proposal/">Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/2-proposal/" selected>English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Internship Report</a> > Project Proposal
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#project-overview">Project Overview</a>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#target-users">Target Users</a></li>
+        <li><a href="#design-principles">Design Principles</a></li>
+      </ul>
+    </li>
+    <li><a href="#problems-to-solve">Problems to Solve</a>
+      <ul>
+        <li><a href="#problem-description">Problem Description</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#architecture-comparison">Architecture Comparison</a></li>
+      </ul>
+    </li>
+    <li><a href="#solution-architecture">Solution Architecture</a>
+      <ul>
+        <li><a href="#system-architecture-diagram">System Architecture Diagram</a></li>
+        <li><a href="#aws-services-used">AWS Services Used</a></li>
+        <li><a href="#system-components">System Components</a></li>
+        <li><a href="#operational-workflow">Operational Workflow</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap--implementation-milestones">Roadmap &amp; Implementation Milestones</a>
+      <ul>
+        <li><a href="#phase-1-requirements-analysis-and-solution-design-weeks-2-4">Phase 1: Requirements Analysis and Solution Design (Weeks 2-4)</a></li>
+        <li><a href="#phase-2-foundation-infrastructure-deployment-weeks-5-6">Phase 2: Foundation Infrastructure Deployment (Weeks 5-6)</a></li>
+        <li><a href="#phase-3-system-business-logic-development-weeks-78">Phase 3: System Business Logic Development (Weeks 7–8)</a></li>
+        <li><a href="#phase-4-testing-and-user-acceptance-weeks-9-10">Phase 4: Testing and User Acceptance (Weeks 9-10)</a></li>
+        <li><a href="#phase-5-production-deployment-and-operational-handover-week-11">Phase 5: Production Deployment and Operational Handover (Week 11)</a></li>
+        <li><a href="#overall-implementation-plan">Overall Implementation Plan</a></li>
+        <li><a href="#post-deployment-expansion-plan">Post-Deployment Expansion Plan</a></li>
+      </ul>
+    </li>
+    <li><a href="#budget-estimation">Budget Estimation</a></li>
+    <li><a href="#risk-assessment">Risk Assessment</a>
+      <ul>
+        <li><a href="#risk-assessment-matrix">Risk Assessment Matrix</a></li>
+        <li><a href="#incident-response-plan">Incident Response Plan</a></li>
+      </ul>
+    </li>
+    <li><a href="#expected-outcomes">Expected Outcomes</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Project Proposal
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="production-access-request-portal">Production Access Request Portal</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#production-access-request-portal">Production Access Request Portal</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#project-overview">Project Overview</a>
+<ul>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#target-users">Target Users</a></li>
+<li><a href="#design-principles">Design Principles</a></li>
+</ul>
+</li>
+<li><a href="#problems-to-solve">Problems to Solve</a>
+<ul>
+<li><a href="#problem-description">Problem Description</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#architecture-comparison">Architecture Comparison</a></li>
+</ul>
+</li>
+<li><a href="#solution-architecture">Solution Architecture</a>
+<ul>
+<li><a href="#system-architecture-diagram">System Architecture Diagram</a></li>
+<li><a href="#aws-services-used">AWS Services Used</a></li>
+<li><a href="#system-components">System Components</a></li>
+<li><a href="#operational-workflow">Operational Workflow</a>
+<ul>
+<li><a href="#standard-grant-flow">Standard Grant Flow</a></li>
+<li><a href="#email-approval-flow">Email Approval Flow</a></li>
+<li><a href="#auto-expiry-and-access-revocation-flow">Auto Expiry and Access Revocation Flow</a></li>
+<li><a href="#emergency-revocation-flow">Emergency Revocation Flow</a></li>
+<li><a href="#operational-principles-and-exception-handling">Operational Principles and Exception Handling</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#roadmap--implementation-milestones">Roadmap &amp; Implementation Milestones</a>
+<ul>
+<li><a href="#phase-1-requirements-analysis-and-solution-design-weeks-2-4">Phase 1: Requirements Analysis and Solution Design (Weeks 2-4)</a></li>
+<li><a href="#phase-2-foundation-infrastructure-deployment-weeks-5-6">Phase 2: Foundation Infrastructure Deployment (Weeks 5-6)</a></li>
+<li><a href="#phase-3-system-business-logic-development-weeks-78">Phase 3: System Business Logic Development (Weeks 7–8)</a></li>
+<li><a href="#phase-4-testing-and-user-acceptance-weeks-9-10">Phase 4: Testing and User Acceptance (Weeks 9-10)</a></li>
+<li><a href="#phase-5-production-deployment-and-operational-handover-week-11">Phase 5: Production Deployment and Operational Handover (Week 11)</a></li>
+<li><a href="#overall-implementation-plan">Overall Implementation Plan</a></li>
+<li><a href="#post-deployment-expansion-plan">Post-Deployment Expansion Plan</a></li>
+</ul>
+</li>
+<li><a href="#budget-estimation">Budget Estimation</a></li>
+<li><a href="#risk-assessment">Risk Assessment</a>
+<ul>
+<li><a href="#risk-assessment-matrix">Risk Assessment Matrix</a></li>
+<li><a href="#incident-response-plan">Incident Response Plan</a></li>
+</ul>
+</li>
+<li><a href="#expected-outcomes">Expected Outcomes</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="project-overview">Project Overview</h2>
+<h3 id="summary">Summary</h3>
+<p>Production Access Request Portal is a temporary access management system (Just-in-Time Access) built on a fully serverless architecture (AWS Lambda, API Gateway, DynamoDB), designed to securely and automatically control access to AWS Production accounts. The process begins when users submit requests through Jira Service Management, after which the system orchestrates the approval workflow via email using Amazon SES and grants permissions through AWS IAM Identity Center. The most significant improvement introduced in version 2.0 is the Group-Based Access mechanism, which enables the system to automatically revoke access permissions (within Access Groups) within just 60 seconds immediately after the access expiration time (TTL), completely overcoming the traditional delay limitation of up to 12 hours found in conventional approaches. All activities are continuously monitored through CloudWatch and CloudTrail, ensuring transparency and strict compliance for sensitive production environments.</p>
+<h3 id="target-users">Target Users</h3>
+<p>Within the Production Access Request Portal system, multiple stakeholders participate in the process of requesting, approving, provisioning and monitoring access to the Production environment. Each role is responsible for a specific function, contributing to the secure, efficient and policy-compliant operation of the system.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Description</th>
+<th>Interaction with the System</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>End User (Developer/Engineer)</strong></td>
+<td>A person who needs access to the Production environment to perform tasks such as deployment, troubleshooting, or system verification.</td>
+<td>Users interact with the system through the Jira Service Management Portal to submit access requests. Once approved, they use AWS IAM Identity Center to log in and receive temporary access permissions.</td>
+</tr>
+<tr>
+<td><strong>Approver (Team Lead/Manager)</strong></td>
+<td>A person responsible for reviewing and approving Production access requests. This role acts as a control point to ensure that only valid and necessary requests are granted access.</td>
+<td>Approvals are performed directly through the Jira interface or via email using confirmation links (approve/decline).</td>
+</tr>
+<tr>
+<td><strong>Platform/DevOps Engineer</strong></td>
+<td>A person responsible for designing, deploying and operating the system.</td>
+<td>Manage the entire infrastructure using Terraform (Infrastructure as Code), develop and maintain Lambda functions, monitor system performance, handle incidents and implement architectural improvements when necessary to ensure system stability.</td>
+</tr>
+<tr>
+<td><strong>Security/Compliance Team</strong></td>
+<td>A team responsible for ensuring that the system complies with the organization&rsquo;s security standards and policies.</td>
+<td>Monitor access activities through audit logs, review access control policies and assess security risks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="design-principles">Design Principles</h3>
+<p>The Production Access Request Portal system is designed based on modern security and architectural principles to ensure that access management for the Production environment is performed securely, transparently and efficiently. The core principles include:</p>
+<ul>
+<li><strong>Zero Standing Privileges:</strong>
+<ul>
+<li>This principle states that the system does not allow any permanent or standing access to the Production environment. Instead, all access permissions must be requested through the system, go through an approval process and only remain valid for a limited period of time.</li>
+<li>Once the granted duration expires, access permissions are automatically revoked without requiring manual intervention. This approach significantly reduces the risk of credential exposure and minimizes the possibility of privilege misuse within the system.</li>
+</ul>
+</li>
+<li><strong>Least Privilege:</strong>
+<ul>
+<li>This principle ensures that each user is granted only the minimum level of access necessary to perform their tasks. The system defines three main access levels: ReadOnly, PowerUser and Admin, corresponding to different levels of interaction with AWS resources.</li>
+<li>Each permission level is mapped to specific IAM policies and controlled through scope limitation mechanisms. As a result, the system minimizes risks in the event of account compromise and prevents actions that exceed authorized privileges.</li>
+</ul>
+</li>
+<li><strong>Defense in Depth:</strong>
+<ul>
+<li>This principle is applied to establish multiple overlapping layers of security throughout the system. Specifically, the system implements user authentication through SSO at the Jira Portal, combined with API Gateway authentication using API keys and request throttling mechanisms.</li>
+<li>In addition, webhooks are protected using HMAC-SHA256 digital signatures to ensure data integrity. The system also applies strict access control policies through IAM, along with comprehensive logging and monitoring using CloudWatch and CloudTrail.</li>
+<li>Implementing multiple security layers ensures that even if one layer is bypassed, the remaining layers can still protect the system against threats.</li>
+</ul>
+</li>
+<li><strong>Fail-Safe Defaults:</strong>
+<ul>
+<li>This principle dictates that the system denies all access requests by default unless all required conditions are satisfied. Access is granted only when every step in the workflow, including authentication, approval and permission provisioning, is successfully completed.</li>
+<li>In cases where errors occur or the system cannot determine a valid state, access will not be granted. This ensures that no permissions are unintentionally or improperly assigned.</li>
+</ul>
+</li>
+<li><strong>Complete Auditability:</strong> This principle ensures that all activities within the system are fully recorded and traceable. Information related to access requests, approvals, permission grants and revocations is stored across multiple systems such as Jira, CloudWatch, CloudTrail and DynamoDB. As a result, the system can provide comprehensive audit information for compliance requirements, security investigations and incident analysis. Ensuring transparency and traceability is a critical factor in Production access management systems.</li>
+</ul>
+<h2 id="problems-to-solve">Problems to Solve</h2>
+<h3 id="problem-description">Problem Description</h3>
+<p>Before this system was introduced, the process of managing access to the Production environment within the organization had many limitations, posing significant security risks and operational challenges. The key issues identified are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Impact</th>
+<th style="text-align:center">Risk Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Manual and Inconsistent Access Provisioning</strong></td>
+<td>The process of granting Production access was primarily performed manually through the creation or modification of IAM Users for each request. This approach was not only time-consuming but also highly prone to configuration errors, potentially resulting in excessive permissions or insufficient access control. The lack of a standardized process also caused inconsistencies across teams, making system management and scalability more difficult.</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td><strong>No Automatic Access Expiration Mechanism</strong></td>
+<td>One of the most critical issues was that Production access permissions were not automatically revoked after tasks were completed. This resulted in the existence of long-lived credentials within the system. Maintaining access permissions for extended periods significantly increased the risk of exploitation if credentials were leaked, while also violating modern security principles such as Zero Standing Privileges.</td>
+<td style="text-align:center">Very High</td>
+</tr>
+<tr>
+<td><strong>Lack of Auditability and Traceability (Audit Trail)</strong></td>
+<td>The legacy system did not provide sufficient information to monitor and trace access activities. The inability to accurately determine who accessed the system, when the access occurred and what actions were performed created major difficulties during auditing and incident investigations. This issue was especially severe in highly regulated environments where maintaining a complete audit trail is mandatory.</td>
+<td style="text-align:center">Very High</td>
+</tr>
+<tr>
+<td><strong>Fragmented and Inefficient Approval Process</strong></td>
+<td>The access approval process was often handled through multiple disconnected channels such as email, messaging applications, or direct communication, lacking centralization and automation. As a result, request processing times were prolonged, SLAs were unclear and tracking the current status of requests became difficult. This reduced the productivity of engineering teams and increased delays in resolving Production incidents.</td>
+<td style="text-align:center">Medium</td>
+</tr>
+<tr>
+<td><strong>No Emergency Access Revocation Mechanism</strong></td>
+<td>In cases involving detected security risks or compromised accounts, the system did not provide the capability to immediately revoke access permissions. This limitation prevented the organization from responding quickly to security incidents, increasing both the potential impact and associated risks.</td>
+<td style="text-align:center">Critical</td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution">Solution</h3>
+<p>To address the limitations in the Production access management process, the Production Access Request Portal was developed as a comprehensive automation solution that applies modern security principles and leverages a serverless architecture on AWS. The main solutions are as follows:</p>
+<ul>
+<li><strong>Automating the Access Provisioning Workflow:</strong>
+<ul>
+<li>Instead of relying on manual operations, the system standardizes and automates the entire access provisioning process following the model:
+<pre><code>Request → Approval → Provisioning → Expiry → Revocation
+</code></pre></li>
+<li>Users submit requests through Jira Service Management, after which the system automatically processes the remaining steps using API Gateway and AWS Lambda. This approach minimizes human error while ensuring consistency across the entire system.</li>
+</ul>
+</li>
+<li><strong>Applying the Just-in-Time Access Model:</strong>
+<ul>
+<li>The system implements a Just-in-Time (JIT) Access model, where access permissions are granted only when needed and remain valid for a limited period of time.</li>
+<li>Each access request is associated with a specific duration and mapped into standardized duration tiers. Once the duration expires, the system automatically revokes access permissions without requiring manual intervention.</li>
+<li>This solution completely eliminates the existence of long-lived access permissions within the Production environment.</li>
+</ul>
+</li>
+<li><strong>Using Group-Based Access Instead of Direct Permission Assignment:</strong> One of the key improvements of the system is the transition from a Direct Assignment model to a Group-Based Access model.
+<ul>
+<li>Instead of assigning permissions directly to individual users, the system will:
+<ul>
+<li>Pre-create access groups corresponding to specific permission levels and durations.</li>
+<li>Add users to groups when access is granted.</li>
+<li>Remove users from groups when access expires.</li>
+</ul>
+</li>
+<li>This approach reduces provisioning time to under 5 seconds, enables near real-time access revocation and significantly decreases management complexity.</li>
+</ul>
+</li>
+<li><strong>Integrating a Centralized and Flexible Approval Mechanism:</strong> The system tightly integrates with Jira Service Management to manage the entire approval workflow. In addition, it supports email-based approvals through confirmation links (approve/decline), increasing flexibility for managers. All requests are tracked with clear statuses, ensuring transparency and SLA-based monitoring.</li>
+<li><strong>Establishing Automatic and Emergency Access Revocation Mechanisms:</strong> The system uses DynamoDB TTL combined with AWS Lambda to automatically detect and revoke expired access permissions. When a session expires, Lambda automatically removes the user from the access group, causing credentials to become invalid within 60 seconds. The system also supports an Emergency Revocation mechanism, allowing all user access permissions to be removed within a very short period when security risks are detected.</li>
+<li><strong>Enhancing Monitoring and Auditability:</strong> To address the lack of audit trails, the system records activities across multiple layers:
+<ul>
+<li>Jira: Stores requests and approval information.</li>
+<li>CloudWatch: Captures system execution logs.</li>
+<li>CloudTrail: Records AWS API calls.</li>
+<li>DynamoDB: Stores session metadata.</li>
+</ul>
+</li>
+<li><strong>Applying a Serverless Architecture for Operational Optimization:</strong> The system is built entirely on a serverless architecture using services such as AWS Lambda, API Gateway and DynamoDB, which provides:
+<ul>
+<li>Automatic scaling based on usage demand.</li>
+<li>No need for server infrastructure management.</li>
+<li>Optimized operational costs through a pay-per-use model.</li>
+<li>Improved system reliability and availability.</li>
+</ul>
+</li>
+</ul>
+<h3 id="architecture-comparison">Architecture Comparison</h3>
+<table>
+<thead>
+<tr>
+<th>Criteria</th>
+<th style="text-align:center">Direct Assignment (v1.0)</th>
+<th style="text-align:center">Group-Based Access (v2.0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Access Provisioning Mechanism</strong></td>
+<td style="text-align:center">Directly assign users to accounts</td>
+<td style="text-align:center">Add users to pre-assigned access groups</td>
+</tr>
+<tr>
+<td><strong>Provisioning Time</strong></td>
+<td style="text-align:center">15-30 seconds (asynchronous operation)</td>
+<td style="text-align:center">&lt; 5 seconds (synchronous operation, near real-time)</td>
+</tr>
+<tr>
+<td><strong>Access Revocation Time</strong></td>
+<td style="text-align:center">Up to 12 hours</td>
+<td style="text-align:center">Within 60 seconds</td>
+</tr>
+<tr>
+<td><strong>Credential Validity After Revocation</strong></td>
+<td style="text-align:center">Credentials may remain valid for a period of time</td>
+<td style="text-align:center">Credentials are invalidated almost immediately</td>
+</tr>
+<tr>
+<td><strong>Operational Complexity</strong></td>
+<td style="text-align:center">High - requires creating/removing assignments each time</td>
+<td style="text-align:center">Low - only group membership management is required</td>
+</tr>
+<tr>
+<td><strong>Scalability</strong></td>
+<td style="text-align:center">Limited as the number of users increases</td>
+<td style="text-align:center">Easily scalable through reusable groups</td>
+</tr>
+<tr>
+<td><strong>Security Incident Response</strong></td>
+<td style="text-align:center">Slow and difficult to control</td>
+<td style="text-align:center">Fast, supports bulk revocation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solution-architecture">Solution Architecture</h2>
+<h3 id="system-architecture-diagram">System Architecture Diagram</h3>
+<img src="/images/figure-proposal.png" alt="figure-proposal" style="width:600px !important; max-width:900px !important;">
+<p style="text-align:center; font-style:italic;">Figure 1. Production Access Request Portal System Architecture Diagram</p>
+<h3 id="aws-services-used">AWS Services Used</h3>
+<table>
+<thead>
+<tr>
+<th>AWS Service</th>
+<th>Role in the System</th>
+<th>Reason for Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AWS Lambda</strong></td>
+<td>Handles the entire business logic of the system, including access provisioning, revocation, email approval processing and automatic expiry handling.</td>
+<td>The serverless architecture eliminates the need for server management, provides auto scaling, offers low operational costs based on execution (pay-per-use) and is well suited for event-driven workloads.</td>
+</tr>
+<tr>
+<td><strong>Amazon API Gateway</strong></td>
+<td>Provides REST API endpoints to receive webhooks from Jira.</td>
+<td>A managed API service that supports authentication, throttling, rate limiting, usage plans and native integration with Lambda.</td>
+</tr>
+<tr>
+<td><strong>AWS IAM Identity Center</strong></td>
+<td>Manages AWS access permissions through Permission Sets, Access Groups and Group Memberships. Enables fast access provisioning and revocation using a group-based approach.</td>
+<td>It is AWS’s official SSO solution, supporting centralized access management and near real-time credential revocation (within 60 seconds).</td>
+</tr>
+<tr>
+<td><strong>Amazon DynamoDB</strong></td>
+<td>Stores session metadata (Sessions Table) and approval tokens (Approval Tokens Table), while supporting TTL auto-expiry and triggering revoke workflows through DynamoDB Streams.</td>
+<td>A low-latency serverless NoSQL database that supports TTL auto-expiry and DynamoDB Streams.</td>
+</tr>
+<tr>
+<td><strong>AWS Secrets Manager</strong></td>
+<td>Securely stores Jira credentials, webhook API keys, token secrets and access group mappings.</td>
+<td>Provides better security than hardcoded secrets or configuration files, with encryption at rest and automatic rotation support.</td>
+</tr>
+<tr>
+<td><strong>Amazon SES</strong></td>
+<td>Sends approval emails, access provisioning notifications and access revocation notifications.</td>
+<td>Low cost and easy integration with Lambda.</td>
+</tr>
+<tr>
+<td><strong>Amazon CloudWatch</strong></td>
+<td>Provides logging (structured JSON logs), monitoring metrics and alarms for Lambda, API Gateway, DynamoDB and other services.</td>
+<td>Native integration with Lambda and other AWS services.</td>
+</tr>
+<tr>
+<td><strong>AWS CloudTrail</strong></td>
+<td>Records audit trails for all API calls related to Identity Center, Lambda and access provisioning operations.</td>
+<td>Helps satisfy compliance requirements by ensuring complete auditability.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="system-components">System Components</h3>
+<p>The Production Access Request Portal system is organized using a multi-layered architecture, where each component serves a specific responsibility while closely coordinating with others to create a fully automated, controlled and auditable Production access provisioning workflow. From a logical perspective, the system consists of the following major component groups: the request interface layer (Jira Service Management), the API ingestion layer, the business logic processing layer using AWS Lambda, the data storage layer, the identity and access management layer, the notification layer and the monitoring/operations layer. This design aligns with the serverless architecture described in the documentation while also supporting the Group-Based Access mechanism for near real-time access provisioning and revocation.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Main Function</th>
+<th>Role in the Processing Flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jira Service Management Portal</strong></td>
+<td>Receives access requests from users, displays request status and manages the approval workflow</td>
+<td>Starting point of the entire process</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>Receives webhooks from Jira, validates requests and forwards them to Lambda</td>
+<td>Entry point of the serverless backend</td>
+</tr>
+<tr>
+<td><strong>Lambda Executor</strong></td>
+<td>Handles access provisioning after requests are approved</td>
+<td>Executes the core access provisioning logic</td>
+</tr>
+<tr>
+<td><strong>Lambda Email Approval</strong></td>
+<td>Generates approval emails and processes approve/decline actions from email</td>
+<td>Supports flexible approval through email</td>
+</tr>
+<tr>
+<td><strong>Lambda Expiry</strong></td>
+<td>Monitors expired sessions and automatically revokes access permissions</td>
+<td>Ensures access permissions only exist within the allowed duration</td>
+</tr>
+<tr>
+<td><strong>DynamoDB</strong></td>
+<td>Stores sessions, approval tokens, TTL values and metadata for revocation workflows</td>
+<td>State storage layer of the system</td>
+</tr>
+<tr>
+<td><strong>Secrets Manager</strong></td>
+<td>Stores secrets, group mappings, token secrets and Jira credentials</td>
+<td>Protects sensitive information</td>
+</tr>
+<tr>
+<td><strong>IAM Identity Center</strong></td>
+<td>Manages permission sets, access groups and group memberships</td>
+<td>Core component for provisioning and revoking access permissions</td>
+</tr>
+<tr>
+<td><strong>Amazon SES</strong></td>
+<td>Sends approval emails, notifications and expiry alerts</td>
+<td>Communication channel for approvers and requesters</td>
+</tr>
+<tr>
+<td><strong>CloudWatch/CloudTrail</strong></td>
+<td>Provides logs, metrics and audit trails</td>
+<td>Supports monitoring, traceability and compliance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operational-workflow">Operational Workflow</h3>
+<p>The operational workflow of the Production Access Request Portal is designed as an end-to-end automation model, starting from the moment a user submits a request through Jira Service Management until access permissions are granted, monitored for expiration and automatically revoked once they expire. The entire lifecycle of each request is fully recorded in Jira, DynamoDB, CloudWatch and CloudTrail to ensure auditability and traceability.</p>
+<h4 id="standard-grant-flow">Standard Grant Flow</h4>
+<p>The standard access provisioning process is triggered when an End User submits a Production access request through the Jira Service Management Portal. Once the request is created, the Jira workflow transitions the request into the approval waiting state and simultaneously triggers a webhook to AWS API Gateway to initiate the provisioning process. Lambda Executor is the component responsible for handling the main access provisioning logic, including webhook validation, mapping lookup, adding users to groups and storing session information in DynamoDB.</p>
+<p>The standard processing flow is as follows:</p>
+<ol>
+<li><strong>User submits an access request:</strong><br>
+The End User fills out a request form on the Jira Service Management Portal with details such as the target account, access type and desired access duration.</li>
+<li><strong>Jira transitions the request to the approval state:</strong><br>
+Jira creates a ticket and triggers an automation rule to send a webhook request to the backend system.</li>
+<li><strong>API Gateway receives the webhook:</strong><br>
+API Gateway receives the request from Jira, validates the API key and forwards the payload to Lambda Executor.</li>
+<li><strong>Lambda Executor validates and processes the request:</strong><br>
+Lambda validates the payload, verifies the webhook signature, retrieves the required data and maps the requested duration into a standardized duration tier.</li>
+<li><strong>Lookup the corresponding access group:</strong><br>
+The system uses Secrets Manager to retrieve the mapping between the AWS account, access type and duration tier, then determines the appropriate access group within IAM Identity Center. This approach aligns with the Group-Based Access model described in the documentation.</li>
+<li><strong>Add the user to the access group:</strong><br>
+Lambda Executor calls the Identity Center API to create a group membership for the user. Once the membership is successfully created, the corresponding access permissions are granted almost immediately.</li>
+<li><strong>Store the session in DynamoDB:</strong><br>
+A session record is created in the AccessSessions table, containing information such as the request ID, requester, group ID, membership ID, provisioning time and expiration time. A TTL value is configured to trigger the automatic revocation workflow.</li>
+<li><strong>Update the status in Jira:</strong><br>
+The Jira ticket is transitioned to the Approved state and serves as the primary tracking source for both users and approvers.</li>
+<li><strong>Send notification email to the requester:</strong><br>
+The system sends an email notification indicating that access has been successfully granted, along with the required information to access the IAM Identity Center Portal.</li>
+<li><strong>User logs in and uses temporary access:</strong><br>
+The End User logs into the Identity Center Portal to use AWS access permissions within the approved time duration.</li>
+</ol>
+<h4 id="email-approval-flow">Email Approval Flow</h4>
+<p>In addition to direct approval through Jira, the system also supports email-based approvals to provide greater flexibility for Approvers. When a new request is created, Jira automation can invoke the Lambda Email Approval function to generate emails containing Approve/Decline links. This process uses HMAC-SHA256 signed tokens with a 24-hour expiration time and single-use validation to minimize the risk of forgery or replay attacks.</p>
+<p>The processing flow is as follows:</p>
+<ol>
+<li><strong>Jira triggers the email approval request:</strong> When a request enters the pending approval state, Jira calls the <code>/email-approval/request</code> endpoint.</li>
+<li><strong>Lambda generates a secure approval token:</strong> The token is generated from <code>token_id</code>, <code>expiry_timestamp</code> and <code>hmac_signature</code>, then its metadata is stored in the Approval Tokens table within DynamoDB.</li>
+<li><strong>Send email to the Approver:</strong> Lambda renders an HTML email containing <code>Approve</code> and <code>Decline</code> buttons and sends it through Amazon SES.</li>
+<li><strong>Approver selects an action:</strong> When the approver clicks one of the buttons, the request is sent to the <code>/email-approval/action</code> endpoint.</li>
+<li><strong>The system validates the token:</strong> Lambda verifies the HMAC signature, expiration status and <code>used</code> flag stored in DynamoDB. If the token is valid, the system marks the token as used.</li>
+<li><strong>Update the result back to Jira:</strong> Lambda calls the Jira Service Desk Approval API to update the request status as approved or declined.</li>
+<li><strong>Return a confirmation page:</strong> The system displays a confirmation page for the Approver and simultaneously records logs for auditing purposes.</li>
+</ol>
+<h4 id="auto-expiry-and-access-revocation-flow">Auto Expiry and Access Revocation Flow</h4>
+<p>When a session reaches its expiration time, DynamoDB TTL automatically removes the session record. This deletion event is published through DynamoDB Streams and triggers Lambda Expiry to revoke the associated permissions. This mechanism is the key component that enables the system to revoke credentials within approximately 60 seconds.</p>
+<p>The processing flow is as follows:</p>
+<ol>
+<li><strong>DynamoDB TTL removes expired sessions:</strong> When the session <code>ttl</code> value expires, DynamoDB automatically deletes the record.</li>
+<li><strong>DynamoDB Streams generates a REMOVE event:</strong> Lambda Expiry receives the deletion event from the stream and determines that it is a valid expiration event.</li>
+<li><strong>Identify the membership to revoke:</strong> Lambda reads the old session data to retrieve the corresponding <code>membership_id</code> and group name.</li>
+<li><strong>Remove the user from the access group:</strong> The system calls <code>DeleteGroupMembership</code> in IAM Identity Center to revoke the user’s access permissions.</li>
+<li><strong>Credentials become invalidated:</strong> Once the membership is removed, the user’s credentials become invalid within a very short period, achieving near real-time revocation.</li>
+<li><strong>Update Jira and send notifications:</strong> The Jira ticket is transitioned to the Expired state and the requester receives an email notification indicating that the access has expired.</li>
+</ol>
+<h4 id="emergency-revocation-flow">Emergency Revocation Flow</h4>
+<p>In emergency situations such as credential leaks, suspicious activities, or security team requests, the system supports an emergency revocation mechanism that can remove all access permissions of a user within a short period of time. Lambda can enumerate all group memberships associated with the user and remove them to invalidate all active sessions.</p>
+<p>The process includes the following steps:</p>
+<ol>
+<li><strong>Trigger an emergency revocation request:</strong> An operator or monitoring system submits an immediate revocation request.</li>
+<li><strong>Retrieve all user memberships:</strong> Lambda retrieves all group memberships associated with the user in IAM Identity Center.</li>
+<li><strong>Remove the user from all groups:</strong> All memberships related to the user are deleted to ensure that no active access permissions remain.</li>
+<li><strong>Record the revocation event:</strong> The system updates the status in DynamoDB, writes logs to CloudWatch and stores audit records for traceability purposes.</li>
+</ol>
+<h4 id="operational-principles-and-exception-handling">Operational Principles and Exception Handling</h4>
+<p>To ensure stable system operation, the following principles are consistently applied throughout the workflow:</p>
+<ul>
+<li><strong>No access is granted unless all conditions are satisfied:</strong> Requests are processed only when the webhook is valid, the approver is authorized and the corresponding group mapping exists.</li>
+<li><strong>Each request can only have one final state:</strong> Approved, Declined, Expired, or Revoked.</li>
+<li><strong>Email tokens are single-use only:</strong> Prevents reopening old links to perform unintended actions.</li>
+<li><strong>All errors must be logged:</strong> Authentication failures, API errors and provisioning failures must be recorded for investigation purposes.</li>
+<li><strong>Fail-safe is prioritized:</strong> If the system cannot determine a valid state, access permissions will not be granted.</li>
+</ul>
+<h2 id="roadmap--implementation-milestones">Roadmap &amp; Implementation Milestones</h2>
+<h3 id="phase-1-requirements-analysis-and-solution-design-weeks-2-4">Phase 1: Requirements Analysis and Solution Design (Weeks 2-4)</h3>
+<p>The objective of this phase is to clearly define the system scope, business requirements, access control model and overall architecture design.</p>
+<p>Main tasks:</p>
+<ul>
+<li>Gather requirements from stakeholders (DevOps, Security, Engineering).</li>
+<li>Identify the list of AWS Accounts to be managed.</li>
+<li>Build the access control matrix (ReadOnly, PowerUser, Admin).</li>
+<li>Define standard duration tiers.</li>
+<li>Design the Jira Service Management workflow.</li>
+<li>Design the system architecture diagram.</li>
+<li>Design the DynamoDB data model.</li>
+</ul>
+<p><strong>Milestone 1 - Architecture Approved</strong></p>
+<h3 id="phase-2-foundation-infrastructure-deployment-weeks-5-6">Phase 2: Foundation Infrastructure Deployment (Weeks 5-6)</h3>
+<p>The objective of this phase is to deploy the entire AWS infrastructure using Terraform to establish the foundation for the system.</p>
+<p>Main tasks:</p>
+<ul>
+<li>Build Terraform modules: API Gateway, Lambda Functions, DynamoDB Tables, IAM Roles, Secrets Manager, SES Configuration.</li>
+<li>Create Permission Sets in IAM Identity Center.</li>
+<li>Create Access Groups for each account.</li>
+<li>Configure Group Assignments.</li>
+<li>Set up Terraform Backend (S3 + DynamoDB Lock).</li>
+</ul>
+<p><strong>Milestone 2 - Infrastructure Ready</strong></p>
+<h3 id="phase-3-system-business-logic-development-weeks-78">Phase 3: System Business Logic Development (Weeks 7–8)</h3>
+<p>This phase focuses on developing the core business logic of the system.</p>
+<p>Main tasks:</p>
+<ul>
+<li>Develop Lambda Executor.</li>
+<li>Develop Lambda Email Approval.</li>
+<li>Develop Lambda Expiry.</li>
+<li>Build shared Lambda Layer.</li>
+<li>Integrate Jira APIs.</li>
+<li>Integrate IAM Identity Center APIs.</li>
+<li>Integrate Amazon SES.</li>
+<li>Implement structured logging.</li>
+<li>Integrate Secrets Manager cache.</li>
+</ul>
+<p><strong>Milestone 3 - Core Features Completed</strong></p>
+<h3 id="phase-4-testing-and-user-acceptance-weeks-9-10">Phase 4: Testing and User Acceptance (Weeks 9-10)</h3>
+<p>This phase focuses on validating system stability, security and operational readiness in real-world scenarios.</p>
+<p>Main tasks:</p>
+<ul>
+<li>Unit Testing for Lambda functions.</li>
+<li>Integration Testing for the entire workflow.</li>
+<li>Security Testing: API authentication, webhook signature validation, token replay prevention.</li>
+<li>Load Testing for API Gateway.</li>
+<li>TTL Expiry Testing.</li>
+<li>Emergency Revocation Testing.</li>
+</ul>
+<p><strong>Milestone 4 - UAT Passed</strong></p>
+<h3 id="phase-5-production-deployment-and-operational-handover-week-11">Phase 5: Production Deployment and Operational Handover (Week 11)</h3>
+<p>The final phase focuses on deploying the system into the production environment and handing it over for operation.</p>
+<p>Main tasks:</p>
+<ul>
+<li>Deploy the Production environment.</li>
+<li>Verify all resources.</li>
+<li>Populate Access Group Mapping.</li>
+<li>Verify Jira webhook integration.</li>
+<li>Verify SES production mode.</li>
+<li>Configure CloudWatch alarms.</li>
+<li>Set up monitoring dashboards.</li>
+</ul>
+<p><strong>Milestone 5 - Production Go-Live</strong></p>
+<h3 id="overall-implementation-plan">Overall Implementation Plan</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Timeline</th>
+<th>Deliverables</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analysis &amp; Design</td>
+<td>Weeks 2-4</td>
+<td>Architecture, workflow, data model</td>
+<td>Architecture Approved</td>
+</tr>
+<tr>
+<td>Infrastructure Deployment</td>
+<td>Weeks 5-6</td>
+<td>Terraform infrastructure</td>
+<td>Infrastructure Ready</td>
+</tr>
+<tr>
+<td>Business Logic Development</td>
+<td>Weeks 7-8</td>
+<td>Lambda functions, API integration</td>
+<td>Core Features Completed</td>
+</tr>
+<tr>
+<td>Testing &amp; User Acceptance</td>
+<td>Weeks 9-10</td>
+<td>Testing reports, UAT</td>
+<td>UAT Passed</td>
+</tr>
+<tr>
+<td>Production Deployment</td>
+<td>Week 11</td>
+<td>Production system live</td>
+<td>Production Go-Live</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-deployment-expansion-plan">Post-Deployment Expansion Plan</h3>
+<p>After the system is deployed and operating stably, future improvements may include:</p>
+<ul>
+<li>Support for Slack Approval Workflow.</li>
+<li>Real-time dashboard for monitoring active sessions.</li>
+<li>SIEM integration for the Security Team.</li>
+<li>Risk-based Access Approval.</li>
+<li>Machine Learning anomaly detection for access patterns.</li>
+<li>Multi-region deployment to improve high availability.</li>
+</ul>
+<h2 id="budget-estimation">Budget Estimation</h2>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Pricing</th>
+<th>Assumptions</th>
+<th>Estimated Monthly Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AWS Lambda</strong></td>
+<td>$0.2/million requests and $0.0000166667 per GB-second duration</td>
+<td>Approximately 3000 invocations, 256 MB memory, average execution time around 5 seconds</td>
+<td>~ $0.06</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>$3.5/million requests</td>
+<td>Approximately 2000 requests</td>
+<td>~ $0.01</td>
+</tr>
+<tr>
+<td><strong>DynamoDB</strong></td>
+<td>On-demand pricing</td>
+<td>Approximately 4000 writes and 2000 reads</td>
+<td>~ $0.01</td>
+</tr>
+<tr>
+<td><strong>Secrets Manager</strong></td>
+<td>$0.4/secret/month and $0.05/10000 API calls</td>
+<td>4 secrets, approximately 10000 API calls</td>
+<td>~ $1.6</td>
+</tr>
+<tr>
+<td><strong>Amazon SES</strong></td>
+<td>$0.1/1000 emails</td>
+<td>Approximately 2000 emails (grant + expiry)</td>
+<td>~ $0.02</td>
+</tr>
+<tr>
+<td><strong>CloudWatch Logs</strong></td>
+<td>$0.5/GB ingested</td>
+<td>Approximately 0.5 GB log ingestion</td>
+<td>~ $0.25</td>
+</tr>
+<tr>
+<td><strong>S3 (Terraform State)</strong></td>
+<td>$0.023/GB</td>
+<td>Less than 1 MB</td>
+<td>~ $0.00</td>
+</tr>
+</tbody>
+</table>
+<p>The total estimated cost for the entire system is approximately <strong>~$2/month</strong>.</p>
+<h2 id="risk-assessment">Risk Assessment</h2>
+<p>Although the Production Access Request Portal is built on a serverless architecture with multiple security layers and automation mechanisms, the system still contains potential risks related to external service dependencies, operational failures, configuration issues, or security incidents. Conducting a risk assessment helps proactively establish mitigation strategies and ensure system availability in the Production environment.</p>
+<h3 id="risk-assessment-matrix">Risk Assessment Matrix</h3>
+<p>The risks are evaluated based on three main criteria: likelihood of occurrence, level of impact and priority level for mitigation.</p>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Description</th>
+<th style="text-align:center">Likelihood</th>
+<th style="text-align:center">Impact Level</th>
+<th style="text-align:center">Mitigation Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jira Service Management outage</td>
+<td>Unable to create new requests or update approval status</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>AWS IAM Identity Center failure or service degradation</td>
+<td>Unable to grant or revoke access permissions</td>
+<td style="text-align:center">Low</td>
+<td style="text-align:center">Very High</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>DynamoDB TTL processing delay</td>
+<td>Sessions expire but are not revoked at the expected time</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>Lambda function runtime failure</td>
+<td>Provisioning or expiry workflows are interrupted</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>SES email delivery failure</td>
+<td>Approvers or requesters do not receive notifications</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">Medium</td>
+</tr>
+<tr>
+<td>Secrets Manager unavailable</td>
+<td>Lambda cannot retrieve secrets to process requests</td>
+<td style="text-align:center">Low</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">Medium</td>
+</tr>
+<tr>
+<td>Forged webhook or modified payload</td>
+<td>Could lead to unauthorized provisioning if validation fails</td>
+<td style="text-align:center">Low</td>
+<td style="text-align:center">Very High</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>Incorrect access group mapping configuration</td>
+<td>Users may receive incorrect permissions or access to the wrong account</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">High</td>
+<td style="text-align:center">High</td>
+</tr>
+<tr>
+<td>CloudWatch logging failure or missing logs</td>
+<td>Loss of investigation capability or incomplete audit trail</td>
+<td style="text-align:center">Low</td>
+<td style="text-align:center">Medium</td>
+<td style="text-align:center">Medium</td>
+</tr>
+<tr>
+<td>Emergency revoke failure</td>
+<td>Unable to revoke access immediately during a security incident</td>
+<td style="text-align:center">Low</td>
+<td style="text-align:center">Very High</td>
+<td style="text-align:center">High</td>
+</tr>
+</tbody>
+</table>
+<h3 id="incident-response-plan">Incident Response Plan</h3>
+<p>To minimize risks when incidents occur, the system should have clear operational runbooks.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Immediate Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lambda provisioning failure</td>
+<td>Retry or manually trigger the workflow</td>
+</tr>
+<tr>
+<td>Identity Center API failure</td>
+<td>Retry and escalate to AWS Support</td>
+</tr>
+<tr>
+<td>SES failure</td>
+<td>Retry email delivery or use Jira UI approval</td>
+</tr>
+<tr>
+<td>TTL revoke failure</td>
+<td>Perform manual revoke through an operator</td>
+</tr>
+<tr>
+<td>Security incident</td>
+<td>Emergency revoke all active sessions</td>
+</tr>
+<tr>
+<td>Webhook authentication failure</td>
+<td>Reject the request and alert the Security Team</td>
+</tr>
+</tbody>
+</table>
+<h2 id="expected-outcomes">Expected Outcomes</h2>
+<ul>
+<li><strong>Standardize and automate the access provisioning process:</strong> The system fully replaces the manual access provisioning workflow with an automated, standardized and end-to-end controllable process. From request submission, approval, access provisioning, to revocation, every step is orchestrated through Jira Service Management, AWS Lambda and IAM Identity Center. This significantly reduces processing time and minimizes human errors.</li>
+<li><strong>Enhance Production environment security:</strong> By adopting the Just-in-Time Access, Zero Standing Privileges and Group-Based Access models, the system grants access only for the required duration and automatically revokes it upon expiration. This minimizes the risk of long-lived credentials while improving the protection of the Production environment against credential leakage or access abuse.</li>
+<li><strong>Reduce access provisioning and revocation time:</strong> Compared to the previous Direct Assignment architecture, the new version is expected to reduce provisioning time to under 5 seconds and revoke access within approximately 60 seconds after TTL expiration. This enables engineering teams to gain access more quickly when handling incidents, while allowing the security team to revoke permissions almost instantly when risks are detected.</li>
+<li><strong>Improve auditability and traceability:</strong> All system activities are recorded through Jira, CloudWatch, CloudTrail and DynamoDB, creating a complete audit trail for events such as request submission, approval, provisioning, expiration and revocation. This serves as a critical foundation for compliance requirements, auditing processes and security incident investigations.</li>
+<li><strong>Optimize operational costs and maintenance effort:</strong> With a serverless architecture on AWS, the system requires no server management, automatically scales based on demand and incurs costs only according to actual usage. This reduces the operational burden on the DevOps team while maintaining low deployment costs suitable for organizational needs.</li>
+<li><strong>Improve user experience and approval workflow:</strong> Users can submit access requests through the Jira Portal and receive clear email notifications throughout the request lifecycle. Approvers can also process requests more efficiently via the Jira UI or email approval links, making the workflow more flexible, transparent and convenient for both requesters and approvers.</li>
+<li><strong>Enable future scalability:</strong> The modular design and Infrastructure as Code approach allow the system to scale easily across multiple AWS accounts, support new access types, or integrate additional approval channels such as Slack without requiring major architectural changes.</li>
+</ul>
+<p>In summary, the project is expected to deliver a modern, secure and highly scalable Production access management platform that effectively balances security, processing speed, auditability and operational cost.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/1-worklog/week-12/" title="Worklog Week 12"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/3-translate-blog/" title="Translated Blogs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203515"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203515"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203515"></script>
+    <script src="/js/jquery.sticky.js?1779203515"></script>
+    <script src="/js/featherlight.min.js?1779203515"></script>
+    <script src="/js/highlight.pack.js?1779203515"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203515"></script>
+    <script src="/js/learn.js?1779203515"></script>
+    <script src="/js/hugo-learn.js?1779203515"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203515"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

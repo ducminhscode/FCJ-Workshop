@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Blog 2 :: Báo cáo thực tập</title>
+
+    
+    <link href="/css/nucleus.css?1779203512" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203512" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203512" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203512" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203512" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203512" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203512" rel="stylesheet">
+    <link href="/css/theme.css?1779203512" rel="stylesheet">
+    <link href="/css/tabs.css?1779203512" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203512" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203512" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203512"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/vi/3-translate-blog/blog-2/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203512"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203512"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203512"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/" title="Nhật ký công việc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/">
+          <b> 1. </b>Nhật ký công việc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-1/" title="Worklog tuần 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog tuần 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-2/" title="Worklog tuần 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog tuần 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-3/" title="Worklog tuần 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog tuần 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-4/" title="Worklog tuần 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog tuần 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-5/" title="Worklog tuần 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog tuần 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-6/" title="Worklog tuần 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog tuần 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-7/" title="Worklog tuần 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog tuần 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-8/" title="Worklog tuần 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog tuần 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-9/" title="Worklog tuần 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog tuần 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-10/" title="Worklog tuần 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog tuần 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-11/" title="Worklog tuần 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog tuần 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-12/" title="Worklog tuần 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog tuần 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-proposal/" title="Bản đề xuất dự án" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/2-proposal/">
+          <b> 2. </b>Bản đề xuất dự án
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/" title="Các blog đã dịch" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/">
+          <b> 3. </b>Các blog đã dịch
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/" title="Các event đã tham gia" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/">
+          <b> 4. </b>Các event đã tham gia
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/1-introduction/" title="Giới thiệu" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/1-introduction/">
+          <b> 5.1 </b>Giới thiệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/" title="Chuẩn bị tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/">
+          <b> 5.2 </b>Chuẩn bị tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.1-activate-identity-center/" title="Kích hoạt Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Kích hoạt Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.2-create-permission-sets/" title="Tạo Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Tạo Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.3-create-access-group/" title="Tạo Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Tạo Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.4-create-group-assignments/" title="Tạo Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Tạo Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Tạo các bảng DynamoDB" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Tạo các bảng DynamoDB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="Bảng AccessSessions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>Bảng AccessSessions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="Bảng ProvisionAccess" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>Bảng ProvisionAccess
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Tạo Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Tạo Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Tạo Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Tạo Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies cho Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies cho Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Tạo Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Tạo Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Tạo Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Tạo Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Thiết lập API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Thiết lập API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Kết nối DynamoDB Stream đến Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Kết nối DynamoDB Stream đến Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Thiết lập CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Thiết lập CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.15-setup-jira/" title="Thiết lập Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Thiết lập Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/3-test-connection/" title="Kiểm tra kết nối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Kiểm tra kết nối
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/4-product-demonstration/" title="Demo sản phẩm" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Demo sản phẩm
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/5-clean-up-resources/" title="Dọn dẹp tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-self-rating/" title="Tự đánh giá" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/6-self-rating/">
+          <b> 6. </b>Tự đánh giá
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-feedback/" title="Chia sẻ, đóng góp ý kiến" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/7-feedback/">
+          <b> 7. </b>Chia sẻ, đóng góp ý kiến
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/3-translate-blog/blog-2/" selected>Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/3-translate-blog/blog-2/">English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/vi/'>Báo cáo thực tập</a> > <a href='/vi/3-translate-blog/'>Các blog đã dịch</a> > Blog 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tóm-tắt">Tóm tắt</a></li>
+    <li><a href="#mục-lục">Mục lục</a></li>
+    <li><a href="#giới-thiệu">Giới thiệu</a></li>
+    <li><a href="#tổng-quan">Tổng quan</a></li>
+    <li><a href="#kịch-bản-ví-dụ">Kịch bản ví dụ</a></li>
+    <li><a href="#bắt-đầu-với-lambda-tenant-isolation-mode">Bắt đầu với Lambda Tenant Isolation Mode</a></li>
+    <li><a href="#tích-hợp-với-amazon-api-gateway">Tích hợp với Amazon API Gateway</a></li>
+    <li><a href="#khả-năng-quan-sát-observability">Khả năng quan sát (Observability)</a></li>
+    <li><a href="#các-lưu-ý">Các lưu ý</a></li>
+    <li><a href="#best-practices">Best practices</a></li>
+    <li><a href="#code-mẫu">Code mẫu</a></li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+    <li><a href="#đóng-góp-và-feedback">Đóng góp và Feedback</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 2
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="xây-dựng-ứng-dụng-multi-tenant-saas-với-chế-độ-tenant-isolation-mới-của-aws-lambda">Xây dựng ứng dụng multi-tenant SaaS với chế độ tenant isolation mới của AWS Lambda</h1>
+<p><strong>Bài viết gốc:</strong> <a href="https://aws.amazon.com/vi/blogs/compute/building-multi-tenant-saas-applications-with-aws-lambdas-new-tenant-isolation-mode/">Xây dựng ứng dụng multi-tenant SaaS với chế độ tenant isolation mới của AWS Lambda</a></p>
+<p><strong>Tác giả:</strong> Anton Aleksandrov (Principal Solutions Architect, Amazon Web Services) và Ayush Kulkarni</p>
+<p><strong>Ngày xuất bản:</strong> 20/11/2025</p>
+<p><strong>Nguồn:</strong> AWS Compute Blog</p>
+<p><strong>Người dịch:</strong> Trần Nguyễn Đức Minh - FCAJ Intern</p>
+<p><strong>Ngày dịch:</strong> 18/03/2026</p>
+<p><strong>Thời gian đọc:</strong> 30 phút</p>
+<h2 id="tóm-tắt">Tóm tắt</h2>
+<p>Bài viết giới thiệu một tính năng mới của AWS Lambda gọi là tenant isolation mode, giúp đơn giản hóa việc xây dựng các ứng dụng multi-tenant SaaS trên kiến trúc serverless. Trước đây, để đảm bảo cách ly giữa các tenant, developers thường phải tự triển khai logic trong code hoặc tạo riêng một Lambda function cho mỗi tenant, dẫn đến độ phức tạp và chi phí vận hành cao.</p>
+<p>Với tenant isolation mode, AWS Lambda cho phép tách biệt execution environment theo từng tenant, ngay cả khi tất cả cùng sử dụng một function. Khi gọi Lambda, hệ thống sử dụng tenant ID để định tuyến request đến đúng môi trường thực thi, đảm bảo rằng dữ liệu và trạng thái của mỗi tenant không bị chia sẻ với tenant khác.</p>
+<p>Giải pháp này giúp tăng cường bảo mật và đơn giản hóa kiến trúc, đồng thời vẫn tận dụng được khả năng tái sử dụng môi trường (warm start) cho từng tenant. Tuy nhiên, nó cũng đi kèm một số trade-offs như tăng số lượng cold start và chi phí do cần nhiều execution environments hơn.</p>
+<p>Nhìn chung, tenant isolation mode giúp AWS Lambda trở thành một lựa chọn hiệu quả hơn cho các hệ thống SaaS yêu cầu mức độ cách ly cao giữa các tenant.</p>
+<p><strong>Đối tượng đọc:</strong> Cloud engineers, backend developers và solution architects đang xây dựng hoặc thiết kế các hệ thống SaaS multi-tenant trên AWS, đặc biệt là những người làm việc với kiến trúc serverless</p>
+<p><strong>Độ khó:</strong> Intermediate</p>
+<p><strong>Tags:</strong> AWS Lambda, Serverless, Multi-tenant SaaS, Tenant Isolation, Cloud Architecture, Security, Scalability</p>
+<h2 id="mục-lục">Mục lục</h2>
+<ul>
+<li><a href="#x%C3%A2y-d%E1%BB%B1ng-%E1%BB%A9ng-d%E1%BB%A5ng-multi-tenant-saas-v%E1%BB%9Bi-ch%E1%BA%BF-%C4%91%E1%BB%99-tenant-isolation-m%E1%BB%9Bi-c%E1%BB%A7a-aws-lambda">Xây dựng ứng dụng multi-tenant SaaS với chế độ tenant isolation mới của AWS Lambda</a>
+<ul>
+<li><a href="#t%C3%B3m-t%E1%BA%AFt">Tóm tắt</a></li>
+<li><a href="#m%E1%BB%A5c-l%E1%BB%A5c">Mục lục</a></li>
+<li><a href="#gi%E1%BB%9Bi-thi%E1%BB%87u">Giới thiệu</a></li>
+<li><a href="#t%E1%BB%95ng-quan">Tổng quan</a></li>
+<li><a href="#k%E1%BB%8Bch-b%E1%BA%A3n-v%C3%AD-d%E1%BB%A5">Kịch bản ví dụ</a></li>
+<li><a href="#b%E1%BA%AFt-%C4%91%E1%BA%A7u-v%E1%BB%9Bi-lambda-tenant-isolation-mode">Bắt đầu với Lambda Tenant Isolation Mode</a></li>
+<li><a href="#t%C3%ADch-h%E1%BB%A3p-v%E1%BB%9Bi-amazon-api-gateway">Tích hợp với Amazon API Gateway</a></li>
+<li><a href="#kh%E1%BA%A3-n%C4%83ng-quan-s%C3%A1t-observability">Khả năng quan sát (Observability)</a></li>
+<li><a href="#c%C3%A1c-l%C6%B0u-%C3%BD">Các lưu ý</a></li>
+<li><a href="#best-practices">Best practices</a></li>
+<li><a href="#code-m%E1%BA%ABu">Code mẫu</a></li>
+<li><a href="#k%E1%BA%BFt-lu%E1%BA%ADn">Kết luận</a></li>
+<li><a href="#%C4%91%C3%B3ng-g%C3%B3p-v%C3%A0-feedback">Đóng góp và Feedback</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="giới-thiệu">Giới thiệu</h2>
+<p>Hôm nay, AWS đã công bố một chế độ cô lập tenant (tenant isolation mode) mới cho <a href="https://aws.amazon.com/vi/lambda/">AWS Lambda</a>, cho phép bạn xử lý các lần gọi hàm (function invocations) trong các môi trường thực thi (execution environments) riêng biệt cho từng end-user hoặc tenant của ứng dụng khi họ invoke Lambda function. Khả năng này giúp đơn giản hóa việc xây dựng các ứng dụng SaaS multi-tenant bảo mật bằng cách AWS tự động quản lý việc cô lập môi trường compute ở cấp tenant (tenant-level isolation) và định tuyến request (request routing) cho bạn. Nhờ đó, bạn có thể tập trung vào business logic cốt lõi thay vì phải tự triển khai cơ chế cô lập môi trường compute theo tenant.</p>
+<h2 id="tổng-quan">Tổng quan</h2>
+<p>AWS Lambda chạy code function của bạn trong các execution environments bảo mật, sử dụng công nghệ <a href="https://firecracker-microvm.github.io/">Firecracker virtualization</a> để đảm bảo isolation. Các execution environment này không bao giờ chia sẻ hoặc tái sử dụng tài nguyên ảo (như vCPU, disk, hoặc memory) giữa các function, thậm chí giữa các version khác nhau của cùng một function. Tuy nhiên, Lambda có thể tái sử dụng execution environment cho nhiều lần invocation của cùng một version function. Điều này là do các environment này đã được thiết lập sẵn (fully initialized), từ đó giúp tăng tốc độ xử lý request (faster request processing) cho function của bạn.</p>
+<img src="/images/figure-1-blog-2.png" alt="figure-1-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 1. Các invocations được xử lý bởi một tập hợp các execution environments thuộc về một function duy nhất.</p>
+<p>Các ứng dụng SaaS multi-tenant xử lý dữ liệu nhạy cảm theo từng tenant, hoặc thực thi code được cung cấp động bởi tenant, thường yêu cầu mức độ isolation cao hơn - cụ thể là ở tenant level thay vì chỉ ở function level - nhằm đảm bảo thực thi code an toàn và giảm thiểu rủi ro truy cập dữ liệu chéo giữa các tenant (cross-tenant data access).</p>
+<p>Trước khi tính năng này được ra mắt, các developer thường phải tự triển khai các giải pháp custom, ví dụ như sử dụng SDK hoặc viết application logic để quản lý isolation ngay trong function code. Cách tiếp cận này dễ phát sinh lỗi (bug-prone), làm tăng khối lượng công việc cho team phát triển, và không đảm bảo isolation ở cấp compute environment.</p>
+<p>Một phương án khác là tạo function riêng cho từng tenant, đồng nghĩa với việc replicate cùng một code cho hàng trăm hoặc hàng nghìn tenant. Cách này cung cấp mức độ isolation mạnh hơn ở compute environment so với việc share environment giữa nhiều tenant trong cùng một function. Tuy nhiên, nó lại làm tăng implementation overhead và operational complexity, đặc biệt khi hệ thống scale để phục vụ số lượng tenant ngày càng lớn theo thời gian.</p>
+<img src="/images/figure-2-blog-2.png" alt="figure-2-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 2. Mô hình function-per-tenant, mỗi yêu cầu của tenant được xử lý bởi một hàm riêng biệt.</p>
+<p>Bắt đầu từ hôm nay, AWS Lambda cung cấp một tenant isolation mode mới, cho phép bạn cô lập các execution environments giữa các tenant khác nhau trong ứng dụng SaaS multi-tenant - ngay cả khi tất cả tenant đều invoke cùng một function. Khi bạn bật chế độ tenant isolation mới này, bạn sẽ truyền vào một tenant identifier trong mỗi lần function invocation. Lambda sẽ sử dụng identifier này để route request đến đúng execution environment tương ứng. Kết quả là, mỗi execution environment chỉ được reuse cho các invocation thuộc cùng một tenant. Điều này giúp bạn vẫn tận dụng được lợi ích hiệu năng của warm execution environments, đồng thời đảm bảo workload của từng tenant luôn được cô lập hoàn toàn (isolated).</p>
+<img src="/images/figure-3-blog-2.png" alt="figure-3-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 3. Với khả năng cô lập mới, Lambda tạo ra các môi trường thực thi riêng biệt cho từng tenant trong cùng một hàm.</p>
+<p>Đối với các tổ chức xử lý dữ liệu nhạy cảm theo từng tenant hoặc thực thi untrusted code được cung cấp động bởi end-user, chế độ tenant isolation mode mới của AWS Lambda mang lại lợi ích bảo mật từ việc tách biệt compute environment theo từng tenant, mà không phải chịu sự phức tạp trong vận hành khi phải quản lý function riêng lẻ hoặc infrastructure riêng cho từng tenant.</p>
+<h2 id="kịch-bản-ví-dụ">Kịch bản ví dụ</h2>
+<p>Hãy xem xét việc xây dựng một ứng dụng SaaS serverless multi-tenant. Để tối ưu hiệu năng, function handler của bạn có thể lấy các cấu hình và dữ liệu riêng theo từng tenant, sau đó cache chúng trong memory và tái sử dụng cho các lần invocation tiếp theo từ cùng tenant. Ví dụ, bạn có thể cache các thông tin như database location theo tenant, feature flags, hoặc business rules thường xuyên được truy cập trong quá trình xử lý request. Những dữ liệu này có thể được lưu trong runtime process của ứng dụng dưới dạng global variables hoặc dưới dạng file trong thư mục <code>/tmp</code>. Tuy nhiên, nếu execution environment bên dưới được dùng để phục vụ nhiều tenant khác nhau, cách tiếp cận này có thể dẫn đến rủi ro rò rỉ dữ liệu giữa các tenant (cross-tenant data exposure).</p>
+<p>Với tenant isolation mode, bạn có thể giải quyết vấn đề này bằng một kiến trúc và cấu hình đơn giản hơn nhiều. Tính năng built-in này của AWS Lambda giúp Lambda trở thành một lựa chọn rất phù hợp cho các ứng dụng SaaS multi-tenant cần compute environment được cô lập riêng cho từng tenant.</p>
+<h2 id="bắt-đầu-với-lambda-tenant-isolation-mode">Bắt đầu với Lambda Tenant Isolation Mode</h2>
+<p>Sử dụng tham số mới <strong>tenancy-config</strong> để cấu hình tenant isolation mode khi bạn tạo function. Lưu ý rằng cấu hình này chỉ có thể được áp dụng tại thời điểm tạo function, và không thể cập nhật lại cho các function đã tồn tại. Đoạn snippet dưới đây minh họa cách tạo một function với tenancy config bằng <a href="https://aws.amazon.com/cli/">AWS CLI</a>.</p>
+<pre><code>aws lambda create-function \
+   --function-name my-function1 \
+   --runtime nodejs22.x \
+   --zip-file fileb://my-function1.zip \
+   --handler index.handler \
+   --role arn:aws:iam:1234567890:role/my-function-role \
+   --tenancy-config '{&quot;TenantIsolationMode&quot;: &quot;PER_TENANT&quot;}'
+</code></pre><p>Sau khi function được tạo, bạn phải cung cấp tham số tenant ID trong mỗi lần invocation. AWS Lambda sẽ sử dụng identifier này để đảm bảo rằng execution environment dành cho một tenant cụ thể không bao giờ được tái sử dụng cho tenant khác. Đối với các lần invocation tiếp theo từ cùng một tenant, Lambda có thể reuse execution environment nhằm tối ưu hiệu năng. Bạn có thể truyền tham số <strong>tenant-id</strong> như minh họa bên dưới:</p>
+<pre><code>aws lambda invoke \
+   --function-name my-function \
+   --tenant-id BlueTenant \
+   response.json
+</code></pre><p>Tham số mới <strong>tenant-id</strong> là bắt buộc đối với các function sử dụng tenant isolation mode trong AWS Lambda. Nếu một function invocation không cung cấp tham số này, request sẽ bị fail và trả về invocation error, như minh họa bên dưới:</p>
+<pre><code>aws lambda invoke --function-name multitenant-function out.json
+
+An error occurred (InvalidParameterValueException) when calling the Invoke operation:
+The invoked function is enabled with tenancy configuration. 
+Add a valid tenant ID in your request and try again.
+</code></pre><p>AWS Lambda cung cấp tham số tenant ID thông qua context object trong function handler của bạn. Điều này cho phép bạn truy cập thông tin theo từng tenant trực tiếp trong code. Nhờ đó, bạn có thể implement các custom logic dựa trên tenant identity, ví dụ như xử lý khác nhau cho từng tenant, như minh họa bên dưới:</p>
+<pre><code>exports.handler = async function (event, context) {
+   const tenantId = context.tenantId;
+
+   // Process tenant-specific logic
+
+   return {
+      statusCode: 200,
+      body: `OK for tenantId=${tenantId}`
+   };
+};
+</code></pre><p>Bảng dưới đây mô tả sự khác biệt giữa các function của AWS Lambda khi không sử dụng và có sử dụng tenant isolation mode:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Without the new tenant isolation mode</th>
+<th>With the new tenant isolation mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Execution environment isolation</td>
+<td>Được cô lập theo từng function version.</td>
+<td>Được cô lập theo từng end-user hoặc tenant invoke một function version.</td>
+</tr>
+<tr>
+<td>Execution environment reuse</td>
+<td>Có thể được reuse để xử lý tất cả các invocation của một function version.</td>
+<td>Chỉ được reuse cho các invocation đến từ cùng một tenant invoke function version đó.</td>
+</tr>
+<tr>
+<td>Data stored on local disk và in-memory</td>
+<td>Có khả năng được truy cập bởi tất cả các invocation của một function version.</td>
+<td>Chỉ có thể truy cập bởi các invocation thuộc cùng tenant. Không thể truy cập từ tenant khác.</td>
+</tr>
+<tr>
+<td>Cold starts</td>
+<td>Xảy ra khi không có warm execution environment để xử lý request đến.</td>
+<td>Xảy ra khi không có tenant-specific warm execution environment. Có thể xảy ra nhiều cold start hơn do environment được tách riêng theo từng tenant.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tích-hợp-với-amazon-api-gateway">Tích hợp với Amazon API Gateway</h2>
+<p><a href="https://aws.amazon.com/vi/api-gateway/">Amazon API Gateway</a> sử dụng <a href="https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html">Lambda’s Invoke API</a> để gọi các function của AWS Lambda. Khi sử dụng Invoke API, Lambda yêu cầu tham số tenant ID phải được truyền thông qua HTTP header <strong>X-Amz-Tenant-Id</strong>. Bạn có thể cấu hình API Gateway để tự động inject header này vào request gọi Lambda, với giá trị được lấy từ các thuộc tính của client request như HTTP header, query parameter hoặc path parameter. Ngoài ra, khi sử dụng <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html">Lambda Authorizers</a>, bạn cũng có thể lấy tenant ID từ authorization context do authorizer trả về, chẳng hạn như principal ID hoặc JWT claim, và xem <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-lambda-authorizer-output.html">tài liệu API Gateway</a> để biết cách mà bạn có thể sử dụng các giá trị này để gán cho header <strong>X-Amz-Tenant-Id</strong> khi gửi request đến Lambda.</p>
+<img src="/images/figure-4-blog-2.png" alt="figure-4-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 4. Lấy giá trị X-Amz-Tenant-Id từ các nguồn xác thực.</p>
+<p>Ảnh minh họa dưới đây cho thấy cấu hình tích hợp giữa Amazon API Gateway và AWS Lambda, trong đó request gửi đến API Gateway chứa header <strong>x-tenant-id</strong>. Header này được map sang <strong>X-Amz-Tenant-Id</strong> trong request gọi Lambda, nhằm kích hoạt function với tenant isolation mode.</p>
+<img src="/images/figure-5-blog-2.png" alt="figure-5-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 5. Ánh xạ (mapping) HTTP header từ client request sang header tenant-id của AWS Lambda.</p>
+<p>Đoạn code dưới đây minh họa cách cấu hình này được triển khai bằng AWS CDK.</p>
+<pre><code>const lambdaIntegration = new ApiGw.LambdaIntegration(fn, {
+   requestParameters: {
+      // This configures API Gateway to inject X-Amz-Tenant-Id header
+      // into downstream requests. The header value is obtained from 
+      // x-tenant-id header in the client request.
+      'integration.request.header.X-Amz-Tenant-Id': 'method.request.header.x-tenant-id'
+   }
+});
+
+resource.addMethod('GET', lambdaIntegration, {
+   requestParameters: {
+      // This enables API Gateway to use the x-tenant-id header value 
+      // obtained from the client request. The header name is arbitrary.
+      // you can use any other header name. 
+      'method.request.header.x-tenant-id': true
+   }
+});
+</code></pre><h2 id="khả-năng-quan-sát-observability">Khả năng quan sát (Observability)</h2>
+<p>Đối với các function sử dụng tenant isolation, AWS Lambda sẽ tự động include tenant ID vào Lambda <a href="https://docs.aws.amazon.com/lambda/latest/dg/monitoring-logs.html">function logs</a> khi bạn <a href="https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs-logformat.html">bật JSON logging</a>, giúp việc monitoring và debug các vấn đề theo từng tenant trở nên dễ dàng hơn. Lưu ý rằng thuộc tính <strong>tenantId</strong> chỉ khả dụng trong quá trình function invocation, chứ không có trong giai đoạn function initialization. Thuộc tính này được include trong cả Lambda <a href="https://docs.aws.amazon.com/lambda/latest/dg/telemetry-schema-reference.html">platform events</a> (như <strong>platform.start</strong> và <strong>platform.report</strong>) cũng như trong các custom logs do bạn in ra từ function code, như minh họa trong hình bên dưới:</p>
+<img src="/images/figure-6-blog-2.png" alt="figure-6-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 6. Log của AWS Lambda hiển thị thuộc tính tenantId trong quá trình thực thi function.</p>
+<p>AWS Lambda tạo một <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">CloudWatch log stream</a> riêng biệt cho mỗi execution environment. Bạn có thể sử dụng <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html">CloudWatch Log Insights</a> để tìm các log stream thuộc về một tenant cụ thể bằng cách filter theo tenantId:</p>
+<pre><code>fields @logStream, @message
+| filter tenantId=='BlueTenant' or record.tenantId=='BlueTenant'
+| stats count() as logCount by @logStream
+| sort @timestamp desc
+</code></pre><p>Bạn cũng có thể truy xuất (retrieve) các log theo từng tenant trên tất cả log stream, bằng cách filter theo tenantId trong CloudWatch Logs Insights khi làm việc với AWS Lambda:</p>
+<pre><code>fields @message
+| filter tenantId=='BlueTenant' or record.tenantId=='BlueTenant'
+| limit 1000
+</code></pre><p>Mỗi CloudWatch log stream bắt đầu với các log của function initialization, sau đó là các log của function invocation. Cấu trúc này giúp bạn dễ dàng debug các vấn đề theo từng tenant và hiểu rõ lifecycle của từng execution environment trong AWS Lambda.</p>
+<h2 id="các-lưu-ý">Các lưu ý</h2>
+<p>Khi sử dụng tenant isolation mode cho AWS Lambda, bạn nên lưu ý các điểm sau:</p>
+<ul>
+<li>Execution environment của mỗi tenant được cô lập hoàn toàn với tenant khác, do đó dữ liệu riêng của tenant (lưu trên disk hoặc in-memory) sẽ không bị truy cập chéo khi nhiều tenant cùng invoke một Lambda function.</li>
+<li>Tất cả tenant vẫn chia sẻ cùng một execution role của function. Nếu cần phân quyền chi tiết hơn theo từng tenant, bạn nên propagate tenant-scoped credentials từ các upstream service gọi đến Lambda.</li>
+<li>Ứng dụng của bạn có thể gặp tỷ lệ cold start cao hơn, vì Lambda phải xử lý request trong các execution environment riêng biệt cho từng tenant.</li>
+<li>Bạn sẽ trả phí cho mỗi execution environment riêng theo tenant được tạo ra, tùy thuộc vào cấu hình memory của function. Bạn có thể tham khảo chi tiết tại <a href="https://aws.amazon.com/vi/lambda/pricing/">Lambda pricing page</a>.</li>
+</ul>
+<h2 id="best-practices">Best practices</h2>
+<p>Khi sử dụng tenant isolation mode cho AWS Lambda, AWS khuyến nghị một số best practices sau:</p>
+<ul>
+<li>Triển khai cơ chế validate tenant ID chặt chẽ ở tầng application để ngăn chặn truy cập trái phép thông qua việc giả mạo hoặc thao túng tenant ID. Bạn nên sử dụng một service hoặc database riêng để quản lý danh sách tenant ID hợp lệ.</li>
+<li>Thường xuyên monitor và audit access pattern của từng tenant để phát hiện sớm các dấu hiệu bất thường hoặc các nỗ lực truy cập cross-tenant trái phép.</li>
+<li>Lưu ý đến <a href="https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html">Lambda concurrency quotas</a> khi xây dựng ứng dụng multi-tenant. Bạn có thể cần yêu cầu tăng quota tùy theo số lượng tenant và pattern sử dụng thực tế.</li>
+</ul>
+<h2 id="code-mẫu">Code mẫu</h2>
+<p>Bạn có thể làm theo hướng dẫn trong <a href="https://github.com/aws-samples/sample-lambda-tenant-isolation">GitHub repository</a> mẫu để triển khai (provision) một project demo trên tài khoản của mình và trải nghiệm trực tiếp tenant isolation mode mới của AWS Lambda. Project mẫu này minh họa cách tích hợp Lambda với <a href="https://aws.amazon.com/api-gateway/">Amazon API Gateway</a>, đồng thời truyền (propagate) tenant identity từ request của client.</p>
+<h2 id="kết-luận">Kết luận</h2>
+<p>Tính năng tenant isolation mode giúp đơn giản hóa việc xây dựng các ứng dụng SaaS multi-tenant serverless trên AWS. Bằng cách tự động quản lý việc cô lập compute environment ở cấp tenant, Lambda loại bỏ nhu cầu phải viết custom isolation logic hoặc tạo function riêng cho từng tenant, từ đó cho phép bạn tập trung hoàn toàn vào business logic cốt lõi trong khi AWS xử lý các phức tạp liên quan đến tenant-aware isolation.</p>
+<p>Khi kết hợp với các tính năng bảo mật sẵn có, khả năng scale nhanh và mô hình tính phí pay-per-use, tenant isolation mode giúp Lambda trở thành lựa chọn hấp dẫn hơn cho các ứng dụng SaaS hiện đại, cho dù bạn có đang xây dựng hệ thống mới hay nâng cấp hệ thống hiện có.</p>
+<p>Để tìm hiểu thêm, bạn có thể tham khảo <a href="https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation.html">tài liệu chính thức về tenant isolation</a> và <a href="https://aws.amazon.com/vi/lambda/pricing/">trang pricing của Lambda</a>.</p>
+<h2 id="đóng-góp-và-feedback">Đóng góp và Feedback</h2>
+<p>Bài dịch này được thực hiện trong khuôn khổ <strong>FCAJ Internship Program</strong>.</p>
+<p><strong>Liên hệ:</strong> <a href="mailto:ducmin76@gmail.com">ducmin76@gmail.com</a></p>
+<p><strong>Feedback:</strong> Mọi góp ý để cải thiện chất lượng dịch thuật xin gửi về email trên</p>
+<p><strong>Updates:</strong> Bài dịch sẽ được cập nhật dựa trên feedback từ cộng đồng</p>
+<p><em>© 2026 - Bản dịch thuộc về Trần Nguyễn Đức Minh. Vui lòng credit khi sử dụng.</em></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/vi/3-translate-blog/blog-1/" title="Blog 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vi/3-translate-blog/blog-3/" title="Blog 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203512"></script>
+    <script src="/js/jquery.sticky.js?1779203512"></script>
+    <script src="/js/featherlight.min.js?1779203512"></script>
+    <script src="/js/highlight.pack.js?1779203512"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203512"></script>
+    <script src="/js/learn.js?1779203512"></script>
+    <script src="/js/hugo-learn.js?1779203512"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203512"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

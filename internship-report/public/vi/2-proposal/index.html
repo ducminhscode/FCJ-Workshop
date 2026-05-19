@@ -1,0 +1,3868 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Bản đề xuất dự án :: Báo cáo thực tập</title>
+
+    
+    <link href="/css/nucleus.css?1779203512" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203512" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203512" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203512" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203512" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203512" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203512" rel="stylesheet">
+    <link href="/css/theme.css?1779203512" rel="stylesheet">
+    <link href="/css/tabs.css?1779203512" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203512" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203512" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203512"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/vi/2-proposal/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203512"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203512"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203512"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/" title="Nhật ký công việc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/">
+          <b> 1. </b>Nhật ký công việc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-1/" title="Worklog tuần 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog tuần 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-2/" title="Worklog tuần 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog tuần 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-3/" title="Worklog tuần 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog tuần 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-4/" title="Worklog tuần 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog tuần 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-5/" title="Worklog tuần 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog tuần 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-6/" title="Worklog tuần 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog tuần 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-7/" title="Worklog tuần 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog tuần 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-8/" title="Worklog tuần 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog tuần 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-9/" title="Worklog tuần 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog tuần 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-10/" title="Worklog tuần 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog tuần 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-11/" title="Worklog tuần 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog tuần 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-12/" title="Worklog tuần 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog tuần 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-proposal/" title="Bản đề xuất dự án" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/vi/2-proposal/">
+          <b> 2. </b>Bản đề xuất dự án
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/" title="Các blog đã dịch" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/">
+          <b> 3. </b>Các blog đã dịch
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/" title="Các event đã tham gia" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/">
+          <b> 4. </b>Các event đã tham gia
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/1-introduction/" title="Giới thiệu" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/1-introduction/">
+          <b> 5.1 </b>Giới thiệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/" title="Chuẩn bị tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/">
+          <b> 5.2 </b>Chuẩn bị tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.1-activate-identity-center/" title="Kích hoạt Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Kích hoạt Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.2-create-permission-sets/" title="Tạo Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Tạo Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.3-create-access-group/" title="Tạo Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Tạo Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.4-create-group-assignments/" title="Tạo Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Tạo Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Tạo các bảng DynamoDB" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Tạo các bảng DynamoDB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="Bảng AccessSessions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>Bảng AccessSessions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="Bảng ProvisionAccess" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>Bảng ProvisionAccess
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Tạo Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Tạo Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Tạo Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Tạo Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies cho Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies cho Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Tạo Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Tạo Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Tạo Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Tạo Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Thiết lập API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Thiết lập API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Kết nối DynamoDB Stream đến Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Kết nối DynamoDB Stream đến Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Thiết lập CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Thiết lập CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.15-setup-jira/" title="Thiết lập Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Thiết lập Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/3-test-connection/" title="Kiểm tra kết nối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Kiểm tra kết nối
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/4-product-demonstration/" title="Demo sản phẩm" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Demo sản phẩm
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/5-clean-up-resources/" title="Dọn dẹp tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-self-rating/" title="Tự đánh giá" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/6-self-rating/">
+          <b> 6. </b>Tự đánh giá
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-feedback/" title="Chia sẻ, đóng góp ý kiến" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/7-feedback/">
+          <b> 7. </b>Chia sẻ, đóng góp ý kiến
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/2-proposal/" selected>Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/2-proposal/">English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/vi/'>Báo cáo thực tập</a> > Bản đề xuất dự án
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mục-lục">Mục lục</a></li>
+    <li><a href="#tổng-quan-dự-án">Tổng quan dự án</a>
+      <ul>
+        <li><a href="#tóm-tắt">Tóm tắt</a></li>
+        <li><a href="#đối-tượng-sử-dụng">Đối tượng sử dụng</a></li>
+        <li><a href="#nguyên-tắc-thiết-kế">Nguyên tắc thiết kế</a></li>
+      </ul>
+    </li>
+    <li><a href="#vấn-đề-cần-giải-quyết">Vấn đề cần giải quyết</a>
+      <ul>
+        <li><a href="#mô-tả-vấn-đề">Mô tả vấn đề</a></li>
+        <li><a href="#giải-pháp">Giải pháp</a></li>
+        <li><a href="#so-sánh-hai-kiến-trúc">So sánh hai kiến trúc</a></li>
+      </ul>
+    </li>
+    <li><a href="#kiến-trúc-giải-pháp">Kiến trúc giải pháp</a>
+      <ul>
+        <li><a href="#sơ-đồ-kiến-trúc-hệ-thống">Sơ đồ kiến trúc hệ thống</a></li>
+        <li><a href="#các-dịch-vụ-aws-được-sử-dụng">Các dịch vụ AWS được sử dụng</a></li>
+        <li><a href="#thành-phần-hệ-thống">Thành phần hệ thống</a></li>
+        <li><a href="#quy-trình-vận-hành">Quy trình vận hành</a></li>
+      </ul>
+    </li>
+    <li><a href="#lộ-trình--mốc-triển-khai">Lộ trình &amp; Mốc triển khai</a>
+      <ul>
+        <li><a href="#giai-đoạn-1-phân-tích-yêu-cầu-và-thiết-kế-giải-pháp-tuần-2-4">Giai đoạn 1: Phân tích yêu cầu và thiết kế giải pháp (Tuần 2-4)</a></li>
+        <li><a href="#giai-đoạn-2-xây-dựng-hạ-tầng-nền-tảng-tuần-5-6">Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5-6)</a></li>
+        <li><a href="#giai-đoạn-3-phát-triển-nghiệp-vụ-hệ-thống-tuần-7-8">Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7-8)</a></li>
+        <li><a href="#giai-đoạn-4-kiểm-thử-và-nghiệm-thu-tuần-9-10">Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9-10)</a></li>
+        <li><a href="#giai-đoạn-5-triển-khai-production-và-chuyển-giao-vận-hành-tuần-11">Giai đoạn 5: Triển khai Production và chuyển giao vận hành (Tuần 11)</a></li>
+        <li><a href="#bảng-kế-hoạch-triển-khai-tổng-quan">Bảng kế hoạch triển khai tổng quan</a></li>
+        <li><a href="#kế-hoạch-mở-rộng-sau-triển-khai">Kế hoạch mở rộng sau triển khai</a></li>
+      </ul>
+    </li>
+    <li><a href="#ước-tính-ngân-sách">Ước tính ngân sách</a></li>
+    <li><a href="#đánh-giá-rủi-ro">Đánh giá rủi ro</a>
+      <ul>
+        <li><a href="#ma-trận-đánh-giá-rủi-ro">Ma trận đánh giá rủi ro</a></li>
+        <li><a href="#kế-hoạch-ứng-phó-sự-cố">Kế hoạch ứng phó sự cố</a></li>
+      </ul>
+    </li>
+    <li><a href="#kết-quả-kỳ-vọng">Kết quả kỳ vọng</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Bản đề xuất dự án
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="production-access-request-portal">Production Access Request Portal</h1>
+<h2 id="mục-lục">Mục lục</h2>
+<ul>
+<li><a href="#production-access-request-portal">Production Access Request Portal</a>
+<ul>
+<li><a href="#m%E1%BB%A5c-l%E1%BB%A5c">Mục lục</a></li>
+<li><a href="#t%E1%BB%95ng-quan-d%E1%BB%B1-%C3%A1n">Tổng quan dự án</a>
+<ul>
+<li><a href="#t%C3%B3m-t%E1%BA%AFt">Tóm tắt</a></li>
+<li><a href="#%C4%91%E1%BB%91i-t%C6%B0%E1%BB%A3ng-s%E1%BB%AD-d%E1%BB%A5ng">Đối tượng sử dụng</a></li>
+<li><a href="#nguy%C3%AAn-t%E1%BA%AFc-thi%E1%BA%BFt-k%E1%BA%BF">Nguyên tắc thiết kế</a></li>
+</ul>
+</li>
+<li><a href="#v%E1%BA%A5n-%C4%91%E1%BB%81-c%E1%BA%A7n-gi%E1%BA%A3i-quy%E1%BA%BFt">Vấn đề cần giải quyết</a>
+<ul>
+<li><a href="#m%C3%B4-t%E1%BA%A3-v%E1%BA%A5n-%C4%91%E1%BB%81">Mô tả vấn đề</a></li>
+<li><a href="#gi%E1%BA%A3i-ph%C3%A1p">Giải pháp</a></li>
+<li><a href="#so-s%C3%A1nh-hai-ki%E1%BA%BFn-tr%C3%BAc">So sánh hai kiến trúc</a></li>
+</ul>
+</li>
+<li><a href="#ki%E1%BA%BFn-tr%C3%BAc-gi%E1%BA%A3i-ph%C3%A1p">Kiến trúc giải pháp</a>
+<ul>
+<li><a href="#s%C6%A1-%C4%91%E1%BB%93-ki%E1%BA%BFn-tr%C3%BAc-h%E1%BB%87-th%E1%BB%91ng">Sơ đồ kiến trúc hệ thống</a></li>
+<li><a href="#c%C3%A1c-d%E1%BB%8Bch-v%E1%BB%A5-aws-%C4%91%C6%B0%E1%BB%A3c-s%E1%BB%AD-d%E1%BB%A5ng">Các dịch vụ AWS được sử dụng</a></li>
+<li><a href="#th%C3%A0nh-ph%E1%BA%A7n-h%E1%BB%87-th%E1%BB%91ng">Thành phần hệ thống</a></li>
+<li><a href="#quy-tr%C3%ACnh-v%E1%BA%ADn-h%C3%A0nh">Quy trình vận hành</a>
+<ul>
+<li><a href="#quy-tr%C3%ACnh-c%E1%BA%A5p-quy%E1%BB%81n-ti%C3%AAu-chu%E1%BA%A9n-standard-grant-flow">Quy trình cấp quyền tiêu chuẩn (Standard Grant Flow)</a></li>
+<li><a href="#quy-tr%C3%ACnh-ph%C3%AA-duy%E1%BB%87t-qua-email-email-approval-flow">Quy trình phê duyệt qua email (Email Approval Flow)</a></li>
+<li><a href="#quy-tr%C3%ACnh-t%E1%BB%B1-%C4%91%E1%BB%99ng-h%E1%BA%BFt-h%E1%BA%A1n-v%C3%A0-thu-h%E1%BB%93i-quy%E1%BB%81n-auto-expiry-flow">Quy trình tự động hết hạn và thu hồi quyền (Auto Expiry Flow)</a></li>
+<li><a href="#quy-tr%C3%ACnh-thu-h%E1%BB%93i-kh%E1%BA%A9n-c%E1%BA%A5p-emergency-revocation">Quy trình thu hồi khẩn cấp (Emergency Revocation)</a></li>
+<li><a href="#nguy%C3%AAn-t%E1%BA%AFc-v%E1%BA%ADn-h%C3%A0nh-v%C3%A0-x%E1%BB%AD-l%C3%BD-ngo%E1%BA%A1i-l%E1%BB%87">Nguyên tắc vận hành và xử lý ngoại lệ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#l%E1%BB%99-tr%C3%ACnh--m%E1%BB%91c-tri%E1%BB%83n-khai">Lộ trình &amp; Mốc triển khai</a>
+<ul>
+<li><a href="#giai-%C4%91o%E1%BA%A1n-1-ph%C3%A2n-t%C3%ADch-y%C3%AAu-c%E1%BA%A7u-v%C3%A0-thi%E1%BA%BFt-k%E1%BA%BF-gi%E1%BA%A3i-ph%C3%A1p-tu%E1%BA%A7n-2-4">Giai đoạn 1: Phân tích yêu cầu và thiết kế giải pháp (Tuần 2-4)</a></li>
+<li><a href="#giai-%C4%91o%E1%BA%A1n-2-x%C3%A2y-d%E1%BB%B1ng-h%E1%BA%A1-t%E1%BA%A7ng-n%E1%BB%81n-t%E1%BA%A3ng-tu%E1%BA%A7n-5-6">Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5-6)</a></li>
+<li><a href="#giai-%C4%91o%E1%BA%A1n-3-ph%C3%A1t-tri%E1%BB%83n-nghi%E1%BB%87p-v%E1%BB%A5-h%E1%BB%87-th%E1%BB%91ng-tu%E1%BA%A7n-7-8">Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7-8)</a></li>
+<li><a href="#giai-%C4%91o%E1%BA%A1n-4-ki%E1%BB%83m-th%E1%BB%AD-v%C3%A0-nghi%E1%BB%87m-thu-tu%E1%BA%A7n-9-10">Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9-10)</a></li>
+<li><a href="#giai-%C4%91o%E1%BA%A1n-5-tri%E1%BB%83n-khai-production-v%C3%A0-chuy%E1%BB%83n-giao-v%E1%BA%ADn-h%C3%A0nh-tu%E1%BA%A7n-11">Giai đoạn 5: Triển khai Production và chuyển giao vận hành (Tuần 11)</a></li>
+<li><a href="#b%E1%BA%A3ng-k%E1%BA%BF-ho%E1%BA%A1ch-tri%E1%BB%83n-khai-t%E1%BB%95ng-quan">Bảng kế hoạch triển khai tổng quan</a></li>
+<li><a href="#k%E1%BA%BF-ho%E1%BA%A1ch-m%E1%BB%9F-r%E1%BB%99ng-sau-tri%E1%BB%83n-khai">Kế hoạch mở rộng sau triển khai</a></li>
+</ul>
+</li>
+<li><a href="#%C6%B0%E1%BB%9Bc-t%C3%ADnh-ng%C3%A2n-s%C3%A1ch">Ước tính ngân sách</a></li>
+<li><a href="#%C4%91%C3%A1nh-gi%C3%A1-r%E1%BB%A7i-ro">Đánh giá rủi ro</a>
+<ul>
+<li><a href="#ma-tr%E1%BA%ADn-%C4%91%C3%A1nh-gi%C3%A1-r%E1%BB%A7i-ro">Ma trận đánh giá rủi ro</a></li>
+<li><a href="#k%E1%BA%BF-ho%E1%BA%A1ch-%E1%BB%A9ng-ph%C3%B3-s%E1%BB%B1-c%E1%BB%91">Kế hoạch ứng phó sự cố</a></li>
+</ul>
+</li>
+<li><a href="#k%E1%BA%BFt-qu%E1%BA%A3-k%E1%BB%B3-v%E1%BB%8Dng">Kết quả kỳ vọng</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="tổng-quan-dự-án">Tổng quan dự án</h2>
+<h3 id="tóm-tắt">Tóm tắt</h3>
+<p>Production Access Request Portal là một hệ thống quản lý quyền truy cập tạm thời (Just-in-Time Access) được xây dựng trên kiến trúc serverless hoàn toàn (AWS Lambda, API Gateway, DynamoDB), giúp kiểm soát việc truy cập vào các tài khoản AWS Production một cách tự động và bảo mật. Quy trình bắt đầu khi người dùng gửi yêu cầu qua Jira Service Management, sau đó hệ thống sẽ điều phối việc phê duyệt qua email bằng Amazon SES và sử dụng AWS IAM Identity Center để cấp quyền. Điểm cải tiến vượt trội của phiên bản v2.0 chính là cơ chế Group-Based Access, cho phép hệ thống tự động thu hồi quyền truy cập (nằm trong Access Groups) chỉ trong vòng 60 giây ngay khi hết thời gian hiệu lực (TTL), khắc phục hoàn toàn giới hạn trễ lên đến 12 giờ của các phương thức truyền thống. Toàn bộ hoạt động đều được giám sát chặt chẽ qua CloudWatch và CloudTrail, đảm bảo tính minh bạch và tuân thủ tuyệt đối cho môi trường vận hành nhạy cảm.</p>
+<h3 id="đối-tượng-sử-dụng">Đối tượng sử dụng</h3>
+<p>Trong hệ thống Production Access Request Portal có nhiều đối tượng tham gia vào quá trình yêu cầu, phê duyệt, cấp phát và giám sát quyền truy cập vào môi trường Production. Mỗi vai trò đảm nhiệm một chức năng riêng, góp phần đảm bảo hệ thống vận hành an toàn, hiệu quả và tuân thủ các chính sách bảo mật.</p>
+<table>
+<thead>
+<tr>
+<th>Vai trò</th>
+<th>Mô tả</th>
+<th>Tương tác với hệ thống</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>End User (Developer/Engineer)</strong></td>
+<td>Người có nhu cầu truy cập vào môi trường Production để thực hiện các công việc như triển khai (deploypment), xử lý sự cố (troubleshooting) hoặc kiểm tra hệ thống.</td>
+<td>Người dùng tương tác với hệ thống thông qua Jira Service Management Portal để gửi yêu cầu truy cập. Sau khi được phê duyệt, họ sử dụng AWS IAM Identity Center để đăng nhập và nhận quyền truy cập tạm thời.</td>
+</tr>
+<tr>
+<td><strong>Approver (Team Lead/Manager)</strong></td>
+<td>Người chịu trách nhiệm xem xét và phê duyệt các yêu cầu truy cập Production. Đóng vai trò kiểm soát, đảm bảo rằng chỉ những yêu cầu hợp lệ và cần thiết mới được cấp quyền.</td>
+<td>Việc phê duyệt được thực hiện trực tiếp trên giao diện Jira hoặc thông qua email với các liên kết xác nhận (approve/decline).</td>
+</tr>
+<tr>
+<td><strong>Platform/DevOps Engineer</strong></td>
+<td>Người chịu trách nhiệm thiết kế, triển khai và vận hành hệ thống.</td>
+<td>Quản lý toàn bộ hạ tầng thông qua Terraform (Infrastructure as Code), phát triển và bảo trì các Lambda functions cũng như giám sát hiệu năng hệ thống, xử lý sự cố và thực hiện các cải tiến kiến trúc khi cần thiết để đảm bảo hệ thống hoạt động ổn định.</td>
+</tr>
+<tr>
+<td><strong>Security/Compliance Team</strong></td>
+<td>Người chịu trách nhiệm đảm bảo hệ thống tuân thủ các tiêu chuẩn và chính sách bảo mật của tổ chức.</td>
+<td>Theo dõi các hoạt động truy cập thông qua audit logs, kiểm tra các chính sách phân quyền và đánh giá rủi ro bảo mật.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nguyên-tắc-thiết-kế">Nguyên tắc thiết kế</h3>
+<p>Hệ thống Production Access Request Portal được thiết kế dựa trên các nguyên tắc bảo mật và kiến trúc hiện đại nhằm đảm bảo việc quản lý truy cập vào môi trường Production được thực hiện một cách an toàn, minh bạch và hiệu quả. Các nguyên tắc cốt lõi bao gồm:</p>
+<ul>
+<li><strong>Zero Standing Privileges:</strong>
+<ul>
+<li>Nguyên tắc này quy định rằng hệ thống không cho phép tồn tại bất kỳ quyền truy cập Production nào mang tính lâu dài hoặc thường trực. Thay vào đó thì mọi quyền truy cập đều phải được yêu cầu thông qua hệ thống, trải qua quy trình phê duyệt và chỉ tồn tại trong một khoảng thời gian giới hạn.</li>
+<li>Sau khi hết thời gian được cấp, quyền truy cập sẽ tự động bị thu hồi mà không cần sự can thiệp thủ công. Cách tiếp cận này giúp giảm thiểu đáng kể nguy cơ lộ thông tin xác thực (credentials) cũng như hạn chế khả năng lạm dụng quyền truy cập trong hệ thống.</li>
+</ul>
+</li>
+<li><strong>Least Privilege:</strong>
+<ul>
+<li>Nguyên tắc đảm bảo rằng mỗi người dùng chỉ được cấp quyền tối thiểu cần thiết để thực hiện nhiệm vụ của mình. Hệ thống định nghĩa ba cấp độ quyền truy cập chính bao gồm ReadOnly, PowerUser và Admin tương ứng với các mức độ thao tác khác nhau trên tài nguyên AWS.</li>
+<li>Mỗi cấp quyền được ánh xạ tới các chính sách (policies) cụ thể, đồng thời được kiểm soát thông qua các cơ chế giới hạn phạm vi truy cập. Nhờ đó mà hệ thống giảm thiểu rủi ro trong trường hợp tài khoản bị xâm phạm, đồng thời ngăn chặn các hành vi thao tác vượt quá quyền hạn cho phép.</li>
+</ul>
+</li>
+<li><strong>Defense in Depth:</strong>
+<ul>
+<li>Nguyên tắc được áp dụng nhằm xây dựng nhiều lớp bảo mật chồng lấn trong toàn bộ hệ thống. Cụ thể, hệ thống triển khai xác thực người dùng thông qua SSO tại Jira Portal, kết hợp với cơ chế xác thực API Gateway bằng API key và giới hạn tốc độ truy cập (throttling).</li>
+<li>Ngoài ra, các webhook được bảo vệ bằng chữ ký số HMAC-SHA256 nhằm đảm bảo tính toàn vẹn của dữ liệu. Hệ thống cũng áp dụng chính sách phân quyền chặt chẽ thông qua IAM cùng với cơ chế ghi log và giám sát toàn diện thông qua CloudWatch và CloudTrail.</li>
+<li>Việc triển khai nhiều lớp bảo mật giúp đảm bảo rằng ngay cả khi một lớp bị vượt qua, các lớp còn lại vẫn có thể bảo vệ hệ thống khỏi các mối đe dọa.</li>
+</ul>
+</li>
+<li><strong>Fail-Safe Defaults:</strong>
+<ul>
+<li>Nguyên tắc quy định rằng hệ thống luôn mặc định từ chối mọi yêu cầu truy cập nếu không có đủ điều kiện hợp lệ. Quyền truy cập chỉ được cấp khi tất cả các bước trong quy trình bao gồm xác thực, phê duyệt và cấp phát quyền đều được thực hiện thành công.</li>
+<li>Trong trường hợp xảy ra lỗi hoặc không xác định được trạng thái hợp lệ hệ thống sẽ không cấp quyền truy cập. Điều này giúp đảm bảo rằng không có quyền truy cập nào được cấp một cách ngoài ý muốn hoặc không kiểm soát.</li>
+</ul>
+</li>
+<li><strong>Complete Auditability:</strong> Nguyên tắc đảm bảo rằng mọi hoạt động trong hệ thống đều được ghi nhận và có thể truy vết đầy đủ. Thông tin về các yêu cầu truy cập, quá trình phê duyệt, cấp quyền và thu hồi quyền đều được lưu trữ tại nhiều hệ thống như Jira, CloudWatch, CloudTrail và DynamoDB. Nhờ vậy mà hệ thống có khả năng cung cấp đầy đủ thông tin phục vụ cho việc kiểm toán, tuân thủ các quy định bảo mật, cũng như hỗ trợ điều tra khi xảy ra sự cố. Việc đảm bảo tính minh bạch và truy vết này là yếu tố quan trọng trong các hệ thống quản lý truy cập Production.</li>
+</ul>
+<h2 id="vấn-đề-cần-giải-quyết">Vấn đề cần giải quyết</h2>
+<h3 id="mô-tả-vấn-đề">Mô tả vấn đề</h3>
+<p>Trước khi hệ thống này ra đời, quy trình quản lý quyền truy cập vào môi trường Production trong tổ chức còn tồn tại nhiều hạn chế, tiềm ẩn rủi ro cao về bảo mật và gây khó khăn trong vận hành. Các vấn đề chính được xác định như sau:</p>
+<table>
+<thead>
+<tr>
+<th>Vấn đề</th>
+<th>Tác động</th>
+<th style="text-align:center">Mức độ rủi ro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cấp quyền thủ công và thiếu nhất quán</strong></td>
+<td>Quy trình cấp quyền truy cập Production chủ yếu được thực hiện thủ công, thông qua việc tạo hoặc chỉnh sửa IAM User cho từng yêu cầu. Cách làm này không chỉ tốn nhiều thời gian mà còn dễ xảy ra sai sót trong quá trình cấu hình, dẫn đến việc cấp sai quyền hoặc thiếu kiểm soát. Việc thiếu một quy trình chuẩn hóa cũng khiến cho các thao tác giữa các nhóm không đồng nhất, gây khó khăn trong quản lý và mở rộng hệ thống.</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td><strong>Không có cơ chế tự động hết hạn quyền truy cập</strong></td>
+<td>Một trong những vấn đề nghiêm trọng là quyền truy cập Production không được tự động thu hồi sau khi hoàn thành công việc. Điều này dẫn đến việc tồn tại các credentials lâu dài (long-lived credentials) trong hệ thống. Việc duy trì quyền truy cập trong thời gian dài làm tăng nguy cơ bị khai thác nếu thông tin xác thực bị lộ, đồng thời vi phạm các nguyên tắc bảo mật hiện đại như Zero Standing Privileges.</td>
+<td style="text-align:center">Rất cao</td>
+</tr>
+<tr>
+<td><strong>Thiếu khả năng truy vết và kiểm toán (Audit Trail)</strong></td>
+<td>Hệ thống cũ không cung cấp đầy đủ thông tin để theo dõi và truy vết các hoạt động truy cập. Việc không biết chính xác ai đã truy cập, vào thời điểm nào và thực hiện hành động gì gây khó khăn trong quá trình kiểm toán và điều tra sự cố. Điều này đặc biệt nghiêm trọng trong các môi trường yêu cầu tuân thủ cao, nơi mà audit trail là bắt buộc.</td>
+<td style="text-align:center">Rất cao</td>
+</tr>
+<tr>
+<td><strong>Quy trình phê duyệt rời rạc và kém hiệu quả</strong></td>
+<td>Quy trình phê duyệt truy cập thường diễn ra thông qua nhiều kênh khác nhau như email, tin nhắn hoặc trao đổi trực tiếp, thiếu sự tập trung và tự động hóa. Điều này làm cho thời gian xử lý yêu cầu kéo dài, không có SLA rõ ràng hay khó theo dõi trạng thái yêu cầu hiện tại. Hệ quả là làm giảm hiệu suất làm việc của đội ngũ kỹ thuật và làm tăng độ trễ trong xử lý sự cố Production.</td>
+<td style="text-align:center">Trung bình</td>
+</tr>
+<tr>
+<td><strong>Không có cơ chế thu hồi quyền khẩn cấp</strong></td>
+<td>Trong trường hợp phát hiện rủi ro bảo mật hoặc tài khoản bị xâm phạm, hệ thống không cung cấp khả năng thu hồi quyền truy cập ngay lập tức. Việc này khiến tổ chức không thể phản ứng nhanh với các sự cố, làm gia tăng mức độ ảnh hưởng và thiệt hại tiềm ẩn.</td>
+<td style="text-align:center">Nghiêm trọng</td>
+</tr>
+</tbody>
+</table>
+<h3 id="giải-pháp">Giải pháp</h3>
+<p>Để khắc phục các hạn chế trong quy trình quản lý truy cập Production, hệ thống Production Access Request Portal được xây dựng như một giải pháp tự động hóa toàn diện, áp dụng các nguyên tắc bảo mật hiện đại và tận dụng kiến trúc serverless trên nền tảng AWS. Các giải pháp chính như sau:</p>
+<ul>
+<li><strong>Tự động hóa quy trình cấp quyền truy cập:</strong>
+<ul>
+<li>Thay vì thực hiện thủ công, hệ thống chuẩn hóa và tự động hóa toàn bộ quy trình cấp quyền theo mô hình:
+<pre><code>Request → Approval → Provisioning → Expiry → Revocation
+</code></pre></li>
+<li>Người dùng gửi yêu cầu thông qua Jira Service Management, sau đó hệ thống tự động xử lý các bước tiếp theo thông qua API Gateway và AWS Lambda. Việc này giúp giảm thiểu sai sót do con người, đồng thời đảm bảo tính nhất quán trong toàn bộ hệ thống.</li>
+</ul>
+</li>
+<li><strong>Áp dụng cơ chế Just-in-Time Access:</strong>
+<ul>
+<li>Hệ thống triển khai mô hình Just-in-Time (JIT) Access, trong đó quyền truy cập chỉ được cấp khi cần thiết và tồn tại trong một khoảng thời gian giới hạn.</li>
+<li>Mỗi yêu cầu truy cập đều được gắn với một thời gian cụ thể (duration), sau đó được ánh xạ vào các bậc thời gian tiêu chuẩn (duration tiers). Khi hết thời gian, hệ thống tự động thu hồi quyền truy cập mà không cần thao tác thủ công.</li>
+<li>Giải pháp này giúp loại bỏ hoàn toàn việc tồn tại các quyền truy cập lâu dài trong môi trường production.</li>
+</ul>
+</li>
+<li><strong>Sử dụng Group-Based Access thay cho cấp quyền trực tiếp:</strong> Một cải tiến quan trọng của hệ thống là chuyển từ mô hình cấp quyền trực tiếp Direct Assignment sang Group-Based Access.
+<ul>
+<li>Thay vì gán quyền trực tiếp cho từng user, hệ thống sẽ:
+<ul>
+<li>Tạo sẵn các access group tương ứng với từng loại quyền và thời gian.</li>
+<li>Thêm user vào group khi được cấp quyền.</li>
+<li>Xóa user khỏi group khi hết hạn.</li>
+</ul>
+</li>
+<li>Cách tiếp cận này giúp rút ngắn thời gian cấp quyền xuống dưới 5 giây, thu hồi quyền gần như ngay lập tức, giảm đáng kể độ phức tạp trong quản lý.</li>
+</ul>
+</li>
+<li><strong>Tích hợp cơ chế phê duyệt tập trung và linh hoạt:</strong> Hệ thống tích hợp chặt chẽ với Jira Service Management để quản lý toàn bộ quy trình phê duyệt. Ngoài ra còn hỗ trợ phê duyệt thông qua email với các liên kết xác nhận (approve/decline) giúp tăng tính linh hoạt cho người quản lý. Tất cả các yêu cầu đều được theo dõi trạng thái rõ ràng, đảm bảo minh bạch và có thể kiểm soát theo SLA.</li>
+<li><strong>Thiết lập cơ chế thu hồi quyền tự động và khẩn cấp:</strong> Hệ thống sử dụng DynamoDB TTL kết hợp với Lambda để tự động phát hiện và thu hồi quyền khi hết hạn. Khi một session hết hạn, Lambda sẽ tự động xóa user khỏi access group, khiến credentials bị vô hiệu hóa trong vòng 60 giây. Hệ thống cũng hỗ trợ cơ chế thu hồi khẩn cấp (Emergency Revocation), cho phép xóa toàn bộ quyền truy cập của một user trong thời gian rất ngắn khi phát hiện rủi ro bảo mật.</li>
+<li><strong>Tăng cường khả năng giám sát và kiểm toán:</strong> Để giải quyết vấn đề thiếu Audit Trail, hệ thống ghi nhận toàn bộ hoạt động tại nhiều lớp:
+<ul>
+<li>Jira: Lưu trữ request và approval.</li>
+<li>CloudWatch: Log thực thi hệ thống.</li>
+<li>CloudTrail: Ghi nhận các API call trên AWS.</li>
+<li>DynamoDB: Lưu metadata của session.</li>
+</ul>
+</li>
+<li><strong>Áp dụng kiến trúc serverless để tối ưu vận hành:</strong> Hệ thống được xây dựng hoàn toàn trên kiến trúc serverless với các dịch vụ như AWS Lambda, API Gateway và DynamoDB giúp:
+<ul>
+<li>Tự động mở rộng theo nhu cầu sử dụng.</li>
+<li>Không cần quản lý hạ tầng máy chủ.</li>
+<li>Tối ưu chi phí vận hành (pay-per-use).</li>
+<li>Tăng độ tin cậy và khả năng sẵn sàng của hệ thống.</li>
+</ul>
+</li>
+</ul>
+<h3 id="so-sánh-hai-kiến-trúc">So sánh hai kiến trúc</h3>
+<table>
+<thead>
+<tr>
+<th>Tiêu chí</th>
+<th style="text-align:center">Direct Assignment (v1.0)</th>
+<th style="text-align:center">Group-Based Access (v2.0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cơ chế cấp quyền</strong></td>
+<td style="text-align:center">Gán trực tiếp user vào account</td>
+<td style="text-align:center">Thêm user vào group đã được gán sẵn</td>
+</tr>
+<tr>
+<td><strong>Thời gian cấp quyền</strong></td>
+<td style="text-align:center">15-30 giây (async operation)</td>
+<td style="text-align:center">&lt; 5 giây (sync operation, gần như real-time)</td>
+</tr>
+<tr>
+<td><strong>Thời gian thu hồi quyền</strong></td>
+<td style="text-align:center">Tối đa 12 giờ</td>
+<td style="text-align:center">Trong vòng 60 giây</td>
+</tr>
+<tr>
+<td><strong>Hiệu lực credentials sau revoke</strong></td>
+<td style="text-align:center">Vẫn còn hiệu lực trong một khoảng thời gian</td>
+<td style="text-align:center">Bị vô hiệu hóa gần như ngay lập tức</td>
+</tr>
+<tr>
+<td><strong>Độ phức tạp vận hành</strong></td>
+<td style="text-align:center">Cao - Phải tạo/xóa assignment mỗi lần</td>
+<td style="text-align:center">Thấp - chỉ quản lý membership</td>
+</tr>
+<tr>
+<td><strong>Khả năng mở rộng</strong></td>
+<td style="text-align:center">Hạn chế khi số lượng user tăng</td>
+<td style="text-align:center">Dễ mở rộng nhờ reuse group</td>
+</tr>
+<tr>
+<td><strong>Phản ứng sự cố bảo mật</strong></td>
+<td style="text-align:center">Chậm, khó kiểm soát</td>
+<td style="text-align:center">Nhanh, có thể revoke hàng loạt</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kiến-trúc-giải-pháp">Kiến trúc giải pháp</h2>
+<h3 id="sơ-đồ-kiến-trúc-hệ-thống">Sơ đồ kiến trúc hệ thống</h3>
+<img src="/images/figure-proposal.png" alt="figure-proposal" style="width:600px !important; max-width:900px !important;">
+<p style="text-align:center; font-style:italic;">Hình 1. Sơ đồ kiến trúc hệ thống Production Access Request Portal</p>
+<h3 id="các-dịch-vụ-aws-được-sử-dụng">Các dịch vụ AWS được sử dụng</h3>
+<table>
+<thead>
+<tr>
+<th>Dịch vụ AWS</th>
+<th>Vai trò trong hệ thống</th>
+<th>Lý do lựa chọn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AWS Lambda</strong></td>
+<td>Xử lý toàn bộ logic nghiệp vụ của hệ thống như provisioning access, revoke, xử lý email approval và auto expiry.</td>
+<td>Kiến trúc serverless giúp không cần quản lý server, auto scaling, chi phí thấp theo số lần chạy (pay-per-use), phù hợp workload event-driven.</td>
+</tr>
+<tr>
+<td><strong>Amazon API Gateway</strong></td>
+<td>Cung cấp REST API endpoint để nhận webhook từ Jira.</td>
+<td>Managed API service có hỗ trợ authentication, throttling, rate limit, usage plans và tích hợp native với Lambda.</td>
+</tr>
+<tr>
+<td><strong>AWS IAM Identity Center</strong></td>
+<td>Quản lý quyền truy cập AWS thông qua Permission Sets, Access Groups và Group Memberships. Cấp phát và thu hồi quyền truy cập nhanh chóng (group-based).</td>
+<td>Đây là giải pháp SSO chính thức của AWS, hỗ trợ centralized access management và revoke credentials gần như tức thời ( trong vòng 60s).</td>
+</tr>
+<tr>
+<td><strong>Amazon DynamoDB</strong></td>
+<td>Lưu trữ session metadata (Sessions Table), approval tokens (Approval Tokens Table), hỗ trợ TTL auto-expiry và trigger revoke workflow thông qua DynamoDB Streams.</td>
+<td>NoSQL serverless có độ trễ thấp, hỗ trợ TTL auto-expiry và DynamoDB Streams.</td>
+</tr>
+<tr>
+<td><strong>AWS Secrets Manager</strong></td>
+<td>Lưu trữ bảo mật Jira credentials, webhook API key, token secret và access group mapping.</td>
+<td>Bảo mật secrets tốt hơn hardcode/config file, có encryption at rest và automatic rotation support.</td>
+</tr>
+<tr>
+<td><strong>Amazon SES</strong></td>
+<td>Gửi email approval, email notification khi cấp quyền và revoke quyền.</td>
+<td>Chi phí thấp, dễ tích hợp với Lambda.</td>
+</tr>
+<tr>
+<td><strong>Amazon CloudWatch</strong></td>
+<td>Logging (structured JSON logs), monitoring metrics, alarming cho Lambda, API Gateway, DynamoDB&hellip;</td>
+<td>Native integration với Lambda và các dịch vụ AWS khác.</td>
+</tr>
+<tr>
+<td><strong>AWS CloudTrail</strong></td>
+<td>Ghi audit trail cho tất cả API calls liên quan đến Identity Center, Lambda và các thao tác cấp quyền.</td>
+<td>Đáp ứng compliance requirements (đảm bảo complete auditability).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="thành-phần-hệ-thống">Thành phần hệ thống</h3>
+<p>Hệ thống Production Access Request Portal được tổ chức theo mô hình nhiều lớp, trong đó mỗi thành phần đảm nhận một vai trò riêng nhưng phối hợp chặt chẽ để tạo thành một quy trình cấp quyền truy cập Production hoàn toàn tự động, có kiểm soát và có khả năng kiểm toán đầy đủ. Về mặt logic, hệ thống bao gồm các nhóm thành phần chính sau: giao diện yêu cầu (Jira Service Management), lớp tiếp nhận API, lớp xử lý nghiệp vụ bằng Lambda, lớp lưu trữ dữ liệu, lớp quản lý danh tính và quyền truy cập, lớp gửi thông báo, và lớp giám sát/vận hành. Thiết kế này phù hợp với kiến trúc serverless đã mô tả trong tài liệu, đồng thời hỗ trợ cơ chế Group-Based Access cho việc cấp và thu hồi quyền gần như theo thời gian thực.</p>
+<table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Chức năng chính</th>
+<th>Vai trò trong luồng xử lý</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jira Service Management Portal</strong></td>
+<td>Tiếp nhận yêu cầu truy cập từ người dùng, hiển thị trạng thái request, workflow phê duyệt</td>
+<td>Điểm bắt đầu của toàn bộ quy trình</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>Tiếp nhận webhook từ Jira, xác thực request và chuyển tiếp vào Lambda</td>
+<td>Cửa vào của backend serverless</td>
+</tr>
+<tr>
+<td><strong>Lambda Executor</strong></td>
+<td>Xử lý provisioning access sau khi request được duyệt</td>
+<td>Thực thi logic cấp quyền chính</td>
+</tr>
+<tr>
+<td><strong>Lambda Email Approval</strong></td>
+<td>Tạo email phê duyệt, xử lý approve/decline từ email</td>
+<td>Hỗ trợ phê duyệt linh hoạt qua email</td>
+</tr>
+<tr>
+<td><strong>Lambda Expiry</strong></td>
+<td>Theo dõi session hết hạn và tự động thu hồi quyền</td>
+<td>Đảm bảo quyền truy cập chỉ tồn tại trong thời gian cho phép</td>
+</tr>
+<tr>
+<td><strong>DynamoDB</strong></td>
+<td>Lưu session, approval token, TTL và metadata phục vụ revoke</td>
+<td>Nền tảng lưu trữ trạng thái hệ thống</td>
+</tr>
+<tr>
+<td><strong>Secrets Manager</strong></td>
+<td>Lưu secrets, mapping group, token secret, Jira credentials</td>
+<td>Bảo vệ dữ liệu nhạy cảm</td>
+</tr>
+<tr>
+<td><strong>IAM Identity Center</strong></td>
+<td>Quản lý permission sets, access groups, group membership</td>
+<td>Thành phần cấp phát và thu hồi quyền truy cập</td>
+</tr>
+<tr>
+<td><strong>Amazon SES</strong></td>
+<td>Gửi email approval, notification, expiry alert</td>
+<td>Kênh giao tiếp với approver và requester</td>
+</tr>
+<tr>
+<td><strong>CloudWatch/CloudTrail</strong></td>
+<td>Ghi log, metrics, audit trail</td>
+<td>Giám sát, truy vết và tuân thủ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quy-trình-vận-hành">Quy trình vận hành</h3>
+<p>Quy trình vận hành của Production Access Request Portal được thiết kế theo mô hình tự động hóa end-to-end, bắt đầu từ lúc người dùng gửi yêu cầu trên Jira Service Management cho đến khi quyền truy cập được cấp, theo dõi thời hạn, và tự động thu hồi khi hết hiệu lực. Toàn bộ vòng đời của một request đều được ghi nhận đầy đủ trên Jira, DynamoDB, CloudWatch và CloudTrail nhằm đảm bảo khả năng kiểm toán và truy vết.</p>
+<h4 id="quy-trình-cấp-quyền-tiêu-chuẩn-standard-grant-flow">Quy trình cấp quyền tiêu chuẩn (Standard Grant Flow)</h4>
+<p>Quy trình cấp quyền tiêu chuẩn được kích hoạt khi End User gửi request truy cập Production trên Jira Service Management Portal. Sau khi request được tạo, Jira workflow sẽ chuyển trạng thái sang bước chờ phê duyệt và đồng thời phát sinh webhook đến AWS API Gateway để bắt đầu quá trình provisioning. Lambda Executor là thành phần chịu trách nhiệm xử lý logic cấp quyền chính, bao gồm xác thực webhook, tra cứu mapping, thêm user vào group và ghi nhận session vào DynamoDB.</p>
+<p>Luồng xử lý tiêu chuẩn như sau:</p>
+<ol>
+<li><strong>Người dùng gửi yêu cầu truy cập:</strong> End User điền form trên Jira Service Management Portal với các thông tin như tài khoản đích, loại quyền truy cập và thời gian sử dụng mong muốn.</li>
+<li><strong>Jira chuyển yêu cầu sang trạng thái chờ duyệt:</strong> Jira tạo ticket và kích hoạt automation rule để gọi webhook tới hệ thống backend.</li>
+<li><strong>API Gateway tiếp nhận webhook:</strong> API Gateway nhận request từ Jira, kiểm tra API key và chuyển tiếp payload đến Lambda Executor.</li>
+<li><strong>Lambda Executor xác thực và xử lý request:</strong> Lambda kiểm tra tính hợp lệ của payload, xác thực chữ ký webhook, đọc dữ liệu cần thiết và ánh xạ duration của request sang duration tier chuẩn.</li>
+<li><strong>Tra cứu access group tương ứng:</strong> Hệ thống sử dụng Secrets Manager để lấy mapping giữa account, access type và duration tier, sau đó xác định access group phù hợp trong IAM Identity Center. Cách làm này đúng với mô hình Group-Based Access đã mô tả trong tài liệu.</li>
+<li><strong>Thêm user vào access group:</strong> Lambda Executor gọi API của Identity Center để tạo group membership cho user. Khi membership được tạo thành công, quyền truy cập tương ứng sẽ được cấp gần như ngay lập tức.</li>
+<li><strong>Ghi nhận session vào DynamoDB:</strong> Một bản ghi session được tạo trong bảng AccessSessions, bao gồm thông tin request ID, requester, group ID, membership ID, thời gian cấp và thời gian hết hạn. TTL được thiết lập để kích hoạt luồng thu hồi tự động.</li>
+<li><strong>Cập nhật trạng thái trên Jira:</strong> Jira ticket được chuyển sang trạng thái Approved và được dùng như nguồn theo dõi chính cho người dùng và approver.</li>
+<li><strong>Gửi email thông báo cho requester:</strong> Hệ thống gửi email thông báo rằng quyền đã được cấp thành công, kèm theo thông tin cần thiết để truy cập IAM Identity Center Portal.</li>
+<li><strong>Người dùng đăng nhập và sử dụng quyền tạm thời:</strong> End User đăng nhập vào Identity Center Portal để sử dụng quyền truy cập AWS trong khoảng thời gian đã được phê duyệt.</li>
+</ol>
+<h4 id="quy-trình-phê-duyệt-qua-email-email-approval-flow">Quy trình phê duyệt qua email (Email Approval Flow)</h4>
+<p>Ngoài quy trình phê duyệt trực tiếp trên Jira, hệ thống còn hỗ trợ phê duyệt qua email nhằm tăng tính linh hoạt cho Approver. Khi một request mới được tạo, Jira automation có thể gọi Lambda Email Approval để sinh email chứa các liên kết Approve/Decline. Quy trình này sử dụng token có chữ ký HMAC-SHA256, thời hạn 24 giờ và chỉ dùng một lần để hạn chế rủi ro giả mạo hoặc replay attack.</p>
+<p>Luồng xử lý như sau:</p>
+<ol>
+<li><strong>Jira kích hoạt yêu cầu phê duyệt email:</strong> Khi request ở trạng thái chờ duyệt, Jira gọi endpoint <code>/email-approval/request</code>.</li>
+<li><strong>Lambda tạo token phê duyệt an toàn:</strong> Token được sinh ra từ <code>token_id</code>, <code>expiry_timestamp</code> và <code>hmac_signature</code>, sau đó lưu metadata vào bảng Approval Tokens trong DynamoDB.</li>
+<li><strong>Gửi email đến Approver:</strong> Lambda render email HTML chứa hai nút <code>Approve</code> và <code>Decline</code> rồi gửi qua Amazon SES.</li>
+<li><strong>Approver chọn hành động:</strong> Khi người phê duyệt nhấp vào một trong hai nút, request sẽ được chuyển đến endpoint <code>/email-approval/action</code>.</li>
+<li><strong>Hệ thống xác thực token:</strong> Lambda kiểm tra chữ ký HMAC, trạng thái hết hạn và cờ <code>used</code> trong DynamoDB. Nếu token hợp lệ, hệ thống đánh dấu token đã sử dụng.</li>
+<li><strong>Cập nhật kết quả về Jira:</strong> Lambda gọi Jira Service Desk Approval API để cập nhật trạng thái approve hoặc decline.</li>
+<li><strong>Trả về trang xác nhận:</strong> Hệ thống hiển thị trang xác nhận cho Approver và đồng thời ghi nhận log phục vụ kiểm toán.</li>
+</ol>
+<h4 id="quy-trình-tự-động-hết-hạn-và-thu-hồi-quyền-auto-expiry-flow">Quy trình tự động hết hạn và thu hồi quyền (Auto Expiry Flow)</h4>
+<p>Khi session đến thời điểm hết hạn, DynamoDB TTL sẽ tự động xóa bản ghi session. Sự kiện xóa này được đẩy qua DynamoDB Streams và kích hoạt Lambda Expiry để thực hiện revoke quyền. Đây là cơ chế then chốt giúp hệ thống đạt được mục tiêu thu hồi credentials trong vòng khoảng 60 giây.</p>
+<p>Luồng xử lý như sau:</p>
+<ol>
+<li><strong>DynamoDB TTL xóa session hết hạn:</strong> Khi <code>ttl</code> của session đã quá hạn, DynamoDB tự động loại bỏ record.</li>
+<li><strong>DynamoDB Streams phát sinh event REMOVE:</strong> Lambda Expiry nhận sự kiện xóa từ stream và xác định đây là một sự kiện hết hạn hợp lệ.</li>
+<li><strong>Xác định membership cần thu hồi:</strong> Lambda đọc dữ liệu cũ của session để lấy <code>membership_id</code> và group name tương ứng.</li>
+<li><strong>Xóa user khỏi access group:</strong> Hệ thống gọi <code>DeleteGroupMembership</code> trên IAM Identity Center để loại bỏ quyền của user.</li>
+<li><strong>Credentials bị vô hiệu hóa:</strong> Sau khi membership bị xóa, credentials của user sẽ không còn hiệu lực trong thời gian rất ngắn, đáp ứng mục tiêu revoke gần như tức thời.</li>
+<li><strong>Cập nhật Jira và gửi thông báo:</strong> Ticket được chuyển sang trạng thái Expired, đồng thời requester nhận email thông báo quyền đã hết hạn.</li>
+</ol>
+<h4 id="quy-trình-thu-hồi-khẩn-cấp-emergency-revocation">Quy trình thu hồi khẩn cấp (Emergency Revocation)</h4>
+<p>Trong các tình huống khẩn cấp như phát hiện lộ credentials, hành vi bất thường hoặc yêu cầu từ nhóm bảo mật, hệ thống hỗ trợ cơ chế thu hồi khẩn cấp để loại bỏ toàn bộ quyền truy cập của một user trong thời gian ngắn. Lambda có thể liệt kê tất cả group memberships của user và xóa chúng để vô hiệu hóa toàn bộ session đang hoạt động.</p>
+<p>Các bước thực hiện gồm:</p>
+<ol>
+<li><strong>Kích hoạt yêu cầu thu hồi khẩn cấp:</strong> Operator hoặc hệ thống giám sát gửi yêu cầu revoke ngay lập tức.</li>
+<li><strong>Tra cứu toàn bộ membership của user:</strong> Lambda lấy danh sách tất cả group memberships của user trong Identity Center.</li>
+<li><strong>Xóa user khỏi toàn bộ groups:</strong> Mọi membership liên quan đến user đều bị xóa để đảm bảo không còn quyền truy cập nào tồn tại.</li>
+<li><strong>Ghi nhận sự kiện thu hồi:</strong> Hệ thống cập nhật trạng thái trong DynamoDB, ghi log lên CloudWatch và lưu dấu vết phục vụ audit trail.</li>
+</ol>
+<h4 id="nguyên-tắc-vận-hành-và-xử-lý-ngoại-lệ">Nguyên tắc vận hành và xử lý ngoại lệ</h4>
+<p>Để đảm bảo hệ thống vận hành ổn định, một số nguyên tắc sau được áp dụng xuyên suốt toàn bộ workflow:</p>
+<ul>
+<li><strong>Không cấp quyền nếu chưa đủ điều kiện</strong>: Request chỉ được xử lý khi webhook hợp lệ, approver hợp lệ và mapping group tương ứng tồn tại.</li>
+<li><strong>Mỗi request chỉ có một trạng thái cuối cùng:</strong> Approved, Declined, Expired hoặc Revoked.</li>
+<li><strong>Token email chỉ dùng một lần:</strong> Ngăn chặn việc mở lại liên kết cũ để thực hiện thao tác ngoài ý muốn.</li>
+<li><strong>Mọi lỗi đều phải được log:</strong> Các lỗi xác thực, lỗi API hoặc lỗi provisioning cần được ghi nhận để phục vụ điều tra.</li>
+<li><strong>Ưu tiên fail-safe:</strong> Nếu hệ thống không xác định được trạng thái hợp lệ, quyền truy cập sẽ không được cấp.</li>
+</ul>
+<h2 id="lộ-trình--mốc-triển-khai">Lộ trình &amp; Mốc triển khai</h2>
+<h3 id="giai-đoạn-1-phân-tích-yêu-cầu-và-thiết-kế-giải-pháp-tuần-2-4">Giai đoạn 1: Phân tích yêu cầu và thiết kế giải pháp (Tuần 2-4)</h3>
+<p>Mục tiêu của giai đoạn này là xác định rõ phạm vi hệ thống, các yêu cầu nghiệp vụ, mô hình phân quyền và thiết kế kiến trúc tổng thể.</p>
+<p>Các công việc chính:</p>
+<ul>
+<li>Thu thập yêu cầu từ các bên liên quan (DevOps, Security, Engineering).</li>
+<li>Xác định danh sách AWS Accounts cần quản lý.</li>
+<li>Xây dựng ma trận quyền truy cập (ReadOnly, PowerUser, Admin).</li>
+<li>Xác định duration tiers tiêu chuẩn.</li>
+<li>Thiết kế workflow Jira Service Management.</li>
+<li>Thiết kế sơ đồ kiến trúc hệ thống.</li>
+<li>Thiết kế mô hình dữ liệu DynamoDB.</li>
+</ul>
+<p><strong>Milestone 1 - Architecture Approved</strong></p>
+<h3 id="giai-đoạn-2-xây-dựng-hạ-tầng-nền-tảng-tuần-5-6">Giai đoạn 2: Xây dựng hạ tầng nền tảng (Tuần 5-6)</h3>
+<p>Mục tiêu của giai đoạn này là triển khai toàn bộ hạ tầng AWS bằng Terraform để tạo nền tảng cho hệ thống.</p>
+<p>Các công việc chính:</p>
+<ul>
+<li>Xây dựng Terraform modules: API Gateway, Lambda Functions, DynamoDB Tables, IAM Roles, Secrets Manager, SES Configuration.</li>
+<li>Tạo Permission Sets trong IAM Identity Center.</li>
+<li>Tạo Access Groups cho từng account.</li>
+<li>Thiết lập Group Assignments.</li>
+<li>Thiết lập Terraform Backend (S3 + DynamoDB Lock).</li>
+</ul>
+<p><strong>Milestone 2 - Infrastructure Ready</strong></p>
+<h3 id="giai-đoạn-3-phát-triển-nghiệp-vụ-hệ-thống-tuần-7-8">Giai đoạn 3: Phát triển nghiệp vụ hệ thống (Tuần 7-8)</h3>
+<p>Đây là giai đoạn phát triển phần logic cốt lõi của hệ thống.</p>
+<p>Các công việc chính:</p>
+<ul>
+<li>Phát triển Lambda Executor.</li>
+<li>Phát triển Lambda Email Approval.</li>
+<li>Phát triển Lambda Expiry.</li>
+<li>Xây dựng shared Lambda Layer.</li>
+<li>Tích hợp Jira APIs.</li>
+<li>Tích hợp IAM Identity Center APIs.</li>
+<li>Tích hợp Amazon SES.</li>
+<li>Triển khai structured logging.</li>
+<li>Tích hợp Secrets Manager cache.</li>
+</ul>
+<p><strong>Milestone 3 - Core Features Completed</strong></p>
+<h3 id="giai-đoạn-4-kiểm-thử-và-nghiệm-thu-tuần-9-10">Giai đoạn 4: Kiểm thử và nghiệm thu (Tuần 9-10)</h3>
+<p>Giai đoạn này tập trung kiểm tra tính ổn định, độ bảo mật và khả năng vận hành thực tế.</p>
+<p>Các công việc chính:</p>
+<ul>
+<li>Unit Testing cho Lambda functions.</li>
+<li>Integration Testing toàn bộ workflow.</li>
+<li>Security Testing: API authentication, webhook signature validation, token replay prevention.</li>
+<li>Load Testing API Gateway.</li>
+<li>TTL Expiry Testing.</li>
+<li>Emergency Revocation Testing.</li>
+</ul>
+<p><strong>Milestone 4 - UAT Passed</strong></p>
+<h3 id="giai-đoạn-5-triển-khai-production-và-chuyển-giao-vận-hành-tuần-11">Giai đoạn 5: Triển khai Production và chuyển giao vận hành (Tuần 11)</h3>
+<p>Giai đoạn cuối cùng đưa hệ thống vào vận hành chính thức.</p>
+<p>Các công việc chính:</p>
+<ul>
+<li>Deploy Production environment.</li>
+<li>Verify tất cả resources.</li>
+<li>Populate Access Group Mapping.</li>
+<li>Verify Jira webhook integration.</li>
+<li>Verify SES production mode.</li>
+<li>Thiết lập CloudWatch alarms.</li>
+<li>Thiết lập dashboard giám sát.</li>
+</ul>
+<p><strong>Milestone 5 - Production Go-Live</strong></p>
+<h3 id="bảng-kế-hoạch-triển-khai-tổng-quan">Bảng kế hoạch triển khai tổng quan</h3>
+<table>
+<thead>
+<tr>
+<th>Giai đoạn</th>
+<th>Thời gian</th>
+<th>Deliverables</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phân tích &amp; Thiết kế</td>
+<td>Tuần 2-4</td>
+<td>Kiến trúc, workflow, data model</td>
+<td>Architecture Approved</td>
+</tr>
+<tr>
+<td>Xây dựng hạ tầng</td>
+<td>Tuần 5-6</td>
+<td>Terraform infrastructure</td>
+<td>Infrastructure Ready</td>
+</tr>
+<tr>
+<td>Phát triển nghiệp vụ</td>
+<td>Tuần 7-8</td>
+<td>Lambda functions, API integration</td>
+<td>Core Features Completed</td>
+</tr>
+<tr>
+<td>Kiểm thử &amp; Nghiệm thu</td>
+<td>Tuần 9-10</td>
+<td>Testing reports, UAT</td>
+<td>UAT Passed</td>
+</tr>
+<tr>
+<td>Production Deployment</td>
+<td>Tuần 11</td>
+<td>Production system live</td>
+<td>Production Go-Live</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kế-hoạch-mở-rộng-sau-triển-khai">Kế hoạch mở rộng sau triển khai</h3>
+<p>Sau khi hệ thống đi vào vận hành ổn định, các cải tiến trong tương lai có thể bao gồm:</p>
+<ul>
+<li>Hỗ trợ Slack Approval Workflow.</li>
+<li>Dashboard theo dõi active sessions theo thời gian thực.</li>
+<li>Tích hợp SIEM cho Security Team.</li>
+<li>Risk-based Access Approval.</li>
+<li>Machine Learning anomaly detection cho access pattern.</li>
+<li>Multi-region deployment để tăng khả năng sẵn sàng.</li>
+</ul>
+<h2 id="ước-tính-ngân-sách">Ước tính ngân sách</h2>
+<table>
+<thead>
+<tr>
+<th>Dịch vụ</th>
+<th>Đơn giá</th>
+<th>Giả định</th>
+<th>Chi phí ước tính mỗi tháng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AWS Lambda</strong></td>
+<td>$0.2/triệu requests và $0.0000166667/mỗi GB-giây duration</td>
+<td>Khoảng 3000 invocations, 256 MB, thời gian chạy trung bình khoảng 5 giây</td>
+<td>~ $0.06</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>$3.5/triệu requests</td>
+<td>Khoảng 2000 requests</td>
+<td>~ $0.01</td>
+</tr>
+<tr>
+<td><strong>DynamoDB</strong></td>
+<td>On-demand pricing</td>
+<td>Khoảng 4000 write và 2000 read</td>
+<td>~ $0.01</td>
+</tr>
+<tr>
+<td><strong>Secrets Manager</strong></td>
+<td>$0.4/secret/tháng và $0.05/10000 lượt calls</td>
+<td>4 secrets, khoảng 10000 calls</td>
+<td>~ $1.6</td>
+</tr>
+<tr>
+<td><strong>Amazon SES</strong></td>
+<td>$0.1/1000 emails</td>
+<td>Khoảng 2000 emails (grant + expiry)</td>
+<td>~ $0.02</td>
+</tr>
+<tr>
+<td><strong>CloudWatch Logs</strong></td>
+<td>$0.5/GB ingested</td>
+<td>Khoảng 0.5 GB log ingestion</td>
+<td>~ $0.25</td>
+</tr>
+<tr>
+<td><strong>S3 (Terraform State)</strong></td>
+<td>$0,023/GB</td>
+<td>Dưới 1 MB</td>
+<td>~ $0.00</td>
+</tr>
+</tbody>
+</table>
+<p>Tổng chi phí ước tính cho toàn bộ hệ thống là khoảng <strong>~$2/tháng</strong>.</p>
+<h2 id="đánh-giá-rủi-ro">Đánh giá rủi ro</h2>
+<p>Mặc dù Production Access Request Portal được xây dựng trên kiến trúc serverless với nhiều lớp bảo mật và cơ chế tự động hóa, hệ thống vẫn tồn tại một số rủi ro tiềm ẩn liên quan đến phụ thuộc dịch vụ bên ngoài, lỗi vận hành, lỗi cấu hình hoặc các sự cố bảo mật. Việc đánh giá rủi ro giúp chủ động xây dựng phương án giảm thiểu và đảm bảo tính sẵn sàng của hệ thống trong môi trường Production.</p>
+<h3 id="ma-trận-đánh-giá-rủi-ro">Ma trận đánh giá rủi ro</h3>
+<p>Các rủi ro được đánh giá dựa trên ba tiêu chí chính: Khả năng xảy ra, mức độ ảnh hưởng, mức độ ưu tiên xử lý.</p>
+<table>
+<thead>
+<tr>
+<th>Rủi ro</th>
+<th>Mô tả</th>
+<th style="text-align:center">Khả năng xảy ra</th>
+<th style="text-align:center">Mức độ ảnh hưởng</th>
+<th style="text-align:center">Mức độ ưu tiên xử lý</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jira Service Management bị gián đoạn</td>
+<td>Không thể tạo request mới hoặc cập nhật trạng thái approval</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td>AWS IAM Identity Center lỗi hoặc suy giảm dịch vụ</td>
+<td>Không thể cấp hoặc thu hồi quyền truy cập</td>
+<td style="text-align:center">Thấp</td>
+<td style="text-align:center">Rất cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td>DynamoDB TTL xử lý chậm</td>
+<td>Session hết hạn nhưng chưa bị revoke đúng thời điểm</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td>Lambda function lỗi runtime</td>
+<td>Workflow provisioning hoặc expiry bị gián đoạn</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td>SES gửi email thất bại</td>
+<td>Approver hoặc requester không nhận được thông báo</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Trung bình</td>
+</tr>
+<tr>
+<td>Secrets Manager không truy cập được</td>
+<td>Lambda không lấy được secret để xử lý request</td>
+<td style="text-align:center">Thấp</td>
+<td style="text-align:center">Cao</td>
+<td style="text-align:center">Trung bình</td>
+</tr>
+<tr>
+<td>Webhook giả mạo hoặc payload bị sửa đổi</td>
+<td>Có thể dẫn đến provisioning trái phép nếu không xác thực đúng</td>
+<td style="text-align:center">Thấp</td>
+<td style="text-align:center">Rất cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td>Cấu hình sai access group mapping</td>
+<td>User được cấp sai quyền hoặc sai account</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+<tr>
+<td>CloudWatch logging lỗi hoặc thiếu log</td>
+<td>Mất khả năng điều tra hoặc audit trail không đầy đủ</td>
+<td style="text-align:center">Thấp</td>
+<td style="text-align:center">Trung bình</td>
+<td style="text-align:center">Trung bình</td>
+</tr>
+<tr>
+<td>Emergency revoke thất bại</td>
+<td>Không thể thu hồi quyền ngay khi phát hiện rủi ro</td>
+<td style="text-align:center">Thấp</td>
+<td style="text-align:center">Rất cao</td>
+<td style="text-align:center">Cao</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kế-hoạch-ứng-phó-sự-cố">Kế hoạch ứng phó sự cố</h3>
+<p>Để giảm thiểu rủi ro khi sự cố xảy ra, hệ thống cần có runbook rõ ràng.</p>
+<table>
+<thead>
+<tr>
+<th>Tình huống</th>
+<th>Phản ứng ngay lập tức</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lambda provisioning fail</td>
+<td>Retry hoặc manual trigger</td>
+</tr>
+<tr>
+<td>Identity Center API fail</td>
+<td>Retry và escalate AWS Support</td>
+</tr>
+<tr>
+<td>SES fail</td>
+<td>Retry gửi email hoặc dùng Jira UI approval</td>
+</tr>
+<tr>
+<td>TTL revoke fail</td>
+<td>Manual revoke qua operator</td>
+</tr>
+<tr>
+<td>Security incident</td>
+<td>Emergency revoke toàn bộ sessions</td>
+</tr>
+<tr>
+<td>Webhook authentication fail</td>
+<td>Reject request và alert Security Team</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kết-quả-kỳ-vọng">Kết quả kỳ vọng</h2>
+<ul>
+<li><strong>Chuẩn hóa và tự động hóa quy trình cấp quyền:</strong> Hệ thống giúp thay thế hoàn toàn quy trình cấp quyền thủ công bằng một luồng xử lý tự động, thống nhất và có thể kiểm soát đầu cuối. Từ bước gửi yêu cầu, phê duyệt, cấp quyền cho đến thu hồi quyền đều được điều phối bởi Jira Service Management, AWS Lambda và IAM Identity Center, qua đó giảm đáng kể thời gian xử lý và hạn chế sai sót do con người.</li>
+<li><strong>Tăng cường bảo mật cho môi trường Production:</strong> Nhờ áp dụng mô hình Just-in-Time Access, Zero Standing Privileges và Group-Based Access hệ thống chỉ cấp quyền trong đúng khoảng thời gian cần thiết và tự động vô hiệu hóa khi hết hạn. Điều này giúp giảm thiểu rủi ro tồn tại credentials dài hạn, đồng thời nâng cao khả năng bảo vệ môi trường Production trước các tình huống lộ thông tin xác thực hoặc lạm dụng quyền truy cập.</li>
+<li><strong>Rút ngắn thời gian cấp và thu hồi quyền:</strong> So với kiến trúc cũ dựa trên Direct Assignment, phiên bản mới kỳ vọng rút ngắn đáng kể thời gian provisioning xuống còn dưới 5 giây và thu hồi quyền trong vòng khoảng 60 giây sau khi TTL hết hạn. Nhờ đó, đội ngũ kỹ thuật có thể truy cập nhanh hơn khi cần xử lý sự cố, trong khi đội ngũ bảo mật vẫn đảm bảo khả năng thu hồi quyền gần như tức thời khi phát hiện rủi ro.</li>
+<li><strong>Nâng cao khả năng kiểm toán và truy vết:</strong> Toàn bộ hoạt động của hệ thống được ghi nhận qua Jira, CloudWatch, CloudTrail và DynamoDB, giúp tạo ra audit trail đầy đủ cho các sự kiện như request submitted, approved, provisioned, expired và revoked. Đây là nền tảng quan trọng để đáp ứng yêu cầu tuân thủ nội bộ, hỗ trợ kiểm toán và điều tra khi có sự cố bảo mật.</li>
+<li><strong>Tối ưu chi phí và công sức vận hành:</strong> Với kiến trúc serverless trên AWS, hệ thống không yêu cầu quản lý máy chủ, tự động mở rộng theo nhu cầu và chỉ phát sinh chi phí theo mức sử dụng thực tế. Điều này giúp giảm gánh nặng vận hành cho đội ngũ DevOps, đồng thời đảm bảo chi phí triển khai ở mức thấp và phù hợp với quy mô sử dụng của tổ chức.</li>
+<li><strong>Cải thiện trải nghiệm người dùng và quy trình phê duyệt:</strong> Người dùng có thể gửi yêu cầu truy cập qua Jira Portal và nhận thông báo rõ ràng qua email trong suốt vòng đời request. Người phê duyệt cũng có thể xử lý nhanh hơn thông qua Jira UI hoặc email approval link, giúp quy trình trở nên linh hoạt, minh bạch và thuận tiện hơn cho cả requester lẫn approver.</li>
+<li><strong>Mở rộng dễ dàng trong tương lai:</strong> Thiết kế theo hướng module hóa và Infrastructure as Code giúp hệ thống dễ dàng mở rộng sang nhiều AWS account, thêm access type mới hoặc tích hợp thêm các kênh phê duyệt khác như Slack mà không cần thay đổi lớn về kiến trúc tổng thể.</li>
+</ul>
+<p>Tổng kết lại, dự án kỳ vọng tạo ra một nền tảng quản lý truy cập Production hiện đại, an toàn và có khả năng mở rộng cao, đồng thời cân bằng tốt giữa bảo mật, tốc độ xử lý, khả năng kiểm toán và chi phí vận hành.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/vi/1-worklog/week-12/" title="Worklog tuần 12"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vi/3-translate-blog/" title="Các blog đã dịch" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203512"></script>
+    <script src="/js/jquery.sticky.js?1779203512"></script>
+    <script src="/js/featherlight.min.js?1779203512"></script>
+    <script src="/js/highlight.pack.js?1779203512"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203512"></script>
+    <script src="/js/learn.js?1779203512"></script>
+    <script src="/js/hugo-learn.js?1779203512"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203512"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,3281 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Blog 1 :: Báo cáo thực tập</title>
+
+    
+    <link href="/css/nucleus.css?1779203512" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203512" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203512" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203512" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203512" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203512" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203512" rel="stylesheet">
+    <link href="/css/theme.css?1779203512" rel="stylesheet">
+    <link href="/css/tabs.css?1779203512" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203512" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203512" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203512"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/vi/3-translate-blog/blog-1/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203512"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203512"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203512"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/" title="Nhật ký công việc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/">
+          <b> 1. </b>Nhật ký công việc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-1/" title="Worklog tuần 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog tuần 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-2/" title="Worklog tuần 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog tuần 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-3/" title="Worklog tuần 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog tuần 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-4/" title="Worklog tuần 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog tuần 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-5/" title="Worklog tuần 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog tuần 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-6/" title="Worklog tuần 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog tuần 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-7/" title="Worklog tuần 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog tuần 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-8/" title="Worklog tuần 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog tuần 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-9/" title="Worklog tuần 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog tuần 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-10/" title="Worklog tuần 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog tuần 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-11/" title="Worklog tuần 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog tuần 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-12/" title="Worklog tuần 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog tuần 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-proposal/" title="Bản đề xuất dự án" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/2-proposal/">
+          <b> 2. </b>Bản đề xuất dự án
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/" title="Các blog đã dịch" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/">
+          <b> 3. </b>Các blog đã dịch
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/" title="Các event đã tham gia" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/">
+          <b> 4. </b>Các event đã tham gia
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/1-introduction/" title="Giới thiệu" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/1-introduction/">
+          <b> 5.1 </b>Giới thiệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/" title="Chuẩn bị tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/">
+          <b> 5.2 </b>Chuẩn bị tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.1-activate-identity-center/" title="Kích hoạt Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Kích hoạt Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.2-create-permission-sets/" title="Tạo Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Tạo Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.3-create-access-group/" title="Tạo Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Tạo Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.4-create-group-assignments/" title="Tạo Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Tạo Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Tạo các bảng DynamoDB" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Tạo các bảng DynamoDB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="Bảng AccessSessions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>Bảng AccessSessions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="Bảng ProvisionAccess" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>Bảng ProvisionAccess
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Tạo Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Tạo Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Tạo Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Tạo Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies cho Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies cho Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Tạo Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Tạo Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Tạo Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Tạo Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Thiết lập API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Thiết lập API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Kết nối DynamoDB Stream đến Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Kết nối DynamoDB Stream đến Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Thiết lập CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Thiết lập CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.15-setup-jira/" title="Thiết lập Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Thiết lập Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/3-test-connection/" title="Kiểm tra kết nối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Kiểm tra kết nối
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/4-product-demonstration/" title="Demo sản phẩm" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Demo sản phẩm
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/5-clean-up-resources/" title="Dọn dẹp tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-self-rating/" title="Tự đánh giá" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/6-self-rating/">
+          <b> 6. </b>Tự đánh giá
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-feedback/" title="Chia sẻ, đóng góp ý kiến" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/7-feedback/">
+          <b> 7. </b>Chia sẻ, đóng góp ý kiến
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/3-translate-blog/blog-1/" selected>Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/3-translate-blog/blog-1/">English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/vi/'>Báo cáo thực tập</a> > <a href='/vi/3-translate-blog/'>Các blog đã dịch</a> > Blog 1
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tóm-tắt">Tóm tắt</a></li>
+    <li><a href="#mục-lục">Mục lục</a></li>
+    <li><a href="#giới-thiệu">Giới thiệu</a></li>
+    <li><a href="#tổng-quan-về-kiến-trúc-hành-trình-qua-các-lớp-bảo-mật">Tổng quan về kiến trúc: Hành trình qua các lớp bảo mật</a></li>
+    <li><a href="#các-lớp-bảo-mật-trong-kiến-trúc">Các lớp bảo mật trong kiến trúc</a>
+      <ul>
+        <li><a href="#lớp-1-bảo-vệ-biên-edge-protection">Lớp 1: Bảo vệ biên (Edge Protection)</a></li>
+        <li><a href="#lớp-2-xác-minh-danh-tính-verifying-identity">Lớp 2: Xác minh danh tính (Verifying Identity)</a></li>
+        <li><a href="#lớp-3-api-front-door">Lớp 3: API front door</a></li>
+        <li><a href="#lớp-4-cô-lập-mạng-network-isolation">Lớp 4: Cô lập mạng (Network Isolation)</a></li>
+        <li><a href="#lớp-5-bảo-mật-compute-compute-security">Lớp 5: Bảo mật compute (Compute Security)</a></li>
+        <li><a href="#lớp-6-bảo-vệ-credentials">Lớp 6: Bảo vệ credentials</a></li>
+        <li><a href="#lớp-7-bảo-vệ-dữ-liệu">Lớp 7: Bảo vệ dữ liệu</a></li>
+      </ul>
+    </li>
+    <li><a href="#giám-sát-liên-tục">Giám sát liên tục</a></li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+    <li><a href="#đóng-góp-và-feedback">Đóng góp và Feedback</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 1
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="xây-dựng-kiến-trúc-bảo-mật-defense-in-depth-được-hỗ-trợ-bởi-ai-cho-serverless-microservices">Xây dựng kiến trúc bảo mật defense-in-depth được hỗ trợ bởi AI cho serverless microservices</h1>
+<p><strong>Bài viết gốc:</strong> <a href="https://aws.amazon.com/vi/blogs/security/building-an-ai-powered-defense-in-depth-security-architecture-for-serverless-microservices/">Xây dựng kiến trúc bảo mật defense-in-depth được hỗ trợ bởi AI cho serverless microservices</a></p>
+<p><strong>Tác giả:</strong> Roger Nem (Security Specialist, Amazon Web Services)</p>
+<p><strong>Ngày xuất bản:</strong> 16/02/2026</p>
+<p><strong>Nguồn:</strong> AWS Security Blog</p>
+<p><strong>Người dịch:</strong> Trần Nguyễn Đức Minh - FCAJ Intern</p>
+<p><strong>Ngày dịch:</strong> 04/03/2026</p>
+<p><strong>Thời gian đọc:</strong> 18 phút</p>
+<h2 id="tóm-tắt">Tóm tắt</h2>
+<p>Bài viết trình bày cách thiết kế một <strong>kiến trúc bảo mật defense-in-depth</strong> (bảo mật nhiều lớp) cho hệ thống <strong>serverless microservices</strong> trên AWS, trong bối cảnh các mối đe dọa hiện đại ngày càng sử dụng AI để tự động hóa tấn công. Khi ứng dụng được xây dựng theo mô hình serverless với nhiều API, function và service phân tán, diện tấn công (attack surface) mở rộng đáng kể, đòi hỏi một chiến lược bảo vệ toàn diện thay vì chỉ dựa vào perimeter security truyền thống.</p>
+<p>Tác giả đề xuất mô hình bảo mật nhiều tầng, bao phủ từ network edge, identity, API, compute, secrets cho đến data layer. Kiến trúc tận dụng các dịch vụ bảo mật tích hợp AI/ML của AWS để phát hiện bất thường, phân tích hành vi và tự động phản ứng với sự cố. Mục tiêu là đạt được sự cân bằng giữa security, scalability và developer agility, giúp tổ chức triển khai serverless ở quy mô lớn mà vẫn đảm bảo compliance và resilience.</p>
+<p><strong>Đối tượng đọc:</strong> Cloud Engineer, Security Engineer, Solutions Architect</p>
+<p><strong>Độ khó:</strong> Intermediate</p>
+<p><strong>Tags:</strong> AWS, Serverless, Security, DefenseInDepth, AI, Microservices</p>
+<h2 id="mục-lục">Mục lục</h2>
+<ul>
+<li><a href="#x%C3%A2y-d%E1%BB%B1ng-ki%E1%BA%BFn-tr%C3%BAc-b%E1%BA%A3o-m%E1%BA%ADt-defense-in-depth-%C4%91%C6%B0%E1%BB%A3c-h%E1%BB%97-tr%E1%BB%A3-b%E1%BB%9Fi-ai-cho-serverless-microservices">Xây dựng kiến trúc bảo mật defense-in-depth được hỗ trợ bởi AI cho serverless microservices</a>
+<ul>
+<li><a href="#t%C3%B3m-t%E1%BA%AFt">Tóm tắt</a></li>
+<li><a href="#m%E1%BB%A5c-l%E1%BB%A5c">Mục lục</a></li>
+<li><a href="#gi%E1%BB%9Bi-thi%E1%BB%87u">Giới thiệu</a></li>
+<li><a href="#t%E1%BB%95ng-quan-v%E1%BB%81-ki%E1%BA%BFn-tr%C3%BAc-h%C3%A0nh-tr%C3%ACnh-qua-c%C3%A1c-l%E1%BB%9Bp-b%E1%BA%A3o-m%E1%BA%ADt">Tổng quan về kiến trúc: Hành trình qua các lớp bảo mật</a></li>
+<li><a href="#c%C3%A1c-l%E1%BB%9Bp-b%E1%BA%A3o-m%E1%BA%ADt-trong-ki%E1%BA%BFn-tr%C3%BAc">Các lớp bảo mật trong kiến trúc</a>
+<ul>
+<li><a href="#l%E1%BB%9Bp-1-b%E1%BA%A3o-v%E1%BB%87-bi%C3%AAn-edge-protection">Lớp 1: Bảo vệ biên (Edge Protection)</a></li>
+<li><a href="#l%E1%BB%9Bp-2-x%C3%A1c-minh-danh-t%C3%ADnh-verifying-identity">Lớp 2: Xác minh danh tính (Verifying Identity)</a></li>
+<li><a href="#l%E1%BB%9Bp-3-api-front-door">Lớp 3: API front door</a></li>
+<li><a href="#l%E1%BB%9Bp-4-c%C3%B4-l%E1%BA%ADp-m%E1%BA%A1ng-network-isolation">Lớp 4: Cô lập mạng (Network Isolation)</a></li>
+<li><a href="#l%E1%BB%9Bp-5-b%E1%BA%A3o-m%E1%BA%ADt-compute-compute-security">Lớp 5: Bảo mật compute (Compute Security)</a></li>
+<li><a href="#l%E1%BB%9Bp-6-b%E1%BA%A3o-v%E1%BB%87-credentials">Lớp 6: Bảo vệ credentials</a></li>
+<li><a href="#l%E1%BB%9Bp-7-b%E1%BA%A3o-v%E1%BB%87-d%E1%BB%AF-li%E1%BB%87u">Lớp 7: Bảo vệ dữ liệu</a></li>
+</ul>
+</li>
+<li><a href="#gi%C3%A1m-s%C3%A1t-li%C3%AAn-t%E1%BB%A5c">Giám sát liên tục</a></li>
+<li><a href="#k%E1%BA%BFt-lu%E1%BA%ADn">Kết luận</a></li>
+<li><a href="#%C4%91%C3%B3ng-g%C3%B3p-v%C3%A0-feedback">Đóng góp và Feedback</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="giới-thiệu">Giới thiệu</h2>
+<p>Khách hàng doanh nghiệp đang đối mặt với một bối cảnh bảo mật chưa từng có, nơi các mối đe dọa mạng tinh vi sử dụng trí tuệ nhân tạo để xác định lỗ hổng, tự động hóa các cuộc tấn công và né tránh phát hiện với tốc độ máy. Các mô hình bảo mật dựa trên biên truyền thống là không đủ khi kẻ tấn công có thể phân tích hàng triệu vector tấn công trong vài giây và khai thác lỗ hổng zero-day trước khi bản vá có sẵn.</p>
+<p>Bản chất phân tán của kiến trúc serverless làm tăng thách thức này - mặc dù microservices mang lại agility và khả năng mở rộng, chúng mở rộng đáng kể diện tấn công, nơi mỗi endpoint API, mỗi lần gọi function và kho dữ liệu trở thành điểm xâm nhập tiềm năng. Một cấu hình sai sót duy nhất có thể cung cấp cho kẻ tấn công điểm tựa cần thiết để di chuyển trong hệ thống. Đồng thời, các tổ chức phải điều hướng các môi trường tuân thủ phức tạp như <a href="https://aws.amazon.com/vi/compliance/gdpr-center/">GDPR</a>, <a href="https://aws.amazon.com/vi/compliance/hipaa-compliance/">HIPAA</a>, <a href="https://aws.amazon.com/vi/compliance/pci-faqs/">PCI-DSS</a> và <a href="https://aws.amazon.com/vi/compliance/soc-faqs/">SOC 2</a>, đòi hỏi kiểm soát bảo mật mạnh mẽ và theo dõi audit đầy đủ, trong khi tốc độ phát triển phần mềm tạo ra mâu thuẫn giữa bảo mật và đổi mới, đòi hỏi các kiến ​​trúc vừa toàn diện vừa tự động hóa để cho phép triển khai an toàn mà không làm giảm tốc độ.</p>
+<p>Thách thức mang tính đa chiều (multifaceted):</p>
+<ul>
+<li><strong>Bề mặt tấn công mở rộng</strong>: Nhiều điểm vào trên các dịch vụ phân tán, yêu cầu bảo vệ trước các cuộc tấn công từ chối dịch vụ phân tán (Distributed Denial of Service – DDoS), lỗ hổng dạng injection và truy cập trái phép.</li>
+<li><strong>Độ phức tạp về danh tính và truy cập</strong>: Quản lý cơ chế xác thực (authentication) và phân quyền (authorization) trên nhiều microservices cũng như trong các luồng giao tiếp service-to-service.</li>
+<li><strong>Yêu cầu bảo vệ dữ liệu</strong>: Mã hóa dữ liệu nhạy cảm khi truyền (in transit) và khi lưu trữ (at rest), đồng thời lưu trữ và xoay vòng thông tin xác thực (credentials) một cách an toàn mà không làm ảnh hưởng đến hiệu năng hệ thống.</li>
+<li><strong>Tuân thủ và bảo vệ dữ liệu</strong>: Đáp ứng các yêu cầu pháp lý và tiêu chuẩn ngành thông qua hệ thống audit trail toàn diện và giám sát liên tục trong môi trường phân tán.</li>
+<li><strong>Thách thức về cô lập mạng</strong>: Triển khai các luồng giao tiếp được kiểm soát chặt chẽ giữa các thành phần mà không làm lộ tài nguyên ra Internet công cộng.</li>
+<li><strong>Các mối đe dọa được hỗ trợ bởi AI</strong>: Phòng thủ trước những kẻ tấn công sử dụng trí tuệ nhân tạo để tự động hóa quá trình trinh sát (reconnaissance), thích ứng chiến thuật tấn công theo thời gian thực và phát hiện lỗ hổng với tốc độ ở cấp độ máy.</li>
+</ul>
+<p>Giải pháp nằm ở <em>defense-in-depth</em> - một phương pháp bảo mật nhiều lớp, nơi nhiều kiểm soát độc lập phối hợp cùng nhau để bảo vệ ứng dụng của bạn.</p>
+<p>Bài viết này trình bày cách triển khai một kiến trúc bảo mật defense-in-depth tích hợp AI cho microservices serverless trên <a href="https://aws.amazon.com/vi/">Amazon Web Services (AWS)</a>. Bằng cách xếp chồng các kiểm soát bảo mật ở mỗi tầng của ứng dụng, kiến trúc này tạo ra một hệ thống kiên cường, không có một điểm thất bại duy nhất có thể làm tổn hại toàn bộ hạ tầng của bạn; nếu một lớp bị xâm phạm, các kiểm soát khác giúp hạn chế tác động và chứa sự cố, đồng thời tích hợp các dịch vụ AI/ML dọc theo toàn bộ kiến trúc để hỗ trợ phát hiện và phản ứng với các mối đe dọa được hỗ trợ bởi AI.</p>
+<h2 id="tổng-quan-về-kiến-trúc-hành-trình-qua-các-lớp-bảo-mật">Tổng quan về kiến trúc: Hành trình qua các lớp bảo mật</h2>
+<p>Hãy theo dõi một yêu cầu người dùng từ Internet công cộng qua kiến trúc serverless đã được bảo vệ, xem xét từng lớp bảo mật và các dịch vụ AWS bảo vệ nó. Việc triển khai này bổ sung các kiểm soát bảo mật tại bảy lớp riêng biệt với việc giám sát liên tục và phát hiện mối đe dọa tích hợp AI, mỗi lớp cung cấp khả năng cụ thể phối hợp tạo thành một chiến lược defense-in-depth toàn diện:</p>
+<ul>
+<li><strong>Lớp 1</strong> Chặn lưu lượng độc hại trước khi đến ứng dụng</li>
+<li><strong>Lớp 2</strong> Xác minh danh tính người dùng và thực thi chính sách truy cập</li>
+<li><strong>Lớp 3</strong> Mã hóa liên lạc và quản lý truy cập API</li>
+<li><strong>Lớp 4</strong> Cô lập tài nguyên trong mạng riêng</li>
+<li><strong>Lớp 5</strong> Bảo mật môi trường thực thi tính toán</li>
+<li><strong>Lớp 6</strong> Bảo vệ thông tin nhạy cảm và cấu hình</li>
+<li><strong>Lớp 7</strong> Mã hóa dữ liệu tại trạng thái nghỉ và kiểm soát truy cập dữ liệu</li>
+<li><strong>Giám sát liên tục</strong> Phát hiện mối đe dọa xuyên suốt với phân tích tích hợp AI</li>
+</ul>
+<img src="/images/architecture_diagram.jpg" alt="Architecture Diagram" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 1: Sơ đồ kiến trúc</p>
+<h2 id="các-lớp-bảo-mật-trong-kiến-trúc">Các lớp bảo mật trong kiến trúc</h2>
+<h3 id="lớp-1-bảo-vệ-biên-edge-protection">Lớp 1: Bảo vệ biên (Edge Protection)</h3>
+<p>Trước khi các yêu cầu đến ứng dụng của bạn, chúng phải đi qua Internet công cộng, nơi kẻ tấn công có thể khởi động các cuộc tấn công DDoS quy mô lớn, tiêm SQL, cross-site scripting (XSS) và các khai thác web khác. AWS đã quan sát và giảm thiểu hàng nghìn cuộc tấn công DDoS trong năm 2024, với một cuộc tấn công vượt quá 2.3 terabit/giây.</p>
+<p>Các thành phần bảo vệ biên có thể bao gồm:</p>
+<ul>
+<li><strong>Bảo vệ DDoS:</strong> <a href="https://aws.amazon.com/vi/shield/">AWS Shield</a> cung cấp bảo vệ quản lý DDoS cho các ứng dụng chạy trên AWS. <a href="https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced-summary.html">AWS Shield Advanced</a> mở rộng bằng phát hiện nâng cao, truy cập liên tục tới Đội phản ứng DDoS của AWS, bảo vệ chi phí khi bị tấn công và chẩn đoán nâng cao cho các ứng dụng doanh nghiệp.</li>
+<li><strong>Bảo vệ tầng 7:</strong> <a href="https://aws.amazon.com/vi/waf/">AWS WAF</a> bảo vệ chống lại tấn công tầng ứng dụng qua các nhóm luật được quản lý, xử lý các lỗ hổng phổ biến như OWASP Top 10 (SQLi, XSS, vv.), quy tắc giới hạn tốc độ và kiểm soát bot thông minh.</li>
+<li><strong>AI cho bảo mật:</strong> <a href="https://aws.amazon.com/vi/guardduty/">Amazon GuardDuty</a> sử dụng AI tạo nội dung để tăng cường các dịch vụ bảo mật gốc bằng cách cải thiện phát hiện mối đe dọa, điều tra và phản ứng tự động.</li>
+<li><strong>Tăng cường tích hợp AI:</strong> Các tổ chức có thể xây dựng agent bảo mật AI tự động bằng <a href="https://aws.amazon.com/vi/bedrock/">Amazon Bedrock</a> để phân tích log AWS WAF, xác định mẫu tấn công mới, tự động đề xuất luật WAF cập nhật và phản ứng sự cố dựa trên ngữ cảnh mối đe dọa, giảm thời gian phát hiện và phản hồi.</li>
+</ul>
+<h3 id="lớp-2-xác-minh-danh-tính-verifying-identity">Lớp 2: Xác minh danh tính (Verifying Identity)</h3>
+<p>Sau khi các yêu cầu vượt qua lớp bảo vệ biên (edge protection), bạn cần xác minh danh tính người dùng và xác định quyền truy cập tài nguyên. Cơ chế xác thực truyền thống bằng tên người dùng/mật khẩu dễ bị tấn công bằng credential stuffing, phishing và brute force, do đó đòi hỏi một hệ thống quản lý danh tính mạnh mẽ hỗ trợ nhiều phương thức xác thực và cơ chế bảo mật thích ứng (adaptive security) phản hồi theo tín hiệu rủi ro theo thời gian thực.</p>
+<p><a href="https://aws.amazon.com/vi/cognito/">Amazon Cognito</a> cung cấp quản lý danh tính và truy cập toàn diện cho ứng dụng web và di động thông qua hai thành phần:</p>
+<ul>
+<li><strong>User pools</strong> cung cấp một danh bạ người dùng (user directory) được quản lý hoàn toàn, xử lý:
+<ul>
+<li>Đăng ký và đăng nhập người dùng</li>
+<li>Xác thực đa yếu tố (Multi-Factor Authentication – MFA)</li>
+<li>Chính sách mật khẩu (password policies)</li>
+<li>Tích hợp nhà cung cấp danh tính mạng xã hội</li>
+<li>Liên kết danh tính doanh nghiệp thông qua SAML và OpenID Connect</li>
+<li>Các tính năng bảo mật nâng cao như xác thực thích ứng (adaptive authentication) và phát hiện thông tin xác thực bị rò rỉ (compromised credential detection)</li>
+</ul>
+</li>
+<li><strong>Identity Pools</strong> cấp thông tin xác thực AWS tạm thời, với quyền hạn giới hạn (temporary, limited-privilege credentials) cho người dùng, cho phép truy cập trực tiếp và an toàn đến các dịch vụ AWS mà không cần tiết lộ thông tin xác thực dài hạn (long-term credentials).</li>
+</ul>
+<p>Amazon Cognito sử dụng xác thực thích ứng (adaptive authentication) dựa trên machine learning để phát hiện các nỗ lực đăng nhập đáng ngờ bằng cách phân tích dấu vân tay thiết bị (device fingerprinting), uy tín địa chỉ IP (IP address reputation), các bất thường về vị trí địa lý (geographic location anomalies) và các mẫu tốc độ đăng nhập (sign-in velocity patterns). Dựa trên kết quả đánh giá rủi ro, hệ thống có thể cho phép đăng nhập, yêu cầu xác minh MFA bổ sung hoặc chặn hoàn toàn lần đăng nhập đó. Tính năng phát hiện thông tin xác thực bị xâm phạm (compromised credential detection) tự động kiểm tra thông tin đăng nhập đối chiếu với các cơ sở dữ liệu mật khẩu đã bị rò rỉ và chặn các lần đăng nhập sử dụng thông tin xác thực đã được biết là bị xâm phạm. MFA hỗ trợ cả phương thức mã xác thực gửi qua SMS và mật khẩu dùng một lần dựa trên thời gian (Time-Based One-Time Password – TOTP), giúp giảm đáng kể nguy cơ chiếm quyền tài khoản (account takeover).</p>
+<p>Đối với phân tích hành vi nâng cao, các tổ chức có thể sử dụng Amazon Bedrock để phân tích các mẫu hành vi trong khoảng thời gian dài hơn, nhằm phát hiện các nỗ lực chiếm quyền tài khoản thông qua các bất thường về địa lý, thay đổi dấu vân tay thiết bị, sai lệch trong mẫu truy cập và các bất thường theo thời điểm trong ngày.</p>
+<h3 id="lớp-3-api-front-door">Lớp 3: API front door</h3>
+<p>Một API Gateway đóng vai trò là điểm truy cập (entry point) của ứng dụng. Nó phải xử lý định tuyến yêu cầu (request routing), giới hạn lưu lượng (throttling), quản lý API key, mã hóa và cần tích hợp liền mạch với lớp xác thực (authentication layer), đồng thời cung cấp ghi log chi tiết phục vụ kiểm toán bảo mật (security auditing) trong khi vẫn duy trì hiệu năng cao và độ trễ thấp.</p>
+<ul>
+<li><a href="https://aws.amazon.com/vi/api-gateway/">Amazon API Gateway</a> là một dịch vụ được quản lý hoàn toàn (fully managed service) để tạo, xuất bản và bảo mật API ở quy mô lớn, cung cấp các năng lực bảo mật quan trọng bao gồm mã hóa SSL/TLS với <a href="https://aws.amazon.com/vi/certificate-manager/">AWS Certificate Manager (ACM)</a> nhằm tự động xử lý việc cấp phát, gia hạn và triển khai chứng chỉ. Cơ chế giới hạn yêu cầu (request throttling) và quản lý hạn ngạch (quota management) bảo vệ các dịch vụ backend thông qua cấu hình burst limit và rate limit cùng hạn ngạch sử dụng theo từng API key hoặc client để ngăn chặn lạm dụng, trong khi quản lý API key kiểm soát quyền truy cập từ các hệ thống đối tác và tích hợp bên thứ ba. Tính năng xác thực request/response sử dụng JSON Schema để kiểm tra tính hợp lệ của dữ liệu trước khi đến <a href="https://aws.amazon.com/vi/lambda/">các hàm AWS Lambda</a>, ngăn các yêu cầu sai định dạng (malformed requests) tiêu tốn tài nguyên tính toán, đồng thời tích hợp liền mạch với Amazon Cognito để xác thực JSON Web Token (JWT) và thực thi các yêu cầu xác thực trước khi yêu cầu đi vào logic ứng dụng.</li>
+<li>GuardDuty cung cấp khả năng phát hiện mối đe dọa thông minh được hỗ trợ bởi AI bằng cách phân tích các mẫu gọi API (API invocation patterns) và xác định các hoạt động đáng ngờ bao gồm rò rỉ thông tin xác thực (credential exfiltration) thông qua machine learning. Đối với phân tích nâng cao, Amazon Bedrock phân tích các metric của API Gateway và log từ <a href="https://aws.amazon.com/vi/cloudwatch/">Amazon CloudWatch</a> để xác định các đột biến bất thường của lỗi HTTP 4XX (ví dụ: 403 Forbidden) có thể cho thấy các nỗ lực quét (scanning) hoặc dò tìm (probing), bất thường trong phân bố địa lý, sai lệch trong mô hình truy cập endpoint, bất thường chuỗi thời gian (time-series anomalies) về lưu lượng yêu cầu hoặc các mẫu user agent đáng ngờ.</li>
+</ul>
+<h3 id="lớp-4-cô-lập-mạng-network-isolation">Lớp 4: Cô lập mạng (Network Isolation)</h3>
+<p>Logic ứng dụng và dữ liệu phải được cô lập khỏi truy cập trực tiếp từ Internet. Phân đoạn mạng (network segmentation) được thiết kế nhằm hạn chế di chuyển ngang (lateral movement) khi xảy ra sự cố bảo mật, giúp ngăn chặn các thành phần bị xâm nhập dễ dàng truy cập vào các tài nguyên nhạy cảm.</p>
+<ul>
+<li><a href="https://aws.amazon.com/vi/vpc/">Amazon Virtual Private Cloud (Amazon VPC)</a> cung cấp môi trường mạng cô lập, triển khai kiến trúc đa tầng (multi-tier architecture) bao gồm:
+<ul>
+<li>Public subnets dành cho NAT Gateways và Application Load Balancers, được định tuyến qua Internet Gateway.</li>
+<li>Private subnets dành cho các hàm Lambda và các thành phần ứng dụng, truy cập Internet thông qua NAT Gateways cho các kết nối outbound.</li>
+<li>Data subnets với mức kiểm soát truy cập nghiêm ngặt nhất.
+Các hàm AWS Lambda chạy trong private subnets nhằm ngăn chặn truy cập Internet trực tiếp. <a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html">VPC Flow Logs</a> ghi nhận lưu lượng mạng để phục vụ phân tích bảo mật. Security Groups cung cấp tường lửa trạng thái (stateful firewall) tuân theo nguyên tắc đặc quyền tối thiểu (least privilege). Network ACLs bổ sung lớp tường lửa phi trạng thái (stateless) ở cấp subnet với các quy tắc từ chối (explicit deny) rõ ràng.
+VPC Endpoints cho phép kết nối riêng tư tới <a href="https://aws.amazon.com/vi/dynamodb/">Amazon DynamoDB</a>, <a href="https://aws.amazon.com/vi/secrets-manager/">AWS Secrets Manager</a> và <a href="https://aws.amazon.com/vi/pm/serv-s3/">Amazon S3</a> mà không làm lưu lượng truy cập rời khỏi mạng AWS.</li>
+</ul>
+</li>
+<li><strong>GuardDuty</strong> cung cấp khả năng phát hiện mối đe dọa mạng dựa trên AI bằng cách liên tục giám sát VPC Flow Logs, CloudTrail logs và DNS logs, sử dụng machine learning để nhận diện các mẫu lưu lượng bất thường, các nỗ lực truy cập trái phép, các instance bị xâm nhập và hoạt động do thám (reconnaissance). Hiện nay, GuardDuty còn tích hợp năng lực generative AI nhằm hỗ trợ phân tích tự động và truy vấn bảo mật bằng ngôn ngữ tự nhiên.</li>
+</ul>
+<h3 id="lớp-5-bảo-mật-compute-compute-security">Lớp 5: Bảo mật compute (Compute Security)</h3>
+<p>Các hàm Lambda thực thi mã ứng dụng của bạn - thường yêu cầu truy cập tới tài nguyên và thông tin xác thực nhạy cảm - phải được bảo vệ trước các nguy cơ như chèn mã (code injection), gọi hàm trái phép (unauthorized invocation) và leo thang đặc quyền (privilege escalation). Ngoài ra, cần giám sát hành vi bất thường của hàm để phát hiện dấu hiệu bị xâm nhập (compromise).</p>
+<p>Lambda cung cấp các tính năng bảo mật tích hợp sẵn, bao gồm:</p>
+<ul>
+<li>IAM execution roles thông qua <a href="https://aws.amazon.com/vi/iam/">AWS Identity and Access Management (IAM)</a>, xác định chính xác quyền truy cập tài nguyên và hành động theo nguyên tắc đặc quyền tối thiểu (least privilege)</li>
+<li><strong>Resource-based policies</strong> kiểm soát dịch vụ và tài khoản nào có thể gọi (invoke) hàm, nhằm ngăn chặn truy cập trái phép</li>
+<li><strong>Mã hóa biến môi trường (environment variables)</strong> bằng <a href="https://aws.amazon.com/vi/kms/">AWS Key Management Service (AWS KMS)</a> để bảo vệ dữ liệu ở trạng thái lưu trữ (at rest); đối với dữ liệu nhạy cảm nên sử dụng AWS Secrets Manager. Cơ chế cô lập hàm (function isolation) đảm bảo mỗi lần thực thi chạy trong môi trường biệt lập, ngăn chặn truy cập dữ liệu chéo giữa các lần gọi (cross-invocation data access)</li>
+<li><strong>Tích hợp VPC</strong> cho phép hàm thừa hưởng cơ chế cô lập mạng và kiểm soát bằng security groups</li>
+<li><strong>Bảo mật runtime</strong> với các môi trường runtime được quản lý và tự động vá lỗi (patch) và cập nhật</li>
+<li><strong>Ký mã (code signing)</strong> với <a href="https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html">AWS Signer</a>, giúp ký số gói triển khai để đảm bảo tính toàn vẹn mã và xác minh mật mã chống sửa đổi trái phép</li>
+</ul>
+<p><strong>Bảo mật mã nguồn dựa trên AI:</strong> <a href="https://aws.amazon.com/vi/codeguru/profiler/">Amazon CodeGuru Security</a> kết hợp machine learning và suy luận tự động (automated reasoning) để phát hiện lỗ hổng, bao gồm các vấn đề thuộc OWASP Top 10, CWE Top 25, log injection, rò rỉ secrets và sử dụng API AWS không an toàn. Thông qua phân tích ngữ nghĩa sâu (deep semantic analysis) được huấn luyện trên hàng triệu dòng mã nội bộ của Amazon, dịch vụ này áp dụng kỹ thuật khai thác luật (rule mining) và các mô hình học máy có giám sát (supervised ML), kết hợp hồi quy logistic (logistic regression) và mạng nơ-ron (neural networks) nhằm đạt tỷ lệ phát hiện đúng cao (high true-positive rate).</p>
+<p><strong>Quản lý lỗ hổng (Vulnerability Management):</strong> <a href="https://aws.amazon.com/vi/inspector/">Amazon Inspector</a> cung cấp giải pháp quản lý lỗ hổng tự động, liên tục quét các hàm Lambda để phát hiện lỗ hổng phần mềm và mức độ phơi bày mạng (network exposure). Dịch vụ sử dụng machine learning để ưu tiên hóa các phát hiện (prioritize findings) và cung cấp hướng dẫn khắc phục chi tiết (detailed remediation guidance).</p>
+<h3 id="lớp-6-bảo-vệ-credentials">Lớp 6: Bảo vệ credentials</h3>
+<p>Ứng dụng cần truy cập đến các thông tin xác thực nhạy cảm như mật khẩu cơ sở dữ liệu, API keys và khóa mã hóa. Việc hardcode secrets trong mã nguồn hoặc lưu trữ trong biến môi trường có thể tạo ra lỗ hổng bảo mật. Do đó, cần cơ chế lưu trữ an toàn, xoay vòng định kỳ (rotation), kiểm soát truy cập theo nguyên tắc &ldquo;chỉ được phép khi cần&rdquo; (authorized-only access) và ghi nhận nhật ký đầy đủ để đáp ứng yêu cầu tuân thủ (compliance).</p>
+<ul>
+<li><strong>Secrets Manager</strong> giúp bảo vệ quyền truy cập vào ứng dụng, dịch vụ và tài nguyên CNTT mà không cần tự quản lý phần cứng HSM (Hardware Security Module). Dịch vụ cung cấp kho lưu trữ tập trung cho thông tin xác thực cơ sở dữ liệu, API keys và OAuth tokens trong một repository được mã hóa bằng AWS Key Management Service (AWS KMS) ở trạng thái lưu trữ (encryption at rest).</li>
+<li><strong>Xoay vòng bí mật tự động (Automatic Secret Rotation)</strong> cho phép cấu hình xoay vòng thông tin xác thực cơ sở dữ liệu, tự động cập nhật cả kho lưu trữ bí mật và cơ sở dữ liệu mục tiêu mà không gây downtime cho ứng dụng.</li>
+<li><strong>Kiểm soát truy cập chi tiết (Fine-grained Access Control)</strong> sử dụng chính sách IAM để kiểm soát người dùng và dịch vụ nào được phép truy cập từng secret cụ thể, tuân thủ nguyên tắc đặc quyền tối thiểu (least privilege).</li>
+<li><strong>Audit trails</strong> ghi lại mọi hoạt động truy cập secret trong <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html">AWS CloudTrail</a> nhằm phục vụ mục đích kiểm toán và điều tra bảo mật.</li>
+<li><strong>Hỗ trợ VPC Endpoint</strong> được thiết kế để lưu lượng truy xuất secret không rời khỏi mạng AWS, tăng cường bảo mật đường truyền nội bộ.</li>
+<li><strong>Tích hợp với Lambda</strong> cho phép các hàm truy xuất secret theo cách lập trình (programmatically) tại runtime, đảm bảo secrets không được lưu trữ trong mã nguồn hoặc file cấu hình, đồng thời có thể xoay vòng mà không cần tái triển khai (redeployment).</li>
+<li><strong>GuardDuty</strong> cung cấp cơ chế giám sát dựa trên AI, phát hiện các mẫu hành vi bất thường có thể cho thấy việc lộ thông tin xác thực hoặc truy cập trái phép.</li>
+</ul>
+<h3 id="lớp-7-bảo-vệ-dữ-liệu">Lớp 7: Bảo vệ dữ liệu</h3>
+<p>Tầng dữ liệu (data layer) lưu trữ thông tin kinh doanh nhạy cảm và dữ liệu khách hàng, yêu cầu được bảo vệ cả ở trạng thái lưu trữ (at rest) và khi truyền tải (in transit). Dữ liệu phải được mã hóa, kiểm soát truy cập chặt chẽ và ghi nhận nhật ký hoạt động (audit), đồng thời vẫn đảm bảo khả năng chống chịu trước các cuộc tấn công vào tính sẵn sàng (availability attacks) và duy trì hiệu năng cao.</p>
+<p><strong>Amazon DynamoDB</strong> là cơ sở dữ liệu NoSQL được quản lý hoàn toàn (fully managed), cung cấp các tính năng bảo mật tích hợp sẵn bao gồm:</p>
+<ul>
+<li><strong>Mã hóa dữ liệu ở trạng thái lưu trữ (Encryption at rest)</strong> sử dụng khóa do AWS sở hữu, AWS quản lý hoặc khóa do khách hàng quản lý thông qua AWS Key Management Service (KMS).</li>
+<li><strong>Mã hóa khi truyền tải (Encryption in transit)</strong> hỗ trợ TLS 1.2 trở lên.</li>
+<li><strong>Kiểm soát truy cập chi tiết (Fine-grained access control)</strong> thông qua chính sách IAM với quyền ở cấp độ item và attribute.</li>
+<li><strong>VPC Endpoints</strong> cho phép kết nối riêng tư đến DynamoDB mà không đi qua Internet công cộng.</li>
+<li><strong>Point-in-Time Recovery (PITR)</strong> hỗ trợ sao lưu liên tục và khôi phục dữ liệu đến bất kỳ thời điểm nào trong khoảng thời gian lưu giữ.</li>
+<li><strong>Streams</strong> cung cấp luồng thay đổi dữ liệu phục vụ audit trails và tích hợp xử lý sự kiện.</li>
+<li><strong>Sao lưu và khôi phục (Backup and Disaster Recovery)</strong> sau thảm họa, hỗ trợ snapshot và chiến lược DR nhằm đảm bảo tính bền vững dữ liệu.</li>
+<li><strong>Global Tables</strong> sao chép đa vùng (multi-Region), đa chủ động (multi-active replication) giữa nhiều AWS Region, đảm bảo tính sẵn sàng cao và độ trễ thấp cho truy cập toàn cầu.</li>
+</ul>
+<p><strong>GuardDuty và Amazon Bedrock cung cấp cơ chế bảo vệ dữ liệu ứng dụng AI:</strong></p>
+<ul>
+<li><strong>GuardDuty</strong> giám sát hoạt động API của DynamoDB thông qua AWS CloudTrail logs, sử dụng machine learning để phát hiện các mẫu truy cập bất thường như khối lượng truy vấn bất thường, truy cập từ vị trí địa lý không mong đợi, hành vi nghi ngờ rò rỉ dữ liệu (data exfiltration).</li>
+<li><strong>Amazon Bedrock</strong> phân tích DynamoDB Streams và CloudTrail logs để xác định các mẫu truy cập đáng ngờ, tương quan các bất thường trên nhiều bảng và theo thời gian, tạo bản tóm tắt sự cố truy cập dữ liệu bằng ngôn ngữ tự nhiên cho đội ngũ bảo mật, đề xuất điều chỉnh chính sách kiểm soát truy cập dựa trên hành vi sử dụng thực tế so với quyền đã cấu hình. Cách tiếp cận này giúp chuyển đổi bảo vệ dữ liệu từ giám sát thụ động (reactive monitoring) sang săn tìm mối đe dọa chủ động (proactive threat hunting), có khả năng phát hiện rò rỉ thông tin xác thực và mối đe dọa nội bộ (insider threats).</li>
+</ul>
+<h2 id="giám-sát-liên-tục">Giám sát liên tục</h2>
+<p>Mặc dù đã triển khai các biện pháp kiểm soát bảo mật toàn diện ở mọi lớp, việc giám sát liên tục (continuous monitoring) vẫn là yếu tố thiết yếu để phát hiện các mối đe dọa có thể vượt qua lớp phòng thủ. Bảo mật không phải là hoạt động triển khai một lần, mà đòi hỏi khả năng quan sát thời gian thực (real-time visibility), phát hiện mối đe dọa thông minh và năng lực phản ứng nhanh chóng.</p>
+<ul>
+<li><strong>GuardDuty</strong> bảo vệ tài khoản AWS, workload và dữ liệu của bạn thông qua cơ chế phát hiện mối đe dọa thông minh dựa trên machine learning và phân tích hành vi.</li>
+<li><strong>CloudWatch</strong> cung cấp khả năng giám sát và quan sát toàn diện, thu thập số liệu, giám sát tệp nhật ký, thiết lập cảnh báo và tự động phản ứng với các thay đổi của tài nguyên AWS.</li>
+<li><strong>CloudTrail</strong> hỗ trợ quản trị, tuân thủ và kiểm toán hoạt động bằng cách ghi lại tất cả các lệnh gọi API trong tài khoản AWS của bạn, tạo ra nhật ký kiểm toán toàn diện phục vụ phân tích bảo mật và báo cáo tuân thủ.</li>
+<li><strong>Khả năng nâng cao dựa trên trí tuệ nhân tạo với Amazon Bedrock</strong> cung cấp phân tích mối đe dọa tự động, tạo bản tóm tắt bằng ngôn ngữ tự nhiên về các phát hiện của GuardDuty và nhật ký CloudWatch, nhận dạng mẫu để xác định các cuộc tấn công phối hợp trên nhiều tín hiệu bảo mật, đề xuất phản hồi sự cố dựa trên kiến trúc và yêu cầu tuân thủ của bạn, đánh giá tư thế bảo mật kèm khuyến nghị cải thiện, đồng thời kích hoạt phản ứng tự động thông qua AWS Lambda và <a href="https://aws.amazon.com/vi/eventbridge/">Amazon EventBridge</a> nhằm cô lập tài nguyên bị xâm phạm, thu hồi thông tin đăng nhập đáng ngờ hoặc gửi cảnh báo đến nhóm bảo mật qua Amazon Simple Notification Service khi phát hiện mối đe dọa.</li>
+</ul>
+<h2 id="kết-luận">Kết luận</h2>
+<p>Bảo mật cho kiến trúc microservices serverless đặt ra nhiều thách thức đáng kể. Tuy nhiên, như đã phân tích, việc tận dụng các dịch vụ AWS kết hợp với năng lực tăng cường bởi AI giúp xây dựng một kiến trúc phòng thủ nhiều lớp (defense-in-depth) có khả năng chống chịu cao trước cả các mối đe dọa hiện tại và mới nổi, đồng thời chứng minh rằng bảo mật và tính linh hoạt (agility) không loại trừ lẫn nhau.</p>
+<p>Bảo mật là một quá trình liên tục - cần giám sát môi trường thường xuyên, rà soát định kỳ các cơ chế kiểm soát an ninh, cập nhật thông tin về các mối đe dọa và thực tiễn tốt nhất (best practices), và xem bảo mật như một nguyên tắc kiến trúc cốt lõi ngay từ đầu, thay vì một yếu tố bổ sung sau cùng.</p>
+<h2 id="đóng-góp-và-feedback">Đóng góp và Feedback</h2>
+<p>Bài dịch này được thực hiện trong khuôn khổ <strong>FCAJ Internship Program</strong>.</p>
+<p><strong>Liên hệ:</strong> <a href="mailto:ducmin76@gmail.com">ducmin76@gmail.com</a></p>
+<p><strong>Feedback:</strong> Mọi góp ý để cải thiện chất lượng dịch thuật xin gửi về email trên</p>
+<p><strong>Updates:</strong> Bài dịch sẽ được cập nhật dựa trên feedback từ cộng đồng</p>
+<p><em>© 2026 - Bản dịch thuộc về Trần Nguyễn Đức Minh. Vui lòng credit khi sử dụng.</em></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/vi/3-translate-blog/" title="Các blog đã dịch"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vi/3-translate-blog/blog-2/" title="Blog 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203512"></script>
+    <script src="/js/jquery.sticky.js?1779203512"></script>
+    <script src="/js/featherlight.min.js?1779203512"></script>
+    <script src="/js/highlight.pack.js?1779203512"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203512"></script>
+    <script src="/js/learn.js?1779203512"></script>
+    <script src="/js/hugo-learn.js?1779203512"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203512"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

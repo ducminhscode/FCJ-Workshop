@@ -1,0 +1,3262 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Blog 1 :: Internship Report</title>
+
+    
+    <link href="/css/nucleus.css?1779203515" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203515" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203515" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203515" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203515" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203515" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203515" rel="stylesheet">
+    <link href="/css/theme.css?1779203515" rel="stylesheet">
+    <link href="/css/tabs.css?1779203515" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203515" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203515" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203515"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/3-translate-blog/blog-1/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203515"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203515"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203515"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/" title="Worklog" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/">
+          <b> 1. </b>Worklog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-1/" title="Worklog Week 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog Week 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-2/" title="Worklog Week 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog Week 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-3/" title="Worklog Week 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog Week 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-4/" title="Worklog Week 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog Week 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-5/" title="Worklog Week 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog Week 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-6/" title="Worklog Week 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog Week 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-7/" title="Worklog Week 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog Week 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-8/" title="Worklog Week 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog Week 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-9/" title="Worklog Week 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog Week 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-10/" title="Worklog Week 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog Week 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-11/" title="Worklog Week 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog Week 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-12/" title="Worklog Week 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog Week 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-proposal/" title="Project Proposal" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2-proposal/">
+          <b> 2. </b>Project Proposal
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/" title="Translated Blogs" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/3-translate-blog/">
+          <b> 3. </b>Translated Blogs
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/" title="Events Participated" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/">
+          <b> 4. </b>Events Participated
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/1-introduction/" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/1-introduction/">
+          <b> 5.1 </b>Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/" title="Preparation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/">
+          <b> 5.2 </b>Preparation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.1-activate-identity-center/" title="Activate Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Activate Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.2-create-permission-sets/" title="Create Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Create Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.3-create-access-group/" title="Create Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Create Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.4-create-group-assignments/" title="Create Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Create Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Create DynamoDB Tables" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Create DynamoDB Tables
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="AccessSessions Table" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>AccessSessions Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="ProvisionAccess Table" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>ProvisionAccess Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Create Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Create Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Create Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Create Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies for Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies for Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Create Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Create Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Create Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Create Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Set up API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Set up API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Connect DynamoDB Stream to Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Connect DynamoDB Stream to Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Set up CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Set up CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.15-setup-jira/" title="Set up Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Set up Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/3-test-connection/" title="Test Connection" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Test Connection
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/4-product-demonstration/" title="Product Demonstration" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Product Demonstration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/5-clean-up-resources/" title="Clean up resources" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Clean up resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-self-rating/" title="Self-Assessment" class="dd-item
+        
+        
+        
+        ">
+      <a href="/6-self-rating/">
+          <b> 6. </b>Self-Assessment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-feedback/" title="Sharing and Feedback" class="dd-item
+        
+        
+        
+        ">
+      <a href="/7-feedback/">
+          <b> 7. </b>Sharing and Feedback
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/3-translate-blog/blog-1/">Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/3-translate-blog/blog-1/" selected>English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Internship Report</a> > <a href='/3-translate-blog/'>Translated Blogs</a> > Blog 1
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#architecture-overview-a-journey-through-security-layers">Architecture overview: A journey through security layers</a></li>
+    <li><a href="#security-layers-in-the-architecture">Security Layers in the Architecture</a>
+      <ul>
+        <li><a href="#layer-1-edge-protection">Layer 1: Edge Protection</a></li>
+        <li><a href="#layer-2-verifying-identity">Layer 2: Verifying identity</a></li>
+        <li><a href="#layer-3-the-application-front-door">Layer 3: The application front door</a></li>
+        <li><a href="#layer-4-network-isolation">Layer 4: Network isolation</a></li>
+        <li><a href="#layer-5-compute-security">Layer 5: Compute security</a></li>
+        <li><a href="#layer-6-protecting-credentials">Layer 6: Protecting credentials</a></li>
+        <li><a href="#layer-7-data-protection">Layer 7: Data protection</a></li>
+      </ul>
+    </li>
+    <li><a href="#continuous-monitoring">Continuous monitoring</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#contributions-and-feedback">Contributions and Feedback</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 1
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="building-an-ai-powered-defense-in-depth-security-architecture-for-serverless-microservices">Building an AI-powered defense-in-depth security architecture for serverless microservices</h1>
+<p><strong>Original Article:</strong> <a href="https://aws.amazon.com/vi/blogs/security/building-an-ai-powered-defense-in-depth-security-architecture-for-serverless-microservices/">Building an AI-powered defense-in-depth security architecture for serverless microservices</a></p>
+<p><strong>Author:</strong> Roger Nem (Security Specialist, Amazon Web Services)</p>
+<p><strong>Publication Date:</strong> 16/02/2026</p>
+<p><strong>Source:</strong> AWS Security Blog</p>
+<p><strong>Translator:</strong> Tran Nguyen Duc Minh – FCAJ Intern</p>
+<p><strong>Translation Date:</strong> 04/03/2026</p>
+<p><strong>Estimated Reading Time:</strong> 18 minutes</p>
+<h2 id="summary">Summary</h2>
+<p>The article presents an approach to designing a <strong>defense-in-depth security architecture</strong> for <strong>serverless microservices</strong> on AWS, in the context of modern threats that increasingly leverage AI to automate attacks. When applications are built using a serverless model with multiple distributed APIs, functions and services, the attack surface expands significantly, requiring a comprehensive protection strategy rather than relying solely on traditional perimeter security.</p>
+<p>The author proposes a multi-layered security model that spans from the network edge, identity, API and compute layers to secrets management and the data layer. The architecture leverages AWS security services enhanced with AI/ML capabilities to detect anomalies, analyze behavioral patterns and automate incident response. The goal is to achieve a balance between security, scalability and developer agility, enabling organizations to deploy serverless architectures at scale while maintaining compliance and resilience.</p>
+<p><strong>Target Audience:</strong> Cloud Engineer, Security Engineer, Solutions Architect</p>
+<p><strong>Difficulty Level:</strong> Intermediate</p>
+<p><strong>Tags:</strong> AWS, Serverless, Security, DefenseInDepth, AI, Microservices</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#building-an-ai-powered-defense-in-depth-security-architecture-for-serverless-microservices">Building an AI-powered defense-in-depth security architecture for serverless microservices</a>
+<ul>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#architecture-overview-a-journey-through-security-layers">Architecture overview: A journey through security layers</a></li>
+<li><a href="#security-layers-in-the-architecture">Security Layers in the Architecture</a>
+<ul>
+<li><a href="#layer-1-edge-protection">Layer 1: Edge Protection</a></li>
+<li><a href="#layer-2-verifying-identity">Layer 2: Verifying identity</a></li>
+<li><a href="#layer-3-the-application-front-door">Layer 3: The application front door</a></li>
+<li><a href="#layer-4-network-isolation">Layer 4: Network isolation</a></li>
+<li><a href="#layer-5-compute-security">Layer 5: Compute security</a></li>
+<li><a href="#layer-6-protecting-credentials">Layer 6: Protecting credentials</a></li>
+<li><a href="#layer-7-data-protection">Layer 7: Data protection</a></li>
+</ul>
+</li>
+<li><a href="#continuous-monitoring">Continuous monitoring</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#contributions-and-feedback">Contributions and Feedback</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Enterprise customers face an unprecedented security landscape where sophisticated cyber threats use artificial intelligence to identify vulnerabilities, automate attacks and evade detection at machine speed. Traditional perimeter-based security models are insufficient when adversaries can analyze millions of attack vectors in seconds and exploit zero-day vulnerabilities before patches are available.</p>
+<p>The distributed nature of serverless architectures compounds this challenge—while microservices offer agility and scalability, they significantly expand the attack surface where each API endpoint, function invocation and data store becomes a potential entry point and a single misconfigured component can provide attackers the foothold needed for lateral movement. Organizations must simultaneously navigate complex regulatory environments where compliance frameworks like <a href="https://aws.amazon.com/vi/compliance/gdpr-center/">GDPR</a>, <a href="https://aws.amazon.com/vi/compliance/hipaa-compliance/">HIPAA</a>, <a href="https://aws.amazon.com/vi/compliance/pci-faqs/">PCI-DSS</a> và <a href="https://aws.amazon.com/vi/compliance/soc-faqs/">SOC 2</a> demand robust security controls and comprehensive audit trails, while the velocity of software development creates tension between security and innovation, requiring architectures that are both comprehensive and automated to enable secure deployment without sacrificing speed.</p>
+<p>The challenge is multifaceted:</p>
+<ul>
+<li><strong>Expanded attack surface:</strong> Multiple entry points across distributed services requiring protection against distributed denial of service (DDoS) attacks, injection vulnerabilities and unauthorized access</li>
+<li><strong>Identity and access complexity:</strong> Managing authentication and authorization across numerous microservices and service-to-service communications</li>
+<li><strong>Data protection requirements:</strong> Encrypting sensitive data in transit and at rest while securely storing and rotating credentials without compromising performance</li>
+<li><strong>Compliance and data protection:</strong> Meeting regulatory requirements through comprehensive audit trails and continuous monitoring in distributed environments</li>
+<li><strong>Network isolation challenges:</strong> Implementing controlled communication paths without exposing resources to the public internet</li>
+<li><strong>AI-powered threats:</strong> Defending against attackers who use AI to automate reconnaissance, adapt attacks in real-time and identify vulnerabilities at machine speed</li>
+</ul>
+<p>The solution lies in <em>defense-in-depth</em>-a layered security approach where multiple independent controls work together to protect your application.</p>
+<p>This article demonstrates how to implement a comprehensive AI-powered defense-in-depth security architecture for serverless microservices on <a href="https://aws.amazon.com/vi/">Amazon Web Services (AWS)</a>. By layering security controls at each tier of your application, this architecture creates a resilient system where no single point of failure compromises your entire infrastructure, designed so that if one layer is compromised, additional controls help limit the impact and contain the incident while incorporating AI and machine learning services throughout to help organizations address and respond to AI-powered threats with AI-powered defenses.</p>
+<h2 id="architecture-overview-a-journey-through-security-layers">Architecture overview: A journey through security layers</h2>
+<p>Let’s trace a user request from the public internet through our secured serverless architecture, examining each security layer and the AWS services that protect it. This implementation deploys security controls at seven distinct layers with continuous monitoring and AI-powered threat detection throughout, where each layer provides specific capabilities that work together to create a comprehensive defense-in-depth strategy:</p>
+<ul>
+<li><strong>Layer 1</strong> blocks malicious traffic before it reaches your application</li>
+<li><strong>Layer 2</strong> verifies user identity and enforces access policies</li>
+<li><strong>Layer 3</strong> encrypts communications and manages API access</li>
+<li><strong>Layer 4</strong> isolates resources in private networks</li>
+<li><strong>Layer 5</strong> secures compute execution environments</li>
+<li><strong>Layer 6</strong> protects credentials and sensitive configuration</li>
+<li><strong>Layer 7</strong> encrypts data at rest and controls data access</li>
+<li><strong>Continuous monitoring</strong> detects threats across layers using AI-powered analysis</li>
+</ul>
+<img src="/images/architecture_diagram.jpg" alt="Architecture Diagram" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 1: Architecture diagram</p>
+<h2 id="security-layers-in-the-architecture">Security Layers in the Architecture</h2>
+<h3 id="layer-1-edge-protection">Layer 1: Edge Protection</h3>
+<p>Before requests reach your application, they traverse the public internet where attackers launch volumetric DDoS attacks, SQL injection, cross-site scripting (XSS) and other web exploits. AWS observed and mitigated thousands of distributed denial of service (DDoS) attacks in 2024, with one exceeding 2.3 terabits per second.</p>
+<ul>
+<li><strong>DDos protection:</strong> <a href="https://aws.amazon.com/vi/shield/">AWS Shield</a> provides managed DDoS protection for applications running on AWS and is enabled for customers at no cost. <a href="https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced-summary.html">AWS Shield Advanced</a> offers enhanced detection, continuous access to the AWS DDoS Response Team (DRT), cost protection during attacks and advanced diagnostics for enterprise applications.</li>
+<li><strong>Layer 7 protection:</strong> <a href="https://aws.amazon.com/vi/waf/">AWS WAF</a> protects against Layer 7 attacks through managed rule groups from AWS and AWS Marketplace sellers that cover OWASP Top 10 vulnerabilities including SQL injection, XSS and remote file inclusion. Rate-based rules automatically block IPs that exceed request thresholds, protecting against application-layer DDoS and brute force attacks. Geo-blocking capabilities restrict access based on geographic location, while Bot Control uses machine learning to identify and block malicious bots while allowing legitimate traffic.</li>
+<li><strong>AI for security:</strong> <a href="https://aws.amazon.com/vi/guardduty/">Amazon GuardDuty</a> uses generative AI to enhance native security services, implementing AI capabilities to improve threat detection, investigation and response through automated analysis.</li>
+<li><strong>AI-powered enhancement:</strong> Organizations can build autonomous AI security agents using <a href="https://aws.amazon.com/vi/bedrock/">Amazon Bedrock</a> to analyze AWS WAF logs, reason through attack data and automate incident response. These agents detect novel attack patterns that signature-based systems miss, generate natural language summaries of security incidents, automatically recommend AWS WAF rule updates based on emerging threats, correlate attack indicators across distributed services to identify coordinated campaigns and trigger appropriate remediation actions based on threat context. This helps enable more proactive threat detection and response capabilities, reducing mean time to detection and response.</li>
+</ul>
+<h3 id="layer-2-verifying-identity">Layer 2: Verifying identity</h3>
+<p>After requests pass edge protection, you must verify user identity and determine resource access. Traditional username/password authentication is vulnerable to credential stuffing, phishing and brute force attacks, requiring robust identity management that supports multiple authentication methods and adaptive security responding to risk signals in real time.</p>
+<p><a href="https://aws.amazon.com/vi/cognito/">Amazon Cognito</a> provides comprehensive identity and access management for web and mobile applications through two components:</p>
+<ul>
+<li><strong>User pools</strong> offer a fully managed user directory handling registration, sign-in, multi-factor authentication (MFA), password policies, social identity provider integration, SAML and OpenID Connect federation for enterprise identity providers and advanced security features including adaptive authentication and compromised credential detection.</li>
+<li><strong>Identity pools</strong> grant temporary, limited-privilege AWS credentials to users for secure direct access to AWS services without exposing long-term credentials.</li>
+</ul>
+<p>Amazon Cognito adaptive authentication uses machine learning to detect suspicious sign-in attempts by analyzing device fingerprinting, IP address reputation, geographic location anomalies and sign-in velocity patterns, then allows sign-in, requires additional MFA verification, or blocks attempts based on risk assessment. Compromised credential detection automatically checks credentials against databases of compromised passwords and blocks sign-ins using known compromised credentials. MFA supports both SMS-based and time-based one-time password (TOTP) methods, significantly reducing account takeover risk.</p>
+<p>For advanced behavioral analysis, organizations can use Amazon Bedrock to analyze patterns across extended timeframes, detecting account takeover attempts through geographic anomalies, device fingerprint changes, access pattern deviations and time-of-day anomalies.</p>
+<h3 id="layer-3-the-application-front-door">Layer 3: The application front door</h3>
+<p>An API gateway serves as your application’s entry point. It must handle request routing, throttling, API key management, encryption and it needs to integrate seamlessly with your authentication layer and provide detailed logging for security auditing while maintaining high performance and low latency.</p>
+<ul>
+<li><a href="https://aws.amazon.com/vi/api-gateway/">Amazon API Gateway</a> is a fully managed service for creating, publishing and securing APIs at scale, providing critical security capabilities including SSL/TLS encryption with <a href="https://aws.amazon.com/vi/certificate-manager/">AWS Certificate Manager (ACM)</a> to automatically handle certificate provisioning, renewal and deployment. Request throttling and quota management protects backend services through configurable burst and rate limits with usage quotas per API key or client to prevent abuse, while API key management controls access from partner systems and third-party integrations. Request/response validation uses JSON Schema to validate data before reaching <a href="https://aws.amazon.com/lambda">AWS Lambda</a> functions, preventing malformed requests from consuming compute resources while seamless integration with Amazon Cognito validates JSON Web Tokens (JWTs) and enforces authentication requirements before requests reach application logic.</li>
+<li>GuardDuty provides AI-powered intelligent threat detection by analyzing API invocation patterns and identifying suspicious activity including credential exfiltration using machine learning. For advanced analysis, Amazon Bedrock analyzes API Gateway metrics and <a href="https://aws.amazon.com/cloudwatch">Amazon CloudWatch</a> logs to identify unusual HTTP 4XX error spikes (for example, 403 Forbidden) that might indicate scanning or probing attempts, geographic distribution anomalies, endpoint access pattern deviations, time-series anomalies in request volume, or suspicious user agent patterns.</li>
+</ul>
+<h3 id="layer-4-network-isolation">Layer 4: Network isolation</h3>
+<p>Application logic and data must be isolated from direct internet access. Network segmentation is designed to limit lateral movement if a security incident occurs, helping to prevent compromised components from easily accessing sensitive resources.</p>
+<ul>
+<li><a href="https://aws.amazon.com/vi/vpc/">Amazon Virtual Private Cloud (Amazon VPC)</a> provides isolated network environments implementing a multi-tier architecture with public subnets for NAT gateways and application load balancers with internet gateway routes, private subnets for Lambda functions and application components accessing the internet through NAT Gateways for outbound connections and data subnets with the most restrictive access controls. Lambda functions run in private subnets to prevent direct internet access, <a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html">VPC Flow Logs</a> capture network traffic for security analysis, security groups provide stateful firewalls following least privilege principles, Network ACLs add stateless subnet-level firewalls with explicit deny rules and VPC endpoints enable private connectivity to <a href="https://aws.amazon.com/vi/dynamodb/">Amazon DynamoDB</a>, <a href="https://aws.amazon.com/vi/secrets-manager/">AWS Secrets Manager</a> and <a href="https://aws.amazon.com/vi/pm/serv-s3/">Amazon S3</a> without traffic leaving the AWS network.</li>
+<li><strong>GuardDuty</strong> provides AI-powered network threat detection by continuously monitoring VPC Flow Logs, CloudTrail logs and DNS logs using machine learning to identify unusual network patterns, unauthorized access attempts, compromised instances and reconnaissance activity, now including generative AI capabilities for automated analysis and natural language security queries.</li>
+</ul>
+<h3 id="layer-5-compute-security">Layer 5: Compute security</h3>
+<p>Lambda functions executing your application code and often requiring access to sensitive resources and credentials must be protected against code injection, unauthorized invocations and privilege escalation. Additionally, functions must be monitored for unusual behavior that might indicate compromise.</p>
+<p>Lambda provides built-in security features including:</p>
+<ul>
+<li><a href="https://aws.amazon.com/iam">AWS Identity and Access Management (IAM)</a> execution roles that define precise resource and action access following least privilege principles</li>
+<li><strong>Resource-based policies</strong> that control which services and accounts can invoke functions to prevent unauthorized invocations</li>
+<li><strong>Environment variable encryption</strong> using <a href="https://aws.amazon.com/vi/kms/">AWS Key Management Service (AWS KMS)</a> for variables at rest while sensitive data should use Secrets Manager function isolation designed so that each execution runs in isolated environments preventing cross-invocation data access</li>
+<li><strong>VPC integration</strong> enabling functions to benefit from network isolation and security group controls</li>
+<li><strong>Runtime security</strong> with automatically patched and updated managed runtimes</li>
+<li><strong>Code signing</strong> with <a href="https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html">AWS Signer</a> digitally signing deployment packages for code integrity and cryptographic verification against unauthorized modifications</li>
+</ul>
+<p><strong>AI-powered code security:</strong> <a href="https://aws.amazon.com/vi/codeguru/profiler/">Amazon CodeGuru Security</a> combines machine learning and automated reasoning to identify vulnerabilities including OWASP Top 10 and CWE Top 25 issues, log injection, secrets and insecure AWS API usage. Using deep semantic analysis trained on millions of lines of Amazon code, it employs rule mining and supervised ML models combining logistic regression and neural networks for high true-positive rates.</p>
+<p><strong>Vulnerability management:</strong> <a href="https://aws.amazon.com/vi/inspector/">Amazon Inspector</a> provides automated vulnerability management, continuously scanning Lambda functions for software vulnerabilities and network exposure, using machine learning to prioritize findings and provide detailed remediation guidance.</p>
+<h3 id="layer-6-protecting-credentials">Layer 6: Protecting credentials</h3>
+<p>Applications require access to sensitive credentials including database passwords, API keys and encryption keys. Hardcoding secrets in code or storing them in environment variables creates security vulnerabilities, requiring secure storage, regular rotation, authorized-only access and comprehensive auditing for compliance.</p>
+<ul>
+<li><strong>Secrets Manager</strong> protects access to applications, services and IT resources without managing hardware security modules (HSMs). It provides centralized secret storage for database credentials, API keys and OAuth tokens in an encrypted repository using AWS KMS encryption at rest.</li>
+<li><strong>Automatic secret rotation</strong> configures rotation for database credentials, automatically updating both the secret store and target database without application downtime.</li>
+<li><strong>Fine-grained access control</strong> uses IAM policies to control which users and services access specific secrets, implementing least-privilege access.</li>
+<li><strong>Audit trails</strong> log secret access in <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html">AWS CloudTrail</a> for compliance and security investigations. <strong>VPC endpoint support</strong> is designed so that secret retrieval traffic doesn’t leave the AWS network.</li>
+<li><strong>Lambda integration</strong> enables functions to retrieve secrets programmatically at runtime, designed so that secrets aren’t stored in code or configuration files and can be rotated without redeployment.</li>
+<li><strong>GuardDuty</strong> provides AI-powered monitoring, detecting anomalous behavior patterns that could indicate credential compromise or unauthorized access.</li>
+</ul>
+<h3 id="layer-7-data-protection">Layer 7: Data protection</h3>
+<p>The data layer stores sensitive business information and customer data requiring protection both at rest and in transit. Data must be encrypted, access tightly controlled and operations audited, while maintaining resilience against availability attacks and high performance.</p>
+<p><strong>Amazon DynamoDB</strong> is a fully managed NoSQL database providing built-in security features including:</p>
+<ul>
+<li><strong>Encryption at rest</strong> (using AWS-owned, AWS managed, or customer managed KMS keys)</li>
+<li><strong>Encryption in transit</strong> (TLS 1.2 or higher)</li>
+<li><strong>Fine-grained access control</strong> through IAM policies with item-level and attribute-level permissions</li>
+<li><strong>VPC endpoints</strong> for private connectivity</li>
+<li><strong>Point-in-Time Recovery</strong> for continuous backups</li>
+<li><strong>Streams</strong> for audit trails</li>
+<li><strong>Backup and disaster recovery</strong> capabilities</li>
+<li><strong>Global Tables</strong> for multi-AWS Region, multi-active replication designed to provide high availability and low-latency global access</li>
+</ul>
+<p><strong>GuarDuty and Amazon Bedrock provide AI-powered data protection:</strong></p>
+<ul>
+<li><strong>GuardDuty</strong> monitors DynamoDB API activity through CloudTrail logs using machine learning to detect anomalous data access patterns including unusual query volumes, access from unexpected geographic locations and data exfiltration attempts.</li>
+<li><strong>Amazon Bedrock</strong> analyzes DynamoDB Streams and CloudTrail logs to identify suspicious access patterns, correlate anomalies across multiple tables and time periods, generate natural language summaries of data access incidents for security teams and recommend access control policy adjustments based on actual usage patterns versus configured permissions. This helps transform data protection from reactive monitoring to proactive threat hunting that can detect compromised credentials and insider threats.</li>
+</ul>
+<h2 id="continuous-monitoring">Continuous monitoring</h2>
+<p>Even with comprehensive security controls at every layer, continuous monitoring is essential to detect threats that bypass defenses. Security requires ongoing real-time visibility, intelligent threat detection and rapid response capabilities rather than one-time implementation.</p>
+<ul>
+<li><strong>GuardDuty</strong> protects your AWS accounts, workloads and data with intelligent threat detection.</li>
+<li><strong>CloudWatch</strong> provides comprehensive monitoring and observability, collecting metrics, monitoring log files, setting alarms and automatically reacting to AWS resource changes.</li>
+<li><strong>CloudTrail</strong> provides governance, compliance and operational auditing by logging all API calls in your AWS account, creating comprehensive audit trails for security analysis and compliance reporting.</li>
+<li><strong>AI-powered enhancement with Amazon Bedrock</strong> provides automated threat analysis; generating natural language summaries of GuardDuty findings and CloudWatch logs, pattern recognition identifying coordinated attacks across multiple security signals, incident response recommendations based on your architecture and compliance requirements, security posture assessment with improvement recommendations and automated response through Lambda and <a href="https://aws.amazon.com/vi/eventbridge/">Amazon EventBridge</a> that isolates compromised resources, revokes suspicious credentials, or notifies security teams through Amazon SNS when threats are detected.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Securing serverless microservices presents significant challenges, but as demonstrated, using AWS services alongside AI-powered capabilities creates a resilient defense-in-depth architecture that protects against current and emerging threats while proving that security and agility are not mutually exclusive.</p>
+<p>Security is an ongoing process-continuously monitor your environment, regularly review security controls, stay informed about emerging threats and best practices and treat security as a fundamental architectural principle rather than an afterthought.</p>
+<h2 id="contributions-and-feedback">Contributions and Feedback</h2>
+<p>This translation was completed as part of the <strong>FCAJ Internship Program</strong>.</p>
+<p><strong>Contact:</strong> <a href="mailto:ducmin76@gmail.com">ducmin76@gmail.com</a></p>
+<p><strong>Feedback:</strong> Any suggestions to improve the translation quality are welcome and can be sent to the email above.</p>
+<p><strong>Updates:</strong> The translation will be updated based on feedback from the community.</p>
+<p><em>© 2026 – Translation by Tran Nguyen Duc Minh. Please provide proper credit when using this content.</em></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/3-translate-blog/" title="Translated Blogs"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/3-translate-blog/blog-2/" title="Blog 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203515"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203515"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203515"></script>
+    <script src="/js/jquery.sticky.js?1779203515"></script>
+    <script src="/js/featherlight.min.js?1779203515"></script>
+    <script src="/js/highlight.pack.js?1779203515"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203515"></script>
+    <script src="/js/learn.js?1779203515"></script>
+    <script src="/js/hugo-learn.js?1779203515"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203515"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

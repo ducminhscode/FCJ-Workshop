@@ -1,0 +1,3246 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Blog 3 :: Báo cáo thực tập</title>
+
+    
+    <link href="/css/nucleus.css?1779203512" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203512" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203512" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203512" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203512" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203512" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203512" rel="stylesheet">
+    <link href="/css/theme.css?1779203512" rel="stylesheet">
+    <link href="/css/tabs.css?1779203512" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203512" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203512" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203512"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/vi/3-translate-blog/blog-3/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203512"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203512"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/\/vi";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203512"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/" title="Nhật ký công việc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/">
+          <b> 1. </b>Nhật ký công việc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-1/" title="Worklog tuần 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog tuần 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-2/" title="Worklog tuần 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog tuần 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-3/" title="Worklog tuần 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog tuần 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-4/" title="Worklog tuần 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog tuần 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-5/" title="Worklog tuần 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog tuần 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-6/" title="Worklog tuần 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog tuần 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-7/" title="Worklog tuần 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog tuần 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-8/" title="Worklog tuần 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog tuần 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-9/" title="Worklog tuần 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog tuần 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-10/" title="Worklog tuần 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog tuần 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-11/" title="Worklog tuần 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog tuần 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-worklog/week-12/" title="Worklog tuần 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog tuần 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-proposal/" title="Bản đề xuất dự án" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/2-proposal/">
+          <b> 2. </b>Bản đề xuất dự án
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/" title="Các blog đã dịch" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/">
+          <b> 3. </b>Các blog đã dịch
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/" title="Các event đã tham gia" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/">
+          <b> 4. </b>Các event đã tham gia
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/1-introduction/" title="Giới thiệu" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/1-introduction/">
+          <b> 5.1 </b>Giới thiệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/" title="Chuẩn bị tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/">
+          <b> 5.2 </b>Chuẩn bị tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.1-activate-identity-center/" title="Kích hoạt Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Kích hoạt Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.2-create-permission-sets/" title="Tạo Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Tạo Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.3-create-access-group/" title="Tạo Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Tạo Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.4-create-group-assignments/" title="Tạo Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Tạo Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Tạo các bảng DynamoDB" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Tạo các bảng DynamoDB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="Bảng AccessSessions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>Bảng AccessSessions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="Bảng ProvisionAccess" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>Bảng ProvisionAccess
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Tạo Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Tạo Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Tạo Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Tạo Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies cho Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies cho Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Tạo Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Tạo Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Tạo Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Tạo Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Thiết lập API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Thiết lập API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Kết nối DynamoDB Stream đến Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Kết nối DynamoDB Stream đến Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Thiết lập CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Thiết lập CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/2-preparation/2.15-setup-jira/" title="Thiết lập Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Thiết lập Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/3-test-connection/" title="Kiểm tra kết nối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Kiểm tra kết nối
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/4-product-demonstration/" title="Demo sản phẩm" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Demo sản phẩm
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-workshop/5-clean-up-resources/" title="Dọn dẹp tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-self-rating/" title="Tự đánh giá" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/6-self-rating/">
+          <b> 6. </b>Tự đánh giá
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-feedback/" title="Chia sẻ, đóng góp ý kiến" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vi/7-feedback/">
+          <b> 7. </b>Chia sẻ, đóng góp ý kiến
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/3-translate-blog/blog-3/" selected>Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/3-translate-blog/blog-3/">English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/vi/'>Báo cáo thực tập</a> > <a href='/vi/3-translate-blog/'>Các blog đã dịch</a> > Blog 3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tóm-tắt">Tóm tắt</a></li>
+    <li><a href="#mục-lục">Mục lục</a></li>
+    <li><a href="#giới-thiệu">Giới thiệu</a></li>
+    <li><a href="#vì-sao-kiến-trúc-truyền-thống-cản-trở-agentic-ai">Vì sao kiến trúc truyền thống cản trở agentic AI</a></li>
+    <li><a href="#kiến-trúc-hệ-thống-cho-các-vòng-phản-hồi-agentic-nhanh">Kiến trúc hệ thống cho các vòng phản hồi agentic nhanh</a>
+      <ul>
+        <li><a href="#giả-lập-cục-bộ-local-emulation-như-con-đường-phản-hồi-mặc-định">Giả lập cục bộ (local emulation) như con đường phản hồi mặc định</a></li>
+        <li><a href="#phát-triển-offline-cho-các-workload-dữ-liệu-và-phân-tích">Phát triển offline cho các workload dữ liệu và phân tích</a></li>
+        <li><a href="#kiểm-thử-hybrid-với-tài-nguyên-cloud-nhẹ">Kiểm thử hybrid với tài nguyên cloud nhẹ</a></li>
+        <li><a href="#preview-environments-và-thiết-kế-contract-first">Preview environments và thiết kế contract-first</a></li>
+      </ul>
+    </li>
+    <li><a href="#kiến-trúc-code-base-thân-thiện-với-ai">Kiến trúc code base thân thiện với AI</a>
+      <ul>
+        <li><a href="#cấu-trúc-domain-driven-với-ranh-giới-rõ-ràng">Cấu trúc domain-driven với ranh giới rõ ràng</a></li>
+        <li><a href="#mã-hóa-ý-đồ-kiến-trúc-bằng-project-rules">Mã hóa ý đồ kiến trúc bằng project rules</a></li>
+        <li><a href="#tests-như-các-đặc-tả-có-thể-thực-thi-executable-specifications">Tests như các &ldquo;đặc tả có thể thực thi&rdquo; (executable specifications)</a></li>
+        <li><a href="#monorepo-và-tài-liệu-có-thể-đọc-bởi-máy-machine-readable-documentation">Monorepo và tài liệu có thể đọc bởi máy (machine-readable documentation)</a></li>
+        <li><a href="#tích-hợp-ai-agents-một-cách-an-toàn-vào-delivery-pipelines">Tích hợp AI agents một cách an toàn vào delivery pipelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+    <li><a href="#đóng-góp-và-feedback">Đóng góp và Feedback</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 3
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="thiết-kế-kiến-trúc-cho-phát-triển-agentic-ai-trên-aws">Thiết kế kiến trúc cho phát triển agentic AI trên AWS</h1>
+<p><strong>Bài viết gốc:</strong> <a href="https://aws.amazon.com/vi/blogs/architecture/architecting-for-agentic-ai-development-on-aws/">Thiết kế kiến trúc cho phát triển agentic AI trên AWS</a></p>
+<p><strong>Tác giả:</strong> Alan Oberto Jimenez (Application Architect)</p>
+<p><strong>Ngày xuất bản:</strong> 26/03/2026</p>
+<p><strong>Nguồn:</strong> AWS Architecture Blog</p>
+<p><strong>Người dịch:</strong> Trần Nguyễn Đức Minh - FCAJ Intern</p>
+<p><strong>Ngày dịch:</strong> 10/04/2026</p>
+<p><strong>Thời gian đọc:</strong> 35 phút</p>
+<h2 id="tóm-tắt">Tóm tắt</h2>
+<p>Bài blog này giải thích cách thiết kế hệ thống để phát triển agentic AI trên AWS, tức là các hệ thống AI có khả năng tự lập kế hoạch, hành động và tương tác với môi trường thay vì chỉ phản hồi một lần như mô hình truyền thống.</p>
+<p>Nội dung tập trung vào việc chuyển từ mô hình AI &ldquo;request–response&rdquo; sang các kiến trúc có vòng lặp (loop), nơi agent có thể:</p>
+<ul>
+<li>Nhận mục tiêu</li>
+<li>Lập kế hoạch từng bước</li>
+<li>Gọi công cụ hoặc API bên ngoài</li>
+<li>Đánh giá kết quả và điều chỉnh hành động</li>
+</ul>
+<p>Blog trình bày một kiến trúc tham chiếu trên AWS, thường bao gồm:</p>
+<ul>
+<li>LLM làm &ldquo;bộ não&rdquo; (decision engine)</li>
+<li>Orchestration layer để quản lý workflow và trạng thái</li>
+<li>Tool integrations (API, database, services)</li>
+<li>Memory (ngắn hạn và dài hạn)</li>
+<li>Monitoring và guardrails để kiểm soát hành vi</li>
+</ul>
+<p>Một điểm quan trọng là nhấn mạnh việc tách rời các thành phần (modular design) để dễ mở rộng, thay thế model, và kiểm soát chi phí. AWS cũng gợi ý sử dụng các dịch vụ như orchestration workflows, storage, và compute để xây dựng hệ thống agent linh hoạt.</p>
+<p>Ngoài ra, blog đề cập đến các thách thức thực tế:</p>
+<ul>
+<li>Quản lý trạng thái và context</li>
+<li>Đảm bảo độ tin cậy của agent</li>
+<li>Kiểm soát chi phí do vòng lặp nhiều bước</li>
+<li>Thiết lập guardrails để tránh hành vi ngoài ý muốn</li>
+</ul>
+<p>Tổng thể, bài viết hướng dẫn cách xây dựng agent AI theo hướng production-ready, không chỉ demo, với trọng tâm là khả năng mở rộng, quan sát được (observability), và kiểm soát.</p>
+<p><strong>Đối tượng đọc:</strong> Developers và software engineers làm về AI/ML, solution architects thiết kế hệ thống trên cloud, product builders muốn xây dựng AI agents thực tế, người đã có kiến thức cơ bản về LLM hoặc AWS</p>
+<p><strong>Độ khó:</strong> Intermediate đến Advance</p>
+<p><strong>Tags:</strong> AI Agents, Agentic AI, AWS Architecture, LLM, Cloud Design, Distributed Systems, AI Engineering</p>
+<h2 id="mục-lục">Mục lục</h2>
+<ul>
+<li><a href="#thi%E1%BA%BFt-k%E1%BA%BF-ki%E1%BA%BFn-tr%C3%BAc-cho-ph%C3%A1t-tri%E1%BB%83n-agentic-ai-tr%C3%AAn-aws">Thiết kế kiến trúc cho phát triển agentic AI trên AWS</a>
+<ul>
+<li><a href="#t%C3%B3m-t%E1%BA%AFt">Tóm tắt</a></li>
+<li><a href="#m%E1%BB%A5c-l%E1%BB%A5c">Mục lục</a></li>
+<li><a href="#gi%E1%BB%9Bi-thi%E1%BB%87u">Giới thiệu</a></li>
+<li><a href="#v%C3%AC-sao-ki%E1%BA%BFn-tr%C3%BAc-truy%E1%BB%81n-th%E1%BB%91ng-c%E1%BA%A3n-tr%E1%BB%9F-agentic-ai">Vì sao kiến trúc truyền thống cản trở agentic AI</a></li>
+<li><a href="#ki%E1%BA%BFn-tr%C3%BAc-h%E1%BB%87-th%E1%BB%91ng-cho-c%C3%A1c-v%C3%B2ng-ph%E1%BA%A3n-h%E1%BB%93i-agentic-nhanh">Kiến trúc hệ thống cho các vòng phản hồi agentic nhanh</a>
+<ul>
+<li><a href="#gi%E1%BA%A3-l%E1%BA%ADp-c%E1%BB%A5c-b%E1%BB%99-local-emulation-nh%C6%B0-con-%C4%91%C6%B0%E1%BB%9Dng-ph%E1%BA%A3n-h%E1%BB%93i-m%E1%BA%B7c-%C4%91%E1%BB%8Bnh">Giả lập cục bộ (local emulation) như con đường phản hồi mặc định</a></li>
+<li><a href="#ph%C3%A1t-tri%E1%BB%83n-offline-cho-c%C3%A1c-workload-d%E1%BB%AF-li%E1%BB%87u-v%C3%A0-ph%C3%A2n-t%C3%ADch">Phát triển offline cho các workload dữ liệu và phân tích</a></li>
+<li><a href="#ki%E1%BB%83m-th%E1%BB%AD-hybrid-v%E1%BB%9Bi-t%C3%A0i-nguy%C3%AAn-cloud-nh%E1%BA%B9">Kiểm thử hybrid với tài nguyên cloud nhẹ</a></li>
+<li><a href="#preview-environments-v%C3%A0-thi%E1%BA%BFt-k%E1%BA%BF-contract-first">Preview environments và thiết kế contract-first</a></li>
+</ul>
+</li>
+<li><a href="#ki%E1%BA%BFn-tr%C3%BAc-code-base-th%C3%A2n-thi%E1%BB%87n-v%E1%BB%9Bi-ai">Kiến trúc code base thân thiện với AI</a>
+<ul>
+<li><a href="#c%E1%BA%A5u-tr%C3%BAc-domain-driven-v%E1%BB%9Bi-ranh-gi%E1%BB%9Bi-r%C3%B5-r%C3%A0ng">Cấu trúc domain-driven với ranh giới rõ ràng</a></li>
+<li><a href="#m%C3%A3-h%C3%B3a-%C3%BD-%C4%91%E1%BB%93-ki%E1%BA%BFn-tr%C3%BAc-b%E1%BA%B1ng-project-rules">Mã hóa ý đồ kiến trúc bằng project rules</a></li>
+<li><a href="#tests-nh%C6%B0-c%C3%A1c-%C4%91%E1%BA%B7c-t%E1%BA%A3-c%C3%B3-th%E1%BB%83-th%E1%BB%B1c-thi-executable-specifications">Tests như các &ldquo;đặc tả có thể thực thi&rdquo; (executable specifications)</a></li>
+<li><a href="#monorepo-v%C3%A0-t%C3%A0i-li%E1%BB%87u-c%C3%B3-th%E1%BB%83-%C4%91%E1%BB%8Dc-b%E1%BB%9Fi-m%C3%A1y-machine-readable-documentation">Monorepo và tài liệu có thể đọc bởi máy (machine-readable documentation)</a></li>
+<li><a href="#t%C3%ADch-h%E1%BB%A3p-ai-agents-m%E1%BB%99t-c%C3%A1ch-an-to%C3%A0n-v%C3%A0o-delivery-pipelines">Tích hợp AI agents một cách an toàn vào delivery pipelines</a></li>
+</ul>
+</li>
+<li><a href="#k%E1%BA%BFt-lu%E1%BA%ADn">Kết luận</a></li>
+<li><a href="#%C4%91%C3%B3ng-g%C3%B3p-v%C3%A0-feedback">Đóng góp và Feedback</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="giới-thiệu">Giới thiệu</h2>
+<p>Nếu bạn đang thiết kế các hệ thống cloud cho phát triển AI trên AWS, có lẽ bạn đã nhận ra rằng các kiến trúc truyền thống tạo ra nhiều friction cho AI agents. Nhiều đội ngũ cloud đang thử nghiệm các AI coding assistants nhưng nhanh chóng nhận thấy khoảng cách giữa những gì các công cụ này hứa hẹn và những gì kiến trúc của họ thực sự cho phép. Khi một AI agent sinh ra code, thường phải mất vài phút-thậm chí vài giờ-trước khi bạn có thể validate xem thay đổi đó có thực sự hoạt động hay không. Chu kỳ deployment chậm, các service bị tightly coupled, và code base thiếu minh bạch khiến mỗi lần iteration trở thành một quá trình nhiều ma sát. Kết quả là, AI agents khó có thể vận hành một cách autonomous, và developers lại phải quay về các vòng lặp validation thủ công.</p>
+<p>Bài viết này dành cho các cloud architects muốn loại bỏ những friction đó. Nội dung tập trung vào agentic development, một mô hình mà AI agent không chỉ gợi ý snippet-mà còn có thể viết, test, deploy và refine code thông qua các vòng phản hồi nhanh (rapid feedback cycles). Để làm được điều này, cả system architecture và code base architecture của bạn cần được thiết kế để hỗ trợ việc validation nhanh, iteration an toàn và thể hiện intent rõ ràng.</p>
+<p>Trong bài viết này, chúng tôi sẽ trình bày cách thiết kế các hệ thống AWS giúp AI agents có thể iteration nhanh chóng thông qua các design patterns cho cả system architecture và cấu trúc code base. Trước tiên, chúng ta sẽ xem xét những vấn đề kiến trúc đang hạn chế agentic development hiện nay. Sau đó, bài viết sẽ đi qua các system architecture patterns hỗ trợ experimentation nhanh, tiếp theo là các codebase patterns giúp AI agents hiểu, chỉnh sửa và validate ứng dụng của bạn một cách tự tin.</p>
+<h2 id="vì-sao-kiến-trúc-truyền-thống-cản-trở-agentic-ai">Vì sao kiến trúc truyền thống cản trở agentic AI</h2>
+<p>Hầu hết các kiến trúc cloud được thiết kế cho human-driven development. Chúng giả định môi trường tồn tại lâu dài (long-lived environments), testing thủ công, và deployment không thường xuyên. Nhưng trong một agentic workflow, những giả định này không còn phù hợp.</p>
+<p>AI agents cần validate thay đổi liên tục. Khi mỗi lần test đều yêu cầu provisioning tài nguyên cloud, chờ pipeline chạy, hoặc debug các lỗi chỉ xuất hiện khi deployment, thì các vòng phản hồi (feedback loops) trở nên quá chậm. Sự tight coupling giữa business logic và cloud services càng làm việc testing cục bộ (local testing) trở nên phức tạp, trong khi cấu trúc project thiếu nhất quán khiến agent khó xác định chính xác nơi cần thay đổi.</p>
+<p>Nếu không có sự hỗ trợ từ kiến trúc, agentic AI sẽ tạo ra nhiều rủi ro hơn là giá trị. Giải pháp không nằm ở việc viết prompt tốt hơn, mà là xây dựng một kiến trúc coi feedback nhanh và ranh giới rõ ràng (clear boundaries) là các yếu tố cốt lõi. Những friction trong kiến trúc này không chỉ gây bất tiện-chúng còn giới hạn trực tiếp hiệu quả của AI agents. Dưới đây là cách bạn có thể thiết kế lại kiến trúc để khai thác tối đa tiềm năng của agentic AI.</p>
+<h2 id="kiến-trúc-hệ-thống-cho-các-vòng-phản-hồi-agentic-nhanh">Kiến trúc hệ thống cho các vòng phản hồi agentic nhanh</h2>
+<p>Agentic development phụ thuộc rất lớn vào tốc độ phản hồi (feedback speed). Agent càng nhanh chóng quan sát được tác động của một thay đổi, thì càng có thể refine output một cách hiệu quả. Ở đây, system architecture đóng vai trò quyết định.</p>
+<img src="/images/figure-1-blog-3.jpeg" alt="figure-1-blog-3" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Hình 1: Kiến trúc tổng thể hỗ trợ agentic development: local test loops, ephemeral test stack, và pipeline CI/CD được AI kích hoạt.</p>
+<h3 id="giả-lập-cục-bộ-local-emulation-như-con-đường-phản-hồi-mặc-định">Giả lập cục bộ (local emulation) như con đường phản hồi mặc định</h3>
+<p>Bất cứ khi nào có thể, kiến trúc của bạn nên cho phép AI agents test các thay đổi ngay trên môi trường local trước khi sử dụng tài nguyên cloud. AWS cung cấp nhiều công cụ giúp điều này trở nên khả thi.</p>
+<p>Ví dụ, các ứng dụng serverless được xây dựng với <a href="https://aws.amazon.com/vi/lambda/">AWS Lambda</a> và <a href="https://aws.amazon.com/vi/api-gateway/">Amazon API Gateway</a> có thể được giả lập cục bộ bằng <a href="https://aws.amazon.com/vi/serverless/sam/">AWS Serverless Application Model</a> (AWS SAM). Với lệnh <code>sam local start-api</code>, một AI agent có thể gọi Lambda functions thông qua API Gateway được giả lập trên local, quan sát phản hồi ngay lập tức và lặp (iterate) chỉ trong vài giây thay vì vài phút.</p>
+<p>Containers cũng mang lại lợi ích tương tự cho các dịch vụ chạy trên <a href="https://aws.amazon.com/vi/ecs/">Amazon Elastic Container Service</a> (Amazon ECS) hoặc <a href="https://aws.amazon.com/vi/fargate/">AWS Fargate</a>. Bằng cách build và chạy cùng một container image trên local, agent có thể validate hành vi của ứng dụng trước khi deploy lên cloud. Đối với lưu trữ dữ liệu, <a href="https://aws.amazon.com/vi/dynamodb/">Amazon DynamoDB</a> Local cho phép agent test các thao tác create, read, update, delete (CRUD) trên một database local mô phỏng API của DynamoDB.</p>
+<p>Lưu ý: Local emulation giúp giảm đáng kể thời gian iteration, cho phép code do AI sinh ra được validate chỉ trong vài giây, đồng thời giảm chi phí và rủi ro khi thử nghiệm.</p>
+<h3 id="phát-triển-offline-cho-các-workload-dữ-liệu-và-phân-tích">Phát triển offline cho các workload dữ liệu và phân tích</h3>
+<p>Nhiều workload phù hợp với mô hình test request-response, nhưng các data processing pipelines thường liên quan đến dữ liệu lớn và thực thi phân tán. Ngay cả trong trường hợp này, agentic workflows vẫn hưởng lợi đáng kể từ phản hồi cục bộ (local feedback).</p>
+<p><a href="https://aws.amazon.com/vi/glue/">AWS Glue</a> cung cấp các Docker image cho phép chạy Glue jobs trên môi trường local cùng với thư viện AWS Glue ETL. Một AI agent có thể validate các bước transform trên các tập dữ liệu mẫu, kiểm tra kết quả trung gian, và chỉ chuyển lên cloud khi cần test ở quy mô lớn. Mô hình tương tự cũng áp dụng cho các workload về dữ liệu và machine learning (ML): tách biệt logic, test local với dữ liệu thu nhỏ, sau đó đưa code đã được kiểm chứng lên các managed services.</p>
+<p><strong>Lưu ý:</strong> Phát triển offline giúp rút ngắn feedback loop cho các workload dữ liệu và giảm số lần chạy cloud không cần thiết trong giai đoạn iteration ban đầu.</p>
+<h3 id="kiểm-thử-hybrid-với-tài-nguyên-cloud-nhẹ">Kiểm thử hybrid với tài nguyên cloud nhẹ</h3>
+<p>Một số dịch vụ AWS không thể được giả lập hoàn toàn trên môi trường local. Trong những trường hợp này, mục tiêu không phải là tránh sử dụng cloud, mà là giữ cho việc phản hồi từ cloud nhẹ và nhanh.</p>
+<p>Đối với các hệ thống hướng sự kiện (event-driven) sử dụng <a href="https://aws.amazon.com/vi/sns/">Amazon Simple Notification Service</a> (Amazon SNS) hoặc <a href="https://aws.amazon.com/vi/sqs/">Amazon Simple Queue Service</a> (Amazon SQS), bạn có thể định nghĩa các môi trường development tối giản bằng các công cụ infrastructure as code (IaC) như <a href="https://aws.amazon.com/vi/cloudformation/">AWS CloudFormation</a> hoặc <a href="https://aws.amazon.com/vi/cdk/">AWS Cloud Development Kit</a> (AWS CDK). Một AI agent có thể deploy các tài nguyên nhỏ, tách biệt, gọi chúng thông qua AWS SDK, và validate hành vi mà không cần provisioning toàn bộ hệ thống.</p>
+<p>Cách tiếp cận hybrid này xem cloud như một dependency trong quá trình test-được sử dụng một cách tiết kiệm và có kiểm soát.</p>
+<p>Lưu ý: Hybrid testing giúp xác nhận hành vi thực tế của dịch vụ từ sớm, đồng thời giữ việc sử dụng cloud tập trung và hiệu quả.</p>
+<h3 id="preview-environments-và-thiết-kế-contract-first">Preview environments và thiết kế contract-first</h3>
+<p>Phản hồi nhanh không chỉ dừng lại ở việc test trên local. Việc validate end-to-end vẫn rất quan trọng, đặc biệt khi có nhiều service tương tác với nhau.</p>
+<p>Preview environments là các môi trường tạm thời (short-lived) được tạo theo nhu cầu để phục vụ validation. Được định nghĩa bằng IaC, chúng cho phép AI agent deploy toàn bộ ứng dụng, chạy các smoke test, và sau đó teardown toàn bộ tài nguyên khi hoàn tất. Khi kết hợp với contract-first design-nơi các API được định nghĩa trước bằng OpenAPI specifications-agents có thể validate tích hợp giữa các service ngay cả khi chưa triển khai đầy đủ tất cả thành phần.</p>
+<p><strong>Lưu ý:</strong> Preview environments giúp giảm rủi ro tích hợp (integration risk) và cho phép các thay đổi do AI tạo ra được kiểm chứng an toàn trước khi đưa vào production.</p>
+<h2 id="kiến-trúc-code-base-thân-thiện-với-ai">Kiến trúc code base thân thiện với AI</h2>
+<p>System architecture giúp tăng tốc phản hồi, nhưng code base architecture mới là yếu tố quyết định liệu một AI agent có thể hiểu được những gì nó đang thay đổi hay không.</p>
+<h3 id="cấu-trúc-domain-driven-với-ranh-giới-rõ-ràng">Cấu trúc domain-driven với ranh giới rõ ràng</h3>
+<p>Chúng tôi khuyến nghị áp dụng agentic development khi repository của bạn phản ánh rõ ràng ý đồ kiến trúc. Một cấu trúc domain-driven lấy cảm hứng từ <a href="https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-architectures/overview.html#ddd">Domain-Driven Design</a> (DDD) sẽ tách biệt business logic cốt lõi khỏi phần orchestration của ứng dụng và các yếu tố hạ tầng.</p>
+<p>Trong thực tế, điều này thường có nghĩa là tổ chức code thành các layer rõ ràng như /domain, /application và /infrastructure, nơi mỗi phần đảm nhận một vai trò riêng biệt. Domain layer tập trung vào business logic cốt lõi và hoàn toàn không phụ thuộc vào các dịch vụ Amazon, giúp logic nghiệp vụ luôn thuần và dễ kiểm thử. Trong khi đó, infrastructure layer chịu trách nhiệm tích hợp với các dịch vụ như Amazon DynamoDB hoặc Amazon Simple Notification Service. Nhờ sự tách biệt này, AI agents có thể chỉnh sửa và kiểm tra business logic ngay trên môi trường local mà không cần chạm tới các thành phần phụ thuộc cloud, từ đó tăng tốc độ iteration và giảm rủi ro khi thay đổi.</p>
+<p>Các pattern như <a href="https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-architectures/welcome.html">hexagonal architecture</a> (kiến trúc lục giác) còn củng cố sự tách biệt này bằng cách xem các hệ thống bên ngoài như adapter thay vì dependency trực tiếp.</p>
+<p>Lưu ý: Ranh giới rõ ràng giúp giảm các tác động ngoài ý muốn và khiến các thay đổi do AI tạo ra trở nên dễ hiểu, dễ kiểm thử hơn.</p>
+<h3 id="mã-hóa-ý-đồ-kiến-trúc-bằng-project-rules">Mã hóa ý đồ kiến trúc bằng project rules</h3>
+<p>Ngay cả khi repository đã được tổ chức tốt, việc có hướng dẫn rõ ràng và tường minh vẫn mang lại nhiều giá trị. <a href="https://kiro.dev/">Kiro</a> hỗ trợ <a href="https://kiro.dev/docs/cli/steering/">steering files</a>-các file Markdown được lưu trong thư mục <code>.kiro/steering/</code>-dùng để mô tả các <a href="https://kiro.dev/docs/cli/steering/#foundational-steering-files">architectural constraints và coding conventions</a>.</p>
+<p>Ví dụ, một rule có thể quy định rằng mọi truy cập database phải đi qua các repository class trong infrastructure layer. AI agent sẽ tự động tham chiếu các rule này, giúp giảm nhu cầu phải lặp lại constraint trong mỗi prompt và đảm bảo code được sinh ra luôn tuân theo kiến trúc đã định.</p>
+<p><strong>Lưu ý:</strong> Project rules giúp giảm architectural drift và duy trì tính nhất quán khi AI agents hoạt động ngày càng autonomous.</p>
+<h3 id="tests-như-các-đặc-tả-có-thể-thực-thi-executable-specifications">Tests như các &ldquo;đặc tả có thể thực thi&rdquo; (executable specifications)</h3>
+<p>Trong agentic workflows, tests không chỉ dùng để phát hiện lỗi hồi quy (regressions) mà còn đóng vai trò định nghĩa hành vi chấp nhận được của hệ thống. Một chiến lược testing theo nhiều lớp (layered) đặc biệt hiệu quả:</p>
+<ul>
+<li><strong>Unit tests</strong> kiểm tra domain logic một cách độc lập và chạy rất nhanh, phù hợp cho các vòng lặp iteration liên tục do AI thực hiện.</li>
+<li><strong>Contract tests</strong> xác minh rằng các service tuân thủ đúng interface đã thỏa thuận, giúp phát hiện sớm các thay đổi phá vỡ (breaking changes).</li>
+<li><strong>Smoke tests</strong> chạy trên môi trường đã deploy để phát hiện các vấn đề về cấu hình hoặc quyền truy cập chỉ xuất hiện khi runtime, chẳng hạn như thiếu quyền trong <a href="https://aws.amazon.com/vi/iam/">AWS Identity và Access Management</a> (IAM). Các tests được viết tốt cũng đóng vai trò như tài liệu. Khi một test thất bại, AI agent có thể suy ra hành vi mong đợi và điều chỉnh lại thay đổi của mình cho phù hợp.</li>
+</ul>
+<p><strong>Lưu ý:</strong> Tests cung cấp cơ chế validation nhanh, khách quan cho code do AI tạo ra và giúp giảm rủi ro các lỗi tích hợp khó phát hiện.</p>
+<h3 id="monorepo-và-tài-liệu-có-thể-đọc-bởi-máy-machine-readable-documentation">Monorepo và tài liệu có thể đọc bởi máy (machine-readable documentation)</h3>
+<p>AI agents hoạt động hiệu quả hơn khi có ngữ cảnh rộng (broad context). Một monorepo cho phép agent di chuyển xuyên suốt các service, hiểu các pattern dùng chung và đánh giá tác động của thay đổi trên toàn hệ thống. Trong repository đó, tài liệu cần ngắn gọn, có cấu trúc rõ ràng. Các file như AGENT.md có thể mô tả nguyên tắc và ràng buộc kiến trúc, trong khi RUNBOOK.md và CONTRIBUTING.md trình bày quy trình vận hành và phát triển. Những định dạng machine-readable như YAML hoặc các file cấu hình sẽ dễ dàng cho agent phân tích hơn so với văn bản dài.</p>
+<p>Kiro cũng có thể sử dụng các <a href="https://kiro.dev/docs/cli/steering/#foundational-steering-files">foundational steering documents</a>-tóm tắt về cấu trúc, công nghệ và guideline sản phẩm—để giúp agent duy trì nhận thức bối cảnh (situational awareness) khi dự án phát triển.</p>
+<p><strong>Lưu ý:</strong> Việc chia sẻ ngữ cảnh đầy đủ giúp nâng cao chất lượng code do AI tạo ra và giảm nhu cầu chỉnh sửa thủ công.</p>
+<h3 id="tích-hợp-ai-agents-một-cách-an-toàn-vào-delivery-pipelines">Tích hợp AI agents một cách an toàn vào delivery pipelines</h3>
+<p>Khi AI agents ngày càng trở nên mạnh mẽ hơn, governance vẫn là yếu tố không thể thiếu. Các pipeline CI/CD (continuous integration và continuous delivery) cần được thiết lập với các guardrails như bắt buộc chạy test, review tự động và cơ chế bảo vệ branch. Theo thời gian, khi mức độ tin cậy tăng lên, bạn có thể mở rộng quyền tự chủ của agent, đồng thời vẫn giữ con người trong vòng kiểm soát đối với các quyết định có tác động lớn. Cách tiếp cận cân bằng này cho phép AI tăng tốc các công việc lặp lại mà không làm gia tăng rủi ro vận hành.</p>
+<h2 id="kết-luận">Kết luận</h2>
+<p>Agentic AI development không thể thành công một cách ngẫu nhiên. Nó đòi hỏi các kiến trúc được thiết kế với trọng tâm là feedback nhanh, ranh giới rõ ràng và ý đồ tường minh (explicit intent). Việc kết hợp local emulation, kiểm thử cloud nhẹ, và preview environments cùng với cấu trúc domain-driven, chiến lược testing nhiều lớp và tài liệu machine-readable sẽ tạo ra một môi trường nơi AI agents có thể hoạt động hiệu quả và an toàn. Các công cụ như Kiro giúp thu hẹp khoảng cách giữa các quyết định thiết kế của con người và việc thực thi tự động của AI. Khi kiến trúc được thiết kế phù hợp với agentic workflows, AI agents sẽ trở thành force multiplier thực sự—xử lý các vòng lặp phát triển nhanh chóng, trong khi đội ngũ của bạn có thể tập trung vào thiết kế cấp cao và đổi mới.</p>
+<p>Để tìm hiểu thêm về cách AWS có thể hỗ trợ tổ chức của bạn triển khai các giải pháp agentic, hãy truy cập <a href="https://aws.amazon.com/vi/ai/agentic-ai/">AWS Agentic AI</a>.</p>
+<h2 id="đóng-góp-và-feedback">Đóng góp và Feedback</h2>
+<p>Bài dịch này được thực hiện trong khuôn khổ <strong>FCAJ Internship Program</strong>.</p>
+<p><strong>Liên hệ:</strong> <a href="mailto:ducmin76@gmail.com">ducmin76@gmail.com</a></p>
+<p><strong>Feedback:</strong> Mọi góp ý để cải thiện chất lượng dịch thuật xin gửi về email trên</p>
+<p><strong>Updates:</strong> Bài dịch sẽ được cập nhật dựa trên feedback từ cộng đồng</p>
+<p><em>© 2026 - Bản dịch thuộc về Trần Nguyễn Đức Minh. Vui lòng credit khi sử dụng.</em></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/vi/3-translate-blog/blog-2/" title="Blog 2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vi/3-translate-blog/blog-4/" title="Blog 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203512"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203512"></script>
+    <script src="/js/jquery.sticky.js?1779203512"></script>
+    <script src="/js/featherlight.min.js?1779203512"></script>
+    <script src="/js/highlight.pack.js?1779203512"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203512"></script>
+    <script src="/js/learn.js?1779203512"></script>
+    <script src="/js/hugo-learn.js?1779203512"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203512"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

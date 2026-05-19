@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="description" content="">
+<meta name="author" content="ducmin76@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Blog 2 :: Internship Report</title>
+
+    
+    <link href="/css/nucleus.css?1779203515" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1779203515" rel="stylesheet">
+    <link href="/css/hybrid.css?1779203515" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1779203515" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1779203515" rel="stylesheet">
+    <link href="/css/auto-complete.css?1779203515" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1779203515" rel="stylesheet">
+    <link href="/css/theme.css?1779203515" rel="stylesheet">
+    <link href="/css/tabs.css?1779203515" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1779203515" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1779203515" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1779203515"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/3-translate-blog/blog-2/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+
+                .cls-2 {
+                    fill: #f90;
+                    fill-rule: evenodd;
+                }
+            </style>
+        </defs>
+        <title>AWS-Logo_White-Color</title>
+        <path class="cls-1"
+            d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z">
+        </path>
+        <path class="cls-2"
+            d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z">
+        </path>
+        <path class="cls-2"
+            d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z">
+        </path>
+    </svg>
+
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1779203515"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1779203515"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1779203515"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/" title="Worklog" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/">
+          <b> 1. </b>Worklog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-1/" title="Worklog Week 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-1/">
+          <b> 1.1 </b>Worklog Week 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-2/" title="Worklog Week 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-2/">
+          <b> 1.2 </b>Worklog Week 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-3/" title="Worklog Week 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-3/">
+          <b> 1.3 </b>Worklog Week 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-4/" title="Worklog Week 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-4/">
+          <b> 1.4 </b>Worklog Week 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-5/" title="Worklog Week 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-5/">
+          <b> 1.5 </b>Worklog Week 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-6/" title="Worklog Week 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-6/">
+          <b> 1.6 </b>Worklog Week 6
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-7/" title="Worklog Week 7" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-7/">
+          <b> 1.7 </b>Worklog Week 7
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-8/" title="Worklog Week 8" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-8/">
+          <b> 1.8 </b>Worklog Week 8
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-9/" title="Worklog Week 9" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-9/">
+          <b> 1.9 </b>Worklog Week 9
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-10/" title="Worklog Week 10" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-10/">
+          <b> 1.10 </b>Worklog Week 10
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-11/" title="Worklog Week 11" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-11/">
+          <b> 1.11 </b>Worklog Week 11
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-worklog/week-12/" title="Worklog Week 12" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1-worklog/week-12/">
+          <b> 1.12 </b>Worklog Week 12
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-proposal/" title="Project Proposal" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2-proposal/">
+          <b> 2. </b>Project Proposal
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/" title="Translated Blogs" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/3-translate-blog/">
+          <b> 3. </b>Translated Blogs
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-1/" title="Blog 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-1/">
+          <b> 3.1 </b>Blog 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-2/" title="Blog 2" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/3-translate-blog/blog-2/">
+          <b> 3.2 </b>Blog 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-3/" title="Blog 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-3/">
+          <b> 3.3 </b>Blog 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-translate-blog/blog-4/" title="Blog 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3-translate-blog/blog-4/">
+          <b> 3.4 </b>Blog 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/" title="Events Participated" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/">
+          <b> 4. </b>Events Participated
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-1/" title="Event 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-1/">
+          <b> 4.1 </b>Event 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-2/" title="Event 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-2/">
+          <b> 4.2 </b>Event 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-3/" title="Event 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-3/">
+          <b> 4.3 </b>Event 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-events/event-4/" title="Event 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4-events/event-4/">
+          <b> 4.4 </b>Event 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/" title="Workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/">
+          <b> 5. </b>Workshop
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/1-introduction/" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/1-introduction/">
+          <b> 5.1 </b>Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/" title="Preparation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/">
+          <b> 5.2 </b>Preparation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.1-activate-identity-center/" title="Activate Identity Center" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.1-activate-identity-center/">
+          <b> 5.2.1 </b>Activate Identity Center
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.2-create-permission-sets/" title="Create Permission Sets" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.2-create-permission-sets/">
+          <b> 5.2.2 </b>Create Permission Sets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.3-create-access-group/" title="Create Access Groups" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.3-create-access-group/">
+          <b> 5.2.3 </b>Create Access Groups
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.4-create-group-assignments/" title="Create Group Assignments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.4-create-group-assignments/">
+          <b> 5.2.4 </b>Create Group Assignments
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/" title="Create DynamoDB Tables" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/">
+          <b> 5.2.5 </b>Create DynamoDB Tables
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/" title="AccessSessions Table" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.1-access-sessions-table/">
+          <b> 5.2.5.1 </b>AccessSessions Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/" title="ProvisionAccess Table" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.5-create-dynamodb-tables/2.5.2-provision-access-table/">
+          <b> 5.2.5.2 </b>ProvisionAccess Table
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/" title="Create Secrets Manager" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/">
+          <b> 5.2.6 </b>Create Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/" title="Jira Credentials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.1-jira-credentials/">
+          <b> 5.2.6.1 </b>Jira Credentials
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/" title="Webhook Auth" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.2-webhook-auth/">
+          <b> 5.2.6.2 </b>Webhook Auth
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/" title="Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.3-access-group-mapping/">
+          <b> 5.2.6.3 </b>Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/" title="Token Secret (Email Approval)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/">
+          <b> 5.2.6.4 </b>Token Secret (Email Approval)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.7-create-simple-email-service/" title="Create Simple Email Service" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.7-create-simple-email-service/">
+          <b> 5.2.7 </b>Create Simple Email Service
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/" title="IAM Roles &amp; Policies for Lambda" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/">
+          <b> 5.2.8 </b>IAM Roles &amp; Policies for Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/" title="Lambda Executor Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.1-lambda-executor-role/">
+          <b> 5.2.8.1 </b>Lambda Executor Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/" title="Lambda Expiry Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.2-lambda-expiry-role/">
+          <b> 5.2.8.2 </b>Lambda Expiry Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/" title="Lambda Email Approval Role" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.8-iam-roles-and-policies-for-lambda/2.8.3-lambda-email-approval-role/">
+          <b> 5.2.8.3 </b>Lambda Email Approval Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.9-create-lambda-layer/" title="Create Lambda Layer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.9-create-lambda-layer/">
+          <b> 5.2.9 </b>Create Lambda Layer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/" title="Create Lambda Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/">
+          <b> 5.2.10 </b>Create Lambda Functions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/" title="Executor" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.1-executor/">
+          <b> 5.2.10.1 </b>Executor
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/" title="Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.2-expiry/">
+          <b> 5.2.10.2 </b>Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/" title="Email Approval" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.10-create-lambda-functions/2.10.3-email-approval/">
+          <b> 5.2.10.3 </b>Email Approval
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.11-setup-api-gateway/" title="Set up API Gateway" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.11-setup-api-gateway/">
+          <b> 5.2.11 </b>Set up API Gateway
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/" title="Connect DynamoDB Stream to Lambda Expiry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.12-connect-dynamodb-stream-to-lambda-expiry/">
+          <b> 5.2.12 </b>Connect DynamoDB Stream to Lambda Expiry
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/" title="Set up CloudWatch Alarms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.13-setup-cloudwatch-alarms/">
+          <b> 5.2.13 </b>Set up CloudWatch Alarms
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.14-populate-access-group-mapping/" title="Populate Access Group Mapping" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.14-populate-access-group-mapping/">
+          <b> 5.2.14 </b>Populate Access Group Mapping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/2-preparation/2.15-setup-jira/" title="Set up Jira" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/2-preparation/2.15-setup-jira/">
+          <b> 5.2.15 </b>Set up Jira
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/3-test-connection/" title="Test Connection" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/3-test-connection/">
+          <b> 5.3 </b>Test Connection
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/4-product-demonstration/" title="Product Demonstration" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/4-product-demonstration/">
+          <b> 5.4 </b>Product Demonstration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-workshop/5-clean-up-resources/" title="Clean up resources" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5-workshop/5-clean-up-resources/">
+          <b> 5.5 </b>Clean up resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-self-rating/" title="Self-Assessment" class="dd-item
+        
+        
+        
+        ">
+      <a href="/6-self-rating/">
+          <b> 6. </b>Self-Assessment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-feedback/" title="Sharing and Feedback" class="dd-item
+        
+        
+        
+        ">
+      <a href="/7-feedback/">
+          <b> 7. </b>Sharing and Feedback
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="vi" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/3-translate-blog/blog-2/">Tiếng Việt</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/3-translate-blog/blog-2/" selected>English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b> Last Updated </b> <br>
+    <i>
+        <font color=orange>19-05-2026</font>
+    </i>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.linkedin.com/in/minh-tran-nguyen-duc-111267304/" style="color:orange">Trần Nguyễn Đức Minh</a> <br>
+        <a href="https://www.linkedin.com/in/tqtcse/" style="color:orange">Trần Quốc Toàn</a> <br>
+        <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%ACnh-8974b4308/" style="color:orange">Lê Trung Bình</a>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Internship Report</a> > <a href='/3-translate-blog/'>Translated Blogs</a> > Blog 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#example-scenario">Example scenario</a></li>
+    <li><a href="#getting-started-with-lambda-tenant-isolation-mode">Getting Started with Lambda Tenant Isolation Mode</a></li>
+    <li><a href="#integrating-with-amazon-api-gateway">Integrating with Amazon API Gateway</a></li>
+    <li><a href="#tenant-aware-observability">Tenant-aware observability</a></li>
+    <li><a href="#considerations">Considerations</a></li>
+    <li><a href="#best-practices">Best practices</a></li>
+    <li><a href="#sample-code">Sample code</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#contributions-and-feedback">Contributions and Feedback</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 2
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="building-multi-tenant-saas-applications-with-aws-lambdas-new-tenant-isolation-mode">Building multi-tenant SaaS applications with AWS Lambda’s new tenant isolation mode</h1>
+<p><strong>Original Article:</strong> <a href="https://aws.amazon.com/vi/blogs/compute/building-multi-tenant-saas-applications-with-aws-lambdas-new-tenant-isolation-mode/">Building multi-tenant SaaS applications with AWS Lambda’s new tenant isolation mode</a></p>
+<p><strong>Author:</strong> Anton Aleksandrov (Principal Solutions Architect, Amazon Web Services) &amp; Ayush Kulkarni</p>
+<p><strong>Publication Date:</strong> 20/11/2025</p>
+<p><strong>Source:</strong> AWS Compute Blog</p>
+<p><strong>Translator:</strong> Tran Nguyen Duc Minh – FCAJ Intern</p>
+<p><strong>Translation Date:</strong> 18/03/2026</p>
+<p><strong>Estimated Reading Time:</strong> 30 minutes</p>
+<h2 id="summary">Summary</h2>
+<p>This article introduces a new feature in AWS Lambda called tenant isolation mode, designed to simplify the development of multi-tenant SaaS applications in serverless architectures. Previously, developers had to implement tenant isolation manually, either by handling it within application logic or by deploying separate Lambda functions for each tenant. Both approaches increased architectural complexity and operational overhead.</p>
+<p>With tenant isolation mode, AWS Lambda enables per-tenant execution environment isolation while still allowing multiple tenants to share the same function. Incoming requests are routed using a tenant ID, ensuring that each tenant runs in its own isolated execution environment without sharing data or state with others.</p>
+<p>This approach enhances security and simplifies system design, while still benefiting from execution environment reuse (warm starts) at the tenant level. However, it also introduces trade-offs, such as an increase in cold starts and operational costs, since more execution environments may be required.</p>
+<p>Overall, tenant isolation mode makes AWS Lambda a more effective solution for building scalable and secure multi-tenant SaaS systems, especially in scenarios where strong isolation between tenants is critical.</p>
+<p><strong>Target Audience:</strong> Cloud engineers, backend developers and solution architects who are building or designing multi-tenant SaaS applications on AWS, especially those working with serverless architectures</p>
+<p><strong>Difficulty Level:</strong> Intermediate</p>
+<p><strong>Tags:</strong> AWS Lambda, Serverless, Multi-tenant SaaS, Tenant Isolation, Cloud Architecture, Security, Scalability</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#building-multi-tenant-saas-applications-with-aws-lambdas-new-tenant-isolation-mode">Building multi-tenant SaaS applications with AWS Lambda’s new tenant isolation mode</a>
+<ul>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#example-scenario">Example scenario</a></li>
+<li><a href="#getting-started-with-lambda-tenant-isolation-mode">Getting Started with Lambda Tenant Isolation Mode</a></li>
+<li><a href="#integrating-with-amazon-api-gateway">Integrating with Amazon API Gateway</a></li>
+<li><a href="#tenant-aware-observability">Tenant-aware observability</a></li>
+<li><a href="#considerations">Considerations</a></li>
+<li><a href="#best-practices">Best practices</a></li>
+<li><a href="#sample-code">Sample code</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#contributions-and-feedback">Contributions and Feedback</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Today, AWS announced a new tenant isolation mode for <a href="https://aws.amazon.com/vi/lambda/">AWS Lambda</a>, that allows you to process function invocations in separate execution environments for each application end-user or tenant invoking your Lambda function. This capability simplifies building secure multi-tenant SaaS applications by managing tenant-level compute environment isolation and request routing for you. As a result, you can focus on your core business logic rather than implementing your own tenant-aware compute environment isolation.</p>
+<h2 id="overview">Overview</h2>
+<p>Lambda runs your function code in secure execution environments that leverage <a href="https://firecracker-microvm.github.io/">Firecracker virtualization</a> to provide isolation. These execution environments never share or reuse virtual resources (such as vCPU, disk, or memory) across functions, or even across different versions of the same function. However, Lambda can reuse execution environments for multiple invocations of the same function version, as these execution environments are fully set-up and can therefore deliver faster request processing for your functions.</p>
+<img src="/images/figure-1-blog-2.png" alt="figure-1-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 1. Incoming invocations processed by a collection of execution environments that belong to a single function.</p>
+<p>Multi-tenant SaaS applications that handle sensitive tenant-specific data or execute code supplied dynamically by tenants may need a higher degree of isolation-at the individual application tenant level rather than at the function level-for secure code execution and to reduce the risk of cross-tenant data access.</p>
+<p>Prior to today’s launch, developers would implement custom solutions, such as SDKs or application logic to manage isolation within function code. This approach was bug-prone, required more work from application development teams and didn’t ensure isolation at the compute environment level.</p>
+<p>Alternatively, developers adopted the approach of creating separate functions per application tenant, replicating the same code across hundreds or thousands of tenants. This approach provided stronger compute environment isolation than sharing compute environments across multiple tenants of the same function, but increased implementation overhead and operational complexity as workloads grew to support a larger number of tenants over time.</p>
+<img src="/images/figure-2-blog-2.png" alt="figure-2-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 2. Using function-per-tenant model, each tenant’s requests are processed by a separate function.</p>
+<p>Starting today, AWS Lambda offers a new tenant isolation mode that lets you isolate execution environments used across different tenants of your multi-tenant SaaS applications, even when all of the tenants invoke the same function. When you enable the new tenant isolation mode, you include a tenant identifier with each function invocation. Lambda uses this identifier to route the request to the correct execution environment. As a result, each execution environment is reused only for invocations from the same tenant. This means you still get the performance benefits of warm execution environments, while ensuring that each tenant’s workloads remain isolated.</p>
+<img src="/images/figure-3-blog-2.png" alt="figure-3-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 3. With the new tenant isolation capability, Lambda creates separate execution environments per tenant for a single function.</p>
+<p>For organizations handling sensitive tenant-specific data or running untrusted code supplied dynamically by end-users, Lambda’s new tenant isolation mode provides the security benefits of per-tenant compute environment separation without the operational complexity of managing individual functions or infrastructure for each tenant.</p>
+<h2 id="example-scenario">Example scenario</h2>
+<p>Consider building a multi-tenant serverless SaaS application. To optimize performance, your function handler can retrieve tenant-specific configuration and data, cache it in memory and reuse it for subsequent invocations from the same tenant. For example, you might cache tenant-specific database location, feature flags, or business rules that are frequently accessed during request processing. You may store this information within the application runtime process as global variables or as files in the <code>/tmp</code> directory. However, if the underlying execution environment is used to serve multiple tenants, this approach can potentially expose data across tenants.</p>
+<p>With tenant isolation mode you can address this risk with much simpler architecture and configuration. This built-in capability makes Lambda an excellent choice for multi-tenant SaaS applications needing isolated compute environments for individual tenants.</p>
+<h2 id="getting-started-with-lambda-tenant-isolation-mode">Getting Started with Lambda Tenant Isolation Mode</h2>
+<p>Use the new <strong>tenancy-config</strong> parameter to configure tenant isolation mode when you create your function. You can only apply this configuration at function creation time; it cannot be updated for existing functions. The following snippet creates a function with tenancy config using the <a href="https://aws.amazon.com/cli/">AWS CLI</a>.</p>
+<pre><code>aws lambda create-function \
+   --function-name my-function1 \
+   --runtime nodejs22.x \
+   --zip-file fileb://my-function1.zip \
+   --handler index.handler \
+   --role arn:aws:iam:1234567890:role/my-function-role \
+   --tenancy-config '{&quot;TenantIsolationMode&quot;: &quot;PER_TENANT&quot;}'
+</code></pre><p>After the function is created, you must provide the tenant ID parameter with each invocation. Lambda uses this identifier to ensure that the execution environment used for a particular tenant is never reused for other tenants. For subsequent invocations from the same tenant, Lambda may reuse the execution environment to optimize performance. Specify this <strong>tenant-id</strong> parameter as illustrated below:</p>
+<pre><code>aws lambda invoke \
+   --function-name my-function \
+   --tenant-id BlueTenant \
+   response.json
+</code></pre><p>The new <strong>tenant-id</strong> parameter is required for functions using the tenant isolation mode. Function invocations omitting this parameter will fail with an invocation error, as shown below:</p>
+<pre><code>aws lambda invoke --function-name multitenant-function out.json
+
+An error occurred (InvalidParameterValueException) when calling the Invoke operation:
+The invoked function is enabled with tenancy configuration. 
+Add a valid tenant ID in your request and try again.
+</code></pre><p>Lambda makes the tenant ID parameter available through your function handler’s context object. This allows you to access tenant-specific information in your code, for example if you wish to implement custom logic based on the tenant identity, as shown below:</p>
+<pre><code>exports.handler = async function (event, context) {
+   const tenantId = context.tenantId;
+
+   // Process tenant-specific logic
+
+   return {
+      statusCode: 200,
+      body: `OK for tenantId=${tenantId}`
+   };
+};
+</code></pre><p>The following table outlines differences between Lambda functions with and without tenant isolation mode enabled:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Without the new tenant isolation mode</th>
+<th>With the new tenant isolation mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Execution environment isolation</td>
+<td>Isolated per function version.</td>
+<td>Isolated per end-user or tenant invoking a function version.</td>
+</tr>
+<tr>
+<td>Execution environment reuse</td>
+<td>Can be reused to process all invocations of a function version.</td>
+<td>Can only be reused to process invocations from the same tenant invoking a function version.</td>
+</tr>
+<tr>
+<td>Data stored on local disk and in-memory</td>
+<td>Potentially accessible across all invocations of a function version.</td>
+<td>Potentially accessible across invocations from the same tenant. Not accessible for invocations from other tenants.</td>
+</tr>
+<tr>
+<td>Cold starts</td>
+<td>Occur when there are no warm execution environments available to process incoming invocation.</td>
+<td>Occur when there are no tenant-specific warm execution environments available to process incoming invocation. More cold starts expected due to tenant-specific execution environments.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="integrating-with-amazon-api-gateway">Integrating with Amazon API Gateway</h2>
+<p><a href="https://aws.amazon.com/vi/api-gateway/">Amazon API Gateway</a> uses <a href="https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html">Lambda’s Invoke API</a> to invoke Lambda functions. When using the Invoke API, Lambda expects the tenant ID parameter to be passed using the <strong>X-Amz-Tenant-Id</strong> HTTP header. You can configure API Gateway to inject this HTTP header into the Lambda invocation request with a value obtained from client request properties such as HTTP header, query parameter, or path parameter. When using <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html">Lambda Authorizers</a>, you can obtain the value from authorization context information returned by the authorizer, such as principal ID or JWT claim. See <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-lambda-authorizer-output.html">API Gateway documentation</a> to learn how you can return authorization information from Lambda authorizers to be used for the <strong>X-Amz-Tenant-Id</strong> header value.</p>
+<img src="/images/figure-4-blog-2.png" alt="figure-4-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 4. Obtaining X-Amz-Tenant-Id header value from authentication sources.</p>
+<p>The following screenshot illustrates API Gateway Lambda integration configuration, where the incoming request to API Gateway includes an <strong>x-tenant-id</strong> header that is mapped to the <strong>X-Amz-Tenant-Id</strong> request header to invoke a Lambda function using tenant isolation mode.</p>
+<img src="/images/figure-5-blog-2.png" alt="figure-5-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 5. Mapping client request header to Lambda tenant-id header.</p>
+<p>The following code snippet illustrates this configuration implemented with the AWS CDK.</p>
+<pre><code>const lambdaIntegration = new ApiGw.LambdaIntegration(fn, {
+   requestParameters: {
+      // This configures API Gateway to inject X-Amz-Tenant-Id header
+      // into downstream requests. The header value is obtained from 
+      // x-tenant-id header in the client request.
+      'integration.request.header.X-Amz-Tenant-Id': 'method.request.header.x-tenant-id'
+   }
+});
+
+resource.addMethod('GET', lambdaIntegration, {
+   requestParameters: {
+      // This enables API Gateway to use the x-tenant-id header value 
+      // obtained from the client request. The header name is arbitrary.
+      // you can use any other header name. 
+      'method.request.header.x-tenant-id': true
+   }
+});
+</code></pre><h2 id="tenant-aware-observability">Tenant-aware observability</h2>
+<p>For functions using tenant isolation, Lambda automatically includes the tenant ID in <a href="https://docs.aws.amazon.com/lambda/latest/dg/monitoring-logs.html">function logs</a> when you have <a href="https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs-logformat.html">JSON logging enabled</a>, making it easier to monitor and debug tenant-specific issues. Note that the <strong>tenantId</strong> property is available during function invocation, rather than during function initialization. The tenantId property is included for both <a href="https://docs.aws.amazon.com/lambda/latest/dg/telemetry-schema-reference.html">platform events</a> (like <strong>platform.start</strong> and <strong>platform.report</strong>) and custom logs you print in your function code, as shown in the following screenshot:</p>
+<img src="/images/figure-6-blog-2.png" alt="figure-6-blog-2" style="width:600px !important; max-width:600px !important;">
+<p style="text-align:center; font-style:italic;">Figure 6. Lambda function logs with tenantId.</p>
+<p>Lambda creates a separate <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">CloudWatch log stream</a> for each execution environment. You can use <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html">CloudWatch Log Insights</a> to find log streams that belong to a particular tenant by filtering by tenant Id:</p>
+<pre><code>fields @logStream, @message
+| filter tenantId=='BlueTenant' or record.tenantId=='BlueTenant'
+| stats count() as logCount by @logStream
+| sort @timestamp desc
+</code></pre><p>You can also retrieve tenant-specific logs across all log streams:</p>
+<pre><code>fields @message
+| filter tenantId=='BlueTenant' or record.tenantId=='BlueTenant'
+| limit 1000
+</code></pre><p>Each log stream starts with function initialization logs followed by the invocation logs. This structure helps you to debug tenant-specific issues and understand the lifecycle of each tenant’s execution environments.</p>
+<h2 id="considerations">Considerations</h2>
+<p>When using the new tenant isolation for Lambda functions, consider the following:</p>
+<ul>
+<li>Each tenant’s execution environments are isolated from other tenants so that tenant-specific data stored on disk or in memory remain separated from other tenants invoking the same Lambda function.</li>
+<li>All tenants share the function’s execution role. For more fine-grained permissions for individual tenants, consider propagating tenant-scoped credentials from the upstream application components invoking your Lambda function.</li>
+<li>Your application may experience higher percentage of cold starts, as Lambda processes requests in separate execution environments for each tenant invoking your functions.</li>
+<li>You pay a fee for each new tenant-specific execution environment created, depending on the memory configured for your function. See <a href="https://aws.amazon.com/vi/lambda/pricing/">Lambda pricing page</a> for details.</li>
+</ul>
+<h2 id="best-practices">Best practices</h2>
+<p>When using the new tenant isolation mode for Lambda functions, AWS recommends the following best practices:</p>
+<ul>
+<li>Implement robust tenant ID validation at the application layer to prevent unauthorized access through tenant ID manipulation. Consider using a dedicated service or database to maintain valid tenant IDs.</li>
+<li>Monitor and audit tenant access patterns regularly to detect potential security anomalies or unauthorized cross-tenant access attempts.</li>
+<li>Be aware of <a href="https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html">Lambda concurrency quotas</a> when building multi-tenant applications. You might need to request quota increases based on your tenant count and usage patterns.</li>
+</ul>
+<h2 id="sample-code">Sample code</h2>
+<p>Follow the instructions in <a href="https://github.com/aws-samples/sample-lambda-tenant-isolation">this GitHub repository</a> to provision a sample project in your own account and see the new Lambda tenant isolation mode in action. The sample project illustrates how to integrate a function using the new tenant isolation mode with <a href="https://aws.amazon.com/api-gateway/">Amazon API Gateway</a> and propagate tenant identity from client requests.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The new tenant isolation mode for Lambda simplifies building serverless multi-tenant SaaS applications on AWS. By automatically managing application tenant-level compute environment isolation, this capability eliminates the need for custom isolation logic or separate tenant functions, allowing you to focus on the core business logic while AWS handles the complexities of tenant-aware compute environment isolation.</p>
+<p>Combined with the existing security features in Lambda, rapid scaling and pay-per-use pricing, tenant isolation mode makes Lambda an even more compelling choice for modern SaaS applications, whether you’re building new solutions or enhancing existing ones.</p>
+<p>To learn more, refer to the <a href="https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation.html">documentation for tenant isolation</a>. For details on pricing, refer to <a href="https://aws.amazon.com/vi/lambda/pricing/">Lambda’s pricing page</a>.</p>
+<h2 id="contributions-and-feedback">Contributions and Feedback</h2>
+<p>This translation was completed as part of the <strong>FCAJ Internship Program</strong>.</p>
+<p><strong>Contact:</strong> <a href="mailto:ducmin76@gmail.com">ducmin76@gmail.com</a></p>
+<p><strong>Feedback:</strong> Any suggestions to improve the translation quality are welcome and can be sent to the email above.</p>
+<p><strong>Updates:</strong> The translation will be updated based on feedback from the community.</p>
+<p><em>© 2026 – Translation by Tran Nguyen Duc Minh. Please provide proper credit when using this content.</em></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/3-translate-blog/blog-1/" title="Blog 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/3-translate-blog/blog-3/" title="Blog 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1779203515"></script>
+    <script src="/js/perfect-scrollbar.min.js?1779203515"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1779203515"></script>
+    <script src="/js/jquery.sticky.js?1779203515"></script>
+    <script src="/js/featherlight.min.js?1779203515"></script>
+    <script src="/js/highlight.pack.js?1779203515"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1779203515"></script>
+    <script src="/js/learn.js?1779203515"></script>
+    <script src="/js/hugo-learn.js?1779203515"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1779203515"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <link rel="stylesheet" href="/css/custom.css">
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
