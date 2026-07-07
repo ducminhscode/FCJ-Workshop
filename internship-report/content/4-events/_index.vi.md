@@ -35,13 +35,3 @@ chapter : false
 **Địa điểm:** Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam
 
 **Vai trò trong sự kiện:** Người tham dự 
-
-### [Event 4](./event-4)
-
-**Tên sự kiện:** 
-
-**Thời gian:** 
-
-**Địa điểm:** 
-
-**Vai trò trong sự kiện:** 

@@ -221,7 +221,7 @@
 	"title": "Các event đã tham gia",
 	"tags": [],
 	"description": "",
-	"content": "Event 1 Tên sự kiện: AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront \u0026amp; WAF\nThời gian: 09:00 ngày 19/11/2025\nĐịa điểm: Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam\nVai trò trong sự kiện: Người tham dự\nEvent 2 Tên sự kiện: AWS First Cloud AI Journey Community Day 2026\nThời gian: 09:00 ngày 21/03/2026\nĐịa điểm: Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam\nVai trò trong sự kiện: Người tham dự\nEvent 3 Tên sự kiện: FCAJ HCM Knowledge Sharing\nThời gian: 09:00 ngày 09/05/2026\nĐịa điểm: Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam\nVai trò trong sự kiện: Người tham dự\nEvent 4 Tên sự kiện:\nThời gian:\nĐịa điểm:\nVai trò trong sự kiện:\n"
+	"content": "Event 1 Tên sự kiện: AWS Perimeter Protection Workshop – Tăng cường bảo mật với CloudFront \u0026amp; WAF\nThời gian: 09:00 ngày 19/11/2025\nĐịa điểm: Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam\nVai trò trong sự kiện: Người tham dự\nEvent 2 Tên sự kiện: AWS First Cloud AI Journey Community Day 2026\nThời gian: 09:00 ngày 21/03/2026\nĐịa điểm: Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam\nVai trò trong sự kiện: Người tham dự\nEvent 3 Tên sự kiện: FCAJ HCM Knowledge Sharing\nThời gian: 09:00 ngày 09/05/2026\nĐịa điểm: Tầng 26, tòa nhà Bitexco, đường Hải Triều, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam\nVai trò trong sự kiện: Người tham dự\n"
 },
 {
 	"uri": "http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/5-workshop/4-product-demonstration/",
@@ -229,13 +229,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Xem video demo sản phẩm ở đường dẫn: Production Access Request Portal\n"
-},
-{
-	"uri": "http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/4-events/event-4/",
-	"title": "Event 4",
-	"tags": [],
-	"description": "",
-	"content": "Bài Thu Hoạch \u0026quot;\u0026quot; Mục Đích Của Sự Kiện Danh Sách Diễn Giả Nội Dung Nổi Bật Những Gì Học Được Ứng Dụng Vào Công Việc Trải Nghiệm Trong Event Một số hình ảnh buổi workshop "
 },
 {
 	"uri": "http://fcj-workshop-hugo.s3-website-ap-southeast-1.amazonaws.com/vi/5-workshop/2-preparation/2.6-create-secrets-manager/2.6.4-token-secret/",
